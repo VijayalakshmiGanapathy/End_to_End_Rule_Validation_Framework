@@ -1,0 +1,70 @@
+2026-06-19 12:47:19,225 | INFO | app.services.validation_service | Starting validation for batch=B15_TrialSummary_TS_part3 host_generator_key=oncology_nsclc
+2026-06-19 12:47:19,226 | INFO | app.utils.file_reader | Reading CSV file: data\input\B15_TrialSummary_TS_part3\2026-06-16T11-48_export_summary.csv
+2026-06-19 12:47:19,242 | INFO | app.utils.file_reader | Reading CSV file: data\input\B15_TrialSummary_TS_part3\2026-06-16T11-48_export_Audit_Report.csv
+2026-06-19 12:47:19,256 | INFO | app.services.validation_service | Export summary columns: ['rule_id', 'injected', 'overwritten', 'failed_self_validation', 'total', 'failure_reason']
+2026-06-19 12:47:19,258 | INFO | app.services.validation_service | Export detail columns: ['error_id', 'rule_id', 'status', 'domain', 'USUBJID', 'row_index', 'primitive', 'variables_modified', 're_derived', 'failure_reason']
+2026-06-19 12:47:19,260 | INFO | app.utils.file_reader | Reading Excel file: data\input\B15_TrialSummary_TS_part3\pinnacle21-report-2026-06-16T17-20-21-369.xlsx | sheet: Issue Summary
+2026-06-19 12:47:19,446 | INFO | app.utils.file_reader | Reading Excel file: data\input\B15_TrialSummary_TS_part3\pinnacle21-report-2026-06-16T17-20-21-369.xlsx | sheet: Rules
+2026-06-19 12:47:23,572 | INFO | app.services.validation_service | Starting Original vs Dirty comparison...
+2026-06-19 12:47:23,673 | INFO | app.services.validation_service | Original vs Dirty comparison completed.
+2026-06-19 12:47:23,674 | INFO | app.services.validation_service | Building rule validation results...
+2026-06-19 12:47:25,673 | INFO | app.services.validation_service | Rule validation results built successfully.
+2026-06-19 12:47:25,695 | INFO | app.services.validation_service | Starting Excel report generation...
+2026-06-19 12:47:25,991 | INFO | app.services.validation_service | Excel report generated successfully.
+2026-06-19 12:47:25,992 | INFO | app.services.validation_service | Validation completed. Report generated: E:\Care2Data\rule_injection_validation_framework\dist\data\output\rule_injection_validation_report.xlsx
+2026-06-19 12:48:28,562 | INFO | app.services.validation_service | Starting validation for batch=B14_TrialSummary_TS_part2 host_generator_key=oncology_nsclc
+2026-06-19 12:48:28,562 | INFO | app.utils.file_reader | Reading CSV file: data\input\B14_TrialSummary_TS_part2\2026-06-16T11-39_export_summary.csv
+2026-06-19 12:48:28,567 | INFO | app.utils.file_reader | Reading CSV file: data\input\B14_TrialSummary_TS_part2\2026-06-16T11-40_export_Audit_Report.csv
+2026-06-19 12:48:28,572 | INFO | app.services.validation_service | Export summary columns: ['rule_id', 'injected', 'overwritten', 'failed_self_validation', 'total', 'failure_reason']
+2026-06-19 12:48:28,573 | INFO | app.services.validation_service | Export detail columns: ['error_id', 'rule_id', 'status', 'domain', 'USUBJID', 'row_index', 'primitive', 'variables_modified', 're_derived', 'failure_reason']
+2026-06-19 12:48:28,573 | INFO | app.utils.file_reader | Reading Excel file: data\input\B14_TrialSummary_TS_part2\pinnacle21-report-2026-06-16T17-11-59-631.xlsx | sheet: Issue Summary
+2026-06-19 12:48:28,682 | INFO | app.utils.file_reader | Reading Excel file: data\input\B14_TrialSummary_TS_part2\pinnacle21-report-2026-06-16T17-11-59-631.xlsx | sheet: Rules
+2026-06-19 12:48:31,887 | INFO | app.services.validation_service | Starting Original vs Dirty comparison...
+2026-06-19 12:48:31,947 | INFO | app.services.validation_service | Original vs Dirty comparison completed.
+2026-06-19 12:48:31,948 | INFO | app.services.validation_service | Building rule validation results...
+2026-06-19 12:48:33,514 | INFO | app.services.validation_service | Rule validation results built successfully.
+2026-06-19 12:48:33,532 | INFO | app.services.validation_service | Starting Excel report generation...
+2026-06-19 12:48:33,968 | INFO | app.services.validation_service | Excel report generated successfully.
+2026-06-19 12:48:33,968 | INFO | app.services.validation_service | Validation completed. Report generated: E:\Care2Data\rule_injection_validation_framework\dist\data\output\rule_injection_validation_report.xlsx
+2026-06-19 12:49:21,728 | INFO | app.services.validation_service | Starting validation for batch=B14_TrialSummary_TS_part2 host_generator_key=oncology_nsclc
+2026-06-19 12:49:21,728 | INFO | app.utils.file_reader | Reading CSV file: data\input\B14_TrialSummary_TS_part2\2026-06-16T11-39_export_summary.csv
+2026-06-19 12:49:21,732 | INFO | app.utils.file_reader | Reading CSV file: data\input\B14_TrialSummary_TS_part2\2026-06-16T11-40_export_Audit_Report.csv
+2026-06-19 12:49:21,737 | INFO | app.services.validation_service | Export summary columns: ['rule_id', 'injected', 'overwritten', 'failed_self_validation', 'total', 'failure_reason']
+2026-06-19 12:49:21,738 | INFO | app.services.validation_service | Export detail columns: ['error_id', 'rule_id', 'status', 'domain', 'USUBJID', 'row_index', 'primitive', 'variables_modified', 're_derived', 'failure_reason']
+2026-06-19 12:49:21,738 | INFO | app.utils.file_reader | Reading Excel file: data\input\B14_TrialSummary_TS_part2\pinnacle21-report-2026-06-16T17-11-59-631.xlsx | sheet: Issue Summary
+2026-06-19 12:49:21,834 | INFO | app.utils.file_reader | Reading Excel file: data\input\B14_TrialSummary_TS_part2\pinnacle21-report-2026-06-16T17-11-59-631.xlsx | sheet: Rules
+2026-06-19 12:49:24,934 | INFO | app.services.validation_service | Starting Original vs Dirty comparison...
+2026-06-19 12:49:24,993 | INFO | app.services.validation_service | Original vs Dirty comparison completed.
+2026-06-19 12:49:24,994 | INFO | app.services.validation_service | Building rule validation results...
+2026-06-19 12:49:26,483 | INFO | app.services.validation_service | Rule validation results built successfully.
+2026-06-19 12:49:26,493 | INFO | app.services.validation_service | Starting Excel report generation...
+2026-06-19 12:49:26,809 | INFO | app.services.validation_service | Excel report generated successfully.
+2026-06-19 12:49:26,810 | INFO | app.services.validation_service | Validation completed. Report generated: E:\Care2Data\rule_injection_validation_framework\dist\data\output\rule_injection_validation_report.xlsx
+2026-06-19 12:50:26,158 | INFO | app.services.validation_service | Starting validation for batch=B12_TrialDesign_TA_TE_TI_TV_TD host_generator_key=psychiatry_mdd
+2026-06-19 12:50:26,159 | INFO | app.utils.file_reader | Reading CSV file: data\input\B12_TrialDesign_TA_TE_TI_TV_TD\2026-06-16T11-19_export_summary.csv
+2026-06-19 12:50:26,163 | INFO | app.utils.file_reader | Reading CSV file: data\input\B12_TrialDesign_TA_TE_TI_TV_TD\2026-06-16T11-19_export_Audit_Report.csv
+2026-06-19 12:50:26,168 | INFO | app.services.validation_service | Export summary columns: ['rule_id', 'injected', 'overwritten', 'failed_self_validation', 'total', 'failure_reason']
+2026-06-19 12:50:26,169 | INFO | app.services.validation_service | Export detail columns: ['error_id', 'rule_id', 'status', 'domain', 'USUBJID', 'row_index', 'primitive', 'variables_modified', 're_derived', 'failure_reason']
+2026-06-19 12:50:26,169 | INFO | app.utils.file_reader | Reading Excel file: data\input\B12_TrialDesign_TA_TE_TI_TV_TD\pinnacle21-report-2026-06-16T16-50-43-485.xlsx | sheet: Issue Summary
+2026-06-19 12:50:26,259 | INFO | app.utils.file_reader | Reading Excel file: data\input\B12_TrialDesign_TA_TE_TI_TV_TD\pinnacle21-report-2026-06-16T16-50-43-485.xlsx | sheet: Rules
+2026-06-19 12:50:29,574 | INFO | app.services.validation_service | Starting Original vs Dirty comparison...
+2026-06-19 12:50:29,670 | INFO | app.services.validation_service | Original vs Dirty comparison completed.
+2026-06-19 12:50:29,670 | INFO | app.services.validation_service | Building rule validation results...
+2026-06-19 12:50:31,386 | INFO | app.services.validation_service | Rule validation results built successfully.
+2026-06-19 12:50:31,400 | INFO | app.services.validation_service | Starting Excel report generation...
+2026-06-19 12:50:31,830 | INFO | app.services.validation_service | Excel report generated successfully.
+2026-06-19 12:50:31,831 | INFO | app.services.validation_service | Validation completed. Report generated: E:\Care2Data\rule_injection_validation_framework\dist\data\output\rule_injection_validation_report.xlsx
+2026-06-19 13:01:59,018 | INFO | app.services.validation_service | Starting validation for batch=B15_TrialSummary_TS_part3 host_generator_key=oncology_nsclc
+2026-06-19 13:01:59,018 | INFO | app.utils.file_reader | Reading CSV file: data\input\B15_TrialSummary_TS_part3\2026-06-16T11-48_export_summary.csv
+2026-06-19 13:01:59,023 | INFO | app.utils.file_reader | Reading CSV file: data\input\B15_TrialSummary_TS_part3\2026-06-16T11-48_export_Audit_Report.csv
+2026-06-19 13:01:59,037 | INFO | app.services.validation_service | Export summary columns: ['rule_id', 'injected', 'overwritten', 'failed_self_validation', 'total', 'failure_reason']
+2026-06-19 13:01:59,038 | INFO | app.services.validation_service | Export detail columns: ['error_id', 'rule_id', 'status', 'domain', 'USUBJID', 'row_index', 'primitive', 'variables_modified', 're_derived', 'failure_reason']
+2026-06-19 13:01:59,039 | INFO | app.utils.file_reader | Reading Excel file: data\input\B15_TrialSummary_TS_part3\pinnacle21-report-2026-06-16T17-20-21-369.xlsx | sheet: Issue Summary
+2026-06-19 13:01:59,154 | INFO | app.utils.file_reader | Reading Excel file: data\input\B15_TrialSummary_TS_part3\pinnacle21-report-2026-06-16T17-20-21-369.xlsx | sheet: Rules
+2026-06-19 13:02:02,248 | INFO | app.services.validation_service | Starting Original vs Dirty comparison...
+2026-06-19 13:02:02,322 | INFO | app.services.validation_service | Original vs Dirty comparison completed.
+2026-06-19 13:02:02,323 | INFO | app.services.validation_service | Building rule validation results...
+2026-06-19 13:02:03,604 | INFO | app.services.validation_service | Rule validation results built successfully.
+2026-06-19 13:02:03,618 | INFO | app.services.validation_service | Starting Excel report generation...
+2026-06-19 13:02:04,030 | INFO | app.services.validation_service | Excel report generated successfully.
+2026-06-19 13:02:04,031 | INFO | app.services.validation_service | Validation completed. Report generated: E:\Care2Data\rule_injection_validation_framework\dist\data\output\rule_injection_validation_report.xlsx

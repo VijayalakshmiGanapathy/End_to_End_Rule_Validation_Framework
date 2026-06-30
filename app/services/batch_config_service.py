@@ -1,0 +1,72 @@
+from dataclasses import dataclass
+
+import pandas as pd
+
+from app.core.config import WORKING_RULES_FILE
+
+
+@dataclass
+class BatchConfiguration:
+
+    batch_name: str
+
+    host_generator_key: str
+
+    rule_ids: list[str]
+
+
+class BatchConfigService:
+    """Read batch configuration from Working Rules Excel."""
+
+    def __init__(self):
+
+        self.df = pd.read_excel(
+            WORKING_RULES_FILE,
+            sheet_name="15 Batches",
+        )
+
+        self.df.columns = (
+            self.df.columns
+            .str.strip()
+        )
+
+    def get_batch_configuration(
+        self,
+        batch_name: str,
+    ) -> BatchConfiguration:
+
+        filtered_df = self.df[
+            self.df["Batch"]
+            .astype(str)
+            .str.strip()
+            == batch_name
+        ]
+
+        if filtered_df.empty:
+
+            raise ValueError(
+                f"Batch '{batch_name}' not found."
+            )
+
+        host_generator_key = (
+            filtered_df[
+                "Host Generator Key"
+            ]
+            .iloc[0]
+        )
+
+        rule_ids = (
+            filtered_df["Rule ID"]
+            .dropna()
+            .astype(str)
+            .str.strip()
+            .str.upper()
+            .unique()
+            .tolist()
+        )
+
+        return BatchConfiguration(
+            batch_name=batch_name,
+            host_generator_key=host_generator_key,
+            rule_ids=rule_ids,
+        )

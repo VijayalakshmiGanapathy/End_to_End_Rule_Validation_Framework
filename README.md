@@ -395,8 +395,8 @@ POST /validate
 {
   "batch_name": "B01_DM_dates",
   "host_generator_key": "oncology_nsclc",
-  "export_summary_path": "data/input/B01_DM_dates/2026-06-09T06-46_export.csv",
-  "export_detail_path": "data/input/B01_DM_dates/2026-06-09T06-45_export.csv",
+  "export_summary_path": "data/input/B01_DM_dates/2026-06-09T06-46_export_summary.csv",
+  "export_detail_path": "data/input/B01_DM_dates/2026-06-09T06-45_export_Audit_Report.csv",
   "p21_report_path": "data/input/B01_DM_dates/pinnacle21-report-2026-06-10T12-54-54-618.xlsx",
   "working_rules_path": "data/input/SDTM_P21_Working_Rules_and_15_Batches 1.xlsx",
   "test_case_path": "data/input/SDTMIG Rule Test Case 1.xlsx",
