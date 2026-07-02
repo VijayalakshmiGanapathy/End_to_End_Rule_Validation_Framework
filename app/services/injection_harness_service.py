@@ -3,7 +3,7 @@ import os
 import time
 from pathlib import Path
 
-
+from app.core.paths import BatchPaths
 from selenium.webdriver.common.action_chains import ActionChains
 
 from selenium.webdriver.common.by import By
@@ -765,6 +765,7 @@ class InjectionHarnessService:
         rule_ids: list[str],
         temp_folder: Path,
         batch_folder: Path,
+        paths,
     ):
         """
         Execute the complete SDTM Error Injection Harness workflow.
@@ -809,7 +810,7 @@ class InjectionHarnessService:
             download_service.process_manifest(
                 temp_folder,
                 batch_folder,
-                self.batch_name,
+                paths,
             )
 
             self.download_dirty_csv()
@@ -833,7 +834,7 @@ class InjectionHarnessService:
             download_service.process_export_summary(
                 temp_folder,
                 batch_folder,
-                self.batch_name,
+                paths,
             )
             
            # ---------------------------------------
@@ -852,7 +853,7 @@ class InjectionHarnessService:
             download_service.process_audit_report(
                 temp_folder,
                 batch_folder,
-                self.batch_name,
+                paths
             )
 
             logger.info(

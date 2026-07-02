@@ -10,6 +10,10 @@ from app.services.trialgen_download_service import (
 )
 from app.services.trialgen_service import TrialGenService
 
+from app.services.p21_service import P21Service
+
+from app.services.validation_service import ValidationService
+
 logger = logging.getLogger(__name__)
 
 
@@ -81,10 +85,15 @@ class AutomationService:
                 "Starting TrialGen..."
             )
 
+            TrialGenDownloadService().clear_download_folder(
+                paths.temp,
+            )
+
             trialgen = TrialGenService(
                 driver,
                 config.batch_name,
             )
+
 
             trialgen.run(
                 config.host_generator_key,
@@ -118,6 +127,7 @@ class AutomationService:
                 config.rule_ids,
                 paths.temp,
                 paths.batch_folder,
+                paths,
             )
 
             logger.info(
@@ -128,6 +138,49 @@ class AutomationService:
                 f"{config.batch_name} completed successfully."
             )
 
+            
+
+            p21 = P21Service()
+
+            report_file, run_number = p21.get_next_report_file(
+                paths,
+            )
+
+            logger.info(
+                f"P21 Report : {report_file.name}"
+            )
+
+            logger.info(
+                f"P21 Run Number : {run_number}"
+            )
+
+            result = p21.run(
+                paths.dirty,
+                report_file,
+            )
+
+            if not result["success"]:
+                raise Exception("P21 validation failed.")
+
+            logger.info(
+                "P21 validation completed successfully."
+            )
+
+            
+        
+            validation = ValidationService()
+
+            validation.run(
+                paths,
+                config,
+                report_file,
+            )
+
+            logger.info(
+                "Validation completed successfully."
+            )
+            return run_number
+    
         except Exception:
 
             logger.exception(

@@ -31,11 +31,11 @@ app.add_middleware(
 
 @app.get("/batch-options")
 def get_batch_options():
-    working_rules_path = "data/input/SDTM_P21_Working_Rules_and_15_Batches 1.xlsx"
+    working_rules_path = "\data\input\Error_Injector_Working_Rule_Batches.xlsx"
 
     df = pd.read_excel(
         working_rules_path,
-        sheet_name="15 Batches",
+        sheet_name="Batches",
     )
 
     df.columns = df.columns.str.strip()

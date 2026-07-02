@@ -217,7 +217,7 @@ For each injected rule:
 ```text
 domain = DM
 row_index = 41
-actual CSV row checked = row_index + 2 = 43
+actual CSV row index checked = row_index + 2 = 43
 ```
 
 The program opens:

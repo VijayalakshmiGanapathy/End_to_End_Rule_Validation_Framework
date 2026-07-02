@@ -183,3 +183,33 @@ class TrialGenDownloadService:
         ArchiveService.delete_archive(
             zip_file,
         )
+
+    
+
+    def clear_download_folder(
+        self,
+        download_folder: Path,
+    ):
+        """
+        Remove all existing files from the temporary download folder.
+        """
+
+        logger.info(
+            f"Clearing download folder: {download_folder}"
+        )
+
+        for file in download_folder.iterdir():
+
+            try:
+
+                if file.is_file():
+                    file.unlink()
+
+                elif file.is_dir():
+                    shutil.rmtree(file)
+
+            except Exception as ex:
+
+                logger.warning(
+                    f"Unable to delete {file}: {ex}"
+                )

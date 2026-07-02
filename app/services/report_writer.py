@@ -17,9 +17,22 @@ class ReportWriter:
         skipped_rules: pd.DataFrame,
         batch_summary: pd.DataFrame,
         batch_name: str,
-        output_path: Path = DEFAULT_OUTPUT_FILE,
+        output_path: Path = None
     ) -> str:
-        output_path.parent.mkdir(parents=True, exist_ok=True)
+        
+        if output_path is None:
+            output_path = DEFAULT_OUTPUT_FILE
+
+        # Create folder if it doesn't exist
+        output_path.parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        # Delete old validation report
+        if output_path.exists():
+            output_path.unlink()
+
 
         sheets_data = {
             "Rule Validation Results": rule_results,
@@ -30,34 +43,23 @@ class ReportWriter:
             "Batch Summary": batch_summary,
         }
 
-        existing_data = {}
+        with pd.ExcelWriter(
+            output_path,
+            engine="openpyxl",
+        ) as writer:
 
-        if output_path.exists():
-            existing_data = pd.read_excel(output_path, sheet_name=None)
+            for sheet_name, df in sheets_data.items():
 
-        with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
-            for sheet_name, new_df in sheets_data.items():
-                if sheet_name in existing_data:
-                    old_df = existing_data[sheet_name]
+                df.to_excel(
+                writer,
+                sheet_name=sheet_name,
+                index=False,
+            )
 
-                    if "Batch Name" in old_df.columns:
-                        old_df = old_df[
-                            old_df["Batch Name"].astype(str) != str(batch_name)
-                        ]
+            worksheet = writer.sheets[sheet_name]
 
-                    final_df = pd.concat(
-                        [old_df, new_df],
-                        ignore_index=True,
-                    )
-                else:
-                    final_df = new_df
-
-                final_df.to_excel(
-                    writer,
-                    sheet_name=sheet_name,
-                    index=False,
-                )
-                worksheet = writer.sheets[sheet_name]
-                worksheet.freeze_panes = "A2"
+            worksheet.freeze_panes = "A2"
+            worksheet.auto_filter.ref = worksheet.dimensions
+                
 
         return str(output_path)

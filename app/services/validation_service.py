@@ -2,8 +2,15 @@ import logging
 
 import pandas as pd
 
-from app.core.config import ISSUE_SUMMARY_SHEET, P21_RULES_SHEET, IMPUTATION_MATCH_THRESHOLD
-from app.models.validation_request import ValidationRequest
+from app.core.config import (
+    ISSUE_SUMMARY_SHEET, 
+    P21_RULES_SHEET, 
+    IMPUTATION_MATCH_THRESHOLD,
+    WORKING_RULES_FILE,
+    TEST_CASE_FILE,
+)
+
+
 from app.services.data_comparison_service import DataComparisonService
 from app.services.report_writer import ReportWriter
 from app.utils.file_reader import read_csv_file, read_excel_sheet
@@ -16,20 +23,32 @@ logger = logging.getLogger(__name__)
 class ValidationService:
     """Main validation orchestration service."""
 
-    def __init__(self, request: ValidationRequest) -> None:
-        self.request = request
-        self.report_writer = ReportWriter()
-        self.data_comparison_service = DataComparisonService()
+    def __init__(self):
 
-    def run_validation(self) -> str:
+        self.report_writer = ReportWriter()
+
+        self.data_comparison_service = DataComparisonService()
+        
+
+    def run(
+    self,
+    paths,
+    config,
+    p21_report,
+    ):
         logger.info(
             "Starting validation for batch=%s host_generator_key=%s",
-            self.request.batch_name,
-            self.request.host_generator_key,
+            config.batch_name,
+            config.host_generator_key,
         )
 
-        export_summary_df = read_csv_file(self.request.export_summary_path)
-        export_detail_df = read_csv_file(self.request.export_detail_path)
+        export_summary_df = read_csv_file(
+            paths.export_summary
+        )
+        
+        export_detail_df = read_csv_file(
+            paths.audit_report
+        )
         
         export_summary_df.columns = export_summary_df.columns.str.strip()
         export_detail_df.columns = export_detail_df.columns.str.strip()
@@ -38,7 +57,7 @@ class ValidationService:
         logger.info("Export detail columns: %s", export_detail_df.columns.tolist())
 
         p21_issue_df = read_excel_sheet(
-            self.request.p21_report_path,
+            p21_report,
             ISSUE_SUMMARY_SHEET,
         )
 
@@ -62,24 +81,23 @@ class ValidationService:
         )
 
         p21_rules_df = read_excel_sheet(
-            self.request.p21_report_path,
+            p21_report,
             P21_RULES_SHEET,
         )
 
         p21_issue_df.columns = p21_issue_df.columns.str.strip()
         p21_rules_df.columns = p21_rules_df.columns.str.strip()
 
-        # logger.info("P21 Issue Summary columns: %s", p21_issue_df.columns.tolist())
-        # logger.info("P21 Rules columns: %s", p21_rules_df.columns.tolist())
+        
 
         p21_rules_df.columns = p21_rules_df.columns.str.strip()
-        # logger.info("P21 Rules columns: %s", p21_rules_df.columns.tolist())
+        
 
         
 
         working_rules_df = pd.read_excel(
-            self.request.working_rules_path,
-            sheet_name="15 Batches",
+            WORKING_RULES_FILE,
+            sheet_name="Batches",
         )
 
         working_rules_df.columns = working_rules_df.columns.str.strip()
@@ -103,8 +121,8 @@ class ValidationService:
         )
 
         print("========== WORKING RULES DEBUG ==========")
-        print("Requested Batch:", repr(self.request.batch_name))
-        print("Requested Host Generator Key:", repr(self.request.host_generator_key))
+        print("Requested Batch:", repr(config.batch_name))
+        print("Requested Host Generator Key:", repr(config.host_generator_key))
 
         print(
             working_rules_df[
@@ -114,14 +132,14 @@ class ValidationService:
 
         working_rules_df = working_rules_df[
             working_rules_df["Batch"].str.contains(
-                self.request.batch_name,
+                config.batch_name,
                 case=False,
                 na=False,
                 regex=False,
             )
             & (
                 working_rules_df["Host Generator Key"].str.lower()
-                == self.request.host_generator_key.lower()
+                == config.host_generator_key.lower()
             )
         ]
 
@@ -135,7 +153,7 @@ class ValidationService:
             )
 
         test_case_sheets = pd.read_excel(
-            self.request.test_case_path,
+            TEST_CASE_FILE,
             sheet_name=None,
         )
 
@@ -143,8 +161,8 @@ class ValidationService:
 
         imputation_results = (
             self.data_comparison_service.compare_original_dirty(
-                self.request.original_data_dir,
-                self.request.dirty_data_dir,
+                paths.original_data,
+                paths.dirty,
                 export_detail_df,
             )
         )
@@ -154,6 +172,7 @@ class ValidationService:
         logger.info("Building rule validation results...")
 
         rule_results = self._build_rule_results(
+            config=config,
             export_summary_df=export_summary_df,
             export_detail_df=export_detail_df,
             p21_issue_df=p21_issue_df,
@@ -167,6 +186,7 @@ class ValidationService:
 
 
         skipped_rules = self._build_skipped_rules(
+            config=config,
             working_rules_df=working_rules_df,
             export_summary_df=export_summary_df,
             p21_issue_df=p21_issue_df,
@@ -183,30 +203,35 @@ class ValidationService:
             rule_results["Count Match"] == "No"
         ].copy()
 
-        batch_summary = self._build_batch_summary(rule_results)
+        batch_summary = self._build_batch_summary(
+            config,
+            rule_results,
+        )
 
         logger.info("Starting Excel report generation...")
 
 
-        output_path = self.report_writer.write_report(
+        report_path = self.report_writer.write_report(
             rule_results=rule_results,
             imputation_results=imputation_results,
             missing_rules=missing_rules,
             count_mismatches=count_mismatches,
             skipped_rules=skipped_rules,
             batch_summary=batch_summary,
-            batch_name=self.request.batch_name,
-
+            batch_name=config.batch_name,
+            output_path=paths.test_validation_report,
         )
 
-        logger.info("Excel report generated successfully.")
-        
+        logger.info("Test Validation Report Generated Successfully")
 
-        logger.info("Validation completed. Report generated: %s", output_path)
-        return output_path
+
+        return report_path
+
+        
 
     def _build_rule_results(
         self,
+        config,
         export_summary_df: pd.DataFrame,
         export_detail_df: pd.DataFrame,
         p21_issue_df: pd.DataFrame,
@@ -283,11 +308,11 @@ class ValidationService:
             count_match = expected_count == actual_count
 
             row = {
-                "Batch Name": self.request.batch_name,
-                "Host Generator Key": self.request.host_generator_key,
+                "Batch Name": config.batch_name,
+                "Host Generator Key": config.host_generator_key,
                 "Rule ID": rule_id,
                 "Domain": domain,
-                "Rule in 15 Batches Sheet": "Yes" if rule_in_batch else "No",
+                "Rule in Batches Sheet": "Yes" if rule_in_batch else "No",
                 "Rule injected in Export Summary": self._is_rule_in_export_summary(
                     export_summary_df,
                     rule_id,
@@ -345,6 +370,7 @@ class ValidationService:
 
     def _build_skipped_rules(
         self,
+        config,
         working_rules_df: pd.DataFrame,
         export_summary_df: pd.DataFrame,
         p21_issue_df: pd.DataFrame,
@@ -355,7 +381,7 @@ class ValidationService:
             "Batch Name",
             "Host Generator Key",
             "Skipped Rule ID",
-            "Rule in 15 Batches Sheet",
+            "Rule in Batches Sheet",
             "Rule present in Export Summary",
             "Rule present in P21 Issue Summary",
             "Rule in P21 Rules Sheet",
@@ -409,10 +435,10 @@ class ValidationService:
 
             rows.append(
                 {
-                    "Batch Name": self.request.batch_name,
-                    "Host Generator Key": self.request.host_generator_key,
+                    "Batch Name": config.batch_name,
+                    "Host Generator Key": config.host_generator_key,
                     "Skipped Rule ID": rule_id,
-                    "Rule in 15 Batches Sheet": (
+                    "Rule in Batches Sheet": (
                         "Yes" if not working_rule_rows.empty else "No"
                     ),
                     "Rule present in Audit Report": "No",
@@ -603,24 +629,24 @@ class ValidationService:
         return ""
 
     def _is_rule_skipped(self, rule_id: str) -> str:
-        if not self.request.skipped_rules_path:
-            return "No"
-
-        skipped_df = read_csv_file(self.request.skipped_rules_path)
-
-        if "rule_id" in skipped_df.columns:
-            exists = (
-                skipped_df["rule_id"].astype(str).str.strip() == str(rule_id)
-            ).any()
-            return "Yes" if exists else "No"
-
-        if "Rule ID" in skipped_df.columns:
-            exists = (
-                skipped_df["Rule ID"].astype(str).str.strip() == str(rule_id)
-            ).any()
-            return "Yes" if exists else "No"
-
+        # if not self.skipped_rules_path:
         return "No"
+
+        # skipped_df = read_csv_file(self.skipped_rules_path)
+
+        # if "rule_id" in skipped_df.columns:
+        #     exists = (
+        #         skipped_df["rule_id"].astype(str).str.strip() == str(rule_id)
+        #     ).any()
+        #     return "Yes" if exists else "No"
+
+        # if "Rule ID" in skipped_df.columns:
+        #     exists = (
+        #         skipped_df["Rule ID"].astype(str).str.strip() == str(rule_id)
+        #     ).any()
+        #     return "Yes" if exists else "No"
+
+        # return "No"
 
     def _status(
         self,
@@ -654,7 +680,7 @@ class ValidationService:
         comments = []
 
         if not rule_in_batch:
-            comments.append("Rule ID not found in 15 Batches sheet.")
+            comments.append("Rule ID not found in Batches sheet.")
 
         if not detail_available:
             comments.append("Injection metadata not found in Export File 2.")
@@ -673,7 +699,11 @@ class ValidationService:
 
         return " ".join(comments)
 
-    def _build_batch_summary(self, rule_results: pd.DataFrame) -> pd.DataFrame:
+    def _build_batch_summary(
+            self, 
+            config,
+            rule_results: pd.DataFrame
+        ) -> pd.DataFrame:
         total_rules = len(rule_results)
 
         passed_rules = len(
@@ -717,8 +747,8 @@ class ValidationService:
         return pd.DataFrame(
             [
                 {
-                    "Batch Name": self.request.batch_name,
-                    "Host Generator Key": self.request.host_generator_key,
+                    "Batch Name": config.batch_name,
+                    "Host Generator Key": config.host_generator_key,
                     "Total Rules": total_rules,
                     "Passed Rules": passed_rules,
                     "Failed Rules": failed_rules,

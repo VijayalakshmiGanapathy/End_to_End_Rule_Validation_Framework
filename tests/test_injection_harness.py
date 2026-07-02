@@ -94,6 +94,7 @@ def test_injection_harness():
             config.rule_ids,
             paths.temp,
             paths.batch_folder,
+            paths,
         )
 
         logger.info(

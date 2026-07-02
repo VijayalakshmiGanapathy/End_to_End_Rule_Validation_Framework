@@ -135,7 +135,7 @@ class InjectionDownloadService:
     def process_manifest(
         temp_folder: Path,
         batch_folder: Path,
-        batch_name: str,
+        paths,
     ) -> Path:
         """
         Wait and rename manifest.json.
@@ -148,7 +148,7 @@ class InjectionDownloadService:
 
         destination = (
             batch_folder /
-            f"{MANIFEST_FILE}_{batch_name}{JSON_EXTENSION}"
+            f"{MANIFEST_FILE}_{paths.batch_prefix}{JSON_EXTENSION}"
         )
 
         return InjectionDownloadService.rename_file(
@@ -244,7 +244,7 @@ class InjectionDownloadService:
     def process_export_summary(
         temp_folder: Path,
         batch_folder: Path,
-        batch_name: str,
+        paths,
     ) -> Path:
         """
         Wait for Export Summary CSV,
@@ -257,9 +257,10 @@ class InjectionDownloadService:
             "*_export.csv",
         )
 
+        
         destination = (
             batch_folder /
-            f"{EXPORT_SUMMARY_FILE}_{batch_name}.csv"
+            f"{EXPORT_SUMMARY_FILE}_{paths.batch_prefix}.csv"
         )
 
         # Delete old file if it exists
@@ -287,7 +288,7 @@ class InjectionDownloadService:
     def process_audit_report(
         temp_folder: Path,
         batch_folder: Path,
-        batch_name: str,
+        paths,
     ) -> Path:
         """
         Wait, rename and move Audit Report.
@@ -298,9 +299,11 @@ class InjectionDownloadService:
             "*_export.csv",
         )
 
+    
+
         destination = (
             batch_folder /
-            f"{EXPORT_AUDIT_REPORT_FILE}_{batch_name}.csv"
+            f"{EXPORT_AUDIT_REPORT_FILE}_{paths.batch_prefix}.csv"
         )
 
         return InjectionDownloadService.rename_file(

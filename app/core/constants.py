@@ -15,3 +15,9 @@ LOG_FOLDER = "logs"
 EXECUTION_SUMMARY = "execution_summary.json"
 
 CSV_EXTENSION = ".csv"
+
+TEST_VALIDATION_REPORT_FOLDER = "Test_Validation_Report"
+
+KWALIFY_REPORT_FOLDER = "Kwalify_reports"
+
+COMPARISON_REPORT_FOLDER = "Comparison_Report"

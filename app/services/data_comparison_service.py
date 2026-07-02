@@ -269,8 +269,8 @@ class DataComparisonService:
                                 "USUBJID": usubjid,
                                 "Variable": variable,
                                 "Audit Row Index": row_index,
-                                "CSV Row Checked": csv_row_number,
-                                "Pandas Index Checked": pandas_index,
+                                "CSV Row Index Checked": csv_row_number,
+                                #"Pandas Index Checked": pandas_index,
                                 "Expected Original Value": (
                                     "Column not present in original"
                                 ),
@@ -378,8 +378,8 @@ class DataComparisonService:
                         "USUBJID": usubjid,
                         "Variable": variable,
                         "Audit Row Index": row_index,
-                        "CSV Row Checked": csv_row_number,
-                        "Pandas Index Checked": pandas_index,
+                        "CSV Row Index Checked": csv_row_number,
+                        #"Pandas Index Checked": pandas_index,
                         "Expected Original Value": expected_original,
                         "Actual Original Value": actual_original,
                         "Expected Injected Value": expected_injected,
@@ -400,7 +400,9 @@ class DataComparisonService:
                     }
                 )
 
-        return pd.DataFrame(results)
+        results_df = pd.DataFrame(results)
+
+        return results_df
 
     def _get_target_domain(
         self,
@@ -479,8 +481,8 @@ class DataComparisonService:
             "USUBJID": usubjid,
             "Variable": variable,
             "Audit Row Index": row_index,
-            "CSV Row Checked": csv_row_number,
-            "Pandas Index Checked": pandas_index,
+            "CSV Row Index Checked": csv_row_number,
+            #"Pandas Index Checked": pandas_index,
             "Expected Original Value": (
                 f"Row where {variable}={expected_original}"
             ),
@@ -574,8 +576,8 @@ class DataComparisonService:
             "USUBJID": usubjid,
             "Variable": "__row_deleted__",
             "Audit Row Index": row_index,
-            "CSV Row Checked": csv_row_number,
-            "Pandas Index Checked": pandas_index,
+            "CSV Row Index Checked": csv_row_number,
+            #"Pandas Index Checked": pandas_index,
             "Expected Original Value": "Row present in original",
             "Actual Original Value": "Present",
             "Expected Injected Value": "Row removed from dirty",
@@ -628,8 +630,8 @@ class DataComparisonService:
             "USUBJID": usubjid,
             "Variable": variable,
             "Audit Row Index": "",
-            "CSV Row Checked": "",
-            "Pandas Index Checked": "",
+            "CSV Row Index Checked": "",
+            #"Pandas Index Checked": "",
             "Expected Original Value": expected_original_text,
             "Actual Original Value": f"{actual_original_count} rows",
             "Expected Injected Value": expected_injected_text,
@@ -729,8 +731,8 @@ class DataComparisonService:
             "USUBJID": usubjid,
             "Variable": "__row__",
             "Audit Row Index": row_index,
-            "CSV Row Checked": csv_row_number,
-            "Pandas Index Checked": pandas_index,
+            "CSV Row Index Checked": csv_row_number,
+            #"Pandas Index Checked": pandas_index,
             "Expected Original Value": "unique",
             "Actual Original Value": f"{duplicate_key}; count={original_count}",
             "Expected Injected Value": "duplicated",
@@ -820,8 +822,8 @@ class DataComparisonService:
             "USUBJID": usubjid,
             "Variable": variable,
             "Audit Row Index": "",
-            "CSV Row Checked": "",
-            "Pandas Index Checked": "",
+            "CSV Row Index Checked": "",
+            #"Pandas Index Checked": "",
             "Expected Original Value": expected_original,
             "Actual Original Value": actual_original,
             "Expected Injected Value": expected_injected,
@@ -857,7 +859,7 @@ class DataComparisonService:
             "Target Domain": target_domain,
             "USUBJID": usubjid,
             "Variable": variable,
-            "CSV Row Checked": csv_row_number,
+            "CSV Row Index Checked": csv_row_number,
             "Original and Dirty csv imputation match": "No",
             "Validation Status": "FAIL",
             "Comments": comments,

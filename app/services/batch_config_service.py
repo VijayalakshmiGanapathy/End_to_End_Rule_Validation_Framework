@@ -22,7 +22,7 @@ class BatchConfigService:
 
         self.df = pd.read_excel(
             WORKING_RULES_FILE,
-            sheet_name="15 Batches",
+            sheet_name="Batches",
         )
 
         self.df.columns = (

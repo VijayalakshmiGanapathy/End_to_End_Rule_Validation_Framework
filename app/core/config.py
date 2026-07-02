@@ -1,4 +1,5 @@
 import sys
+import os
 from pathlib import Path
 
 
@@ -21,7 +22,7 @@ def get_base_dir() -> Path:
 BASE_DIR = get_base_dir()
 
 DATA_DIR = BASE_DIR / "data"
-INPUT_DIR = DATA_DIR / "input"
+#INPUT_DIR = DATA_DIR / "input"
 OUTPUT_DIR = DATA_DIR / "output"
 LOG_DIR = BASE_DIR / "logs"
 
@@ -30,8 +31,15 @@ LOG_DIR.mkdir(parents=True, exist_ok=True)
 
 DEFAULT_OUTPUT_FILE = OUTPUT_DIR / "rule_injection_validation_report.xlsx"
 
-WORKING_RULES_FILE = INPUT_DIR / "Error_Injector_Working_Rule_Batches.xlsx"
-TEST_CASE_FILE = INPUT_DIR / "SDTMIG Rule Test Case 1.xlsx"
+INPUT_DIR = Path("data/input")
+
+WORKING_RULES_FILE = (
+    INPUT_DIR / "Error_Injector_Working_Rule_Batches.xlsx"
+)
+
+TEST_CASE_FILE = (
+    INPUT_DIR / "SDTMIG Rule Test Case 1.xlsx"
+)
 
 WORKING_RULES_SHEET = "Batches"
 ISSUE_SUMMARY_SHEET = "Issue Summary"
@@ -54,7 +62,7 @@ INPUT_DIR = Path("data/input")
 
 WORKING_RULES_FILE = (
     INPUT_DIR
-    / "SDTM_P21_Working_Rules_and_15_Batches 1.xlsx"
+    / "Error_Injector_Working_Rule_Batches.xlsx"
 )
 
 # TrialGen Configuration
@@ -100,3 +108,30 @@ EXPORT_AUDIT_REPORT_FILE = "export_audit_report"
 JSON_EXTENSION = ".json"
 ZIP_EXTENSION = ".zip"
 EXCEL_EXTENSION = ".xlsx"
+
+# ==========================================================
+# PINNACLE 21 CLI
+# ==========================================================
+
+JAVA_EXE = Path(
+    r"D:\Program Files\Pinnacle 21 Community\resources\app.asar.unpacked\components\java64\bin\java.exe"
+)
+
+P21_JAR = Path(
+    r"D:\Program Files\Pinnacle 21 Community"
+    r"\resources\app.asar.unpacked\components\lib\p21-client-1.0.8.jar"
+)
+
+ENGINE_VERSION = "2405.2"
+
+CONFIG_XML = Path(
+    r"D:\Program Files\Pinnacle 21 Community"
+    r"\resources\app.asar.unpacked\components\lib\configs"
+    r"\2405.2\SDTM-IG 3.4 (FDA).xml"
+)
+
+STANDARD = "sdtm"
+
+STANDARD_VERSION = "3.4"
+
+
