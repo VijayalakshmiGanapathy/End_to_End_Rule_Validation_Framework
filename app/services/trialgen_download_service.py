@@ -1,5 +1,6 @@
 from pathlib import Path
 from app.services.archive_service import ArchiveService
+from pathlib import Path
 
 import logging
 import shutil
@@ -186,30 +187,23 @@ class TrialGenDownloadService:
 
     
 
-    def clear_download_folder(
-        self,
-        download_folder: Path,
-    ):
-        """
-        Remove all existing files from the temporary download folder.
-        """
+    def clear_download_folder(self, download_folder):
 
-        logger.info(
-            f"Clearing download folder: {download_folder}"
+        download_folder = Path(download_folder)
+
+        # Create the folder if it doesn't exist
+        download_folder.mkdir(
+            parents=True,
+            exist_ok=True,
         )
+
+        logger.info(f"Clearing download folder: {download_folder}")
 
         for file in download_folder.iterdir():
 
-            try:
+            if file.is_file():
+                file.unlink()
 
-                if file.is_file():
-                    file.unlink()
-
-                elif file.is_dir():
-                    shutil.rmtree(file)
-
-            except Exception as ex:
-
-                logger.warning(
-                    f"Unable to delete {file}: {ex}"
-                )
+            elif file.is_dir():
+                import shutil
+                shutil.rmtree(file)

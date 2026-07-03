@@ -14,6 +14,8 @@ from app.services.p21_service import P21Service
 
 from app.services.validation_service import ValidationService
 
+from app.services.kwalify_service import KwalifyService
+
 logger = logging.getLogger(__name__)
 
 
@@ -178,6 +180,20 @@ class AutomationService:
 
             logger.info(
                 "Validation completed successfully."
+            )
+
+            logger.info(
+                "Starting Kwalify Validation..."
+            )
+
+            KwalifyService().run(
+                paths,
+                config,
+                run_number,
+            )
+
+            logger.info(
+                "Kwalify Validation Completed."
             )
             return run_number
     

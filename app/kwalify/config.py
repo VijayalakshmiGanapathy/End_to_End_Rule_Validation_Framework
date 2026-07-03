@@ -32,3 +32,12 @@ FRONTEND_URL = "http://103.189.89.49:4300"
 FRONTEND_USERNAME = os.getenv("KWALIFY_USERNAME")
 FRONTEND_PASSWORD = os.getenv("KWALIFY_PASSWORD")
 
+# ==========================================================
+# Download Folder
+# ==========================================================
+
+DOWNLOAD_FOLDER = Path("downloads")
+DOWNLOAD_FOLDER.mkdir(
+    parents=True,
+    exist_ok=True,
+)

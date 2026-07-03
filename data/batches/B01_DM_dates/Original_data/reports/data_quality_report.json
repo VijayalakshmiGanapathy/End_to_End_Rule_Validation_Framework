@@ -1,19 +1,19 @@
 {
   "study_id": "MS200095-0022-VISION",
-  "generated_at": "2026-07-01T11:24:25.892891+00:00",
+  "generated_at": "2026-07-03T09:34:40.450929+00:00",
   "sdtmig_version": "3.4",
   "overall": {
-    "total_subjects": 50,
-    "total_records": 55127,
-    "domains_generated": 32,
+    "total_subjects": 20,
+    "total_records": 22882,
+    "domains_generated": 31,
     "conformance_pass": true,
     "error_count": 0,
     "warning_count": 0,
-    "info_count": 158
+    "info_count": 148
   },
   "domains": {
     "AE": {
-      "record_count": 1096,
+      "record_count": 462,
       "variable_count": 36,
       "completeness": {
         "required_vars_present": [
@@ -33,7 +33,7 @@
             "populated_pct": 100.0
           },
           "AEENDTC": {
-            "populated_pct": 91.42
+            "populated_pct": 92.86
           }
         },
         "variable_population": {
@@ -69,62 +69,59 @@
           "AECONTRT": 100.0,
           "EPOCH": 100.0,
           "AESTDTC": 100.0,
-          "AEENDTC": 91.42,
+          "AEENDTC": 92.86,
           "AESTDY": 100.0,
-          "AEENDY": 91.42,
-          "AEENRF": 8.58
+          "AEENDY": 92.86,
+          "AEENRF": 7.14
         }
       },
       "records_per_subject": {
-        "mean": 24.4,
-        "median": 22.0,
-        "min": 1,
-        "max": 65,
-        "p25": 10.0,
-        "p75": 34.0,
-        "total_subjects": 45
+        "mean": 25.7,
+        "median": 22.5,
+        "min": 2,
+        "max": 63,
+        "p25": 15.5,
+        "p75": 35.5,
+        "total_subjects": 18
       },
       "value_distributions": {
         "AESEV": {
-          "MILD": 485,
-          "MODERATE": 407,
-          "SEVERE": 204
+          "MODERATE": 183,
+          "MILD": 183,
+          "SEVERE": 96
         },
         "AESER": {
-          "N": 892,
-          "Y": 204
+          "N": 366,
+          "Y": 96
         },
         "AEOUT": {
-          "RECOVERED/RESOLVED": 806,
-          "RECOVERING/RESOLVING": 161,
-          "NOT RECOVERED/NOT RESOLVED": 94,
-          "RECOVERED/RESOLVED WITH SEQUELAE": 21,
-          "UNKNOWN": 12,
-          "FATAL": 2
+          "RECOVERED/RESOLVED": 348,
+          "RECOVERING/RESOLVING": 64,
+          "NOT RECOVERED/NOT RESOLVED": 33,
+          "RECOVERED/RESOLVED WITH SEQUELAE": 9,
+          "UNKNOWN": 8
         },
         "AEACN": {
-          "DOSE NOT CHANGED": 948,
-          "DOSE REDUCED": 76,
-          "DRUG INTERRUPTED": 69,
-          "NOT APPLICABLE": 2,
-          "DRUG WITHDRAWN": 1
+          "DOSE NOT CHANGED": 398,
+          "DOSE REDUCED": 33,
+          "DRUG INTERRUPTED": 31
         },
         "AEREL": {
-          "NOT RELATED": 569,
-          "UNLIKELY RELATED": 226,
-          "POSSIBLY RELATED": 204,
-          "PROBABLY RELATED": 64,
-          "RELATED": 33
+          "NOT RELATED": 247,
+          "UNLIKELY RELATED": 96,
+          "POSSIBLY RELATED": 76,
+          "PROBABLY RELATED": 29,
+          "RELATED": 14
         },
         "AEBODSYS": {
-          "General disorders and administration site conditions": 385,
-          "Gastrointestinal disorders": 317,
-          "Metabolism and nutrition disorders": 151,
-          "Respiratory, thoracic and mediastinal disorders": 112,
-          "Investigations": 95,
-          "Infections and infestations": 21,
-          "Immune system disorders": 8,
-          "Vascular disorders": 7
+          "General disorders and administration site conditions": 158,
+          "Gastrointestinal disorders": 125,
+          "Metabolism and nutrition disorders": 70,
+          "Respiratory, thoracic and mediastinal disorders": 57,
+          "Investigations": 34,
+          "Infections and infestations": 10,
+          "Vascular disorders": 6,
+          "Immune system disorders": 2
         }
       },
       "conformance_findings": {
@@ -136,7 +133,7 @@
             "category": "FDA Submission Rules",
             "source": "Pinnacle 21 (SD1040)",
             "description": "No adverse event end date (AEENDTC) should be after the subject's death date (DTHDTC)",
-            "result": "AE end dates vs death dates valid",
+            "result": "No deaths \u2014 skipped",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -168,15 +165,6 @@
             "affected_usubjids": []
           },
           {
-            "rule_id": "D2_AFTER_DEATH",
-            "category": "Domain Structure Rules",
-            "source": "sdtmchecks R package",
-            "description": "No clinical events (AE, EX, LB, VS, CM) should occur after the subject's death date",
-            "result": "No AE dates after death",
-            "affected_count": 0,
-            "affected_usubjids": []
-          },
-          {
             "rule_id": "D4_AEDECOD",
             "category": "Domain Structure Rules",
             "source": "Pinnacle 21",
@@ -190,7 +178,7 @@
             "category": "Cross-domain Consistency",
             "source": "Pinnacle 21",
             "description": "EPOCH assignment must match Subject Elements (SE) timeline for records in AE",
-            "result": "EPOCH populated (1096/1096)",
+            "result": "EPOCH populated (462/462)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -240,13 +228,6 @@
             "category": "TEMPORAL",
             "category_description": "Validates date logic within and across domains \u2014 reference dates are chronologically ordered, study day derivations are correct, and no temporal impossibilities exist.",
             "result": "AE date intervals valid",
-            "affected_count": 0
-          },
-          {
-            "rule_id": "TE03_DEATH",
-            "category": "TEMPORAL",
-            "category_description": "Validates date logic within and across domains \u2014 reference dates are chronologically ordered, study day derivations are correct, and no temporal impossibilities exist.",
-            "result": "No AEs after death",
             "affected_count": 0
           },
           {
@@ -302,7 +283,7 @@
       }
     },
     "CM": {
-      "record_count": 562,
+      "record_count": 249,
       "variable_count": 17,
       "completeness": {
         "required_vars_present": [
@@ -331,9 +312,9 @@
           "CMTRT": 100.0,
           "CMDECOD": 100.0,
           "CMCAT": 100.0,
-          "CMINDC": 96.62,
-          "CMDOSE": 96.62,
-          "CMDOSU": 96.62,
+          "CMINDC": 97.59,
+          "CMDOSE": 97.59,
+          "CMDOSU": 97.59,
           "CMDOSFRQ": 100.0,
           "CMROUTE": 100.0,
           "EPOCH": 100.0,
@@ -344,50 +325,47 @@
         }
       },
       "records_per_subject": {
-        "mean": 12.8,
-        "median": 11.0,
+        "mean": 14.6,
+        "median": 10.0,
         "min": 1,
         "max": 37,
         "p25": 6.0,
-        "p75": 19.0,
-        "total_subjects": 44
+        "p75": 21.0,
+        "total_subjects": 17
       },
       "value_distributions": {
         "CMDECOD": {
-          "FUROSEMIDE": 166,
-          "IBUPROFEN": 67,
-          "PARACETAMOL": 67,
-          "LOPERAMIDE": 63,
-          "ONDANSETRON": 59,
-          "MEGESTROL": 34,
-          "METOCLOPRAMIDE": 34,
-          "SALBUTAMOL": 32,
-          "AMOXICILLIN/CLAVULANATE": 7,
-          "OMEPRAZOLE": 7,
-          "LISINOPRIL": 6,
-          "METFORMIN": 6,
-          "TIOTROPIUM": 5,
-          "ASPIRIN": 3,
+          "FUROSEMIDE": 75,
+          "PARACETAMOL": 37,
+          "IBUPROFEN": 32,
+          "LOPERAMIDE": 24,
+          "ONDANSETRON": 19,
+          "SALBUTAMOL": 18,
+          "MEGESTROL": 16,
+          "METOCLOPRAMIDE": 11,
+          "AMOXICILLIN/CLAVULANATE": 5,
+          "TIOTROPIUM": 2,
+          "OMEPRAZOLE": 2,
+          "ASPIRIN": 2,
+          "LISINOPRIL": 2,
           "ESOMEPRAZOLE": 1,
           "ATORVASTATIN": 1,
           "HYDROCHLOROTHIAZIDE": 1,
-          "SERTRALINE": 1,
-          "ROSUVASTATIN": 1,
-          "AMLODIPINE": 1
+          "ROSUVASTATIN": 1
         },
         "CMCAT": {
-          "CONCOMITANT": 538,
-          "PRIOR": 24
+          "CONCOMITANT": 239,
+          "PRIOR": 10
         },
         "CMDOSFRQ": {
-          "PRN": 265,
-          "QD": 227,
-          "BID": 36,
-          "TID": 34
+          "PRN": 123,
+          "QD": 103,
+          "BID": 12,
+          "TID": 11
         },
         "CMROUTE": {
-          "ORAL": 525,
-          "RESPIRATORY (INHALATION)": 37
+          "ORAL": 229,
+          "RESPIRATORY (INHALATION)": 20
         }
       },
       "conformance_findings": {
@@ -400,15 +378,6 @@
             "source": "Pinnacle 21 (SD1042)",
             "description": "No domain should contain exact duplicate rows (all columns identical)",
             "result": "No duplicate rows",
-            "affected_count": 0,
-            "affected_usubjids": []
-          },
-          {
-            "rule_id": "D2_AFTER_DEATH",
-            "category": "Domain Structure Rules",
-            "source": "sdtmchecks R package",
-            "description": "No clinical events (AE, EX, LB, VS, CM) should occur after the subject's death date",
-            "result": "No CM dates after death",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -426,7 +395,7 @@
             "category": "Cross-domain Consistency",
             "source": "Pinnacle 21",
             "description": "EPOCH assignment must match Subject Elements (SE) timeline for records in CM",
-            "result": "EPOCH populated (562/562)",
+            "result": "EPOCH populated (249/249)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -466,7 +435,7 @@
       }
     },
     "CO": {
-      "record_count": 10,
+      "record_count": 4,
       "variable_count": 11,
       "completeness": {
         "required_vars_present": [],
@@ -495,7 +464,7 @@
         "max": 1,
         "p25": 1.0,
         "p75": 1.0,
-        "total_subjects": 10
+        "total_subjects": 4
       },
       "value_distributions": {},
       "conformance_findings": {
@@ -522,7 +491,7 @@
       }
     },
     "DA": {
-      "record_count": 29994,
+      "record_count": 12504,
       "variable_count": 16,
       "completeness": {
         "required_vars_present": [
@@ -550,20 +519,20 @@
           "DASTRESN": 100.0,
           "DASTRESU": 100.0,
           "VISITNUM": 100.0,
-          "VISIT": 18.81,
+          "VISIT": 17.97,
           "EPOCH": 100.0,
           "DADTC": 100.0,
           "DADY": 100.0
         }
       },
       "records_per_subject": {
-        "mean": 652.0,
-        "median": 621.0,
-        "min": 3,
-        "max": 1512,
-        "p25": 202.5,
-        "p75": 1044.0,
-        "total_subjects": 46
+        "mean": 694.7,
+        "median": 691.5,
+        "min": 27,
+        "max": 1404,
+        "p25": 343.5,
+        "p75": 1046.2,
+        "total_subjects": 18
       },
       "value_distributions": {},
       "conformance_findings": {
@@ -598,76 +567,8 @@
         ]
       }
     },
-    "DD": {
-      "record_count": 6,
-      "variable_count": 9,
-      "completeness": {
-        "required_vars_present": [
-          "STUDYID",
-          "DOMAIN",
-          "USUBJID",
-          "DDSEQ"
-        ],
-        "required_vars_missing": [],
-        "required_vars_pct": 100.0,
-        "key_fields_populated_pct": 100.0,
-        "date_fields": {},
-        "variable_population": {
-          "STUDYID": 100.0,
-          "DOMAIN": 100.0,
-          "USUBJID": 100.0,
-          "DDSEQ": 100.0,
-          "DDTESTCD": 100.0,
-          "DDTEST": 100.0,
-          "DDORRES": 100.0,
-          "DDSTRESC": 100.0,
-          "DDDTC": 100.0
-        }
-      },
-      "records_per_subject": {
-        "mean": 3.0,
-        "median": 3.0,
-        "min": 3,
-        "max": 3,
-        "p25": 3.0,
-        "p75": 3.0,
-        "total_subjects": 2
-      },
-      "value_distributions": {},
-      "conformance_findings": {
-        "errors": [],
-        "warnings": [],
-        "infos": [
-          {
-            "rule_id": "G7_DUPLICATE_ROWS",
-            "category": "FDA Submission Rules",
-            "source": "Pinnacle 21 (SD1042)",
-            "description": "No domain should contain exact duplicate rows (all columns identical)",
-            "result": "No duplicate rows",
-            "affected_count": 0,
-            "affected_usubjids": []
-          },
-          {
-            "rule_id": "D20_DOMAIN_COL",
-            "category": "Cross-domain Consistency",
-            "source": "Pinnacle 21",
-            "description": "Every domain must have a DOMAIN column with the correct 2-letter code, positioned as the second column",
-            "result": "DOMAIN column correct",
-            "affected_count": 0,
-            "affected_usubjids": []
-          },
-          {
-            "rule_id": "ST01_DD",
-            "category": "STRUCTURAL",
-            "category_description": "Checks that every domain has the correct SDTM-IG 3.4 column structure \u2014 required variables present, proper column ordering (STUDYID first, DOMAIN second), and correct data types.",
-            "result": "All required variables present",
-            "affected_count": 0
-          }
-        ]
-      }
-    },
     "DM": {
-      "record_count": 50,
+      "record_count": 20,
       "variable_count": 27,
       "completeness": {
         "required_vars_present": [
@@ -683,21 +584,21 @@
         ],
         "required_vars_missing": [],
         "required_vars_pct": 100.0,
-        "key_fields_populated_pct": 98.22,
+        "key_fields_populated_pct": 97.78,
         "date_fields": {},
         "variable_population": {
           "STUDYID": 100.0,
           "DOMAIN": 100.0,
           "USUBJID": 100.0,
           "SUBJID": 100.0,
-          "RFSTDTC": 92.0,
-          "RFENDTC": 92.0,
-          "RFXSTDTC": 92.0,
-          "RFXENDTC": 92.0,
+          "RFSTDTC": 90.0,
+          "RFENDTC": 90.0,
+          "RFXSTDTC": 90.0,
+          "RFXENDTC": 90.0,
           "RFICDTC": 100.0,
-          "RFPENDTC": 92.0,
-          "DTHDTC": 4.0,
-          "DTHFL": 4.0,
+          "RFPENDTC": 90.0,
+          "DTHDTC": 0.0,
+          "DTHFL": 0.0,
           "SITEID": 100.0,
           "INVNAM": 100.0,
           "BRTHDTC": 100.0,
@@ -706,11 +607,11 @@
           "SEX": 100.0,
           "RACE": 100.0,
           "ETHNIC": 100.0,
-          "ARMCD": 92.0,
-          "ARM": 92.0,
-          "ACTARMCD": 92.0,
-          "ACTARM": 92.0,
-          "ARMNRS": 8.0,
+          "ARMCD": 90.0,
+          "ARM": 90.0,
+          "ACTARMCD": 90.0,
+          "ACTARM": 90.0,
+          "ARMNRS": 10.0,
           "ACTARMUD": 0.0,
           "COUNTRY": 100.0
         }
@@ -722,44 +623,40 @@
         "max": 1,
         "p25": 1.0,
         "p75": 1.0,
-        "total_subjects": 50
+        "total_subjects": 20
       },
       "value_distributions": {
         "SEX": {
-          "M": 30,
-          "F": 20
+          "M": 12,
+          "F": 8
         },
         "RACE": {
-          "WHITE": 25,
-          "ASIAN": 21,
-          "BLACK OR AFRICAN AMERICAN": 3,
-          "OTHER": 1
+          "ASIAN": 10,
+          "WHITE": 8,
+          "BLACK OR AFRICAN AMERICAN": 2
         },
         "ETHNIC": {
-          "NOT HISPANIC OR LATINO": 47,
-          "HISPANIC OR LATINO": 2,
-          "UNKNOWN": 1
+          "NOT HISPANIC OR LATINO": 19,
+          "HISPANIC OR LATINO": 1
         },
         "COUNTRY": {
-          "JPN": 11,
-          "USA": 10,
-          "DEU": 7,
-          "CHN": 6,
-          "FRA": 6,
-          "ESP": 3,
-          "GBR": 3,
-          "ITA": 3,
-          "KOR": 1
+          "JPN": 7,
+          "USA": 4,
+          "CHN": 2,
+          "DEU": 2,
+          "FRA": 2,
+          "ITA": 2,
+          "GBR": 1
         },
         "ARMCD": {
-          "COHORT_B": 19,
-          "COHORT_A": 17,
-          "COHORT_C": 10
+          "COHORT_B": 10,
+          "COHORT_A": 6,
+          "COHORT_C": 2
         },
         "ARM": {
-          "Cohort B \u2014 Tepotinib 500 mg QD (MET amplification)": 19,
-          "Cohort A \u2014 Tepotinib 500 mg QD (MET exon 14 skipping)": 17,
-          "Cohort C \u2014 Tepotinib 500 mg QD (MET exon 14, confirmatory)": 10
+          "Cohort B \u2014 Tepotinib 500 mg QD (MET amplification)": 10,
+          "Cohort A \u2014 Tepotinib 500 mg QD (MET exon 14 skipping)": 6,
+          "Cohort C \u2014 Tepotinib 500 mg QD (MET exon 14, confirmatory)": 2
         }
       },
       "conformance_findings": {
@@ -849,13 +746,6 @@
             "affected_count": 0
           },
           {
-            "rule_id": "CO03_FATAL_AE",
-            "category": "COHERENCE",
-            "category_description": "Cross-domain logical consistency \u2014 subjects who died have matching DM/DS/AE records, ARM matches ACTARM for enrolled subjects, exposure aligns with disposition.",
-            "result": "Fatal AE \u2194 DM.DTHFL consistent",
-            "affected_count": 0
-          },
-          {
             "rule_id": "CO06_SF_DATES",
             "category": "COHERENCE",
             "category_description": "Cross-domain logical consistency \u2014 subjects who died have matching DM/DS/AE records, ARM matches ACTARM for enrolled subjects, exposure aligns with disposition.",
@@ -866,7 +756,7 @@
       }
     },
     "DS": {
-      "record_count": 146,
+      "record_count": 58,
       "variable_count": 10,
       "completeness": {
         "required_vars_present": [
@@ -896,7 +786,7 @@
           "DSCAT": 100.0,
           "EPOCH": 100.0,
           "DSSTDTC": 100.0,
-          "DSSTDY": 94.52
+          "DSSTDY": 93.1
         }
       },
       "records_per_subject": {
@@ -906,25 +796,21 @@
         "max": 3,
         "p25": 3.0,
         "p75": 3.0,
-        "total_subjects": 50
+        "total_subjects": 20
       },
       "value_distributions": {
         "DSDECOD": {
-          "INFORMED CONSENT OBTAINED": 50,
-          "RANDOMIZED": 46,
-          "ADVERSE EVENT": 22,
-          "COMPLETED": 16,
-          "ELIGIBILITY CRITERIA NOT MET": 4,
-          "PHYSICIAN DECISION": 2,
-          "DEATH": 2,
-          "WITHDRAWAL BY SUBJECT": 1,
+          "INFORMED CONSENT OBTAINED": 20,
+          "RANDOMIZED": 18,
+          "ADVERSE EVENT": 9,
+          "COMPLETED": 7,
+          "ELIGIBILITY CRITERIA NOT MET": 2,
           "PROGRESSIVE DISEASE": 1,
-          "PROTOCOL VIOLATION": 1,
-          "LOST TO FOLLOW-UP": 1
+          "PROTOCOL VIOLATION": 1
         },
         "DSCAT": {
-          "PROTOCOL MILESTONE": 100,
-          "DISPOSITION EVENT": 46
+          "PROTOCOL MILESTONE": 40,
+          "DISPOSITION EVENT": 18
         }
       },
       "conformance_findings": {
@@ -945,7 +831,7 @@
             "category": "Domain Structure Rules",
             "source": "sdtmchecks R package",
             "description": "Subjects who died (DTHFL=Y in DM) must have a DEATH record in DS disposition",
-            "result": "DS death records complete (2 deaths)",
+            "result": "No deaths \u2014 skipped",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -996,19 +882,12 @@
             "category_description": "Cross-domain logical consistency \u2014 subjects who died have matching DM/DS/AE records, ARM matches ACTARM for enrolled subjects, exposure aligns with disposition.",
             "result": "All subjects in DM",
             "affected_count": 0
-          },
-          {
-            "rule_id": "CO02_DEATH",
-            "category": "COHERENCE",
-            "category_description": "Cross-domain logical consistency \u2014 subjects who died have matching DM/DS/AE records, ARM matches ACTARM for enrolled subjects, exposure aligns with disposition.",
-            "result": "Death cascade complete",
-            "affected_count": 0
           }
         ]
       }
     },
     "DV": {
-      "record_count": 756,
+      "record_count": 345,
       "variable_count": 11,
       "completeness": {
         "required_vars_present": [
@@ -1042,28 +921,28 @@
         }
       },
       "records_per_subject": {
-        "mean": 18.0,
-        "median": 15.0,
-        "min": 1,
+        "mean": 21.6,
+        "median": 17.5,
+        "min": 2,
         "max": 46,
-        "p25": 9.0,
-        "p75": 22.5,
-        "total_subjects": 42
+        "p25": 11.8,
+        "p75": 32.2,
+        "total_subjects": 16
       },
       "value_distributions": {
         "DVCAT": {
-          "MINOR": 756
+          "MINOR": 345
         },
         "DVSCAT": {
-          "DOSING": 637,
-          "VISIT WINDOW": 102,
-          "ASSESSMENT": 17
+          "DOSING": 306,
+          "VISIT WINDOW": 36,
+          "ASSESSMENT": 3
         },
         "DVDECOD": {
-          "MISSED DOSE": 579,
-          "VISIT OCCURRED OUTSIDE VISIT WINDOW": 102,
-          "DOSE MODIFICATION": 58,
-          "MISSED ASSESSMENT": 17
+          "MISSED DOSE": 280,
+          "VISIT OCCURRED OUTSIDE VISIT WINDOW": 36,
+          "DOSE MODIFICATION": 26,
+          "MISSED ASSESSMENT": 3
         }
       },
       "conformance_findings": {
@@ -1099,7 +978,7 @@
       }
     },
     "EC": {
-      "record_count": 9998,
+      "record_count": 4168,
       "variable_count": 23,
       "completeness": {
         "required_vars_present": [
@@ -1121,17 +1000,17 @@
           "ECTRT": 100.0,
           "ECMOOD": 100.0,
           "ECPRESP": 100.0,
-          "ECOCCUR": 93.86,
-          "ECSTAT": 6.14,
-          "ECREASND": 6.14,
-          "ECDOSE": 93.86,
+          "ECOCCUR": 92.8,
+          "ECSTAT": 7.2,
+          "ECREASND": 7.2,
+          "ECDOSE": 92.8,
           "ECDOSTXT": 0.0,
           "ECDOSU": 100.0,
           "ECDOSFRM": 100.0,
           "ECDOSFRQ": 100.0,
           "ECROUTE": 100.0,
           "VISITNUM": 100.0,
-          "VISIT": 18.81,
+          "VISIT": 17.97,
           "EPOCH": 100.0,
           "ECSTDTC": 100.0,
           "ECENDTC": 100.0,
@@ -1140,21 +1019,21 @@
         }
       },
       "records_per_subject": {
-        "mean": 217.3,
-        "median": 207.0,
-        "min": 1,
-        "max": 504,
-        "p25": 67.5,
-        "p75": 348.0,
-        "total_subjects": 46
+        "mean": 231.6,
+        "median": 230.5,
+        "min": 9,
+        "max": 468,
+        "p25": 114.5,
+        "p75": 348.8,
+        "total_subjects": 18
       },
       "value_distributions": {
         "ECTRT": {
-          "TEPOTINIB": 9998
+          "TEPOTINIB": 4168
         },
         "ECMOOD": {
-          "PERFORMED": 9384,
-          "SCHEDULED": 614
+          "PERFORMED": 3868,
+          "SCHEDULED": 300
         }
       },
       "conformance_findings": {
@@ -1190,7 +1069,7 @@
       }
     },
     "EX": {
-      "record_count": 189,
+      "record_count": 82,
       "variable_count": 15,
       "completeness": {
         "required_vars_present": [
@@ -1231,23 +1110,23 @@
         }
       },
       "records_per_subject": {
-        "mean": 4.1,
-        "median": 3.5,
+        "mean": 4.6,
+        "median": 4.0,
         "min": 1,
         "max": 14,
         "p25": 2.0,
-        "p75": 5.8,
-        "total_subjects": 46
+        "p75": 6.8,
+        "total_subjects": 18
       },
       "value_distributions": {
         "EXTRT": {
-          "TEPOTINIB": 189
+          "TEPOTINIB": 82
         },
         "EXDOSFRQ": {
-          "QD": 189
+          "QD": 82
         },
         "EXROUTE": {
-          "ORAL": 189
+          "ORAL": 82
         }
       },
       "conformance_findings": {
@@ -1260,15 +1139,6 @@
             "source": "Pinnacle 21 (SD1042)",
             "description": "No domain should contain exact duplicate rows (all columns identical)",
             "result": "No duplicate rows",
-            "affected_count": 0,
-            "affected_usubjids": []
-          },
-          {
-            "rule_id": "D2_AFTER_DEATH",
-            "category": "Domain Structure Rules",
-            "source": "sdtmchecks R package",
-            "description": "No clinical events (AE, EX, LB, VS, CM) should occur after the subject's death date",
-            "result": "No EX dates after death",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -1295,7 +1165,7 @@
             "category": "Domain Structure Rules",
             "source": "sdtmchecks R package",
             "description": "No exposure records should have a start date after the subject's discontinuation date",
-            "result": "No EX after discontinuation (30 discontinued)",
+            "result": "No EX after discontinuation (11 discontinued)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -1304,7 +1174,7 @@
             "category": "Cross-domain Consistency",
             "source": "Pinnacle 21",
             "description": "EPOCH assignment must match Subject Elements (SE) timeline for records in EX",
-            "result": "EPOCH populated (189/189)",
+            "result": "EPOCH populated (82/82)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -1356,7 +1226,7 @@
       }
     },
     "FA": {
-      "record_count": 2444,
+      "record_count": 908,
       "variable_count": 21,
       "completeness": {
         "required_vars_present": [
@@ -1387,7 +1257,7 @@
           "FASTRESN": 100.0,
           "FASTRESU": 100.0,
           "FASTAT": 0.0,
-          "FABLFL": 3.76,
+          "FABLFL": 3.96,
           "VISITNUM": 100.0,
           "VISIT": 100.0,
           "EPOCH": 100.0,
@@ -1396,21 +1266,21 @@
         }
       },
       "records_per_subject": {
-        "mean": 53.1,
+        "mean": 50.4,
         "median": 48.0,
         "min": 4,
         "max": 120,
         "p25": 24.0,
-        "p75": 78.0,
-        "total_subjects": 46
+        "p75": 73.5,
+        "total_subjects": 18
       },
       "value_distributions": {
         "FATESTCD": {
-          "LDIAM": 1222,
-          "SAXIS": 1222
+          "LDIAM": 454,
+          "SAXIS": 454
         },
         "FACAT": {
-          "TUMOR ASSESSMENT": 2444
+          "TUMOR ASSESSMENT": 908
         }
       },
       "conformance_findings": {
@@ -1446,7 +1316,7 @@
       }
     },
     "HO": {
-      "record_count": 136,
+      "record_count": 68,
       "variable_count": 12,
       "completeness": {
         "required_vars_present": [
@@ -1476,30 +1346,29 @@
         }
       },
       "records_per_subject": {
-        "mean": 3.8,
-        "median": 3.0,
+        "mean": 4.5,
+        "median": 4.0,
         "min": 1,
         "max": 11,
-        "p25": 1.8,
-        "p75": 5.0,
-        "total_subjects": 36
+        "p25": 2.0,
+        "p75": 6.0,
+        "total_subjects": 15
       },
       "value_distributions": {
         "HOTERM": {
-          "Oedema peripheral": 41,
-          "Nausea": 21,
-          "Diarrhoea": 14,
-          "Hypoalbuminaemia": 13,
-          "Fatigue": 12,
-          "Aspartate aminotransferase increased": 7,
-          "Decreased appetite": 6,
-          "Vomiting": 6,
-          "Pleural effusion": 5,
-          "Dyspnoea": 4,
-          "Alanine aminotransferase increased": 3,
-          "Blood creatinine increased": 2,
+          "Oedema peripheral": 22,
+          "Hypoalbuminaemia": 10,
+          "Nausea": 9,
+          "Diarrhoea": 6,
+          "Decreased appetite": 5,
+          "Fatigue": 4,
+          "Dyspnoea": 3,
+          "Vomiting": 2,
+          "Aspartate aminotransferase increased": 2,
+          "Pleural effusion": 2,
           "Pneumonia": 1,
-          "Pulmonary embolism": 1
+          "Pulmonary embolism": 1,
+          "Alanine aminotransferase increased": 1
         }
       },
       "conformance_findings": {
@@ -1535,7 +1404,7 @@
       }
     },
     "IE": {
-      "record_count": 4,
+      "record_count": 2,
       "variable_count": 14,
       "completeness": {
         "required_vars_present": [
@@ -1575,16 +1444,16 @@
         "max": 1,
         "p25": 1.0,
         "p75": 1.0,
-        "total_subjects": 4
+        "total_subjects": 2
       },
       "value_distributions": {
         "IECAT": {
-          "EXCLUSION": 3,
-          "INCLUSION": 1
+          "INCLUSION": 1,
+          "EXCLUSION": 1
         },
         "IEORRES": {
-          "Y": 3,
-          "N": 1
+          "N": 1,
+          "Y": 1
         }
       },
       "conformance_findings": {
@@ -1620,7 +1489,7 @@
       }
     },
     "LB": {
-      "record_count": 2527,
+      "record_count": 1001,
       "variable_count": 26,
       "completeness": {
         "required_vars_present": [
@@ -1635,7 +1504,7 @@
         ],
         "required_vars_missing": [],
         "required_vars_pct": 100.0,
-        "key_fields_populated_pct": 99.02,
+        "key_fields_populated_pct": 98.63,
         "date_fields": {
           "LBDTC": {
             "populated_pct": 100.0
@@ -1649,20 +1518,20 @@
           "LBTESTCD": 100.0,
           "LBTEST": 100.0,
           "LBCAT": 100.0,
-          "LBORRES": 96.08,
-          "LBORRESU": 96.08,
-          "LBORNRLO": 96.08,
-          "LBORNRHI": 96.08,
-          "LBSTRESC": 96.08,
-          "LBSTRESN": 96.08,
-          "LBSTRESU": 96.08,
-          "LBSTNRLO": 96.08,
-          "LBSTNRHI": 96.08,
-          "LBNRIND": 96.08,
-          "LBSTAT": 3.92,
-          "LBLOBXFL": 12.7,
-          "LBBLFL": 12.7,
-          "LBTOXGR": 15.08,
+          "LBORRES": 94.51,
+          "LBORRESU": 94.51,
+          "LBORNRLO": 94.51,
+          "LBORNRHI": 94.51,
+          "LBSTRESC": 94.51,
+          "LBSTRESN": 94.51,
+          "LBSTRESU": 94.51,
+          "LBSTNRLO": 94.51,
+          "LBSTNRHI": 94.51,
+          "LBNRIND": 94.51,
+          "LBSTAT": 5.49,
+          "LBLOBXFL": 12.49,
+          "LBBLFL": 12.49,
+          "LBTOXGR": 11.09,
           "VISITNUM": 100.0,
           "VISIT": 100.0,
           "EPOCH": 100.0,
@@ -1671,32 +1540,32 @@
         }
       },
       "records_per_subject": {
-        "mean": 54.9,
-        "median": 52.5,
+        "mean": 55.6,
+        "median": 56.0,
         "min": 14,
         "max": 91,
-        "p25": 42.0,
-        "p75": 77.0,
-        "total_subjects": 46
+        "p25": 43.8,
+        "p75": 75.2,
+        "total_subjects": 18
       },
       "value_distributions": {
         "LBTESTCD": {
-          "ALT": 361,
-          "AST": 361,
-          "CREAT": 361,
-          "GLUC": 361,
-          "HGB": 361,
-          "PLAT": 361,
-          "WBC": 361
+          "ALT": 143,
+          "AST": 143,
+          "CREAT": 143,
+          "GLUC": 143,
+          "HGB": 143,
+          "PLAT": 143,
+          "WBC": 143
         },
         "LBCAT": {
-          "CHEMISTRY": 1444,
-          "HEMATOLOGY": 1083
+          "CHEMISTRY": 572,
+          "HEMATOLOGY": 429
         },
         "LBNRIND": {
-          "NORMAL": 2047,
-          "LOW": 195,
-          "HIGH": 186
+          "NORMAL": 835,
+          "HIGH": 57,
+          "LOW": 54
         }
       },
       "conformance_findings": {
@@ -1717,16 +1586,7 @@
             "category": "Domain Structure Rules",
             "source": "sdtmchecks R package",
             "description": "Lab normal range indicator (LBNRIND) must be consistent with result vs reference range (LOW/NORMAL/HIGH)",
-            "result": "LBNRIND consistent with reference ranges (2428 checked)",
-            "affected_count": 0,
-            "affected_usubjids": []
-          },
-          {
-            "rule_id": "D2_AFTER_DEATH",
-            "category": "Domain Structure Rules",
-            "source": "sdtmchecks R package",
-            "description": "No clinical events (AE, EX, LB, VS, CM) should occur after the subject's death date",
-            "result": "No LB dates after death",
+            "result": "LBNRIND consistent with reference ranges (946 checked)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -1744,7 +1604,7 @@
             "category": "Domain Structure Rules",
             "source": "sdtmchecks R package",
             "description": "Lab reference range column must be populated for quantitative results in LBORNRLO",
-            "result": "LBORNRLO populated (2428 rows)",
+            "result": "LBORNRLO populated (946 rows)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -1753,7 +1613,7 @@
             "category": "Domain Structure Rules",
             "source": "sdtmchecks R package",
             "description": "Lab reference range column must be populated for quantitative results in LBORNRHI",
-            "result": "LBORNRHI populated (2428 rows)",
+            "result": "LBORNRHI populated (946 rows)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -1771,7 +1631,7 @@
             "category": "Cross-domain Consistency",
             "source": "Pinnacle 21",
             "description": "EPOCH assignment must match Subject Elements (SE) timeline for records in LB",
-            "result": "EPOCH populated (2527/2527)",
+            "result": "EPOCH populated (1001/1001)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -1811,7 +1671,7 @@
       }
     },
     "MH": {
-      "record_count": 120,
+      "record_count": 44,
       "variable_count": 15,
       "completeness": {
         "required_vars_present": [
@@ -1839,44 +1699,44 @@
           "MHCAT": 100.0,
           "MHSCAT": 0.0,
           "MHBODSYS": 0.0,
-          "EPOCH": 86.67,
+          "EPOCH": 93.18,
           "MHSTDTC": 100.0,
-          "MHENDTC": 60.83,
+          "MHENDTC": 56.82,
           "MHSTDY": 100.0,
-          "MHENDY": 60.83,
+          "MHENDY": 56.82,
           "MHENRF": 100.0
         }
       },
       "records_per_subject": {
-        "mean": 2.6,
+        "mean": 2.4,
         "median": 2.0,
         "min": 2,
         "max": 5,
         "p25": 2.0,
-        "p75": 3.0,
-        "total_subjects": 46
+        "p75": 2.8,
+        "total_subjects": 18
       },
       "value_distributions": {
         "MHDECOD": {
-          "TOBACCO USE": 38,
-          "HYPERTENSION": 31,
-          "CHRONIC OBSTRUCTIVE PULMONARY DISEASE": 12,
-          "HYPERLIPIDEMIA": 12,
-          "DIABETES MELLITUS TYPE 2": 9,
-          "GASTROESOPHAGEAL REFLUX DISEASE": 7,
-          "CORONARY ARTERY DISEASE": 4,
-          "DEEP VEIN THROMBOSIS": 4,
-          "DEPRESSION": 3
+          "TOBACCO USE": 15,
+          "HYPERTENSION": 11,
+          "CHRONIC OBSTRUCTIVE PULMONARY DISEASE": 5,
+          "HYPERLIPIDEMIA": 5,
+          "GASTROESOPHAGEAL REFLUX DISEASE": 2,
+          "DEEP VEIN THROMBOSIS": 2,
+          "DIABETES MELLITUS TYPE 2": 2,
+          "CORONARY ARTERY DISEASE": 1,
+          "DEPRESSION": 1
         },
         "MHCAT": {
-          "SOCIAL HISTORY": 38,
-          "CARDIOVASCULAR": 35,
-          "RESPIRATORY": 12,
-          "METABOLIC": 12,
-          "ENDOCRINE": 9,
-          "GASTROINTESTINAL": 7,
-          "VASCULAR": 4,
-          "PSYCHIATRIC": 3
+          "SOCIAL HISTORY": 15,
+          "CARDIOVASCULAR": 12,
+          "RESPIRATORY": 5,
+          "METABOLIC": 5,
+          "GASTROINTESTINAL": 2,
+          "VASCULAR": 2,
+          "ENDOCRINE": 2,
+          "PSYCHIATRIC": 1
         }
       },
       "conformance_findings": {
@@ -1928,7 +1788,7 @@
       }
     },
     "PE": {
-      "record_count": 920,
+      "record_count": 360,
       "variable_count": 13,
       "completeness": {
         "required_vars_present": [
@@ -1966,20 +1826,20 @@
         "max": 20,
         "p25": 20.0,
         "p75": 20.0,
-        "total_subjects": 46
+        "total_subjects": 18
       },
       "value_distributions": {
         "PETESTCD": {
-          "ABDOMEN": 92,
-          "CARDIOVA": 92,
-          "EARSNOSE": 92,
-          "EYES": 92,
-          "GENERALA": 92,
-          "HEADANDN": 92,
-          "MUSCULOS": 92,
-          "NEUROLOG": 92,
-          "RESPIRAT": 92,
-          "SKIN": 92
+          "ABDOMEN": 36,
+          "CARDIOVA": 36,
+          "EARSNOSE": 36,
+          "EYES": 36,
+          "GENERALA": 36,
+          "HEADANDN": 36,
+          "MUSCULOS": 36,
+          "NEUROLOG": 36,
+          "RESPIRAT": 36,
+          "SKIN": 36
         }
       },
       "conformance_findings": {
@@ -2015,7 +1875,7 @@
       }
     },
     "RELREC": {
-      "record_count": 1082,
+      "record_count": 482,
       "variable_count": 7,
       "completeness": {
         "required_vars_present": [],
@@ -2034,13 +1894,13 @@
         }
       },
       "records_per_subject": {
-        "mean": 25.2,
+        "mean": 28.4,
         "median": 18.0,
         "min": 4,
         "max": 74,
-        "p25": 12.0,
-        "p75": 37.0,
-        "total_subjects": 43
+        "p25": 14.0,
+        "p75": 42.0,
+        "total_subjects": 17
       },
       "value_distributions": {},
       "conformance_findings": {
@@ -2067,7 +1927,7 @@
       }
     },
     "SC": {
-      "record_count": 207,
+      "record_count": 80,
       "variable_count": 13,
       "completeness": {
         "required_vars_present": [
@@ -2092,28 +1952,28 @@
           "SCCAT": 100.0,
           "SCORRES": 100.0,
           "SCSTRESC": 100.0,
-          "SCSTRESN": 55.56,
-          "SCSTRESU": 55.56,
+          "SCSTRESN": 55.0,
+          "SCSTRESU": 55.0,
           "SCDTC": 100.0,
           "SCDY": 100.0
         }
       },
       "records_per_subject": {
-        "mean": 4.5,
-        "median": 4.5,
+        "mean": 4.4,
+        "median": 4.0,
         "min": 4,
         "max": 5,
         "p25": 4.0,
         "p75": 5.0,
-        "total_subjects": 46
+        "total_subjects": 18
       },
       "value_distributions": {
         "SCTESTCD": {
-          "ALCUSE": 46,
-          "BMI": 46,
-          "DURDIS": 46,
-          "TOBUSE": 46,
-          "TOBPKYR": 23
+          "ALCUSE": 18,
+          "BMI": 18,
+          "DURDIS": 18,
+          "TOBUSE": 18,
+          "TOBPKYR": 8
         }
       },
       "conformance_findings": {
@@ -2149,7 +2009,7 @@
       }
     },
     "SE": {
-      "record_count": 109,
+      "record_count": 44,
       "variable_count": 11,
       "completeness": {
         "required_vars_present": [
@@ -2185,7 +2045,7 @@
         "max": 3,
         "p25": 2.0,
         "p75": 3.0,
-        "total_subjects": 46
+        "total_subjects": 18
       },
       "value_distributions": {},
       "conformance_findings": {
@@ -2206,7 +2066,7 @@
             "category": "Domain Structure Rules",
             "source": "SDTM-IG 3.4",
             "description": "Subject Elements (SE) must have no gaps between consecutive epochs \u2014 SEENDTC of one element must equal SESTDTC of the next",
-            "result": "SE timeline continuity valid (63 transitions)",
+            "result": "SE timeline continuity valid (26 transitions)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -2237,7 +2097,7 @@
       }
     },
     "SM": {
-      "record_count": 46,
+      "record_count": 18,
       "variable_count": 8,
       "completeness": {
         "required_vars_present": [],
@@ -2263,7 +2123,7 @@
         "max": 1,
         "p25": 1.0,
         "p75": 1.0,
-        "total_subjects": 46
+        "total_subjects": 18
       },
       "value_distributions": {},
       "conformance_findings": {
@@ -2290,7 +2150,7 @@
       }
     },
     "SS": {
-      "record_count": 19,
+      "record_count": 8,
       "variable_count": 14,
       "completeness": {
         "required_vars_present": [
@@ -2329,11 +2189,11 @@
         "max": 1,
         "p25": 1.0,
         "p75": 1.0,
-        "total_subjects": 19
+        "total_subjects": 8
       },
       "value_distributions": {
         "SSTESTCD": {
-          "SURVSTAT": 19
+          "SURVSTAT": 8
         }
       },
       "conformance_findings": {
@@ -2369,7 +2229,7 @@
       }
     },
     "SU": {
-      "record_count": 138,
+      "record_count": 54,
       "variable_count": 20,
       "completeness": {
         "required_vars_present": [
@@ -2395,15 +2255,15 @@
           "SUPRESP": 100.0,
           "SUOCCUR": 100.0,
           "SUSTAT": 0.0,
-          "SUDOSE": 47.1,
-          "SUDOSU": 47.1,
-          "SUDOSFRQ": 47.1,
+          "SUDOSE": 38.89,
+          "SUDOSU": 38.89,
+          "SUDOSFRQ": 38.89,
           "EPOCH": 100.0,
-          "SUSTDTC": 65.22,
-          "SUENDTC": 18.12,
-          "SUSTDY": 65.22,
-          "SUENDY": 18.12,
-          "SUENRF": 47.1
+          "SUSTDTC": 61.11,
+          "SUENDTC": 22.22,
+          "SUSTDY": 61.11,
+          "SUENDY": 22.22,
+          "SUENRF": 38.89
         }
       },
       "records_per_subject": {
@@ -2413,18 +2273,18 @@
         "max": 3,
         "p25": 3.0,
         "p75": 3.0,
-        "total_subjects": 46
+        "total_subjects": 18
       },
       "value_distributions": {
         "SUTRT": {
-          "BEER/WINE/SPIRITS": 46,
-          "COFFEE": 46,
-          "CIGARETTES": 46
+          "BEER/WINE/SPIRITS": 18,
+          "COFFEE": 18,
+          "CIGARETTES": 18
         },
         "SUCAT": {
-          "ALCOHOL": 46,
-          "CAFFEINE": 46,
-          "TOBACCO": 46
+          "ALCOHOL": 18,
+          "CAFFEINE": 18,
+          "TOBACCO": 18
         }
       },
       "conformance_findings": {
@@ -2460,7 +2320,7 @@
       }
     },
     "SUPPAE": {
-      "record_count": 1096,
+      "record_count": 462,
       "variable_count": 10,
       "completeness": {
         "required_vars_present": [],
@@ -2482,13 +2342,13 @@
         }
       },
       "records_per_subject": {
-        "mean": 24.4,
-        "median": 22.0,
-        "min": 1,
-        "max": 65,
-        "p25": 10.0,
-        "p75": 34.0,
-        "total_subjects": 45
+        "mean": 25.7,
+        "median": 22.5,
+        "min": 2,
+        "max": 63,
+        "p25": 15.5,
+        "p75": 35.5,
+        "total_subjects": 18
       },
       "value_distributions": {},
       "conformance_findings": {
@@ -2515,7 +2375,7 @@
       }
     },
     "SV": {
-      "record_count": 421,
+      "record_count": 172,
       "variable_count": 14,
       "completeness": {
         "required_vars_present": [
@@ -2549,18 +2409,18 @@
           "EPOCH": 100.0,
           "SVSTDTC": 100.0,
           "SVENDTC": 100.0,
-          "SVSTDY": 99.05,
-          "SVENDY": 99.05
+          "SVSTDY": 98.84,
+          "SVENDY": 98.84
         }
       },
       "records_per_subject": {
-        "mean": 8.4,
+        "mean": 8.6,
         "median": 9.0,
         "min": 1,
         "max": 13,
-        "p25": 6.0,
+        "p25": 5.2,
         "p75": 13.0,
-        "total_subjects": 50
+        "total_subjects": 20
       },
       "value_distributions": {},
       "conformance_findings": {
@@ -2751,7 +2611,7 @@
             "category": "Trial Design Integrity",
             "source": "SDTM-IG 3.4",
             "description": "Every inclusion/exclusion criterion defined in TI should be assessed in at least one IE record (criteria never triggered are acceptable)",
-            "result": "7 TI criteria never assessed in IE (normal if all subjects passed): ['EXCL01', 'EXCL03', 'EXCL05', 'INCL01', 'INCL02', 'INCL04', 'INCL05']",
+            "result": "8 TI criteria never assessed in IE (normal if all subjects passed): ['EXCL01', 'EXCL02', 'EXCL03', 'EXCL05', 'INCL01', 'INCL02', 'INCL04', 'INCL05']",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -2920,7 +2780,7 @@
       }
     },
     "VS": {
-      "record_count": 2944,
+      "record_count": 1180,
       "variable_count": 25,
       "completeness": {
         "required_vars_present": [
@@ -2935,7 +2795,7 @@
         ],
         "required_vars_missing": [],
         "required_vars_pct": 100.0,
-        "key_fields_populated_pct": 96.5,
+        "key_fields_populated_pct": 96.59,
         "date_fields": {
           "VSDTC": {
             "populated_pct": 100.0
@@ -2948,15 +2808,15 @@
           "VSSEQ": 100.0,
           "VSTESTCD": 100.0,
           "VSTEST": 100.0,
-          "VSORRES": 86.01,
-          "VSORRESU": 86.01,
-          "VSSTRESC": 98.27,
-          "VSSTRESN": 98.27,
-          "VSSTRESU": 98.27,
-          "VSSTAT": 1.73,
-          "VSLOBXFL": 12.5,
-          "VSBLFL": 12.5,
-          "VSDRVFL": 12.26,
+          "VSORRES": 86.36,
+          "VSORRESU": 86.36,
+          "VSSTRESC": 98.56,
+          "VSSTRESN": 98.56,
+          "VSSTRESU": 98.56,
+          "VSSTAT": 1.44,
+          "VSLOBXFL": 12.2,
+          "VSBLFL": 12.2,
+          "VSDRVFL": 12.2,
           "VISITNUM": 100.0,
           "VISIT": 100.0,
           "EPOCH": 100.0,
@@ -2970,24 +2830,24 @@
         }
       },
       "records_per_subject": {
-        "mean": 64.0,
-        "median": 68.0,
+        "mean": 65.6,
+        "median": 72.0,
         "min": 16,
-        "max": 104,
-        "p25": 48.0,
+        "max": 96,
+        "p25": 54.5,
         "p75": 87.8,
-        "total_subjects": 46
+        "total_subjects": 18
       },
       "value_distributions": {
         "VSTESTCD": {
-          "DIABP": 369,
-          "HEIGHT": 369,
-          "PULSE": 369,
-          "RESP": 369,
-          "SYSBP": 369,
-          "TEMP": 369,
-          "WEIGHT": 369,
-          "BMI": 361
+          "DIABP": 148,
+          "HEIGHT": 148,
+          "PULSE": 148,
+          "RESP": 148,
+          "SYSBP": 148,
+          "TEMP": 148,
+          "WEIGHT": 148,
+          "BMI": 144
         }
       },
       "conformance_findings": {
@@ -3000,15 +2860,6 @@
             "source": "Pinnacle 21 (SD1042)",
             "description": "No domain should contain exact duplicate rows (all columns identical)",
             "result": "No duplicate rows",
-            "affected_count": 0,
-            "affected_usubjids": []
-          },
-          {
-            "rule_id": "D2_AFTER_DEATH",
-            "category": "Domain Structure Rules",
-            "source": "sdtmchecks R package",
-            "description": "No clinical events (AE, EX, LB, VS, CM) should occur after the subject's death date",
-            "result": "No VS dates after death",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -3026,7 +2877,7 @@
             "category": "Domain Structure Rules",
             "source": "sdtmchecks R package",
             "description": "Systolic blood pressure must be greater than or equal to diastolic blood pressure for the same time point",
-            "result": "SBP \u2265 DBP valid (345 paired readings)",
+            "result": "SBP \u2265 DBP valid (141 paired readings)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -3035,7 +2886,7 @@
             "category": "Cross-domain Consistency",
             "source": "Pinnacle 21",
             "description": "EPOCH assignment must match Subject Elements (SE) timeline for records in VS",
-            "result": "EPOCH populated (2944/2944)",
+            "result": "EPOCH populated (1180/1180)",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -3092,11 +2943,20 @@
             "affected_usubjids": []
           },
           {
+            "rule_id": "D2_AFTER_DEATH",
+            "category": "Domain Structure Rules",
+            "source": "sdtmchecks R package",
+            "description": "No clinical events (AE, EX, LB, VS, CM) should occur after the subject's death date",
+            "result": "No deaths \u2014 skipped",
+            "affected_count": 0,
+            "affected_usubjids": []
+          },
+          {
             "rule_id": "D14_ISO8601",
             "category": "Date and Temporal Integrity",
             "source": "FDA Technical Rejection Criteria",
             "description": "All date/time variables (--DTC) must be valid ISO 8601 format across every domain",
-            "result": "All 10756 date values are valid ISO 8601",
+            "result": "All 4405 date values are valid ISO 8601",
             "affected_count": 0,
             "affected_usubjids": []
           },
@@ -3105,7 +2965,7 @@
             "category": "Date and Temporal Integrity",
             "source": "FDA Technical Rejection Criteria",
             "description": "STUDYID must be identical and single-valued across all domains",
-            "result": "STUDYID consistent across 31 domains",
+            "result": "STUDYID consistent across 30 domains",
             "affected_count": 0,
             "affected_usubjids": []
           }
@@ -3115,19 +2975,19 @@
   },
   "cross_domain": {
     "subject_set_consistency": {
-      "dm_subjects": 50,
-      "ae_subjects": 45,
+      "dm_subjects": 20,
+      "ae_subjects": 18,
       "subjects_in_ae_not_dm": [],
-      "enrolled_subjects_without_ae": 1
+      "enrolled_subjects_without_ae": 0
     },
     "exposure_coverage": {
-      "enrolled_subjects": 46,
-      "subjects_with_exposure": 46,
+      "enrolled_subjects": 18,
+      "subjects_with_exposure": 18,
       "missing_exposure_usubjids": []
     },
     "disposition_coverage": {
-      "enrolled_subjects": 46,
-      "subjects_with_disposition": 46
+      "enrolled_subjects": 18,
+      "subjects_with_disposition": 18
     },
     "domain_coverage_matrix": {
       "all_domains": [
@@ -3135,7 +2995,6 @@
         "CM",
         "CO",
         "DA",
-        "DD",
         "DM",
         "DS",
         "DV",
@@ -3158,37 +3017,32 @@
         "VS"
       ],
       "subjects_per_domain": {
-        "AE": 45,
-        "CM": 44,
-        "CO": 10,
-        "DA": 46,
-        "DD": 2,
-        "DM": 50,
-        "DS": 50,
-        "DV": 42,
-        "EC": 46,
-        "EX": 46,
-        "FA": 46,
-        "HO": 36,
-        "IE": 4,
-        "LB": 46,
-        "MH": 46,
-        "PE": 46,
-        "RELREC": 43,
-        "SC": 46,
-        "SE": 46,
-        "SM": 46,
-        "SS": 19,
-        "SU": 46,
-        "SUPPAE": 45,
-        "SV": 50,
-        "VS": 46
+        "AE": 18,
+        "CM": 17,
+        "CO": 4,
+        "DA": 18,
+        "DM": 20,
+        "DS": 20,
+        "DV": 16,
+        "EC": 18,
+        "EX": 18,
+        "FA": 18,
+        "HO": 15,
+        "IE": 2,
+        "LB": 18,
+        "MH": 18,
+        "PE": 18,
+        "RELREC": 17,
+        "SC": 18,
+        "SE": 18,
+        "SM": 18,
+        "SS": 8,
+        "SU": 18,
+        "SUPPAE": 18,
+        "SV": 20,
+        "VS": 18
       },
-      "enrolled_subjects_missing_from": {
-        "AE": [
-          "MS200095-0022-VISION-USA_SITE02-0021"
-        ]
-      }
+      "enrolled_subjects_missing_from": {}
     }
   },
   "conformance_summary": {
@@ -3197,13 +3051,13 @@
         "description": "Checks that every domain has the correct SDTM-IG 3.4 column structure \u2014 required variables present, proper column ordering (STUDYID first, DOMAIN second), and correct data types.",
         "errors": 0,
         "warnings": 0,
-        "passed": 41
+        "passed": 40
       },
       "TEMPORAL": {
         "description": "Validates date logic within and across domains \u2014 reference dates are chronologically ordered, study day derivations are correct, and no temporal impossibilities exist.",
         "errors": 0,
         "warnings": 0,
-        "passed": 4
+        "passed": 3
       },
       "TERMINOLOGY": {
         "description": "Verifies that coded values (AESEV, AEOUT, SEX, RACE, etc.) use CDISC Controlled Terminology and that dictionary-derived terms (AEDECOD, CMDECOD) are populated.",
@@ -3215,7 +3069,7 @@
         "description": "Cross-domain logical consistency \u2014 subjects who died have matching DM/DS/AE records, ARM matches ACTARM for enrolled subjects, exposure aligns with disposition.",
         "errors": 0,
         "warnings": 0,
-        "passed": 7
+        "passed": 5
       },
       "DERIVED": {
         "description": "Validates computed variables \u2014 study day (--DY) correctly derived from reference start date, EPOCH assigned from Subject Elements timeline.",
@@ -3226,24 +3080,24 @@
     }
   },
   "quality_checks_summary": {
-    "total_checks": 99,
+    "total_checks": 93,
     "total_errors": 0,
     "total_warnings": 0,
-    "total_passed": 99,
+    "total_passed": 93,
     "by_category": {
       "FDA Submission Rules": {
         "description": "Checks required by FDA for electronic submissions \u2014 derived from Pinnacle 21 Community validation rules (SD-series). Errors here would cause a Technical Rejection of the submission.",
-        "checks_run": 36,
+        "checks_run": 35,
         "errors": 0,
         "warnings": 0,
-        "passed": 36
+        "passed": 35
       },
       "Domain Structure Rules": {
         "description": "Domain-specific structural rules \u2014 SE epochs have no gaps, DS has at most one discontinuation per subject, reference ranges are populated for quantitative labs, no semantic duplicates.",
-        "checks_run": 22,
+        "checks_run": 18,
         "errors": 0,
         "warnings": 0,
-        "passed": 22
+        "passed": 18
       },
       "Date and Temporal Integrity": {
         "description": "Validates that all dates are valid ISO 8601, in logical chronological order, and consistent across domains (e.g., no events after death).",
@@ -3254,10 +3108,10 @@
       },
       "Cross-domain Consistency": {
         "description": "Ensures values that appear in multiple domains are aligned \u2014 ARM matches ACTARM, STUDYID is uniform, EPOCH matches SE timeline, dictionary-derived terms are populated.",
-        "checks_run": 27,
+        "checks_run": 26,
         "errors": 0,
         "warnings": 0,
-        "passed": 27
+        "passed": 26
       },
       "Clinical Plausibility": {
         "description": "Checks that clinical values fall within physiologically possible ranges and that the clinical narrative is internally consistent (e.g., medical history pre-dates study start).",

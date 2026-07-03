@@ -50,7 +50,16 @@ class UploadManager:
                 files=files,
             )
 
+            print("=" * 80)
+            print(file_path.name)
+            print(response.status_code)
+            print(response.json())
+            print("=" * 80)
+
+            
+
         return response.json()
+    
 
     def get_record_count(self, file_path):
         """
@@ -64,7 +73,7 @@ class UploadManager:
         """
         Upload every CSV inside the dirty folder.
         """
-
+        
         dirty_folder = paths.dirty
 
         total_timer = StepTimer()
@@ -104,6 +113,12 @@ class UploadManager:
                 success(
                     f"{file.name} uploaded ({records} records, {elapsed:.2f}s)"
                 )
+
+                print("=" * 80)
+                print("Uploaded files:")
+                for file in sorted(dirty_folder.glob("*.csv")):
+                    print(file.name)
+                    print("=" * 80)
 
         success(
             f"Upload complete | Uploaded: {uploaded} | Skipped: {skipped} | Time: {total_timer.stop():.2f}s"

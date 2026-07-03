@@ -1,112 +1,95 @@
 {
   "generator_version": "2.0",
   "sdtmig_version": "3.4",
-  "generated_at": "2026-07-01T11:24:21.846322+00:00",
+  "generated_at": "2026-07-03T09:34:38.348862+00:00",
   "study_id": "MS200095-0022-VISION",
   "protocol_name": "oncology_nsclc",
   "seed": 1,
   "subjects": {
-    "total_generated": 50,
-    "enrolled": 46,
-    "screen_failures": 4,
-    "completed": 16,
-    "deaths": 2,
-    "total_adverse_events": 1096
+    "total_generated": 20,
+    "enrolled": 18,
+    "screen_failures": 2,
+    "completed": 7,
+    "deaths": 0,
+    "total_adverse_events": 462
   },
   "arms": [
     {
       "armcd": "COHORT_A",
       "arm": "Cohort A \u2014 Tepotinib 500 mg QD (MET exon 14 skipping)",
       "type": "",
-      "n_randomized": 17,
-      "n_completed": 5,
-      "n_discontinued": 12,
+      "n_randomized": 6,
+      "n_completed": 2,
+      "n_discontinued": 4,
       "discontinuation_reasons": {
-        "ADVERSE EVENT": 11,
-        "PHYSICIAN DECISION": 1
+        "ADVERSE EVENT": 4
       },
-      "mean_exposure_days": 190.9,
-      "total_aes": 397,
-      "ae_rate_per_subject": 23.4,
-      "subjects_with_ae": 17,
-      "serious_ae_count": 65
+      "mean_exposure_days": 179.3,
+      "total_aes": 115,
+      "ae_rate_per_subject": 19.2,
+      "subjects_with_ae": 6,
+      "serious_ae_count": 15
     },
     {
       "armcd": "COHORT_B",
       "arm": "Cohort B \u2014 Tepotinib 500 mg QD (MET amplification)",
       "type": "",
-      "n_randomized": 19,
-      "n_completed": 7,
-      "n_discontinued": 12,
+      "n_randomized": 10,
+      "n_completed": 4,
+      "n_discontinued": 6,
       "discontinuation_reasons": {
-        "ADVERSE EVENT": 9,
-        "WITHDRAWAL BY SUBJECT": 1,
-        "PROGRESSIVE DISEASE": 1,
-        "DEATH": 1
+        "ADVERSE EVENT": 5,
+        "PROGRESSIVE DISEASE": 1
       },
-      "mean_exposure_days": 255.2,
-      "total_aes": 508,
-      "ae_rate_per_subject": 26.7,
-      "subjects_with_ae": 19,
-      "serious_ae_count": 108
+      "mean_exposure_days": 264.1,
+      "total_aes": 322,
+      "ae_rate_per_subject": 32.2,
+      "subjects_with_ae": 10,
+      "serious_ae_count": 77
     },
     {
       "armcd": "COHORT_C",
       "arm": "Cohort C \u2014 Tepotinib 500 mg QD (MET exon 14, confirmatory)",
       "type": "",
-      "n_randomized": 10,
-      "n_completed": 4,
-      "n_discontinued": 6,
+      "n_randomized": 2,
+      "n_completed": 1,
+      "n_discontinued": 1,
       "discontinuation_reasons": {
-        "ADVERSE EVENT": 2,
-        "PHYSICIAN DECISION": 1,
-        "DEATH": 1,
-        "PROTOCOL VIOLATION": 1,
-        "LOST TO FOLLOW-UP": 1
+        "PROTOCOL VIOLATION": 1
       },
-      "mean_exposure_days": 182.5,
-      "total_aes": 191,
-      "ae_rate_per_subject": 19.1,
-      "subjects_with_ae": 9,
-      "serious_ae_count": 31
+      "mean_exposure_days": 216.5,
+      "total_aes": 25,
+      "ae_rate_per_subject": 12.5,
+      "subjects_with_ae": 2,
+      "serious_ae_count": 4
     }
   ],
   "sites": [
     {
       "siteid": "CHN_SITE01",
-      "n_subjects": 6,
-      "n_enrolled": 6,
+      "n_subjects": 2,
+      "n_enrolled": 2,
       "n_screen_failures": 0,
       "country": "CHN",
       "investigator": "Dr. Investigator CHN_SITE01",
-      "n_completed": 4,
+      "n_completed": 1,
       "n_deaths": 0
     },
     {
       "siteid": "DEU_SITE01",
-      "n_subjects": 7,
-      "n_enrolled": 6,
+      "n_subjects": 2,
+      "n_enrolled": 1,
       "n_screen_failures": 1,
       "country": "DEU",
       "investigator": "Dr. Investigator DEU_SITE01",
-      "n_completed": 3,
-      "n_deaths": 0
-    },
-    {
-      "siteid": "ESP_SITE01",
-      "n_subjects": 3,
-      "n_enrolled": 2,
-      "n_screen_failures": 1,
-      "country": "ESP",
-      "investigator": "Dr. Investigator ESP_SITE01",
-      "n_completed": 0,
+      "n_completed": 1,
       "n_deaths": 0
     },
     {
       "siteid": "FRA_SITE01",
-      "n_subjects": 6,
-      "n_enrolled": 5,
-      "n_screen_failures": 1,
+      "n_subjects": 2,
+      "n_enrolled": 2,
+      "n_screen_failures": 0,
       "country": "FRA",
       "investigator": "Dr. Investigator FRA_SITE01",
       "n_completed": 0,
@@ -114,8 +97,8 @@
     },
     {
       "siteid": "GBR_SITE01",
-      "n_subjects": 3,
-      "n_enrolled": 3,
+      "n_subjects": 1,
+      "n_enrolled": 1,
       "n_screen_failures": 0,
       "country": "GBR",
       "investigator": "Dr. Investigator GBR_SITE01",
@@ -124,18 +107,18 @@
     },
     {
       "siteid": "ITA_SITE01",
-      "n_subjects": 3,
-      "n_enrolled": 3,
+      "n_subjects": 2,
+      "n_enrolled": 2,
       "n_screen_failures": 0,
       "country": "ITA",
       "investigator": "Dr. Investigator ITA_SITE01",
-      "n_completed": 3,
+      "n_completed": 2,
       "n_deaths": 0
     },
     {
       "siteid": "JPN_SITE01",
-      "n_subjects": 2,
-      "n_enrolled": 2,
+      "n_subjects": 1,
+      "n_enrolled": 1,
       "n_screen_failures": 0,
       "country": "JPN",
       "investigator": "Dr. Investigator JPN_SITE01",
@@ -144,48 +127,38 @@
     },
     {
       "siteid": "JPN_SITE02",
-      "n_subjects": 9,
-      "n_enrolled": 8,
+      "n_subjects": 6,
+      "n_enrolled": 5,
       "n_screen_failures": 1,
       "country": "JPN",
       "investigator": "Dr. Investigator JPN_SITE02",
-      "n_completed": 3,
-      "n_deaths": 1
-    },
-    {
-      "siteid": "KOR_SITE01",
-      "n_subjects": 1,
-      "n_enrolled": 1,
-      "n_screen_failures": 0,
-      "country": "KOR",
-      "investigator": "Dr. Investigator KOR_SITE01",
-      "n_completed": 0,
-      "n_deaths": 1
+      "n_completed": 2,
+      "n_deaths": 0
     },
     {
       "siteid": "USA_SITE01",
-      "n_subjects": 5,
-      "n_enrolled": 5,
+      "n_subjects": 2,
+      "n_enrolled": 2,
       "n_screen_failures": 0,
       "country": "USA",
       "investigator": "Dr. Investigator USA_SITE01",
-      "n_completed": 1,
+      "n_completed": 0,
       "n_deaths": 0
     },
     {
       "siteid": "USA_SITE02",
-      "n_subjects": 5,
-      "n_enrolled": 5,
+      "n_subjects": 2,
+      "n_enrolled": 2,
       "n_screen_failures": 0,
       "country": "USA",
       "investigator": "Dr. Investigator USA_SITE02",
-      "n_completed": 1,
+      "n_completed": 0,
       "n_deaths": 0
     }
   ],
   "domains": {
     "AE": {
-      "record_count": 1096,
+      "record_count": 462,
       "variable_count": 36,
       "file": "ae.csv",
       "variables": [
@@ -228,7 +201,7 @@
       ]
     },
     "CM": {
-      "record_count": 562,
+      "record_count": 249,
       "variable_count": 17,
       "file": "cm.csv",
       "variables": [
@@ -252,7 +225,7 @@
       ]
     },
     "CO": {
-      "record_count": 10,
+      "record_count": 4,
       "variable_count": 11,
       "file": "co.csv",
       "variables": [
@@ -270,7 +243,7 @@
       ]
     },
     "DA": {
-      "record_count": 29994,
+      "record_count": 12504,
       "variable_count": 16,
       "file": "da.csv",
       "variables": [
@@ -292,24 +265,8 @@
         "DADY"
       ]
     },
-    "DD": {
-      "record_count": 6,
-      "variable_count": 9,
-      "file": "dd.csv",
-      "variables": [
-        "STUDYID",
-        "DOMAIN",
-        "USUBJID",
-        "DDSEQ",
-        "DDTESTCD",
-        "DDTEST",
-        "DDORRES",
-        "DDSTRESC",
-        "DDDTC"
-      ]
-    },
     "DM": {
-      "record_count": 50,
+      "record_count": 20,
       "variable_count": 27,
       "file": "dm.csv",
       "variables": [
@@ -343,7 +300,7 @@
       ]
     },
     "DS": {
-      "record_count": 146,
+      "record_count": 58,
       "variable_count": 10,
       "file": "ds.csv",
       "variables": [
@@ -360,7 +317,7 @@
       ]
     },
     "DV": {
-      "record_count": 756,
+      "record_count": 345,
       "variable_count": 11,
       "file": "dv.csv",
       "variables": [
@@ -378,7 +335,7 @@
       ]
     },
     "EC": {
-      "record_count": 9998,
+      "record_count": 4168,
       "variable_count": 23,
       "file": "ec.csv",
       "variables": [
@@ -408,7 +365,7 @@
       ]
     },
     "EX": {
-      "record_count": 189,
+      "record_count": 82,
       "variable_count": 15,
       "file": "ex.csv",
       "variables": [
@@ -430,7 +387,7 @@
       ]
     },
     "FA": {
-      "record_count": 2444,
+      "record_count": 908,
       "variable_count": 21,
       "file": "fa.csv",
       "variables": [
@@ -458,7 +415,7 @@
       ]
     },
     "HO": {
-      "record_count": 136,
+      "record_count": 68,
       "variable_count": 12,
       "file": "ho.csv",
       "variables": [
@@ -477,7 +434,7 @@
       ]
     },
     "IE": {
-      "record_count": 4,
+      "record_count": 2,
       "variable_count": 14,
       "file": "ie.csv",
       "variables": [
@@ -498,7 +455,7 @@
       ]
     },
     "LB": {
-      "record_count": 2527,
+      "record_count": 1001,
       "variable_count": 26,
       "file": "lb.csv",
       "variables": [
@@ -531,7 +488,7 @@
       ]
     },
     "MH": {
-      "record_count": 120,
+      "record_count": 44,
       "variable_count": 15,
       "file": "mh.csv",
       "variables": [
@@ -553,7 +510,7 @@
       ]
     },
     "PE": {
-      "record_count": 920,
+      "record_count": 360,
       "variable_count": 13,
       "file": "pe.csv",
       "variables": [
@@ -573,7 +530,7 @@
       ]
     },
     "RELREC": {
-      "record_count": 1082,
+      "record_count": 482,
       "variable_count": 7,
       "file": "relrec.csv",
       "variables": [
@@ -587,7 +544,7 @@
       ]
     },
     "SC": {
-      "record_count": 207,
+      "record_count": 80,
       "variable_count": 13,
       "file": "sc.csv",
       "variables": [
@@ -607,7 +564,7 @@
       ]
     },
     "SE": {
-      "record_count": 109,
+      "record_count": 44,
       "variable_count": 11,
       "file": "se.csv",
       "variables": [
@@ -625,7 +582,7 @@
       ]
     },
     "SM": {
-      "record_count": 46,
+      "record_count": 18,
       "variable_count": 8,
       "file": "sm.csv",
       "variables": [
@@ -640,7 +597,7 @@
       ]
     },
     "SS": {
-      "record_count": 19,
+      "record_count": 8,
       "variable_count": 14,
       "file": "ss.csv",
       "variables": [
@@ -661,7 +618,7 @@
       ]
     },
     "SU": {
-      "record_count": 138,
+      "record_count": 54,
       "variable_count": 20,
       "file": "su.csv",
       "variables": [
@@ -688,7 +645,7 @@
       ]
     },
     "SUPPAE": {
-      "record_count": 1096,
+      "record_count": 462,
       "variable_count": 10,
       "file": "suppae.csv",
       "variables": [
@@ -705,7 +662,7 @@
       ]
     },
     "SV": {
-      "record_count": 421,
+      "record_count": 172,
       "variable_count": 14,
       "file": "sv.csv",
       "variables": [
@@ -818,7 +775,7 @@
       ]
     },
     "VS": {
-      "record_count": 2944,
+      "record_count": 1180,
       "variable_count": 25,
       "file": "vs.csv",
       "variables": [
@@ -857,48 +814,29 @@
       "SCREEN FAILURE",
       "ADVERSE EVENT",
       "COMPLETED",
-      "PHYSICIAN DECISION",
-      "DEATH",
-      "WITHDRAWAL BY SUBJECT",
       "PROGRESSIVE DISEASE",
-      "PROTOCOL VIOLATION",
-      "LOST TO FOLLOW-UP"
+      "PROTOCOL VIOLATION"
     ],
     "links": [
       {
         "source": "SCREENED",
         "target": "ENROLLED",
-        "value": 46
+        "value": 18
       },
       {
         "source": "SCREENED",
         "target": "SCREEN FAILURE",
-        "value": 4
+        "value": 2
       },
       {
         "source": "ENROLLED",
         "target": "ADVERSE EVENT",
-        "value": 22
+        "value": 9
       },
       {
         "source": "ENROLLED",
         "target": "COMPLETED",
-        "value": 16
-      },
-      {
-        "source": "ENROLLED",
-        "target": "PHYSICIAN DECISION",
-        "value": 2
-      },
-      {
-        "source": "ENROLLED",
-        "target": "DEATH",
-        "value": 2
-      },
-      {
-        "source": "ENROLLED",
-        "target": "WITHDRAWAL BY SUBJECT",
-        "value": 1
+        "value": 7
       },
       {
         "source": "ENROLLED",
@@ -908,11 +846,6 @@
       {
         "source": "ENROLLED",
         "target": "PROTOCOL VIOLATION",
-        "value": 1
-      },
-      {
-        "source": "ENROLLED",
-        "target": "LOST TO FOLLOW-UP",
         "value": 1
       }
     ]

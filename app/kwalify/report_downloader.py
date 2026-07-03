@@ -9,11 +9,13 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from app.core.paths import BatchPaths
 
 from app.kwalify.config import (
     FRONTEND_URL,
     FRONTEND_USERNAME,
     FRONTEND_PASSWORD,
+    DOWNLOAD_FOLDER,
 )
 
 
@@ -123,9 +125,9 @@ class ReportDownloader:
 
         success(f"Opened study: {batch_name}")
 
-        download_folder = Path(
-            r"D:\Test Automation\Kwalify_Run_Auto\downloads"
-        )
+        
+
+        download_folder = DOWNLOAD_FOLDER
 
         download_folder.mkdir(
             exist_ok=True
@@ -166,15 +168,23 @@ class ReportDownloader:
 
         success(f"Clicked download for {run_id}")
 
+        print("=" * 80)
+        print("Download button clicked successfully")
+        print("=" * 80)
+
+        time.sleep(5)
+
         latest_file = None
 
         for _ in range(60):
 
-            files = list(
-                download_folder.glob(
-                    "Validation_Report_*.xlsx"
-                )
-            )
+            files = list(download_folder.glob("*"))
+
+            print("=" * 80)
+            print("Current Download Folder Files")
+            for f in files:
+                print(f.name)
+                print("=" * 80)
 
             if files:
 
@@ -200,11 +210,9 @@ class ReportDownloader:
 
         success(f"Downloaded {latest_file.name}")
 
-        report_folder = (
-            Path(r"D:\Test Automation\Data\Batches")
-            / batch_name
-            / "Kwalify Report"
-        )
+        paths = BatchPaths(batch_name)
+
+        report_folder = paths.kwalify_reports
 
         report_folder.mkdir(
             parents=True,

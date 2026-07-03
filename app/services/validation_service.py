@@ -36,6 +36,7 @@ class ValidationService:
     config,
     p21_report,
     ):
+        
         logger.info(
             "Starting validation for batch=%s host_generator_key=%s",
             config.batch_name,

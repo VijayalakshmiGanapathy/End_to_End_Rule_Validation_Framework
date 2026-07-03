@@ -1,10 +1,12 @@
 import logging
+import time
 
 from app.kwalify.api_client import APIClient
 from app.kwalify.auth_manager import AuthManager
 from app.kwalify.study_manager import StudyManager
 from app.kwalify.upload_manager import UploadManager
 from app.kwalify.validation_manager import ValidationManager
+from app.kwalify.report_downloader import ReportDownloader
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +24,8 @@ class KwalifyService:
         self.upload = UploadManager(self.client)
 
         self.validation = ValidationManager(self.client)
+
+        self.report_downloader = ReportDownloader()
 
     def run(
         self,
@@ -45,19 +49,28 @@ class KwalifyService:
 
             self.study.create_study(study_name)
 
+        
+
+            # Configure Domains
+            domains = self.study.get_batch_domains(paths)
+
+            self.study.save_domains(
+                study_name,
+                domains,
+            )
+
+            logger.info("Domains configured.")
+        
         else:
 
             logger.info(f"Study already exists : {study_name}")
 
-        # Configure Domains
-        domains = self.study.get_batch_domains(paths)
+        csv_files = sorted(paths.dirty.glob("*.csv"))
 
-        self.study.save_domains(
-            study_name,
-            domains,
-        )
+        logger.info(f"Dirty CSV Count : {len(csv_files)}")
 
-        logger.info("Domains configured.")
+        for file in csv_files:
+            logger.info(file.name)
 
         # Upload Dirty CSV
         self.upload.upload_batch(
@@ -71,6 +84,16 @@ class KwalifyService:
         run_id = self.validation.run_validation(
             study_name,
         )
+
+        input(
+            "\nPress ENTER after checking the frontend status..."
+        )
+        
+
+        self.report_downloader.login(
+            batch_name=study_name,
+            run_id=run_id,
+    )
 
         logger.info(f"Run ID : {run_id}")
 

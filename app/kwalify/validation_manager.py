@@ -92,13 +92,11 @@ class ValidationManager:
 
         logger.info("Calling Validation API...")
 
-        print("Calling Validate API...")
+        
 
         validation = self.validate(study_name)
 
-        print("Validate API Returned")
-
-        print(validation)
+        
 
         success(
             f"Validation completed ({timer.stop():.2f}s)"
@@ -115,7 +113,7 @@ class ValidationManager:
 
         info("Consolidating results...")
 
-        consolidation = self.consolidate(
+        self.consolidate(
             study_name,
             run_id,
         )
@@ -124,10 +122,17 @@ class ValidationManager:
             f"Consolidation completed ({timer.stop():.2f}s)"
         )
 
+        
+
+        # Wait for frontend/database to update
+        info("Waiting 30 seconds for frontend to update validation status...")
+        time.sleep(30)
+        success("Wait completed.")
+
         success(
             f"Validation workflow completed ({total_timer.stop():.2f}s)"
         )
-
+        
         return run_id
     
     logger.info("Validation API returned successfully.")

@@ -76,7 +76,7 @@ class BatchPaths:
             exist_ok=True,
         )
 
-        self.test_validation_report.mkdir(
+        self.test_validation_report_folder.mkdir(
             parents=True,
             exist_ok=True,
         )
