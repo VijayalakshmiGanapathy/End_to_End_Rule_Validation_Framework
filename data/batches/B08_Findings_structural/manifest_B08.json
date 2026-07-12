@@ -1,0 +1,2568 @@
+{
+  "generated_at": "2026-07-07T05:28:00.192540",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_9hghzy6a",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 6,
+  "rules_skipped": 0,
+  "rules_injected": 6,
+  "total_mutations": 105,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD0068-IE-001",
+      "rule_id": "SD0068",
+      "rule_message": "Invalid IETESTCD",
+      "category": "FND1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "IE",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0004",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETESTCD": {
+          "original": "INCL03",
+          "injected": "ZZZSD0068"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TI.IETESTCD (not_in_target_set); target_set_size=10",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1016-IE-001",
+      "rule_id": "SD1016",
+      "rule_message": "Invalid IETESTCD/IETEST/IECAT",
+      "category": "FND1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "IE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0020",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETESTCD": {
+          "original": "EXCL04",
+          "injected": "ZZZSD1016"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TI.IETESTCD (not_in_target_set); target_set_size=10",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1252-SS-001",
+      "rule_id": "SD1252",
+      "rule_message": "DTHFL does not equal 'Y' when SS.SSSTRESC = 'DEAD'",
+      "category": "FND1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "SS",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "SSSTRESC": {
+          "original": "ALIVE",
+          "injected": "DEAD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs DM.DTHFL (set_source_expect_target); DM.DTHFL='' (expected 'Y')",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1439-LB-001",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-FRA_SITE01-0003",
+      "row_index": 180,
+      "csv_line": 182,
+      "seq_value": "13",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 180
+    },
+    {
+      "error_id": "INJ-SD1439-LB-002",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0014",
+      "row_index": 961,
+      "csv_line": 963,
+      "seq_value": "10",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 961
+    },
+    {
+      "error_id": "INJ-SD1439-LB-003",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0017",
+      "row_index": 682,
+      "csv_line": 684,
+      "seq_value": "11",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 682
+    },
+    {
+      "error_id": "INJ-SD1439-LB-004",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0015",
+      "row_index": 31,
+      "csv_line": 33,
+      "seq_value": "11",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 31
+    },
+    {
+      "error_id": "INJ-SD1439-LB-005",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0018",
+      "row_index": 889,
+      "csv_line": 891,
+      "seq_value": "8",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 889
+    },
+    {
+      "error_id": "INJ-SD1439-LB-006",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 389,
+      "csv_line": 391,
+      "seq_value": "12",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 389
+    },
+    {
+      "error_id": "INJ-SD1439-VS-007",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 629,
+      "csv_line": 631,
+      "seq_value": "9",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 629
+    },
+    {
+      "error_id": "INJ-SD1439-VS-008",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0017",
+      "row_index": 792,
+      "csv_line": 794,
+      "seq_value": "12",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 792
+    },
+    {
+      "error_id": "INJ-SD1439-VS-009",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE01-0016",
+      "row_index": 567,
+      "csv_line": 569,
+      "seq_value": "1",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 567
+    },
+    {
+      "error_id": "INJ-SD1439-VS-010",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 130,
+      "csv_line": 132,
+      "seq_value": "11",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 130
+    },
+    {
+      "error_id": "INJ-SD1439-VS-011",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0007",
+      "row_index": 963,
+      "csv_line": 965,
+      "seq_value": "16",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 963
+    },
+    {
+      "error_id": "INJ-SD1439-VS-012",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 873,
+      "csv_line": 875,
+      "seq_value": "13",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 873
+    },
+    {
+      "error_id": "INJ-SD1439-VS-013",
+      "rule_id": "SD1439",
+      "rule_message": "Multiple BASELINE records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE01-0016",
+      "row_index": 580,
+      "csv_line": 582,
+      "seq_value": "14",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--BLFL', '--TESTCD', '--CAT', '--SCAT', '--METHOD', '--SPEC', '--LOC', '--LAT', '--DIR']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 580
+    },
+    {
+      "error_id": "INJ-SD1117-DA-001",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 1926,
+      "csv_line": 1928,
+      "seq_value": "847",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1926
+    },
+    {
+      "error_id": "INJ-SD1117-DA-002",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0006",
+      "row_index": 4541,
+      "csv_line": 4543,
+      "seq_value": "465",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4541
+    },
+    {
+      "error_id": "INJ-SD1117-DA-003",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 9452,
+      "csv_line": 9454,
+      "seq_value": "909",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9452
+    },
+    {
+      "error_id": "INJ-SD1117-DA-004",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 5132,
+      "csv_line": 5134,
+      "seq_value": "291",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5132
+    },
+    {
+      "error_id": "INJ-SD1117-DA-005",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0006",
+      "row_index": 4128,
+      "csv_line": 4130,
+      "seq_value": "52",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4128
+    },
+    {
+      "error_id": "INJ-SD1117-DA-006",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 2428,
+      "csv_line": 2430,
+      "seq_value": "1349",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2428
+    },
+    {
+      "error_id": "INJ-SD1117-DA-007",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 5868,
+      "csv_line": 5870,
+      "seq_value": "1027",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5868
+    },
+    {
+      "error_id": "INJ-SD1117-DA-008",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0007",
+      "row_index": 10316,
+      "csv_line": 10318,
+      "seq_value": "369",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10316
+    },
+    {
+      "error_id": "INJ-SD1117-DA-009",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 5523,
+      "csv_line": 5525,
+      "seq_value": "682",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5523
+    },
+    {
+      "error_id": "INJ-SD1117-DA-010",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 6793,
+      "csv_line": 6795,
+      "seq_value": "314",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6793
+    },
+    {
+      "error_id": "INJ-SD1117-DA-011",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 9482,
+      "csv_line": 9484,
+      "seq_value": "939",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9482
+    },
+    {
+      "error_id": "INJ-SD1117-DA-012",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 8735,
+      "csv_line": 8737,
+      "seq_value": "192",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8735
+    },
+    {
+      "error_id": "INJ-SD1117-DA-013",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 5559,
+      "csv_line": 5561,
+      "seq_value": "718",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5559
+    },
+    {
+      "error_id": "INJ-SD1117-DA-014",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0010",
+      "row_index": 6910,
+      "csv_line": 6912,
+      "seq_value": "20",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6910
+    },
+    {
+      "error_id": "INJ-SD1117-DA-015",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 5825,
+      "csv_line": 5827,
+      "seq_value": "984",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5825
+    },
+    {
+      "error_id": "INJ-SD1117-DA-016",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0017",
+      "row_index": 8457,
+      "csv_line": 8459,
+      "seq_value": "721",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8457
+    },
+    {
+      "error_id": "INJ-SD1117-DA-017",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 2831,
+      "csv_line": 2833,
+      "seq_value": "30",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2831
+    },
+    {
+      "error_id": "INJ-SD1117-DA-018",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0018",
+      "row_index": 11313,
+      "csv_line": 11315,
+      "seq_value": "727",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11313
+    },
+    {
+      "error_id": "INJ-SD1117-DA-019",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0015",
+      "row_index": 795,
+      "csv_line": 797,
+      "seq_value": "766",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 795
+    },
+    {
+      "error_id": "INJ-SD1117-DA-020",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0018",
+      "row_index": 11520,
+      "csv_line": 11522,
+      "seq_value": "934",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11520
+    },
+    {
+      "error_id": "INJ-SD1117-DA-021",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 9944,
+      "csv_line": 9946,
+      "seq_value": "1401",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9944
+    },
+    {
+      "error_id": "INJ-SD1117-DA-022",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0015",
+      "row_index": 847,
+      "csv_line": 849,
+      "seq_value": "818",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 847
+    },
+    {
+      "error_id": "INJ-SD1117-DA-023",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0006",
+      "row_index": 4579,
+      "csv_line": 4581,
+      "seq_value": "503",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4579
+    },
+    {
+      "error_id": "INJ-SD1117-DA-024",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0007",
+      "row_index": 10247,
+      "csv_line": 10249,
+      "seq_value": "300",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10247
+    },
+    {
+      "error_id": "INJ-SD1117-DA-025",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 8582,
+      "csv_line": 8584,
+      "seq_value": "39",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8582
+    },
+    {
+      "error_id": "INJ-SD1117-DA-026",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 1148,
+      "csv_line": 1150,
+      "seq_value": "69",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1148
+    },
+    {
+      "error_id": "INJ-SD1117-DA-027",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 9711,
+      "csv_line": 9713,
+      "seq_value": "1168",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9711
+    },
+    {
+      "error_id": "INJ-SD1117-DA-028",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0006",
+      "row_index": 4628,
+      "csv_line": 4630,
+      "seq_value": "552",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4628
+    },
+    {
+      "error_id": "INJ-SD1117-DA-029",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0014",
+      "row_index": 12107,
+      "csv_line": 12109,
+      "seq_value": "162",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12107
+    },
+    {
+      "error_id": "INJ-SD1117-DA-030",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 5786,
+      "csv_line": 5788,
+      "seq_value": "945",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5786
+    },
+    {
+      "error_id": "INJ-SD1117-DA-031",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 1624,
+      "csv_line": 1626,
+      "seq_value": "545",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1624
+    },
+    {
+      "error_id": "INJ-SD1117-DA-032",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0018",
+      "row_index": 10697,
+      "csv_line": 10699,
+      "seq_value": "111",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10697
+    },
+    {
+      "error_id": "INJ-SD1117-DA-033",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 9301,
+      "csv_line": 9303,
+      "seq_value": "758",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9301
+    },
+    {
+      "error_id": "INJ-SD1117-DA-034",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 2060,
+      "csv_line": 2062,
+      "seq_value": "981",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2060
+    },
+    {
+      "error_id": "INJ-SD1117-DA-035",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 4070,
+      "csv_line": 4072,
+      "seq_value": "1269",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4070
+    },
+    {
+      "error_id": "INJ-SD1117-DA-036",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0015",
+      "row_index": 546,
+      "csv_line": 548,
+      "seq_value": "517",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 546
+    },
+    {
+      "error_id": "INJ-SD1117-DA-037",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0006",
+      "row_index": 4421,
+      "csv_line": 4423,
+      "seq_value": "345",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4421
+    },
+    {
+      "error_id": "INJ-SD1117-DA-038",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 9281,
+      "csv_line": 9283,
+      "seq_value": "738",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9281
+    },
+    {
+      "error_id": "INJ-SD1117-DA-039",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0015",
+      "row_index": 953,
+      "csv_line": 955,
+      "seq_value": "924",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 953
+    },
+    {
+      "error_id": "INJ-SD1117-DA-040",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0017",
+      "row_index": 7874,
+      "csv_line": 7876,
+      "seq_value": "138",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7874
+    },
+    {
+      "error_id": "INJ-SD1117-DA-041",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 5611,
+      "csv_line": 5613,
+      "seq_value": "770",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5611
+    },
+    {
+      "error_id": "INJ-SD1117-DA-042",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 6823,
+      "csv_line": 6825,
+      "seq_value": "344",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6823
+    },
+    {
+      "error_id": "INJ-SD1117-DA-043",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE01-0016",
+      "row_index": 5947,
+      "csv_line": 5949,
+      "seq_value": "71",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5947
+    },
+    {
+      "error_id": "INJ-SD1117-DA-044",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0014",
+      "row_index": 12085,
+      "csv_line": 12087,
+      "seq_value": "140",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12085
+    },
+    {
+      "error_id": "INJ-SD1117-DA-045",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0018",
+      "row_index": 11064,
+      "csv_line": 11066,
+      "seq_value": "478",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11064
+    },
+    {
+      "error_id": "INJ-SD1117-DA-046",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0018",
+      "row_index": 11141,
+      "csv_line": 11143,
+      "seq_value": "555",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11141
+    },
+    {
+      "error_id": "INJ-SD1117-DA-047",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 2368,
+      "csv_line": 2370,
+      "seq_value": "1289",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2368
+    },
+    {
+      "error_id": "INJ-SD1117-DA-048",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0017",
+      "row_index": 8529,
+      "csv_line": 8531,
+      "seq_value": "793",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8529
+    },
+    {
+      "error_id": "INJ-SD1117-DA-049",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE01-0016",
+      "row_index": 6213,
+      "csv_line": 6215,
+      "seq_value": "337",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6213
+    },
+    {
+      "error_id": "INJ-SD1117-DA-050",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "DA",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 3450,
+      "csv_line": 3452,
+      "seq_value": "649",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3450
+    },
+    {
+      "error_id": "INJ-SD1117-IE-051",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "IE",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0004",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1117-LB-052",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 551,
+      "csv_line": 553,
+      "seq_value": "48",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 551
+    },
+    {
+      "error_id": "INJ-SD1117-LB-053",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0014",
+      "row_index": 954,
+      "csv_line": 956,
+      "seq_value": "3",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 954
+    },
+    {
+      "error_id": "INJ-SD1117-LB-054",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0014",
+      "row_index": 967,
+      "csv_line": 969,
+      "seq_value": "16",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 967
+    },
+    {
+      "error_id": "INJ-SD1117-LB-055",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 228,
+      "csv_line": 230,
+      "seq_value": "5",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 228
+    },
+    {
+      "error_id": "INJ-SD1117-LB-056",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 532,
+      "csv_line": 534,
+      "seq_value": "29",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 532
+    },
+    {
+      "error_id": "INJ-SD1117-LB-057",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-FRA_SITE01-0003",
+      "row_index": 208,
+      "csv_line": 210,
+      "seq_value": "41",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 208
+    },
+    {
+      "error_id": "INJ-SD1117-LB-058",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 658,
+      "csv_line": 660,
+      "seq_value": "71",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 658
+    },
+    {
+      "error_id": "INJ-SD1117-LB-059",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0014",
+      "row_index": 987,
+      "csv_line": 989,
+      "seq_value": "36",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 987
+    },
+    {
+      "error_id": "INJ-SD1117-LB-060",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0007",
+      "row_index": 839,
+      "csv_line": 841,
+      "seq_value": "14",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 839
+    },
+    {
+      "error_id": "INJ-SD1117-LB-061",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 652,
+      "csv_line": 654,
+      "seq_value": "65",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 652
+    },
+    {
+      "error_id": "INJ-SD1117-LB-062",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 288,
+      "csv_line": 290,
+      "seq_value": "65",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 288
+    },
+    {
+      "error_id": "INJ-SD1117-LB-063",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 543,
+      "csv_line": 545,
+      "seq_value": "40",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 543
+    },
+    {
+      "error_id": "INJ-SD1117-LB-064",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 609,
+      "csv_line": 611,
+      "seq_value": "22",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 609
+    },
+    {
+      "error_id": "INJ-SD1117-LB-065",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE01-0016",
+      "row_index": 499,
+      "csv_line": 501,
+      "seq_value": "45",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 499
+    },
+    {
+      "error_id": "INJ-SD1117-LB-066",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0010",
+      "row_index": 582,
+      "csv_line": 584,
+      "seq_value": "30",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 582
+    },
+    {
+      "error_id": "INJ-SD1117-LB-067",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 269,
+      "csv_line": 271,
+      "seq_value": "46",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 269
+    },
+    {
+      "error_id": "INJ-SD1117-LB-068",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 539,
+      "csv_line": 541,
+      "seq_value": "36",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 539
+    },
+    {
+      "error_id": "INJ-SD1117-LB-069",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0007",
+      "row_index": 832,
+      "csv_line": 834,
+      "seq_value": "7",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 832
+    },
+    {
+      "error_id": "INJ-SD1117-LB-070",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 550,
+      "csv_line": 552,
+      "seq_value": "47",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 550
+    },
+    {
+      "error_id": "INJ-SD1117-LB-071",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE01-0016",
+      "row_index": 464,
+      "csv_line": 466,
+      "seq_value": "10",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 464
+    },
+    {
+      "error_id": "INJ-SD1117-LB-072",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 276,
+      "csv_line": 278,
+      "seq_value": "53",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 276
+    },
+    {
+      "error_id": "INJ-SD1117-LB-073",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "LB",
+      "usubjid": "MS200095-0022-VISION-GBR_SITE01-0008",
+      "row_index": 293,
+      "csv_line": 295,
+      "seq_value": "70",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 293
+    },
+    {
+      "error_id": "INJ-SD1117-PE-074",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "PE",
+      "usubjid": "MS200095-0022-VISION-FRA_SITE01-0003",
+      "row_index": 61,
+      "csv_line": 63,
+      "seq_value": "2",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 61
+    },
+    {
+      "error_id": "INJ-SD1117-PE-075",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "PE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0010",
+      "row_index": 209,
+      "csv_line": 211,
+      "seq_value": "10",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 209
+    },
+    {
+      "error_id": "INJ-SD1117-PE-076",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "PE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 234,
+      "csv_line": 236,
+      "seq_value": "15",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 234
+    },
+    {
+      "error_id": "INJ-SD1117-PE-077",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "PE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 223,
+      "csv_line": 225,
+      "seq_value": "4",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 223
+    },
+    {
+      "error_id": "INJ-SD1117-PE-078",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "PE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 233,
+      "csv_line": 235,
+      "seq_value": "14",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 233
+    },
+    {
+      "error_id": "INJ-SD1117-PE-079",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "PE",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0001",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "7",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1117-SC-080",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "SC",
+      "usubjid": "MS200095-0022-VISION-FRA_SITE01-0003",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "1",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1117-SC-081",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "SC",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0002",
+      "row_index": 73,
+      "csv_line": 75,
+      "seq_value": "3",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 73
+    },
+    {
+      "error_id": "INJ-SD1117-VS-082",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0002",
+      "row_index": 1094,
+      "csv_line": 1096,
+      "seq_value": "3",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1094
+    },
+    {
+      "error_id": "INJ-SD1117-VS-083",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0001",
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": "12",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1117-VS-084",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0002",
+      "row_index": 1107,
+      "csv_line": 1109,
+      "seq_value": "16",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1107
+    },
+    {
+      "error_id": "INJ-SD1117-FA-085",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "FA",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0001",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "13",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1117-FA-086",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "FA",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0001",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "5",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1117-FA-087",
+      "rule_id": "SD1117",
+      "rule_message": "Duplicate records",
+      "category": "FA1",
+      "primitive": "duplicate_record",
+      "domain": "FA",
+      "usubjid": "MS200095-0022-VISION-FRA_SITE01-0003",
+      "row_index": 175,
+      "csv_line": 177,
+      "seq_value": "14",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--TESTCD', '--CAT', '--ORRES', '--STRESC', '--DTC', '--RFTDTC']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 175
+    },
+    {
+      "error_id": "INJ-SD1445-VS-001",
+      "rule_id": "SD1445",
+      "rule_message": "Multiple --LOBXFL records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0002",
+      "row_index": 1100,
+      "csv_line": 1102,
+      "seq_value": "9",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--LOBXFL', '--TESTCD', '--CAT', '--SCAT', '--POS', '--METHOD', '--SPEC', '--LOC', '--LAT']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1100
+    },
+    {
+      "error_id": "INJ-SD1445-VS-002",
+      "rule_id": "SD1445",
+      "rule_message": "Multiple --LOBXFL records for the same test",
+      "category": "FA2",
+      "primitive": "duplicate_record",
+      "domain": "VS",
+      "usubjid": "MS200095-0022-VISION-CHN_SITE01-0001",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "11",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', '--LOBXFL', '--TESTCD', '--CAT', '--SCAT', '--POS', '--METHOD', '--SPEC', '--LOC', '--LAT']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    }
+  ],
+  "summary_by_rule": {
+    "SD0068": 1,
+    "SD1016": 1,
+    "SD1252": 1,
+    "SD1439": 13,
+    "SD1117": 87,
+    "SD1445": 2
+  },
+  "summary_by_category": {
+    "FND1": 3,
+    "FA2": 15,
+    "FA1": 87
+  },
+  "summary_by_domain": {
+    "IE": 3,
+    "SS": 1,
+    "LB": 28,
+    "VS": 12,
+    "DA": 50,
+    "PE": 6,
+    "SC": 2,
+    "FA": 3
+  },
+  "summary_status": {
+    "injected": 105,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

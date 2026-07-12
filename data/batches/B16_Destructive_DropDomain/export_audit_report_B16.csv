@@ -1,0 +1,11 @@
+﻿error_id,rule_id,status,domain,USUBJID,row_index,primitive,variables_modified,re_derived,failure_reason
+INJ-SD1020-DM-001,SD1020,injected,DM,,,drop_domain,"{""__domain__"": {""original"": ""20 rows"", ""injected"": ""removed""}}",,
+INJ-SD1107-LB-001,SD1107,injected,LB,,,drop_domain,"{""__domain__"": {""original"": ""868 rows"", ""injected"": ""removed""}}",,
+INJ-SD1108-VS-001,SD1108,injected,VS,,,drop_domain,"{""__domain__"": {""original"": ""1087 rows"", ""injected"": ""removed""}}",,
+INJ-SD1109-EX-001,SD1109,injected,EX,,,drop_domain,"{""__domain__"": {""original"": ""48 rows"", ""injected"": ""removed""}}",,
+INJ-SD1110-DS-001,SD1110,injected,DS,,,drop_domain,"{""__domain__"": {""original"": ""58 rows"", ""injected"": ""removed""}}",,
+INJ-SD1111-SE-001,SD1111,injected,SE,,,drop_domain,"{""__domain__"": {""original"": ""47 rows"", ""injected"": ""removed""}}",,
+INJ-SD1112-TA-001,SD1112,injected,TA,,,drop_domain,"{""__domain__"": {""original"": ""6 rows"", ""injected"": ""removed""}}",,
+INJ-SD1113-TE-001,SD1113,injected,TE,,,drop_domain,"{""__domain__"": {""original"": ""3 rows"", ""injected"": ""removed""}}",,
+INJ-SD1115-TS-001,SD1115,injected,TS,,,drop_domain,"{""__domain__"": {""original"": ""45 rows"", ""injected"": ""removed""}}",,
+INJ-SD1270-PC-001,SD1270,injected,PC,,,drop_domain,"{""__domain__"": {""original"": ""72 rows"", ""injected"": ""removed""}}",,

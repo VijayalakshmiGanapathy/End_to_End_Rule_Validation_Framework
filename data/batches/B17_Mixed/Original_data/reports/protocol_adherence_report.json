@@ -1,0 +1,4086 @@
+{
+  "study_id": "021IGAN17001",
+  "generated_at": "2026-07-07T05:55:05.139866+00:00",
+  "summary": {
+    "total_enrolled": 15,
+    "subjects_with_deviations": 14,
+    "total_deviations": 339,
+    "deviation_rate_pct": 93.3,
+    "overall_visit_compliance_pct": 64.6,
+    "overall_dose_compliance_pct": 93.1
+  },
+  "protocol_deviations": {
+    "by_category": {
+      "MINOR": 339
+    },
+    "by_decod": {
+      "MISSED DOSE": 287,
+      "DOSE MODIFICATION": 11,
+      "VISIT OCCURRED OUTSIDE VISIT WINDOW": 37,
+      "MISSED ASSESSMENT": 4
+    },
+    "by_arm": {
+      "Sparsentan 400 mg QD (target dose)": 87,
+      "Irbesartan 300 mg QD (active control)": 252
+    },
+    "by_visit": {},
+    "deviations_leading_to_discontinuation": 0,
+    "subject_level": [
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0008",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed SPARSENTAN dose on 2024-05-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed SPARSENTAN dose on 2024-05-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed SPARSENTAN dose on 2024-06-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed SPARSENTAN dose on 2024-06-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed SPARSENTAN dose on 2024-06-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed SPARSENTAN dose on 2024-06-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed SPARSENTAN dose on 2024-06-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed SPARSENTAN dose on 2024-07-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed SPARSENTAN dose on 2024-07-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed SPARSENTAN dose on 2024-07-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed SPARSENTAN dose on 2024-08-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed SPARSENTAN dose on 2024-08-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed SPARSENTAN dose on 2024-08-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Dose modified from 400.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed SPARSENTAN dose on 2024-09-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed SPARSENTAN dose on 2024-09-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed SPARSENTAN dose on 2024-09-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed SPARSENTAN dose on 2024-09-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed SPARSENTAN dose on 2024-09-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed SPARSENTAN dose on 2024-10-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed SPARSENTAN dose on 2024-10-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed SPARSENTAN dose on 2024-10-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed SPARSENTAN dose on 2024-10-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed SPARSENTAN dose on 2024-10-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed SPARSENTAN dose on 2024-11-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed SPARSENTAN dose on 2024-11-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed SPARSENTAN dose on 2024-11-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Visit WEEK 36 occurred 4 days early (Day 249 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-01-13",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 28
+      },
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0010",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 3 days early (Day 12 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-02-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed IRBESARTAN dose on 2024-02-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 4 occurred 0 days late (Day 29 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-08",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0018",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 0 days late (Day 15 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed IRBESARTAN dose on 2024-05-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 4 occurred 1 days early (Day 28 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed IRBESARTAN dose on 2024-07-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed IRBESARTAN dose on 2024-07-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed IRBESARTAN dose on 2024-07-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed IRBESARTAN dose on 2024-07-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed IRBESARTAN dose on 2024-07-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed IRBESARTAN dose on 2024-08-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed IRBESARTAN dose on 2024-09-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed IRBESARTAN dose on 2024-09-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed IRBESARTAN dose on 2024-09-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed IRBESARTAN dose on 2024-09-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed IRBESARTAN dose on 2024-10-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed IRBESARTAN dose on 2024-11-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed IRBESARTAN dose on 2024-12-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed IRBESARTAN dose on 2024-12-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed IRBESARTAN dose on 2024-12-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed IRBESARTAN dose on 2025-01-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed IRBESARTAN dose on 2025-01-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed IRBESARTAN dose on 2025-01-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed IRBESARTAN dose on 2025-02-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed IRBESARTAN dose on 2025-02-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed IRBESARTAN dose on 2025-02-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed IRBESARTAN dose on 2025-02-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed IRBESARTAN dose on 2025-03-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed IRBESARTAN dose on 2025-03-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed IRBESARTAN dose on 2025-03-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed IRBESARTAN dose on 2025-03-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed IRBESARTAN dose on 2025-04-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed IRBESARTAN dose on 2025-04-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-19",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 31
+      },
+      {
+        "usubjid": "021IGAN17001-CHN_SITE02-0002",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed IRBESARTAN dose on 2024-04-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed IRBESARTAN dose on 2024-04-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed IRBESARTAN dose on 2024-04-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 8 occurred 0 days late (Day 57 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed IRBESARTAN dose on 2024-05-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed IRBESARTAN dose on 2024-05-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed IRBESARTAN dose on 2024-06-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed IRBESARTAN dose on 2024-06-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed IRBESARTAN dose on 2024-07-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed IRBESARTAN dose on 2024-07-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed IRBESARTAN dose on 2024-07-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed IRBESARTAN dose on 2024-07-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Visit WEEK 24 occurred 2 days early (Day 167 vs planned Day 169)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-08-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed IRBESARTAN dose on 2024-08-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed IRBESARTAN dose on 2024-08-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed IRBESARTAN dose on 2024-09-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed IRBESARTAN dose on 2024-09-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed IRBESARTAN dose on 2024-09-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed IRBESARTAN dose on 2024-09-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Dose modified from 300.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed IRBESARTAN dose on 2024-09-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed IRBESARTAN dose on 2024-10-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed IRBESARTAN dose on 2024-10-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed IRBESARTAN dose on 2024-10-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed IRBESARTAN dose on 2024-10-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Visit WEEK 36 occurred 1 days late (Day 254 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-11-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed IRBESARTAN dose on 2024-11-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed IRBESARTAN dose on 2024-11-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed IRBESARTAN dose on 2024-11-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed IRBESARTAN dose on 2024-12-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed IRBESARTAN dose on 2024-12-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed IRBESARTAN dose on 2024-12-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed IRBESARTAN dose on 2024-12-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed IRBESARTAN dose on 2024-12-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed IRBESARTAN dose on 2025-01-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed IRBESARTAN dose on 2025-01-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed IRBESARTAN dose on 2025-01-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed IRBESARTAN dose on 2025-02-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed IRBESARTAN dose on 2025-03-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed IRBESARTAN dose on 2025-03-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed IRBESARTAN dose on 2025-03-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Missed IRBESARTAN dose on 2025-04-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Missed IRBESARTAN dose on 2025-04-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "44",
+            "term": "Missed IRBESARTAN dose on 2025-04-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "45",
+            "term": "Missed IRBESARTAN dose on 2025-05-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "46",
+            "term": "Missed IRBESARTAN dose on 2025-05-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "47",
+            "term": "Missed IRBESARTAN dose on 2025-06-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "48",
+            "term": "Dose modified from 300.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "49",
+            "term": "Missed IRBESARTAN dose on 2025-06-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "50",
+            "term": "Missed IRBESARTAN dose on 2025-07-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "51",
+            "term": "Missed IRBESARTAN dose on 2025-07-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "52",
+            "term": "Missed IRBESARTAN dose on 2025-07-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "53",
+            "term": "Missed IRBESARTAN dose on 2025-07-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "54",
+            "term": "Dose modified from 300.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "55",
+            "term": "Missed IRBESARTAN dose on 2025-08-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "56",
+            "term": "Missed IRBESARTAN dose on 2025-08-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "57",
+            "term": "Missed IRBESARTAN dose on 2025-08-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "58",
+            "term": "Visit WEEK 84 occurred 4 days late (Day 593 vs planned Day 589)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-10-10",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 58
+      },
+      {
+        "usubjid": "021IGAN17001-GBR_SITE01-0006",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed IRBESARTAN dose on 2024-03-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Vital signs assessment not performed at WEEK 8",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-04-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed IRBESARTAN dose on 2024-05-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 36 occurred 6 days early (Day 247 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-10-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed IRBESARTAN dose on 2024-10-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed IRBESARTAN dose on 2024-12-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Dose modified from 300.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed IRBESARTAN dose on 2024-12-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed IRBESARTAN dose on 2025-02-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed IRBESARTAN dose on 2025-03-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Visit WEEK 58 occurred 7 days early (Day 400 vs planned Day 407)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed IRBESARTAN dose on 2025-07-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed IRBESARTAN dose on 2025-08-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed IRBESARTAN dose on 2025-09-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Visit WEEK 84 occurred 3 days early (Day 586 vs planned Day 589)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-10-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed IRBESARTAN dose on 2025-12-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-12-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed IRBESARTAN dose on 2026-01-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2026-01-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed IRBESARTAN dose on 2026-02-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2026-02-04",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 18
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0013",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 2 days late (Day 17 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed SPARSENTAN dose on 2024-04-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed SPARSENTAN dose on 2024-04-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed SPARSENTAN dose on 2024-05-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Dose modified from 400.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed SPARSENTAN dose on 2024-05-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Visit WEEK 8 occurred 1 days late (Day 58 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed SPARSENTAN dose on 2024-05-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed SPARSENTAN dose on 2024-05-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Visit WEEK 12 occurred 2 days late (Day 87 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed SPARSENTAN dose on 2024-08-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed SPARSENTAN dose on 2024-08-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed SPARSENTAN dose on 2024-08-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed SPARSENTAN dose on 2024-09-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Dose modified from 400.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed SPARSENTAN dose on 2024-09-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed SPARSENTAN dose on 2024-11-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed SPARSENTAN dose on 2024-11-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Visit WEEK 36 occurred 3 days early (Day 250 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-11-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed SPARSENTAN dose on 2024-12-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed SPARSENTAN dose on 2024-12-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed SPARSENTAN dose on 2024-12-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed SPARSENTAN dose on 2025-01-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed SPARSENTAN dose on 2025-02-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed SPARSENTAN dose on 2025-03-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed SPARSENTAN dose on 2025-04-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Visit WEEK 58 occurred 6 days late (Day 413 vs planned Day 407)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-05-08",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 27
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0016",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed IRBESARTAN dose on 2024-04-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed IRBESARTAN dose on 2024-04-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed IRBESARTAN dose on 2024-05-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 4 occurred 2 days early (Day 27 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed IRBESARTAN dose on 2024-05-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed IRBESARTAN dose on 2024-05-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed IRBESARTAN dose on 2024-05-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed IRBESARTAN dose on 2024-06-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Visit WEEK 8 occurred 3 days early (Day 54 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed IRBESARTAN dose on 2024-06-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed IRBESARTAN dose on 2024-06-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed IRBESARTAN dose on 2024-06-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed IRBESARTAN dose on 2024-06-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed IRBESARTAN dose on 2024-06-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed IRBESARTAN dose on 2024-06-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed IRBESARTAN dose on 2024-07-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed IRBESARTAN dose on 2024-07-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed IRBESARTAN dose on 2024-07-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed IRBESARTAN dose on 2024-08-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed IRBESARTAN dose on 2024-08-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed IRBESARTAN dose on 2024-08-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed IRBESARTAN dose on 2024-08-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed IRBESARTAN dose on 2024-08-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed IRBESARTAN dose on 2024-09-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed IRBESARTAN dose on 2024-09-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Visit WEEK 24 occurred 1 days early (Day 168 vs planned Day 169)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed IRBESARTAN dose on 2024-10-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed IRBESARTAN dose on 2024-10-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed IRBESARTAN dose on 2024-10-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed IRBESARTAN dose on 2024-10-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed IRBESARTAN dose on 2024-10-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed IRBESARTAN dose on 2024-10-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed IRBESARTAN dose on 2024-11-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed IRBESARTAN dose on 2024-11-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed IRBESARTAN dose on 2024-11-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed IRBESARTAN dose on 2024-11-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed IRBESARTAN dose on 2024-11-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed IRBESARTAN dose on 2024-11-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed IRBESARTAN dose on 2024-11-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed IRBESARTAN dose on 2024-12-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed IRBESARTAN dose on 2024-12-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Missed IRBESARTAN dose on 2024-12-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Missed IRBESARTAN dose on 2024-12-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "44",
+            "term": "Missed IRBESARTAN dose on 2025-02-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "45",
+            "term": "Missed IRBESARTAN dose on 2025-02-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "46",
+            "term": "Missed IRBESARTAN dose on 2025-02-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "47",
+            "term": "Missed IRBESARTAN dose on 2025-02-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "48",
+            "term": "Missed IRBESARTAN dose on 2025-02-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "49",
+            "term": "Missed IRBESARTAN dose on 2025-02-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "50",
+            "term": "Missed IRBESARTAN dose on 2025-02-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "51",
+            "term": "Missed IRBESARTAN dose on 2025-02-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "52",
+            "term": "Missed IRBESARTAN dose on 2025-03-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "53",
+            "term": "Missed IRBESARTAN dose on 2025-03-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "54",
+            "term": "Missed IRBESARTAN dose on 2025-03-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "55",
+            "term": "Missed IRBESARTAN dose on 2025-03-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "56",
+            "term": "Missed IRBESARTAN dose on 2025-03-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "57",
+            "term": "Missed IRBESARTAN dose on 2025-03-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "58",
+            "term": "Missed IRBESARTAN dose on 2025-04-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "59",
+            "term": "Missed IRBESARTAN dose on 2025-04-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "60",
+            "term": "Missed IRBESARTAN dose on 2025-04-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "61",
+            "term": "Missed IRBESARTAN dose on 2025-04-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "62",
+            "term": "Missed IRBESARTAN dose on 2025-04-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "63",
+            "term": "Missed IRBESARTAN dose on 2025-04-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "64",
+            "term": "Visit WEEK 58 occurred 5 days late (Day 412 vs planned Day 407)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-05-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "65",
+            "term": "Visit WEEK 84 occurred 2 days late (Day 591 vs planned Day 589)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-11-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "66",
+            "term": "Visit WEEK 110 occurred 0 days late (Day 771 vs planned Day 771)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2026-05-21",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 66
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0020",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [],
+        "total_deviations": 0
+      },
+      {
+        "usubjid": "021IGAN17001-JPN_SITE01-0015",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed IRBESARTAN dose on 2024-04-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed IRBESARTAN dose on 2024-04-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed IRBESARTAN dose on 2024-04-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed IRBESARTAN dose on 2024-04-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed IRBESARTAN dose on 2024-05-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Vital signs assessment not performed at WEEK 2",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-05-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed IRBESARTAN dose on 2024-05-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed IRBESARTAN dose on 2024-06-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed IRBESARTAN dose on 2024-06-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed IRBESARTAN dose on 2024-06-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed IRBESARTAN dose on 2024-06-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Vital signs assessment not performed at WEEK 24",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-10-07",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 12
+      },
+      {
+        "usubjid": "021IGAN17001-JPN_SITE02-0019",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed IRBESARTAN dose on 2024-05-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed IRBESARTAN dose on 2024-05-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed IRBESARTAN dose on 2024-05-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed IRBESARTAN dose on 2024-05-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed IRBESARTAN dose on 2024-06-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed IRBESARTAN dose on 2024-06-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed IRBESARTAN dose on 2024-06-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed IRBESARTAN dose on 2024-06-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed IRBESARTAN dose on 2024-07-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Visit WEEK 12 occurred 0 days late (Day 85 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed IRBESARTAN dose on 2024-08-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed IRBESARTAN dose on 2024-08-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed IRBESARTAN dose on 2024-08-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed IRBESARTAN dose on 2024-08-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed IRBESARTAN dose on 2024-09-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed IRBESARTAN dose on 2024-09-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed IRBESARTAN dose on 2024-09-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed IRBESARTAN dose on 2024-09-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed IRBESARTAN dose on 2024-10-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed IRBESARTAN dose on 2024-10-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed IRBESARTAN dose on 2024-10-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed IRBESARTAN dose on 2024-10-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed IRBESARTAN dose on 2024-10-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed IRBESARTAN dose on 2024-10-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed IRBESARTAN dose on 2024-11-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Visit WEEK 36 occurred 0 days late (Day 253 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-12-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed IRBESARTAN dose on 2025-01-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed IRBESARTAN dose on 2025-01-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed IRBESARTAN dose on 2025-01-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed IRBESARTAN dose on 2025-03-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed IRBESARTAN dose on 2025-03-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed IRBESARTAN dose on 2025-04-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed IRBESARTAN dose on 2025-04-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed IRBESARTAN dose on 2025-04-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Dose modified from 300.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed IRBESARTAN dose on 2025-05-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Visit WEEK 58 occurred 1 days late (Day 408 vs planned Day 407)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-05-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed IRBESARTAN dose on 2025-06-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed IRBESARTAN dose on 2025-06-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed IRBESARTAN dose on 2025-07-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-14",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 40
+      },
+      {
+        "usubjid": "021IGAN17001-KOR_SITE01-0005",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 1 days early (Day 14 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-15",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "021IGAN17001-KOR_SITE01-0007",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 1 days early (Day 14 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed IRBESARTAN dose on 2024-04-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 4 occurred 2 days early (Day 27 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed IRBESARTAN dose on 2024-05-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed IRBESARTAN dose on 2024-05-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed IRBESARTAN dose on 2024-05-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed IRBESARTAN dose on 2024-05-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed IRBESARTAN dose on 2024-05-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed IRBESARTAN dose on 2024-05-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed IRBESARTAN dose on 2024-05-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed IRBESARTAN dose on 2024-05-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed IRBESARTAN dose on 2024-06-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed IRBESARTAN dose on 2024-06-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed IRBESARTAN dose on 2024-07-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed IRBESARTAN dose on 2024-07-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed IRBESARTAN dose on 2024-07-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed IRBESARTAN dose on 2024-08-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed IRBESARTAN dose on 2024-09-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed IRBESARTAN dose on 2024-09-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed IRBESARTAN dose on 2024-09-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed IRBESARTAN dose on 2024-09-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed IRBESARTAN dose on 2024-09-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed IRBESARTAN dose on 2024-09-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-22",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 23
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE01-0001",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed SPARSENTAN dose on 2024-03-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 2 occurred 3 days early (Day 12 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed SPARSENTAN dose on 2024-05-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed SPARSENTAN dose on 2024-06-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Dose modified from 400.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed SPARSENTAN dose on 2024-08-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed SPARSENTAN dose on 2024-09-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed SPARSENTAN dose on 2024-09-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed SPARSENTAN dose on 2024-11-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Visit WEEK 36 occurred 5 days late (Day 258 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-11-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed SPARSENTAN dose on 2024-11-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed SPARSENTAN dose on 2024-11-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-19",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 12
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE01-0009",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 2 days early (Day 13 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 4 occurred 1 days late (Day 30 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Dose modified from 400.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Dose modified from 400.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed SPARSENTAN dose on 2024-04-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Visit WEEK 8 occurred 0 days late (Day 57 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed SPARSENTAN dose on 2024-05-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Visit WEEK 12 occurred 3 days early (Day 82 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-19",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 8
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE02-0014",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed SPARSENTAN dose on 2024-02-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 4 occurred 1 days early (Day 28 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 8 occurred 1 days early (Day 56 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed SPARSENTAN dose on 2024-04-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed SPARSENTAN dose on 2024-04-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed SPARSENTAN dose on 2024-04-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed SPARSENTAN dose on 2024-06-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed SPARSENTAN dose on 2024-06-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed SPARSENTAN dose on 2024-06-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Vital signs assessment not performed at WEEK 24",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-07-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed SPARSENTAN dose on 2024-09-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed SPARSENTAN dose on 2024-09-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-13",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 12
+      }
+    ]
+  },
+  "visit_compliance": {
+    "planned_visits": [
+      "SCREENING",
+      "BASELINE",
+      "WEEK 2",
+      "WEEK 4",
+      "WEEK 8",
+      "WEEK 12",
+      "WEEK 24",
+      "WEEK 36",
+      "WEEK 58",
+      "WEEK 84",
+      "WEEK 110",
+      "WEEK 114 EOT",
+      "SAFETY FU"
+    ],
+    "per_visit": {
+      "SCREENING": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": -42.0,
+        "median_actual_study_day": -55.0,
+        "within_window_pct": 0.0,
+        "out_of_window_count": 15
+      },
+      "BASELINE": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 1.0,
+        "median_actual_study_day": 1.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 2": {
+        "planned": 15,
+        "attended": 14,
+        "compliance_pct": 93.3,
+        "planned_study_day": 15.0,
+        "median_actual_study_day": 15.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 4": {
+        "planned": 15,
+        "attended": 14,
+        "compliance_pct": 93.3,
+        "planned_study_day": 29.0,
+        "median_actual_study_day": 28.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 8": {
+        "planned": 15,
+        "attended": 12,
+        "compliance_pct": 80.0,
+        "planned_study_day": 57.0,
+        "median_actual_study_day": 57.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 12": {
+        "planned": 15,
+        "attended": 12,
+        "compliance_pct": 80.0,
+        "planned_study_day": 85.0,
+        "median_actual_study_day": 86.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 24": {
+        "planned": 15,
+        "attended": 11,
+        "compliance_pct": 73.3,
+        "planned_study_day": 169.0,
+        "median_actual_study_day": 168.0,
+        "within_window_pct": 45.5,
+        "out_of_window_count": 6
+      },
+      "WEEK 36": {
+        "planned": 15,
+        "attended": 10,
+        "compliance_pct": 66.7,
+        "planned_study_day": 253.0,
+        "median_actual_study_day": 253.0,
+        "within_window_pct": 40.0,
+        "out_of_window_count": 6
+      },
+      "WEEK 58": {
+        "planned": 15,
+        "attended": 7,
+        "compliance_pct": 46.7,
+        "planned_study_day": 407.0,
+        "median_actual_study_day": 410.0,
+        "within_window_pct": 42.9,
+        "out_of_window_count": 4
+      },
+      "WEEK 84": {
+        "planned": 15,
+        "attended": 4,
+        "compliance_pct": 26.7,
+        "planned_study_day": 589.0,
+        "median_actual_study_day": 591.0,
+        "within_window_pct": 75.0,
+        "out_of_window_count": 1
+      },
+      "WEEK 110": {
+        "planned": 15,
+        "attended": 4,
+        "compliance_pct": 26.7,
+        "planned_study_day": 771.0,
+        "median_actual_study_day": 775.0,
+        "within_window_pct": 25.0,
+        "out_of_window_count": 3
+      },
+      "WEEK 114 EOT": {
+        "planned": 15,
+        "attended": 4,
+        "compliance_pct": 26.7,
+        "planned_study_day": 799.0,
+        "median_actual_study_day": 802.0,
+        "within_window_pct": 75.0,
+        "out_of_window_count": 1
+      },
+      "SAFETY FU": {
+        "planned": 15,
+        "attended": 4,
+        "compliance_pct": 26.7,
+        "planned_study_day": 827.0,
+        "median_actual_study_day": 827.0,
+        "within_window_pct": 25.0,
+        "out_of_window_count": 3
+      }
+    },
+    "per_subject": [
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0008",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "visits_planned": 13,
+        "visits_attended": 9,
+        "compliance_pct": 69.2,
+        "missed_visits": [
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0010",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 4,
+        "compliance_pct": 30.8,
+        "missed_visits": [
+          "WEEK 8",
+          "WEEK 12",
+          "WEEK 24",
+          "WEEK 36",
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0018",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 9,
+        "compliance_pct": 69.2,
+        "missed_visits": [
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-CHN_SITE02-0002",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 13,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "021IGAN17001-GBR_SITE01-0006",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 13,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0013",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "visits_planned": 13,
+        "visits_attended": 9,
+        "compliance_pct": 69.2,
+        "missed_visits": [
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0016",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 13,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0020",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 2,
+        "compliance_pct": 15.4,
+        "missed_visits": [
+          "WEEK 2",
+          "WEEK 4",
+          "WEEK 8",
+          "WEEK 12",
+          "WEEK 24",
+          "WEEK 36",
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-JPN_SITE01-0015",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 7,
+        "compliance_pct": 53.8,
+        "missed_visits": [
+          "WEEK 36",
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-JPN_SITE02-0019",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 13,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "021IGAN17001-KOR_SITE01-0005",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 4,
+        "compliance_pct": 30.8,
+        "missed_visits": [
+          "WEEK 8",
+          "WEEK 12",
+          "WEEK 24",
+          "WEEK 36",
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-KOR_SITE01-0007",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "visits_planned": 13,
+        "visits_attended": 8,
+        "compliance_pct": 61.5,
+        "missed_visits": [
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE01-0001",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "visits_planned": 13,
+        "visits_attended": 8,
+        "compliance_pct": 61.5,
+        "missed_visits": [
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE01-0009",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "visits_planned": 13,
+        "visits_attended": 6,
+        "compliance_pct": 46.2,
+        "missed_visits": [
+          "WEEK 24",
+          "WEEK 36",
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE02-0014",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "visits_planned": 13,
+        "visits_attended": 8,
+        "compliance_pct": 61.5,
+        "missed_visits": [
+          "WEEK 58",
+          "WEEK 84",
+          "WEEK 110",
+          "WEEK 114 EOT",
+          "SAFETY FU"
+        ]
+      }
+    ]
+  },
+  "dose_compliance": {
+    "per_subject": [
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0008",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "planned_doses": 188,
+        "administered_doses": 160,
+        "compliance_pct": 85.1,
+        "first_dose_dtc": "2024-05-10",
+        "last_dose_dtc": "2024-11-13",
+        "exposure_days": 187,
+        "total_dose": 800.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0010",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 46,
+        "administered_doses": 45,
+        "compliance_pct": 97.8,
+        "first_dose_dtc": "2024-02-09",
+        "last_dose_dtc": "2024-03-25",
+        "exposure_days": 45,
+        "total_dose": 450.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-CAN_SITE01-0018",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 347,
+        "administered_doses": 317,
+        "compliance_pct": 91.4,
+        "first_dose_dtc": "2024-05-09",
+        "last_dose_dtc": "2025-04-07",
+        "exposure_days": 333,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-CHN_SITE02-0002",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 558,
+        "administered_doses": 506,
+        "compliance_pct": 90.7,
+        "first_dose_dtc": "2024-02-26",
+        "last_dose_dtc": "2025-09-05",
+        "exposure_days": 557,
+        "total_dose": 1050.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-GBR_SITE01-0006",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 782,
+        "administered_doses": 769,
+        "compliance_pct": 98.3,
+        "first_dose_dtc": "2024-02-26",
+        "last_dose_dtc": "2026-04-17",
+        "exposure_days": 781,
+        "total_dose": 900.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0013",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "planned_doses": 423,
+        "administered_doses": 402,
+        "compliance_pct": 95.0,
+        "first_dose_dtc": "2024-03-22",
+        "last_dose_dtc": "2025-04-16",
+        "exposure_days": 390,
+        "total_dose": 1200.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0016",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 380,
+        "administered_doses": 315,
+        "compliance_pct": 82.9,
+        "first_dose_dtc": "2024-06-04",
+        "last_dose_dtc": "2025-04-25",
+        "exposure_days": 325,
+        "total_dose": 750.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-ITA_SITE01-0020",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 2,
+        "administered_doses": 2,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-27",
+        "last_dose_dtc": "2024-03-28",
+        "exposure_days": 1,
+        "total_dose": 300.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-JPN_SITE01-0015",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 67,
+        "administered_doses": 57,
+        "compliance_pct": 85.1,
+        "first_dose_dtc": "2024-04-20",
+        "last_dose_dtc": "2024-06-25",
+        "exposure_days": 66,
+        "total_dose": 300.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-JPN_SITE02-0019",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 476,
+        "administered_doses": 439,
+        "compliance_pct": 92.2,
+        "first_dose_dtc": "2024-04-19",
+        "last_dose_dtc": "2025-08-07",
+        "exposure_days": 475,
+        "total_dose": 750.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-KOR_SITE01-0005",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 33,
+        "administered_doses": 33,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-02",
+        "last_dose_dtc": "2024-04-03",
+        "exposure_days": 32,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-KOR_SITE01-0007",
+        "arm": "Irbesartan 300 mg QD (active control)",
+        "planned_doses": 179,
+        "administered_doses": 156,
+        "compliance_pct": 87.2,
+        "first_dose_dtc": "2024-03-30",
+        "last_dose_dtc": "2024-09-24",
+        "exposure_days": 178,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE01-0001",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "planned_doses": 270,
+        "administered_doses": 261,
+        "compliance_pct": 96.7,
+        "first_dose_dtc": "2024-02-29",
+        "last_dose_dtc": "2024-11-24",
+        "exposure_days": 269,
+        "total_dose": 800.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE01-0009",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "planned_doses": 113,
+        "administered_doses": 111,
+        "compliance_pct": 98.2,
+        "first_dose_dtc": "2024-02-28",
+        "last_dose_dtc": "2024-06-19",
+        "exposure_days": 112,
+        "total_dose": 1200.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "021IGAN17001-USA_SITE02-0014",
+        "arm": "Sparsentan 400 mg QD (target dose)",
+        "planned_doses": 289,
+        "administered_doses": 279,
+        "compliance_pct": 96.5,
+        "first_dose_dtc": "2024-02-08",
+        "last_dose_dtc": "2024-11-22",
+        "exposure_days": 288,
+        "total_dose": 1200.0,
+        "dose_unit": "mg"
+      }
+    ],
+    "summary": {
+      "mean_compliance_pct": 93.1,
+      "subjects_below_80pct": []
+    }
+  },
+  "screen_failures": {
+    "total": 5,
+    "by_reason": {
+      "ELIGIBILITY CRITERIA NOT MET": 5,
+      "INFORMED CONSENT OBTAINED": 5
+    },
+    "by_ie_criterion": {
+      "EXCL02": {
+        "test": "Subject is pregnant or breastfeeding",
+        "category": "EXCLUSION",
+        "failed_count": 1
+      },
+      "EXCL04": {
+        "test": "Subject has uncontrolled concurrent illness",
+        "category": "EXCLUSION",
+        "failed_count": 2
+      },
+      "EXCL05": {
+        "test": "Subject has participated in another clinical trial within 30 days",
+        "category": "EXCLUSION",
+        "failed_count": 1
+      },
+      "INCL04": {
+        "test": "Subject has adequate organ function based on screening labs",
+        "category": "INCLUSION",
+        "failed_count": 1
+      }
+    },
+    "by_site": {
+      "GBR_SITE01": 2,
+      "ESP_SITE01": 1,
+      "USA_SITE01": 1,
+      "USA_SITE02": 1
+    }
+  }
+}

@@ -15,7 +15,7 @@ def test_validation_service():
     # -----------------------------------------
 
     config = BatchConfigService().get_batch_configuration(
-        "B01_DM_dates",
+        "B18_Mixed",
     )
 
     # -----------------------------------------

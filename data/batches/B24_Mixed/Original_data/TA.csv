@@ -1,0 +1,7 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+BI-1245.110,TA,EMPA10,Empagliflozin 10 mg QD,1,SCRN,Screening,,Transition to Treatment,SCREENING
+BI-1245.110,TA,EMPA10,Empagliflozin 10 mg QD,2,TRT,Treatment,,Transition to Safety EoT,TREATMENT
+BI-1245.110,TA,EMPA10,Empagliflozin 10 mg QD,3,FU,Safety EoT,,,FOLLOW-UP
+BI-1245.110,TA,PLACEBO,Matching placebo QD,1,SCRN,Screening,,Transition to Treatment,SCREENING
+BI-1245.110,TA,PLACEBO,Matching placebo QD,2,TRT,Treatment,,Transition to Safety EoT,TREATMENT
+BI-1245.110,TA,PLACEBO,Matching placebo QD,3,FU,Safety EoT,,,FOLLOW-UP

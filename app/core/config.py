@@ -22,16 +22,26 @@ def get_base_dir() -> Path:
 BASE_DIR = get_base_dir()
 
 DATA_DIR = BASE_DIR / "data"
-#INPUT_DIR = DATA_DIR / "input"
+INPUT_DIR = DATA_DIR / "input"
 OUTPUT_DIR = DATA_DIR / "output"
 LOG_DIR = BASE_DIR / "logs"
+
+# ==========================================================
+# TD Validation
+# ==========================================================
+
+BATCHES_DIR = DATA_DIR / "batches"
+
+TD_VALIDATION_FOLDER = "TD_Validation"
+
+TD_VALIDATION_REPORT_PREFIX = "TD_Validation_Report_"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_OUTPUT_FILE = OUTPUT_DIR / "rule_injection_validation_report.xlsx"
+#DEFAULT_OUTPUT_FILE = OUTPUT_DIR / "rule_injection_validation_report.xlsx"
 
-INPUT_DIR = Path("data/input")
+
 
 WORKING_RULES_FILE = (
     INPUT_DIR / "Error_Injector_Working_Rule_Batches.xlsx"
@@ -46,7 +56,7 @@ ISSUE_SUMMARY_SHEET = "Issue Summary"
 P21_RULES_SHEET = "Rules"
 
 STUDY_SHEET = "Study"
-RULE_SHEET = "Rule"
+RULE_SHEET = "Rule Cases"
 TEST_CASE_SHEET = "Test Case"
 
 ROW_INDEX_OFFSET = 2
@@ -58,7 +68,15 @@ SDTM_DOMAINS = {
     "TA", "TE", "TI", "TV", "RELREC", "SUPPDM",
 }
 
-INPUT_DIR = Path("data/input")
+# Execution Mode
+RUN_MODE_SINGLE = "single"      # Options: "single" or "all"
+RUN_MODE_ALL ="all"
+
+RUN_MODE = RUN_MODE_SINGLE
+
+SINGLE_BATCH = "B01_DM_dates"
+
+
 
 WORKING_RULES_FILE = (
     INPUT_DIR
@@ -80,7 +98,7 @@ TRIALGEN_RANDOM_SEED = 1
 
 # Demo Settings
 
-DEMO_MODE = False
+DEMO_MODE = True
 
 DEMO_DELAY = 2  # seconds
 
@@ -134,4 +152,14 @@ STANDARD = "sdtm"
 
 STANDARD_VERSION = "3.4"
 
+# -------------------------------
+# Test Approach 2
+# -------------------------------
 
+RUN_MODE_SINGLE_T2 = "single"
+
+RUN_MODE_ALL_T2 = "all"
+
+RUN_MODE_T2 = RUN_MODE_SINGLE_T2
+
+SINGLE_BATCH_T2 = "BM01"

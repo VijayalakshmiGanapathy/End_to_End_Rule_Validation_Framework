@@ -1,0 +1,684 @@
+{
+  "generated_at": "2026-07-07T06:23:59.753777",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_12wbqgty",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 1,
+  "rules_skipped": 0,
+  "rules_injected": 1,
+  "total_mutations": 27,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1125-VS-001",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 230,
+      "csv_line": 232,
+      "seq_value": "16",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "PT1H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 230
+    },
+    {
+      "error_id": "INJ-SD1125-VS-002",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 804,
+      "csv_line": 806,
+      "seq_value": "15",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 804
+    },
+    {
+      "error_id": "INJ-SD1125-VS-003",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 948,
+      "csv_line": 950,
+      "seq_value": "13",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 948
+    },
+    {
+      "error_id": "INJ-SD1125-VS-004",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 684,
+      "csv_line": 686,
+      "seq_value": "16",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "PT1H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 684
+    },
+    {
+      "error_id": "INJ-SD1125-VS-005",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 451,
+      "csv_line": 453,
+      "seq_value": "18",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "PT1H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 451
+    },
+    {
+      "error_id": "INJ-SD1125-VS-006",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 746,
+      "csv_line": 748,
+      "seq_value": "17",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 746
+    },
+    {
+      "error_id": "INJ-SD1125-VS-007",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 1051,
+      "csv_line": 1053,
+      "seq_value": "18",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "PT1H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1051
+    },
+    {
+      "error_id": "INJ-SD1125-VS-008",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 450,
+      "csv_line": 452,
+      "seq_value": "17",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 450
+    },
+    {
+      "error_id": "INJ-SD1125-VS-009",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 91,
+      "csv_line": 93,
+      "seq_value": "15",
+      "variables_modified": {
+        "VSELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 91
+    },
+    {
+      "error_id": "INJ-SD1125-EG-010",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 400,
+      "csv_line": 402,
+      "seq_value": "16",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 400
+    },
+    {
+      "error_id": "INJ-SD1125-EG-011",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 236,
+      "csv_line": 238,
+      "seq_value": "17",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 236
+    },
+    {
+      "error_id": "INJ-SD1125-EG-012",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 271,
+      "csv_line": 273,
+      "seq_value": "22",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 271
+    },
+    {
+      "error_id": "INJ-SD1125-EG-013",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 132,
+      "csv_line": 134,
+      "seq_value": "13",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 132
+    },
+    {
+      "error_id": "INJ-SD1125-EG-014",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 524,
+      "csv_line": 526,
+      "seq_value": "20",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 524
+    },
+    {
+      "error_id": "INJ-SD1125-EG-015",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 301,
+      "csv_line": 303,
+      "seq_value": "12",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT1H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 301
+    },
+    {
+      "error_id": "INJ-SD1125-EG-016",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 274,
+      "csv_line": 276,
+      "seq_value": "25",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 274
+    },
+    {
+      "error_id": "INJ-SD1125-EG-017",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 351,
+      "csv_line": 353,
+      "seq_value": "22",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 351
+    },
+    {
+      "error_id": "INJ-SD1125-EG-018",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 486,
+      "csv_line": 488,
+      "seq_value": "22",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 486
+    },
+    {
+      "error_id": "INJ-SD1125-EG-019",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 92,
+      "csv_line": 94,
+      "seq_value": "13",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 92
+    },
+    {
+      "error_id": "INJ-SD1125-EG-020",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 262,
+      "csv_line": 264,
+      "seq_value": "13",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT2H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 262
+    },
+    {
+      "error_id": "INJ-SD1125-EG-021",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 598,
+      "csv_line": 600,
+      "seq_value": "14",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 598
+    },
+    {
+      "error_id": "INJ-SD1125-EG-022",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 521,
+      "csv_line": 523,
+      "seq_value": "17",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "-PT15M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 521
+    },
+    {
+      "error_id": "INJ-SD1125-EG-023",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 310,
+      "csv_line": 312,
+      "seq_value": "21",
+      "variables_modified": {
+        "EGELTM": {
+          "original": "PT1H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 310
+    },
+    {
+      "error_id": "INJ-SD1125-PC-024",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "PC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "5",
+      "variables_modified": {
+        "PCELTM": {
+          "original": "PT4H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with PCELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1125-PC-025",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "PC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 67,
+      "csv_line": 69,
+      "seq_value": "5",
+      "variables_modified": {
+        "PCELTM": {
+          "original": "PT4H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with PCELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 67
+    },
+    {
+      "error_id": "INJ-SD1125-PC-026",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "PC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 64,
+      "csv_line": 66,
+      "seq_value": "2",
+      "variables_modified": {
+        "PCELTM": {
+          "original": "PT30M",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with PCELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 64
+    },
+    {
+      "error_id": "INJ-SD1125-PC-027",
+      "rule_id": "SD1125",
+      "rule_message": "Inconsistent value for  --ELTM within --TPT, --TPTREF and/or VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "PC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 31,
+      "csv_line": 33,
+      "seq_value": "5",
+      "variables_modified": {
+        "PCELTM": {
+          "original": "PT4H",
+          "injected": "PT99H"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with PCELTM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 31
+    }
+  ],
+  "summary_by_rule": {
+    "SD1125": 27
+  },
+  "summary_by_category": {
+    "GO1": 27
+  },
+  "summary_by_domain": {
+    "VS": 9,
+    "EG": 14,
+    "PC": 4
+  },
+  "summary_status": {
+    "injected": 27,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

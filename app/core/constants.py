@@ -21,3 +21,5 @@ TEST_VALIDATION_REPORT_FOLDER = "Test_Validation_Report"
 KWALIFY_REPORT_FOLDER = "Kwalify_reports"
 
 COMPARISON_REPORT_FOLDER = "Comparison_Report"
+
+TD_VALIDATION_FOLDER = "TD_Validation"

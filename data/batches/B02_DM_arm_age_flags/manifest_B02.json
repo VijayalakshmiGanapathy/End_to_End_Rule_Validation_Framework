@@ -1,0 +1,1516 @@
+{
+  "generated_at": "2026-07-07T05:06:59.995166",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_48tnjnud",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 31,
+  "rules_skipped": 0,
+  "rules_injected": 29,
+  "total_mutations": 60,
+  "skipped_rules": [
+    {
+      "rule_id": "SD1362",
+      "reason": "every eligible row's target cell was taken by an earlier rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD2236",
+      "reason": "every eligible row's target cell was taken by an earlier rule \u2014 re-run in a separate batch"
+    }
+  ],
+  "errors": [
+    {
+      "error_id": "INJ-SD1359-DM-001",
+      "rule_id": "SD1359",
+      "rule_message": "ARMNRS is not populated when ARMCD/ARM are not provided",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0007",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMNRS": {
+          "original": "SCREEN FAILURE",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1363-DM-001",
+      "rule_id": "SD1363",
+      "rule_message": "ARMCD/ARM is populated for a subject not assigned to treatment",
+      "category": "DM01",
+      "primitive": "populate_forbidden",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0018",
+      "row_index": 17,
+      "csv_line": 19,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "",
+          "injected": "P"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17
+    },
+    {
+      "error_id": "INJ-SD1363-DM-001",
+      "rule_id": "SD1363",
+      "rule_message": "ARMCD/ARM is populated for a subject not assigned to treatment",
+      "category": "DM01",
+      "primitive": "populate_forbidden",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0018",
+      "row_index": 17,
+      "csv_line": 19,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "",
+          "injected": "Placebo"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17
+    },
+    {
+      "error_id": "INJ-SD1364-DM-001",
+      "rule_id": "SD1364",
+      "rule_message": "ACTARMCD/ACTARM is populated for a subject who wasn't treated",
+      "category": "DM01",
+      "primitive": "populate_forbidden",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0014",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "",
+          "injected": "P"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1364-DM-001",
+      "rule_id": "SD1364",
+      "rule_message": "ACTARMCD/ACTARM is populated for a subject who wasn't treated",
+      "category": "DM01",
+      "primitive": "populate_forbidden",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0014",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARM": {
+          "original": "",
+          "injected": "Placebo"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1377-DM-001",
+      "rule_id": "SD1377",
+      "rule_message": "No records for SCREEN FAILURE subject are found in IE domain",
+      "category": "DM02",
+      "primitive": "cross_domain_orphan",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0009",
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "IE": {
+          "original": "5 rows",
+          "injected": "4 rows (1 removed)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD0066-DM-001",
+      "rule_id": "SD0066",
+      "rule_message": "Invalid ARMCD",
+      "category": "DM02",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0010",
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE1",
+          "injected": "ZZZSD0066"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TA.ARMCD (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD0071-DM-001",
+      "rule_id": "SD0071",
+      "rule_message": "Invalid ARM/ARMCD",
+      "category": "DM02",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "ZZZSD0071"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TA.ARMCD,ARM (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD0071-DM-002",
+      "rule_id": "SD0071",
+      "rule_message": "Invalid ARM/ARMCD",
+      "category": "DM02",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "ZZZSD0071"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TA.ARMCD,ARM (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD1121-DM-001",
+      "rule_id": "SD1121",
+      "rule_message": "Neither AGE nor AGETXT values are populated",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0011",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "24",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1121-DM-002",
+      "rule_id": "SD1121",
+      "rule_message": "Neither AGE nor AGETXT values are populated",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0020",
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "21",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1133-DM-001",
+      "rule_id": "SD1133",
+      "rule_message": "Inconsistent value for ACTARM",
+      "category": "DM01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ACTARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ACTARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD1133-DM-002",
+      "rule_id": "SD1133",
+      "rule_message": "Inconsistent value for ACTARM",
+      "category": "DM01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0020",
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARM": {
+          "original": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ACTARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ACTARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1134-DM-001",
+      "rule_id": "SD1134",
+      "rule_message": "Inconsistent value for ACTARMCD",
+      "category": "DM01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "DOSE1",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ACTARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1134-DM-002",
+      "rule_id": "SD1134",
+      "rule_message": "Inconsistent value for ACTARMCD",
+      "category": "DM01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0003",
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "DOSE1",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ACTARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1358-DM-002",
+      "rule_id": "SD1358",
+      "rule_message": "ARMNRS is not populated, when ACTARMCD or ACTARM is NULL",
+      "category": "DM01",
+      "primitive": "populate_forbidden",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMNRS": {
+          "original": "",
+          "injected": "SCREEN FAILURE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1360-DM-001",
+      "rule_id": "SD1360",
+      "rule_message": "ARMNRS is populated but ARMCD and ACTARMCD are populated",
+      "category": "DM01",
+      "primitive": "populate_forbidden",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMNRS": {
+          "original": "",
+          "injected": "SCREEN FAILURE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1360-DM-002",
+      "rule_id": "SD1360",
+      "rule_message": "ARMNRS is populated but ARMCD and ACTARMCD are populated",
+      "category": "DM01",
+      "primitive": "populate_forbidden",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+      "row_index": 22,
+      "csv_line": 24,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMNRS": {
+          "original": "",
+          "injected": "SCREEN FAILURE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 22
+    },
+    {
+      "error_id": "INJ-SD1361-DM-001",
+      "rule_id": "SD1361",
+      "rule_message": "ARM is populated, but ARMCD is null, or vice versa",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0017",
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD1361-DM-002",
+      "rule_id": "SD1361",
+      "rule_message": "ARM is populated, but ARMCD is null, or vice versa",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1374-DM-001",
+      "rule_id": "SD1374",
+      "rule_message": "No Disposition record found for subject",
+      "category": "DM02",
+      "primitive": "cross_domain_orphan",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0005",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "DS": {
+          "original": "55 rows",
+          "injected": "52 rows (3 removed)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1374-DM-002",
+      "rule_id": "SD1374",
+      "rule_message": "No Disposition record found for subject",
+      "category": "DM02",
+      "primitive": "cross_domain_orphan",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0002",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "DS": {
+          "original": "52 rows",
+          "injected": "49 rows (3 removed)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD2003-DM-001",
+      "rule_id": "SD2003",
+      "rule_message": "Invalid value for ACTARM",
+      "category": "DM02",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARM": {
+          "original": "INCONSISTENT ACTARM",
+          "injected": "ZZZSD2003"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TA.ARM (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD2003-DM-002",
+      "rule_id": "SD2003",
+      "rule_message": "Invalid value for ACTARM",
+      "category": "DM02",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0002",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "ZZZSD2003"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TA.ARM (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD0070-DM-001",
+      "rule_id": "SD0070",
+      "rule_message": "No Exposure record found for subject",
+      "category": "DM02",
+      "primitive": "cross_domain_orphan",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0020",
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": "1",
+      "variables_modified": {
+        "EX": {
+          "original": "44 rows",
+          "injected": "41 rows (3 removed)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 41
+    },
+    {
+      "error_id": "INJ-SD0079-DM-001",
+      "rule_id": "SD0079",
+      "rule_message": "EX record is present, when subject is not assigned to an arm",
+      "category": "INT1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE1",
+          "injected": "NOTASSGN"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs EX.USUBJID (set_source_expect_target); EX.USUBJID='COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004' (expected 'Y')",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD0084-DM-001",
+      "rule_id": "SD0084",
+      "rule_message": "Negative or zero value for AGE",
+      "category": "DM01",
+      "primitive": "set_invalid_value",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0017",
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "26",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD0084-DM-002",
+      "rule_id": "SD0084",
+      "rule_message": "Negative or zero value for AGE",
+      "category": "DM01",
+      "primitive": "set_invalid_value",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0018",
+      "row_index": 17,
+      "csv_line": 19,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "21",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17
+    },
+    {
+      "error_id": "INJ-SD1240-DM-001",
+      "rule_id": "SD1240",
+      "rule_message": "No Informed Consent Obtained record in DS domain for subject",
+      "category": "DM02",
+      "primitive": "cross_domain_orphan",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0003",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "DS": {
+          "original": "49 rows",
+          "injected": "46 rows (3 removed)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1322-DM-001",
+      "rule_id": "SD1322",
+      "rule_message": "Value for COUNTRY not found in ISO 3166",
+      "category": "DM01",
+      "primitive": "invalid_codelist",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": null,
+      "variables_modified": {
+        "COUNTRY": {
+          "original": "GBR",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD1322-DM-002",
+      "rule_id": "SD1322",
+      "rule_message": "Value for COUNTRY not found in ISO 3166",
+      "category": "DM01",
+      "primitive": "invalid_codelist",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0017",
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": null,
+      "variables_modified": {
+        "COUNTRY": {
+          "original": "GBR",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD1340-DM-001",
+      "rule_id": "SD1340",
+      "rule_message": "EX record is present, when subject is not treated",
+      "category": "INT1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0019",
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "DOSE3",
+          "injected": "NOTTRT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs EX.USUBJID (set_source_expect_target); EX.USUBJID='COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0019' (expected 'Y')",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD2001-DM-001",
+      "rule_id": "SD2001",
+      "rule_message": "Invalid value for ACTARMCD",
+      "category": "DM01",
+      "primitive": "set_invalid_value",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0009",
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD2001-DM-002",
+      "rule_id": "SD2001",
+      "rule_message": "Invalid value for ACTARMCD",
+      "category": "DM01",
+      "primitive": "set_invalid_value",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0005",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "DOSE3",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD2002-DM-001",
+      "rule_id": "SD2002",
+      "rule_message": "Invalid value for ACTARMCD",
+      "category": "DM02",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0011",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "DOSE3",
+          "injected": "ZZZSD2002"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TA.ARMCD (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD2002-DM-002",
+      "rule_id": "SD2002",
+      "rule_message": "Invalid value for ACTARMCD",
+      "category": "DM02",
+      "primitive": "cross_domain_mismatch",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0002",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARMCD": {
+          "original": "DOSE1",
+          "injected": "ZZZSD2002"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TA.ARMCD (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD2021-DM-001",
+      "rule_id": "SD2021",
+      "rule_message": "Missing values for both AGE and AGETXT, when AGEU is provided",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "26",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD2022-DM-001",
+      "rule_id": "SD2022",
+      "rule_message": "Missing value for AGEU, when AGE or AGETXT is populated",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0017",
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": null,
+      "variables_modified": {
+        "AGEU": {
+          "original": "YEARS",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD2022-DM-002",
+      "rule_id": "SD2022",
+      "rule_message": "Missing value for AGEU, when AGE or AGETXT is populated",
+      "category": "DM01",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": null,
+      "variables_modified": {
+        "AGEU": {
+          "original": "YEARS",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD2023-DM-001",
+      "rule_id": "SD2023",
+      "rule_message": "AGE is not provided",
+      "category": "DTC1",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0010",
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "19",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD2023-DM-002",
+      "rule_id": "SD2023",
+      "rule_message": "AGE is not provided",
+      "category": "DTC1",
+      "primitive": "blank_field",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+      "row_index": 22,
+      "csv_line": 24,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "24",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 22
+    },
+    {
+      "error_id": "INJ-SD2237-DM-001",
+      "rule_id": "SD2237",
+      "rule_message": "ACTARM does not equal ARM",
+      "category": "DM01",
+      "primitive": "mismatch_pair",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0011",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": null,
+      "variables_modified": {
+        "ACTARM": {
+          "original": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir_X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1033-DM-001",
+      "rule_id": "SD1033",
+      "rule_message": "Inconsistent value for ARM",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0011",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1033-DM-002",
+      "rule_id": "SD1033",
+      "rule_message": "Inconsistent value for ARM",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0003",
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1033-TA-003",
+      "rule_id": "SD1033",
+      "rule_message": "Inconsistent value for ARM",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TA",
+      "usubjid": null,
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1033-TV-004",
+      "rule_id": "SD1033",
+      "rule_message": "Inconsistent value for ARM",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD1033-TV-005",
+      "rule_id": "SD1033",
+      "rule_message": "Inconsistent value for ARM",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1033-TV-006",
+      "rule_id": "SD1033",
+      "rule_message": "Inconsistent value for ARM",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 15,
+      "csv_line": 17,
+      "seq_value": null,
+      "variables_modified": {
+        "ARM": {
+          "original": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+          "injected": "INCONSISTENT ARM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15
+    },
+    {
+      "error_id": "INJ-SD1034-DM-001",
+      "rule_id": "SD1034",
+      "rule_message": "Inconsistent value for ARMCD",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0013",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE3",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1034-DM-002",
+      "rule_id": "SD1034",
+      "rule_message": "Inconsistent value for ARMCD",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "NOTASSGN",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1034-TA-003",
+      "rule_id": "SD1034",
+      "rule_message": "Inconsistent value for ARMCD",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TA",
+      "usubjid": null,
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE3",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1034-TV-004",
+      "rule_id": "SD1034",
+      "rule_message": "Inconsistent value for ARMCD",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE3",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1034-TV-005",
+      "rule_id": "SD1034",
+      "rule_message": "Inconsistent value for ARMCD",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE1",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1034-TV-006",
+      "rule_id": "SD1034",
+      "rule_message": "Inconsistent value for ARMCD",
+      "category": "DM02",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE2",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ARMCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD1004-DM-001",
+      "rule_id": "SD1004",
+      "rule_message": "Invalid value for ARMCD",
+      "category": "DM02",
+      "primitive": "set_invalid_value",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0003",
+      "row_index": 23,
+      "csv_line": 25,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE1",
+          "injected": "TOOLONGARMCODEVALUE12345"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 23
+    },
+    {
+      "error_id": "INJ-SD1004-DM-002",
+      "rule_id": "SD1004",
+      "rule_message": "Invalid value for ARMCD",
+      "category": "DM02",
+      "primitive": "set_invalid_value",
+      "domain": "DM",
+      "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0020",
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE3",
+          "injected": "TOOLONGARMCODEVALUE12345"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD1004-TA-003",
+      "rule_id": "SD1004",
+      "rule_message": "Invalid value for ARMCD",
+      "category": "DM02",
+      "primitive": "set_invalid_value",
+      "domain": "TA",
+      "usubjid": null,
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE2",
+          "injected": "TOOLONGARMCODEVALUE12345"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1004-TV-004",
+      "rule_id": "SD1004",
+      "rule_message": "Invalid value for ARMCD",
+      "category": "DM02",
+      "primitive": "set_invalid_value",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 32,
+      "csv_line": 34,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "INCONSISTENT_CD",
+          "injected": "TOOLONGARMCODEVALUE12345"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 32
+    },
+    {
+      "error_id": "INJ-SD1004-TV-005",
+      "rule_id": "SD1004",
+      "rule_message": "Invalid value for ARMCD",
+      "category": "DM02",
+      "primitive": "set_invalid_value",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE3",
+          "injected": "TOOLONGARMCODEVALUE12345"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD1004-TV-006",
+      "rule_id": "SD1004",
+      "rule_message": "Invalid value for ARMCD",
+      "category": "DM02",
+      "primitive": "set_invalid_value",
+      "domain": "TV",
+      "usubjid": null,
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": null,
+      "variables_modified": {
+        "ARMCD": {
+          "original": "DOSE1",
+          "injected": "TOOLONGARMCODEVALUE12345"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    }
+  ],
+  "summary_by_rule": {
+    "SD1359": 1,
+    "SD1363": 2,
+    "SD1364": 2,
+    "SD1377": 1,
+    "SD0066": 1,
+    "SD0071": 2,
+    "SD1121": 2,
+    "SD1133": 2,
+    "SD1134": 2,
+    "SD1358": 1,
+    "SD1360": 2,
+    "SD1361": 2,
+    "SD1374": 2,
+    "SD2003": 2,
+    "SD0070": 1,
+    "SD0079": 1,
+    "SD0084": 2,
+    "SD1240": 1,
+    "SD1322": 2,
+    "SD1340": 1,
+    "SD2001": 2,
+    "SD2002": 2,
+    "SD2021": 1,
+    "SD2022": 2,
+    "SD2023": 2,
+    "SD2237": 1,
+    "SD1033": 6,
+    "SD1034": 6,
+    "SD1004": 6
+  },
+  "summary_by_category": {
+    "DM01": 26,
+    "DM02": 30,
+    "INT1": 2,
+    "DTC1": 2
+  },
+  "summary_by_domain": {
+    "DM": 48,
+    "TA": 3,
+    "TV": 9
+  },
+  "summary_status": {
+    "injected": 60,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

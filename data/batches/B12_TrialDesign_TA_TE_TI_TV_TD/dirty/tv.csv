@@ -1,0 +1,23 @@
+STUDYID,DOMAIN,VISITNUM,VISIT,VISITDY,ARMCD,ARM,TVSTRL,TVENRL
+NBI-1065846-MDD2020-TERPSIS,TV,1.0,SCREENING,-28,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day -28,End of SCREENING
+NBI-1065846-MDD2020-TERPSIS,TV,2.0,DAY 1 LOADING,1,SCRNFAIL,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 1,End of DAY 1 LOADING
+NBI-1065846-MDD2020-TERPSIS,TV,3.0,WEEK 2,15,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 15,End of WEEK 2
+NBI-1065846-MDD2020-TERPSIS,TV,4.0,WEEK 3,22,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 22,End of WEEK 3
+NBI-1065846-MDD2020-TERPSIS,TV,5.0,WEEK 4,29,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 29,End of WEEK 4
+NBI-1065846-MDD2020-TERPSIS,TV,6.0,WEEK 5,36,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 36,End of WEEK 5
+NBI-1065846-MDD2020-TERPSIS,TV,7.0,WEEK 6,43,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 43,End of WEEK 6
+NBI-1065846-MDD2020-TERPSIS,TV,8.0,WEEK 7,50,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 50,End of WEEK 7
+NBI-1065846-MDD2020-TERPSIS,TV,9.0,WEEK 8 EOT,57,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 57,End of WEEK 8 EOT
+NBI-1065846-MDD2020-TERPSIS,TV,10.0,SAFETY FU WEEK 4,85,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 85,End of SAFETY FU WEEK 4
+NBI-1065846-MDD2020-TERPSIS,TV,11.0,SAFETY FU WEEK 8,113,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),Study Day 113,End of SAFETY FU WEEK 8
+NBI-1065846-MDD2020-TERPSIS,TV,1.0,SCREENING,-28,SCRNFAIL,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day -28,End of SCREENING
+NBI-1065846-MDD2020-TERPSIS,TV,2.0,DAY 1 LOADING,1,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 1,End of DAY 1 LOADING
+NBI-1065846-MDD2020-TERPSIS,TV,3.0,WEEK 2,15,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 15,End of WEEK 2
+NBI-1065846-MDD2020-TERPSIS,TV,4.0,WEEK 3,22,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 22,End of WEEK 3
+NBI-1065846-MDD2020-TERPSIS,TV,5.0,WEEK 4,29,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 29,End of WEEK 4
+NBI-1065846-MDD2020-TERPSIS,TV,6.0,WEEK 5,36,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 36,End of WEEK 5
+NBI-1065846-MDD2020-TERPSIS,TV,7.0,WEEK 6,43,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 43,End of WEEK 6
+NBI-1065846-MDD2020-TERPSIS,TV,8.0,WEEK 7,50,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 50,End of WEEK 7
+NBI-1065846-MDD2020-TERPSIS,TV,9.0,WEEK 8 EOT,57,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 57,End of WEEK 8 EOT
+NBI-1065846-MDD2020-TERPSIS,TV,10.0,SAFETY FU WEEK 4,85,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 85,End of SAFETY FU WEEK 4
+NBI-1065846-MDD2020-TERPSIS,TV,11.0,SAFETY FU WEEK 8,113,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",Study Day 113,End of SAFETY FU WEEK 8

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-07-07T06:28:42.810716",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_haz05gd_",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 1,
+  "rules_skipped": 0,
+  "rules_injected": 1,
+  "total_mutations": 1,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1129-DM-001",
+      "rule_id": "SD1129",
+      "rule_message": "Neither AGE nor AGETXT variables are present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "DM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "AGE": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1129": 1
+  },
+  "summary_by_category": {
+    "VI1 & VV1": 1
+  },
+  "summary_by_domain": {
+    "DM": 1
+  },
+  "summary_status": {
+    "injected": 1,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

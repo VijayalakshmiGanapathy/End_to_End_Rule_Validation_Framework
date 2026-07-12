@@ -1,0 +1,17 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+GB001-2001,TA,GB001_20,GB001 20 mg QD,1,SCRN,Screening,,Transition to eDiary run-in,SCREENING
+GB001-2001,TA,GB001_20,GB001 20 mg QD,2,RUNIN,eDiary run-in,,Transition to Treatment,RUN_IN
+GB001-2001,TA,GB001_20,GB001 20 mg QD,3,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+GB001-2001,TA,GB001_20,GB001 20 mg QD,4,FU,Safety follow-up,,,FOLLOW-UP
+GB001-2001,TA,GB001_40,GB001 40 mg QD,1,SCRN,Screening,,Transition to eDiary run-in,SCREENING
+GB001-2001,TA,GB001_40,GB001 40 mg QD,2,RUNIN,eDiary run-in,,Transition to Treatment,RUN_IN
+GB001-2001,TA,GB001_40,GB001 40 mg QD,3,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+GB001-2001,TA,GB001_40,GB001 40 mg QD,4,FU,Safety follow-up,,,FOLLOW-UP
+GB001-2001,TA,GB001_60,GB001 60 mg QD,1,SCRN,Screening,,Transition to eDiary run-in,SCREENING
+GB001-2001,TA,GB001_60,GB001 60 mg QD,2,RUNIN,eDiary run-in,,Transition to Treatment,RUN_IN
+GB001-2001,TA,GB001_60,GB001 60 mg QD,3,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+GB001-2001,TA,GB001_60,GB001 60 mg QD,4,FU,Safety follow-up,,,FOLLOW-UP
+GB001-2001,TA,PLACEBO,Matching placebo QD,1,SCRN,Screening,,Transition to eDiary run-in,SCREENING
+GB001-2001,TA,PLACEBO,Matching placebo QD,2,RUNIN,eDiary run-in,,Transition to Treatment,RUN_IN
+GB001-2001,TA,PLACEBO,Matching placebo QD,3,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+GB001-2001,TA,PLACEBO,Matching placebo QD,4,FU,Safety follow-up,,,FOLLOW-UP

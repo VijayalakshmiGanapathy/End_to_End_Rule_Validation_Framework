@@ -1,0 +1,869 @@
+{
+  "generated_at": "2026-07-07T11:50:27.786256",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_bpl52du5",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 10,
+  "rules_skipped": 0,
+  "rules_injected": 10,
+  "total_mutations": 34,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1327-RELSUB-001",
+      "rule_id": "SD1327",
+      "rule_message": "RSUBJID is equal to POOLID",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELSUB",
+      "usubjid": "",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": null,
+      "variables_modified": {
+        "RSUBJID": {
+          "original": "SD-001",
+          "injected": "POOL-002"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1328-RELSUB-001",
+      "rule_id": "SD1328",
+      "rule_message": "RSUBJID is equal to USUBJID",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELSUB",
+      "usubjid": "SD-001",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": null,
+      "variables_modified": {
+        "RSUBJID": {
+          "original": "SD-002",
+          "injected": "SD-001"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1008-CO-001",
+      "rule_id": "SD1008",
+      "rule_message": "CODTC is populated, when comment is a child record of another domain",
+      "category": "SP01",
+      "primitive": "populate_forbidden",
+      "domain": "CO",
+      "usubjid": "SD-001",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "2",
+      "variables_modified": {
+        "CODTC": {
+          "original": "",
+          "injected": "2024-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1119-CO-001",
+      "rule_id": "SD1119",
+      "rule_message": "Inappropriate usage of variables in CO domain, when comment is a child record of another domain",
+      "category": "SP01",
+      "primitive": "populate_forbidden",
+      "domain": "CO",
+      "usubjid": "SD-005",
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "2",
+      "variables_modified": {
+        "VISIT": {
+          "original": "",
+          "injected": "Child Visit"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD1301-TD-001",
+      "rule_id": "SD1301",
+      "rule_message": "Invalid value for TDSTOFF variable",
+      "category": "TD01",
+      "primitive": "set_invalid_value",
+      "domain": "TD",
+      "usubjid": null,
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": null,
+      "variables_modified": {
+        "TDSTOFF": {
+          "original": "P0D",
+          "injected": "INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD0072-CO-001",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-001",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD0072-CO-002",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-001",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "2",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "AE",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD0072-CO-003",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-002",
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD0072-CO-004",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-002",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "2",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "AE",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD0072-CO-005",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-002",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "1",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD0072-CO-006",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-002",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "2",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "CM",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD0072-CO-007",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-005",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD0072-CO-008",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "SD-005",
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "2",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "CM",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD1235-DU-001",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-001",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-001",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1235-DU-001",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-001",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1235-DU-002",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-002",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-002",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1235-DU-002",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-002",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1235-DU-003",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-003",
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-003",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1235-DU-003",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-003",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1235-DU-004",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-004",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1235-DU-004",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-004",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1235-DU-005",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-005",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-005",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1235-DU-005",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-005",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1235-DU-006",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-006",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-006",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1235-DU-006",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-006",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1235-DU-007",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-007",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-007",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1235-DU-007",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-007",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1235-DU-008",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-008",
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-008",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD1235-DU-008",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-008",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD1235-DU-009",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "SD-010",
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "1",
+      "variables_modified": {
+        "SPDEVID": {
+          "original": "DEV-010",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD1235-DU-009",
+      "rule_id": "SD1235",
+      "rule_message": "Neither SPDEVID nor USUBJID values are populated",
+      "category": "MDAP",
+      "primitive": "blank_field",
+      "domain": "DU",
+      "usubjid": "",
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "1",
+      "variables_modified": {
+        "USUBJID": {
+          "original": "SD-010",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD1337-RS-001",
+      "rule_id": "SD1337",
+      "rule_message": "RSLNKID value does not exist in TR domain",
+      "category": "FND1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RS",
+      "usubjid": "SD-004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "RSLNKID": {
+          "original": "TR-L004",
+          "injected": "ZZZSD1337"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TR.TRLNKID (not_in_target_set); target_set_size=9",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1338-RS-001",
+      "rule_id": "SD1338",
+      "rule_message": "RSLNKGRP value does not exist in TR domain",
+      "category": "FND1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RS",
+      "usubjid": "SD-004",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "RSLNKGRP": {
+          "original": "LNK-G001",
+          "injected": "ZZZSD1338"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TR.TRLNKGRP (not_in_target_set); target_set_size=1",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1368-SM-001",
+      "rule_id": "SD1368",
+      "rule_message": "SMSTDTC is null",
+      "category": "SP01",
+      "primitive": "blank_field",
+      "domain": "SM",
+      "usubjid": "SD-008",
+      "row_index": 38,
+      "csv_line": 40,
+      "seq_value": "4",
+      "variables_modified": {
+        "SMSTDTC": {
+          "original": "2025-08-01",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 38
+    }
+  ],
+  "summary_by_rule": {
+    "SD1327": 1,
+    "SD1328": 1,
+    "SD1008": 1,
+    "SD1119": 1,
+    "SD1301": 1,
+    "SD0072": 8,
+    "SD1235": 18,
+    "SD1337": 1,
+    "SD1338": 1,
+    "SD1368": 1
+  },
+  "summary_by_category": {
+    "REL1": 2,
+    "SP01": 3,
+    "TD01": 1,
+    "Re-order": 8,
+    "MDAP": 18,
+    "FND1": 2
+  },
+  "summary_by_domain": {
+    "RELSUB": 2,
+    "CO": 10,
+    "TD": 1,
+    "DU": 18,
+    "RS": 2,
+    "SM": 1
+  },
+  "summary_status": {
+    "injected": 34,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

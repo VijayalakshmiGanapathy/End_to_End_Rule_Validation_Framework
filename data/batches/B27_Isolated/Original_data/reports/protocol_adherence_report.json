@@ -1,0 +1,6369 @@
+{
+  "study_id": "BI-1245.110",
+  "generated_at": "2026-07-07T06:20:15.102608+00:00",
+  "summary": {
+    "total_enrolled": 18,
+    "subjects_with_deviations": 16,
+    "total_deviations": 568,
+    "deviation_rate_pct": 88.9,
+    "overall_visit_compliance_pct": 77.2,
+    "overall_dose_compliance_pct": 93.0
+  },
+  "protocol_deviations": {
+    "by_category": {
+      "MINOR": 568
+    },
+    "by_decod": {
+      "MISSED DOSE": 513,
+      "VISIT OCCURRED OUTSIDE VISIT WINDOW": 41,
+      "DOSE MODIFICATION": 11,
+      "MISSED ASSESSMENT": 3
+    },
+    "by_arm": {
+      "Matching placebo QD": 300,
+      "Empagliflozin 10 mg QD": 268
+    },
+    "by_visit": {},
+    "deviations_leading_to_discontinuation": 0,
+    "subject_level": [
+      {
+        "usubjid": "BI-1245.110-ARG_SITE01-0017",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-05-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-06-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit MONTH 6 occurred 1 days late (Day 184 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed PLACEBO dose on 2024-12-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-12-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-12-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed PLACEBO dose on 2024-12-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2025-01-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed PLACEBO dose on 2025-02-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Visit MONTH 12 occurred 5 days early (Day 360 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2025-07-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2025-09-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2026-02-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2026-02-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2026-03-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2026-03-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Visit MONTH 24 occurred 7 days late (Day 737 vs planned Day 730)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2026-03-28",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 15
+      },
+      {
+        "usubjid": "BI-1245.110-BRA_SITE01-0010",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Visit MONTH 6 occurred 2 days late (Day 185 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Visit MONTH 12 occurred 11 days early (Day 354 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Visit MONTH 18 occurred 6 days late (Day 553 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-09-23",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 42
+      },
+      {
+        "usubjid": "BI-1245.110-BRA_SITE01-0020",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 4 occurred 2 days late (Day 31 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Visit MONTH 6 occurred 2 days early (Day 181 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "44",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "45",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "46",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "47",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "48",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "49",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "50",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "51",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "52",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-06-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "53",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-06-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "54",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-06-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "55",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-06-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "56",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-06-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "57",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-07-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "58",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-07-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "59",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "60",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-07-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "61",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-07-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "62",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-08-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "63",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-08-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "64",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-08-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "65",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-08-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "66",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-08-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "67",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-09-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "68",
+            "term": "Visit MONTH 18 occurred 4 days late (Day 551 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-09-18",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 68
+      },
+      {
+        "usubjid": "BI-1245.110-CAN_SITE01-0008",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 4 occurred 4 days early (Day 25 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Visit MONTH 6 occurred 3 days late (Day 186 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Visit MONTH 12 occurred 2 days late (Day 367 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-26",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 29
+      },
+      {
+        "usubjid": "BI-1245.110-CAN_SITE01-0015",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 4 occurred 2 days late (Day 31 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Visit WEEK 12 occurred 0 days late (Day 85 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-11",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 25
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE01-0003",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 4 occurred 4 days early (Day 25 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-04-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed PLACEBO dose on 2024-05-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed PLACEBO dose on 2024-06-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-08-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-09-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed PLACEBO dose on 2024-09-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2024-12-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed PLACEBO dose on 2024-12-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed PLACEBO dose on 2025-02-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2025-03-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2025-05-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2025-05-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2025-07-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed PLACEBO dose on 2025-08-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed PLACEBO dose on 2025-09-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed PLACEBO dose on 2025-10-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-10-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed PLACEBO dose on 2025-11-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-11-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed PLACEBO dose on 2025-12-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-12-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed PLACEBO dose on 2025-12-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-12-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed PLACEBO dose on 2025-12-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-12-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed PLACEBO dose on 2026-01-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2026-01-03",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 22
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE01-0013",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-04-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-05-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed PLACEBO dose on 2024-05-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed PLACEBO dose on 2024-05-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-05-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-06-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed PLACEBO dose on 2024-06-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2024-06-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Visit WEEK 12 occurred 6 days late (Day 91 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed PLACEBO dose on 2024-06-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2024-06-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2024-07-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2024-07-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2024-08-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed PLACEBO dose on 2024-08-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed PLACEBO dose on 2024-08-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed PLACEBO dose on 2024-09-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed PLACEBO dose on 2024-09-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed PLACEBO dose on 2024-09-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Visit MONTH 6 occurred 6 days late (Day 189 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-10-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed PLACEBO dose on 2024-10-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed PLACEBO dose on 2024-10-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed PLACEBO dose on 2024-10-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed PLACEBO dose on 2024-10-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed PLACEBO dose on 2024-10-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed PLACEBO dose on 2024-11-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed PLACEBO dose on 2024-11-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed PLACEBO dose on 2024-11-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed PLACEBO dose on 2024-12-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed PLACEBO dose on 2024-12-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed PLACEBO dose on 2024-12-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed PLACEBO dose on 2024-12-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed PLACEBO dose on 2024-12-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed PLACEBO dose on 2024-12-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed PLACEBO dose on 2024-12-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed PLACEBO dose on 2025-01-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed PLACEBO dose on 2025-01-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed PLACEBO dose on 2025-01-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed PLACEBO dose on 2025-01-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed PLACEBO dose on 2025-02-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed PLACEBO dose on 2025-02-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Missed PLACEBO dose on 2025-02-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Missed PLACEBO dose on 2025-02-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "44",
+            "term": "Missed PLACEBO dose on 2025-03-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "45",
+            "term": "Missed PLACEBO dose on 2025-03-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "46",
+            "term": "Missed PLACEBO dose on 2025-03-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "47",
+            "term": "Visit MONTH 18 occurred 1 days early (Day 546 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-09-24",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 47
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE02-0007",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 4 occurred 5 days early (Day 24 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Visit WEEK 12 occurred 0 days late (Day 85 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-08-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Visit MONTH 6 occurred 10 days late (Day 193 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-02-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Vital signs assessment not performed at MONTH 12",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2025-03-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "44",
+            "term": "Visit MONTH 18 occurred 10 days early (Day 537 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-09-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "45",
+            "term": "Visit EOT occurred 9 days early (Day 799 vs planned Day 808)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2026-05-28",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 45
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE02-0014",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit MONTH 6 occurred 1 days early (Day 182 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Visit MONTH 18 occurred 1 days early (Day 546 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-09-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed EMPAGLIFLOZIN dose on 2026-01-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2026-01-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Visit MONTH 24 occurred 0 days late (Day 730 vs planned Day 730)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2026-03-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2026-03-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2026-03-25",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 10
+      },
+      {
+        "usubjid": "BI-1245.110-KOR_SITE01-0012",
+        "arm": "Matching placebo QD",
+        "deviations": [],
+        "total_deviations": 0
+      },
+      {
+        "usubjid": "BI-1245.110-MEX_SITE01-0016",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-03-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 4 occurred 5 days early (Day 24 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Visit MONTH 6 occurred 13 days late (Day 196 vs planned Day 183)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Visit MONTH 12 occurred 2 days late (Day 367 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Dose modified from 10.0 to 5.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-20",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 24
+      },
+      {
+        "usubjid": "BI-1245.110-MEX_SITE01-0019",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-03-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-03-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed PLACEBO dose on 2024-03-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed PLACEBO dose on 2024-04-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-04-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-04-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed PLACEBO dose on 2024-05-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2024-05-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed PLACEBO dose on 2024-05-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Visit WEEK 12 occurred 1 days early (Day 84 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2024-06-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2024-06-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2024-06-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2024-07-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed PLACEBO dose on 2024-07-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed PLACEBO dose on 2024-08-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed PLACEBO dose on 2024-08-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed PLACEBO dose on 2024-08-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed PLACEBO dose on 2024-09-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed PLACEBO dose on 2024-09-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed PLACEBO dose on 2024-09-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed PLACEBO dose on 2024-09-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed PLACEBO dose on 2024-09-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed PLACEBO dose on 2024-09-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed PLACEBO dose on 2024-10-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed PLACEBO dose on 2024-10-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed PLACEBO dose on 2024-11-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed PLACEBO dose on 2024-11-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed PLACEBO dose on 2024-11-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed PLACEBO dose on 2024-11-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed PLACEBO dose on 2024-11-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed PLACEBO dose on 2024-11-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed PLACEBO dose on 2024-12-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed PLACEBO dose on 2024-12-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed PLACEBO dose on 2024-12-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed PLACEBO dose on 2024-12-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Visit MONTH 12 occurred 12 days late (Day 377 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Visit MONTH 24 occurred 11 days early (Day 719 vs planned Day 730)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2026-02-16",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 38
+      },
+      {
+        "usubjid": "BI-1245.110-POL_SITE01-0004",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-02-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-02-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed PLACEBO dose on 2024-02-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Vital signs assessment not performed at WEEK 4",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-03-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-03-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-03-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed PLACEBO dose on 2024-04-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2024-04-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed PLACEBO dose on 2024-04-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed PLACEBO dose on 2024-04-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2024-05-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2024-05-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2024-05-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2024-05-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed PLACEBO dose on 2024-05-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed PLACEBO dose on 2024-05-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed PLACEBO dose on 2024-06-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed PLACEBO dose on 2024-06-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed PLACEBO dose on 2024-06-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed PLACEBO dose on 2024-06-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed PLACEBO dose on 2024-06-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed PLACEBO dose on 2024-06-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed PLACEBO dose on 2024-06-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed PLACEBO dose on 2024-07-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed PLACEBO dose on 2024-07-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed PLACEBO dose on 2024-07-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed PLACEBO dose on 2024-08-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed PLACEBO dose on 2024-08-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed PLACEBO dose on 2024-08-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed PLACEBO dose on 2024-09-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed PLACEBO dose on 2024-09-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed PLACEBO dose on 2024-09-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed PLACEBO dose on 2024-10-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed PLACEBO dose on 2024-10-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed PLACEBO dose on 2024-10-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed PLACEBO dose on 2024-10-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed PLACEBO dose on 2024-10-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed PLACEBO dose on 2024-10-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed PLACEBO dose on 2024-11-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed PLACEBO dose on 2024-11-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed PLACEBO dose on 2024-11-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Missed PLACEBO dose on 2024-12-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Missed PLACEBO dose on 2024-12-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-11",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 43
+      },
+      {
+        "usubjid": "BI-1245.110-POL_SITE01-0006",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-04-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-05-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed PLACEBO dose on 2024-05-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed PLACEBO dose on 2024-05-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-05-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-06-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed PLACEBO dose on 2024-07-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2024-07-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed PLACEBO dose on 2024-07-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed PLACEBO dose on 2024-08-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2024-08-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2024-11-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2024-11-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2024-12-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed PLACEBO dose on 2024-12-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed PLACEBO dose on 2024-12-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed PLACEBO dose on 2025-01-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed PLACEBO dose on 2025-02-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed PLACEBO dose on 2025-02-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed PLACEBO dose on 2025-02-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed PLACEBO dose on 2025-04-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed PLACEBO dose on 2025-04-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed PLACEBO dose on 2025-05-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed PLACEBO dose on 2025-05-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed PLACEBO dose on 2025-05-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed PLACEBO dose on 2025-06-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed PLACEBO dose on 2025-07-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed PLACEBO dose on 2025-07-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed PLACEBO dose on 2025-07-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed PLACEBO dose on 2025-08-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed PLACEBO dose on 2025-08-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed PLACEBO dose on 2025-08-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed PLACEBO dose on 2025-09-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed PLACEBO dose on 2025-09-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Visit MONTH 18 occurred 3 days early (Day 544 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-10-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed PLACEBO dose on 2025-10-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-10-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed PLACEBO dose on 2025-11-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-11-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed PLACEBO dose on 2025-11-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-11-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed PLACEBO dose on 2025-11-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-11-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed PLACEBO dose on 2025-11-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-11-16",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 40
+      },
+      {
+        "usubjid": "BI-1245.110-RUS_SITE01-0011",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-04-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-04-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed PLACEBO dose on 2024-04-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed PLACEBO dose on 2024-05-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-06-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-06-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Visit WEEK 12 occurred 3 days early (Day 82 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2024-07-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed PLACEBO dose on 2024-07-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed PLACEBO dose on 2024-08-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2024-09-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2024-09-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2024-09-16",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2024-10-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed PLACEBO dose on 2024-10-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed PLACEBO dose on 2024-10-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed PLACEBO dose on 2024-10-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed PLACEBO dose on 2024-11-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed PLACEBO dose on 2024-11-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed PLACEBO dose on 2024-11-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed PLACEBO dose on 2024-12-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed PLACEBO dose on 2024-12-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed PLACEBO dose on 2024-12-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed PLACEBO dose on 2024-12-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed PLACEBO dose on 2025-01-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed PLACEBO dose on 2025-01-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed PLACEBO dose on 2025-01-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed PLACEBO dose on 2025-02-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed PLACEBO dose on 2025-02-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed PLACEBO dose on 2025-02-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Missed PLACEBO dose on 2025-03-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed PLACEBO dose on 2025-03-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed PLACEBO dose on 2025-04-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed PLACEBO dose on 2025-04-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed PLACEBO dose on 2025-04-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed PLACEBO dose on 2025-05-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed PLACEBO dose on 2025-05-06",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed PLACEBO dose on 2025-05-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed PLACEBO dose on 2025-06-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed PLACEBO dose on 2025-06-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed PLACEBO dose on 2025-07-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Missed PLACEBO dose on 2025-07-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Missed PLACEBO dose on 2025-08-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "44",
+            "term": "Missed PLACEBO dose on 2025-09-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "45",
+            "term": "Missed PLACEBO dose on 2025-09-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "46",
+            "term": "Missed PLACEBO dose on 2025-09-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-09-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "47",
+            "term": "Visit MONTH 18 occurred 14 days early (Day 533 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-09-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "48",
+            "term": "Missed PLACEBO dose on 2025-10-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-10-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "49",
+            "term": "Visit MONTH 24 occurred 5 days late (Day 735 vs planned Day 730)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2026-04-19",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 49
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE01-0005",
+        "arm": "Matching placebo QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-03-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-04-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed PLACEBO dose on 2024-04-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed PLACEBO dose on 2024-05-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed PLACEBO dose on 2024-06-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed PLACEBO dose on 2024-06-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Missed PLACEBO dose on 2024-06-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed PLACEBO dose on 2024-07-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed PLACEBO dose on 2024-07-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed PLACEBO dose on 2024-07-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed PLACEBO dose on 2024-08-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed PLACEBO dose on 2024-08-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed PLACEBO dose on 2024-09-03",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed PLACEBO dose on 2024-09-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed PLACEBO dose on 2024-10-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed PLACEBO dose on 2024-10-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed PLACEBO dose on 2024-10-15",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed PLACEBO dose on 2024-10-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Missed PLACEBO dose on 2024-10-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed PLACEBO dose on 2024-12-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed PLACEBO dose on 2024-12-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed PLACEBO dose on 2024-12-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed PLACEBO dose on 2024-12-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed PLACEBO dose on 2024-12-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed PLACEBO dose on 2025-01-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "26",
+            "term": "Missed PLACEBO dose on 2025-01-29",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-29",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "27",
+            "term": "Missed PLACEBO dose on 2025-02-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-02-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "28",
+            "term": "Missed PLACEBO dose on 2025-03-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "29",
+            "term": "Missed PLACEBO dose on 2025-03-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "30",
+            "term": "Missed PLACEBO dose on 2025-03-17",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-17",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "31",
+            "term": "Visit MONTH 12 occurred 10 days late (Day 375 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "32",
+            "term": "Missed PLACEBO dose on 2025-03-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "33",
+            "term": "Missed PLACEBO dose on 2025-04-04",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "34",
+            "term": "Missed PLACEBO dose on 2025-04-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "35",
+            "term": "Missed PLACEBO dose on 2025-04-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "36",
+            "term": "Missed PLACEBO dose on 2025-04-25",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "37",
+            "term": "Missed PLACEBO dose on 2025-04-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "38",
+            "term": "Missed PLACEBO dose on 2025-05-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "39",
+            "term": "Missed PLACEBO dose on 2025-06-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-06-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "40",
+            "term": "Missed PLACEBO dose on 2025-07-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-07-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "41",
+            "term": "Missed PLACEBO dose on 2025-08-19",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "42",
+            "term": "Missed PLACEBO dose on 2025-08-31",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-08-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "43",
+            "term": "Visit MONTH 18 occurred 10 days late (Day 557 vs planned Day 547)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-09-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "44",
+            "term": "Missed PLACEBO dose on 2025-10-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-10-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "45",
+            "term": "Missed PLACEBO dose on 2025-10-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-10-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "46",
+            "term": "Visit EOT occurred 8 days early (Day 800 vs planned Day 808)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2026-05-25",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 46
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE01-0018",
+        "arm": "Matching placebo QD",
+        "deviations": [],
+        "total_deviations": 0
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE02-0002",
+        "arm": "Empagliflozin 10 mg QD",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-04-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Vital signs assessment not performed at WEEK 4",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-05-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-05-28",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-05",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-06-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Visit WEEK 12 occurred 4 days late (Day 89 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-24",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "9",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-07-26",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "10",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-09-14",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-14",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "11",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-01",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "12",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-10-23",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-10-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "13",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-11-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "14",
+            "term": "Missed EMPAGLIFLOZIN dose on 2024-12-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-12-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "15",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-01-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-01-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "16",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-07",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "17",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-21",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "18",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-03-30",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-03-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "19",
+            "term": "Visit MONTH 12 occurred 0 days late (Day 365 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-04-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "20",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-09",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "21",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-13",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "22",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-04-27",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-04-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "23",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-02",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "24",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-10",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "25",
+            "term": "Missed EMPAGLIFLOZIN dose on 2025-05-12",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2025-05-12",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 25
+      }
+    ]
+  },
+  "visit_compliance": {
+    "planned_visits": [
+      "SCREENING",
+      "BASELINE",
+      "WEEK 4",
+      "WEEK 12",
+      "MONTH 6",
+      "MONTH 12",
+      "MONTH 18",
+      "MONTH 24",
+      "EOT",
+      "SAFETY FU"
+    ],
+    "per_visit": {
+      "SCREENING": {
+        "planned": 18,
+        "attended": 18,
+        "compliance_pct": 100.0,
+        "planned_study_day": -28.0,
+        "median_actual_study_day": -39.0,
+        "within_window_pct": 5.6,
+        "out_of_window_count": 17
+      },
+      "BASELINE": {
+        "planned": 18,
+        "attended": 18,
+        "compliance_pct": 100.0,
+        "planned_study_day": 1.0,
+        "median_actual_study_day": 1.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 4": {
+        "planned": 18,
+        "attended": 16,
+        "compliance_pct": 88.9,
+        "planned_study_day": 29.0,
+        "median_actual_study_day": 30.0,
+        "within_window_pct": 56.2,
+        "out_of_window_count": 7
+      },
+      "WEEK 12": {
+        "planned": 18,
+        "attended": 16,
+        "compliance_pct": 88.9,
+        "planned_study_day": 85.0,
+        "median_actual_study_day": 85.0,
+        "within_window_pct": 50.0,
+        "out_of_window_count": 8
+      },
+      "MONTH 6": {
+        "planned": 18,
+        "attended": 16,
+        "compliance_pct": 88.9,
+        "planned_study_day": 183.0,
+        "median_actual_study_day": 185.0,
+        "within_window_pct": 43.8,
+        "out_of_window_count": 9
+      },
+      "MONTH 12": {
+        "planned": 18,
+        "attended": 16,
+        "compliance_pct": 88.9,
+        "planned_study_day": 365.0,
+        "median_actual_study_day": 368.0,
+        "within_window_pct": 31.2,
+        "out_of_window_count": 11
+      },
+      "MONTH 18": {
+        "planned": 18,
+        "attended": 13,
+        "compliance_pct": 72.2,
+        "planned_study_day": 547.0,
+        "median_actual_study_day": 546.0,
+        "within_window_pct": 30.8,
+        "out_of_window_count": 9
+      },
+      "MONTH 24": {
+        "planned": 18,
+        "attended": 11,
+        "compliance_pct": 61.1,
+        "planned_study_day": 730.0,
+        "median_actual_study_day": 729.0,
+        "within_window_pct": 18.2,
+        "out_of_window_count": 9
+      },
+      "EOT": {
+        "planned": 18,
+        "attended": 11,
+        "compliance_pct": 61.1,
+        "planned_study_day": 808.0,
+        "median_actual_study_day": 802.0,
+        "within_window_pct": 18.2,
+        "out_of_window_count": 9
+      },
+      "SAFETY FU": {
+        "planned": 18,
+        "attended": 4,
+        "compliance_pct": 22.2,
+        "planned_study_day": 838.0,
+        "median_actual_study_day": 838.0,
+        "within_window_pct": 75.0,
+        "out_of_window_count": 1
+      }
+    },
+    "per_subject": [
+      {
+        "usubjid": "BI-1245.110-ARG_SITE01-0017",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 9,
+        "compliance_pct": 90.0,
+        "missed_visits": [
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-BRA_SITE01-0010",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 9,
+        "compliance_pct": 90.0,
+        "missed_visits": [
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-BRA_SITE01-0020",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "BI-1245.110-CAN_SITE01-0008",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 6,
+        "compliance_pct": 60.0,
+        "missed_visits": [
+          "MONTH 18",
+          "MONTH 24",
+          "EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-CAN_SITE01-0015",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 6,
+        "compliance_pct": 60.0,
+        "missed_visits": [
+          "MONTH 18",
+          "MONTH 24",
+          "EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE01-0003",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE01-0013",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 7,
+        "compliance_pct": 70.0,
+        "missed_visits": [
+          "MONTH 24",
+          "EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE02-0007",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 9,
+        "compliance_pct": 90.0,
+        "missed_visits": [
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE02-0014",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "BI-1245.110-KOR_SITE01-0012",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 2,
+        "compliance_pct": 20.0,
+        "missed_visits": [
+          "WEEK 4",
+          "WEEK 12",
+          "MONTH 6",
+          "MONTH 12",
+          "MONTH 18",
+          "MONTH 24",
+          "EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-MEX_SITE01-0016",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 7,
+        "compliance_pct": 70.0,
+        "missed_visits": [
+          "MONTH 24",
+          "EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-MEX_SITE01-0019",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 9,
+        "compliance_pct": 90.0,
+        "missed_visits": [
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-POL_SITE01-0004",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 9,
+        "compliance_pct": 90.0,
+        "missed_visits": [
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-POL_SITE01-0006",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "BI-1245.110-RUS_SITE01-0011",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 9,
+        "compliance_pct": 90.0,
+        "missed_visits": [
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE01-0005",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 9,
+        "compliance_pct": 90.0,
+        "missed_visits": [
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE01-0018",
+        "arm": "Matching placebo QD",
+        "visits_planned": 10,
+        "visits_attended": 2,
+        "compliance_pct": 20.0,
+        "missed_visits": [
+          "WEEK 4",
+          "WEEK 12",
+          "MONTH 6",
+          "MONTH 12",
+          "MONTH 18",
+          "MONTH 24",
+          "EOT",
+          "SAFETY FU"
+        ]
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE02-0002",
+        "arm": "Empagliflozin 10 mg QD",
+        "visits_planned": 10,
+        "visits_attended": 6,
+        "compliance_pct": 60.0,
+        "missed_visits": [
+          "MONTH 18",
+          "MONTH 24",
+          "EOT",
+          "SAFETY FU"
+        ]
+      }
+    ]
+  },
+  "dose_compliance": {
+    "per_subject": [
+      {
+        "usubjid": "BI-1245.110-ARG_SITE01-0017",
+        "arm": "Matching placebo QD",
+        "planned_doses": 750,
+        "administered_doses": 737,
+        "compliance_pct": 98.3,
+        "first_dose_dtc": "2024-03-22",
+        "last_dose_dtc": "2026-04-10",
+        "exposure_days": 749
+      },
+      {
+        "usubjid": "BI-1245.110-BRA_SITE01-0010",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 300,
+        "administered_doses": 261,
+        "compliance_pct": 87.0,
+        "first_dose_dtc": "2024-03-20",
+        "last_dose_dtc": "2025-01-13",
+        "exposure_days": 299,
+        "total_dose": 20.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "BI-1245.110-BRA_SITE01-0020",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 538,
+        "administered_doses": 474,
+        "compliance_pct": 88.1,
+        "first_dose_dtc": "2024-03-17",
+        "last_dose_dtc": "2025-09-05",
+        "exposure_days": 537,
+        "total_dose": 65.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "BI-1245.110-CAN_SITE01-0008",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 381,
+        "administered_doses": 358,
+        "compliance_pct": 94.0,
+        "first_dose_dtc": "2024-03-18",
+        "last_dose_dtc": "2025-03-10",
+        "exposure_days": 357,
+        "total_dose": 30.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "BI-1245.110-CAN_SITE01-0015",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 360,
+        "administered_doses": 336,
+        "compliance_pct": 93.3,
+        "first_dose_dtc": "2024-04-25",
+        "last_dose_dtc": "2025-04-19",
+        "exposure_days": 359,
+        "total_dose": 20.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE01-0003",
+        "arm": "Matching placebo QD",
+        "planned_doses": 670,
+        "administered_doses": 648,
+        "compliance_pct": 96.7,
+        "first_dose_dtc": "2024-03-12",
+        "last_dose_dtc": "2026-01-10",
+        "exposure_days": 669
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE01-0013",
+        "arm": "Matching placebo QD",
+        "planned_doses": 369,
+        "administered_doses": 323,
+        "compliance_pct": 87.5,
+        "first_dose_dtc": "2024-03-28",
+        "last_dose_dtc": "2025-03-31",
+        "exposure_days": 368
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE02-0007",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 375,
+        "administered_doses": 331,
+        "compliance_pct": 88.3,
+        "first_dose_dtc": "2024-03-21",
+        "last_dose_dtc": "2025-03-30",
+        "exposure_days": 374,
+        "total_dose": 10.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "BI-1245.110-JPN_SITE02-0014",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 780,
+        "administered_doses": 773,
+        "compliance_pct": 99.1,
+        "first_dose_dtc": "2024-03-21",
+        "last_dose_dtc": "2026-05-09",
+        "exposure_days": 779,
+        "total_dose": 50.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "BI-1245.110-KOR_SITE01-0012",
+        "arm": "Matching placebo QD",
+        "planned_doses": 14,
+        "administered_doses": 14,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-05-03",
+        "last_dose_dtc": "2024-05-16",
+        "exposure_days": 13
+      },
+      {
+        "usubjid": "BI-1245.110-MEX_SITE01-0016",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 420,
+        "administered_doses": 399,
+        "compliance_pct": 95.0,
+        "first_dose_dtc": "2024-03-10",
+        "last_dose_dtc": "2025-05-03",
+        "exposure_days": 419,
+        "total_dose": 40.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "BI-1245.110-MEX_SITE01-0019",
+        "arm": "Matching placebo QD",
+        "planned_doses": 331,
+        "administered_doses": 296,
+        "compliance_pct": 89.4,
+        "first_dose_dtc": "2024-02-29",
+        "last_dose_dtc": "2025-01-24",
+        "exposure_days": 330
+      },
+      {
+        "usubjid": "BI-1245.110-POL_SITE01-0004",
+        "arm": "Matching placebo QD",
+        "planned_doses": 307,
+        "administered_doses": 264,
+        "compliance_pct": 86.0,
+        "first_dose_dtc": "2024-02-12",
+        "last_dose_dtc": "2024-12-14",
+        "exposure_days": 306
+      },
+      {
+        "usubjid": "BI-1245.110-POL_SITE01-0006",
+        "arm": "Matching placebo QD",
+        "planned_doses": 597,
+        "administered_doses": 557,
+        "compliance_pct": 93.3,
+        "first_dose_dtc": "2024-04-12",
+        "last_dose_dtc": "2025-11-29",
+        "exposure_days": 596
+      },
+      {
+        "usubjid": "BI-1245.110-RUS_SITE01-0011",
+        "arm": "Matching placebo QD",
+        "planned_doses": 555,
+        "administered_doses": 507,
+        "compliance_pct": 91.4,
+        "first_dose_dtc": "2024-04-15",
+        "last_dose_dtc": "2025-10-21",
+        "exposure_days": 554
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE01-0005",
+        "arm": "Matching placebo QD",
+        "planned_doses": 579,
+        "administered_doses": 535,
+        "compliance_pct": 92.4,
+        "first_dose_dtc": "2024-03-17",
+        "last_dose_dtc": "2025-10-16",
+        "exposure_days": 578
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE01-0018",
+        "arm": "Matching placebo QD",
+        "planned_doses": 20,
+        "administered_doses": 20,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-01",
+        "last_dose_dtc": "2024-02-20",
+        "exposure_days": 19
+      },
+      {
+        "usubjid": "BI-1245.110-USA_SITE02-0002",
+        "arm": "Empagliflozin 10 mg QD",
+        "planned_doses": 408,
+        "administered_doses": 385,
+        "compliance_pct": 94.4,
+        "first_dose_dtc": "2024-04-10",
+        "last_dose_dtc": "2025-05-22",
+        "exposure_days": 407,
+        "total_dose": 25.0,
+        "dose_unit": "mg"
+      }
+    ],
+    "summary": {
+      "mean_compliance_pct": 93.0,
+      "subjects_below_80pct": []
+    }
+  },
+  "screen_failures": {
+    "total": 2,
+    "by_reason": {
+      "ELIGIBILITY CRITERIA NOT MET": 2,
+      "INFORMED CONSENT OBTAINED": 2
+    },
+    "by_ie_criterion": {
+      "EXCL05": {
+        "test": "Subject has participated in another clinical trial within 30 days",
+        "category": "EXCLUSION",
+        "failed_count": 1
+      },
+      "INCL03": {
+        "test": "Subject meets diagnosis criteria for the study indication",
+        "category": "INCLUSION",
+        "failed_count": 1
+      }
+    },
+    "by_site": {
+      "GBR_SITE01": 1,
+      "USA_SITE01": 1
+    }
+  }
+}

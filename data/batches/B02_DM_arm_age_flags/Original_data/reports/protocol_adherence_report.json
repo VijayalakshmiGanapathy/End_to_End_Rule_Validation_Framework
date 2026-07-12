@@ -1,0 +1,861 @@
+{
+  "study_id": "COVHIC001-CHALLENGE",
+  "generated_at": "2026-07-07T05:03:08.407139+00:00",
+  "summary": {
+    "total_enrolled": 15,
+    "subjects_with_deviations": 14,
+    "total_deviations": 28,
+    "deviation_rate_pct": 93.3,
+    "overall_visit_compliance_pct": 100.0,
+    "overall_dose_compliance_pct": 95.7
+  },
+  "protocol_deviations": {
+    "by_category": {
+      "MINOR": 28
+    },
+    "by_decod": {
+      "DOSE MODIFICATION": 8,
+      "MISSED ASSESSMENT": 5,
+      "VISIT OCCURRED OUTSIDE VISIT WINDOW": 12,
+      "MISSED DOSE": 3
+    },
+    "by_arm": {
+      "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir": 16,
+      "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir": 11,
+      "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir": 1
+    },
+    "by_visit": {},
+    "deviations_leading_to_discontinuation": 0,
+    "subject_level": [
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0001",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 1000.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Vital signs assessment not performed at MONTH 6 FU",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-09-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit MONTH 12 FU occurred 2 days early (Day 363 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-26",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0002",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 10.0 to 100.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit MONTH 3 FU occurred 4 days early (Day 86 vs planned Day 90)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit MONTH 6 FU occurred 2 days late (Day 182 vs planned Day 180)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-08-22",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0003",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit MONTH 6 FU occurred 7 days early (Day 173 vs planned Day 180)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-08-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit MONTH 12 FU occurred 11 days late (Day 376 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-02-27",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed SARS-COV-2-CHALLENGE dose on 2024-03-11",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Dose modified from 10.0 to 100.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-14",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0005",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit MONTH 12 FU occurred 5 days early (Day 360 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-08",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0006",
+        "arm": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit DAY 28 FU occurred 1 days late (Day 29 vs planned Day 28)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-27",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0010",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 10.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-21",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0011",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed REMDESIVIR dose on 2024-04-20",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit DAY 28 FU occurred 3 days early (Day 25 vs planned Day 28)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Vital signs assessment not performed at MONTH 12 FU",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2025-02-21",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0013",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 1000.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Dose modified from 1000.0 to 100.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Missed REMDESIVIR dose on 2024-05-18",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit MONTH 3 FU occurred 2 days late (Day 92 vs planned Day 90)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-08-12",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 4
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit DAY 28 FU occurred 1 days late (Day 29 vs planned Day 28)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Vital signs assessment not performed at MONTH 3 FU",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-07-07",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0016",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 1000.0 to 100.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit MONTH 3 FU occurred 1 days early (Day 89 vs planned Day 90)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Vital signs assessment not performed at MONTH 3 FU",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-07-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit MONTH 12 FU occurred 9 days early (Day 356 vs planned Day 365)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-03-29",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 4
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0017",
+        "arm": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [],
+        "total_deviations": 0
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0019",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Vital signs assessment not performed at DAY 4 QUARANTINE",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-02-02",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0020",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 1000.0 to 200.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-16",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      }
+    ]
+  },
+  "visit_compliance": {
+    "planned_visits": [
+      "SCREENING",
+      "DAY 1 INOCULATION",
+      "DAY 4 QUARANTINE",
+      "DAY 7 QUARANTINE",
+      "DAY 14 DISCHARGE",
+      "DAY 28 FU",
+      "MONTH 3 FU",
+      "MONTH 6 FU",
+      "MONTH 12 FU"
+    ],
+    "per_visit": {
+      "SCREENING": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": -28.0,
+        "median_actual_study_day": -45.0,
+        "within_window_pct": 0.0,
+        "out_of_window_count": 15
+      },
+      "DAY 1 INOCULATION": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 1.0,
+        "median_actual_study_day": 1.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "DAY 4 QUARANTINE": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 4.0,
+        "median_actual_study_day": 4.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "DAY 7 QUARANTINE": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 7.0,
+        "median_actual_study_day": 7.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "DAY 14 DISCHARGE": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 14.0,
+        "median_actual_study_day": 15.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "DAY 28 FU": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 28.0,
+        "median_actual_study_day": 28.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "MONTH 3 FU": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 90.0,
+        "median_actual_study_day": 90.0,
+        "within_window_pct": 60.0,
+        "out_of_window_count": 6
+      },
+      "MONTH 6 FU": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 180.0,
+        "median_actual_study_day": 178.0,
+        "within_window_pct": 20.0,
+        "out_of_window_count": 12
+      },
+      "MONTH 12 FU": {
+        "planned": 15,
+        "attended": 15,
+        "compliance_pct": 100.0,
+        "planned_study_day": 365.0,
+        "median_actual_study_day": 368.0,
+        "within_window_pct": 26.7,
+        "out_of_window_count": 11
+      }
+    },
+    "per_subject": [
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0001",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0002",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0003",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0005",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0006",
+        "arm": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0010",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0011",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0013",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0016",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0017",
+        "arm": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0019",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0020",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "visits_planned": 9,
+        "visits_attended": 9,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      }
+    ]
+  },
+  "dose_compliance": {
+    "per_subject": [
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0001",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-29",
+        "last_dose_dtc": "2024-04-02",
+        "exposure_days": 4,
+        "total_dose": 1300.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0002",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-23",
+        "last_dose_dtc": "2024-02-27",
+        "exposure_days": 4,
+        "total_dose": 310.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0003",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 5,
+        "administered_doses": 5,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-18",
+        "last_dose_dtc": "2024-02-23",
+        "exposure_days": 5,
+        "total_dose": 310.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 3,
+        "compliance_pct": 75.0,
+        "first_dose_dtc": "2024-03-13",
+        "last_dose_dtc": "2024-03-15",
+        "exposure_days": 2,
+        "total_dose": 300.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0005",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-14",
+        "last_dose_dtc": "2024-03-18",
+        "exposure_days": 4,
+        "total_dose": 1300.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0006",
+        "arm": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 5,
+        "administered_doses": 5,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-30",
+        "last_dose_dtc": "2024-04-04",
+        "exposure_days": 5,
+        "total_dose": 400.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0010",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-19",
+        "last_dose_dtc": "2024-02-23",
+        "exposure_days": 4,
+        "total_dose": 310.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0011",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 5,
+        "administered_doses": 4,
+        "compliance_pct": 80.0,
+        "first_dose_dtc": "2024-04-15",
+        "last_dose_dtc": "2024-04-20",
+        "exposure_days": 5,
+        "total_dose": 1300.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0012",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 5,
+        "administered_doses": 5,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-20",
+        "last_dose_dtc": "2024-02-25",
+        "exposure_days": 5,
+        "total_dose": 310.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0013",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 5,
+        "administered_doses": 4,
+        "compliance_pct": 80.0,
+        "first_dose_dtc": "2024-05-13",
+        "last_dose_dtc": "2024-05-18",
+        "exposure_days": 5,
+        "total_dose": 1300.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0015",
+        "arm": "Dose 1 \u2014 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-06",
+        "last_dose_dtc": "2024-04-10",
+        "exposure_days": 4,
+        "total_dose": 310.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0016",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-08",
+        "last_dose_dtc": "2024-04-12",
+        "exposure_days": 4,
+        "total_dose": 1300.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0017",
+        "arm": "Dose 2 \u2014 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-07",
+        "last_dose_dtc": "2024-03-11",
+        "exposure_days": 4,
+        "total_dose": 400.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0019",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-01-30",
+        "last_dose_dtc": "2024-02-03",
+        "exposure_days": 4,
+        "total_dose": 1300.0,
+        "dose_unit": "TCID50"
+      },
+      {
+        "usubjid": "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0020",
+        "arm": "Dose 3 \u2014 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir",
+        "planned_doses": 5,
+        "administered_doses": 5,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-14",
+        "last_dose_dtc": "2024-04-19",
+        "exposure_days": 5,
+        "total_dose": 1300.0,
+        "dose_unit": "TCID50"
+      }
+    ],
+    "summary": {
+      "mean_compliance_pct": 95.7,
+      "subjects_below_80pct": [
+        "COVHIC001-CHALLENGE-UK_ICL_HVIVO01-0004"
+      ]
+    }
+  },
+  "screen_failures": {
+    "total": 5,
+    "by_reason": {
+      "ELIGIBILITY CRITERIA NOT MET": 5,
+      "INFORMED CONSENT OBTAINED": 5
+    },
+    "by_ie_criterion": {
+      "EXCL01": {
+        "test": "Subject has a known hypersensitivity to study drug or excipients",
+        "category": "EXCLUSION",
+        "failed_count": 1
+      },
+      "EXCL03": {
+        "test": "Subject has severe hepatic impairment (ALT/AST > 5x ULN)",
+        "category": "EXCLUSION",
+        "failed_count": 1
+      },
+      "EXCL04": {
+        "test": "Subject has uncontrolled concurrent illness",
+        "category": "EXCLUSION",
+        "failed_count": 1
+      },
+      "INCL03": {
+        "test": "Subject meets diagnosis criteria for the study indication",
+        "category": "INCLUSION",
+        "failed_count": 1
+      },
+      "INCL04": {
+        "test": "Subject has adequate organ function based on screening labs",
+        "category": "INCLUSION",
+        "failed_count": 1
+      }
+    },
+    "by_site": {
+      "UK_ICL_HVIVO01": 5
+    }
+  }
+}

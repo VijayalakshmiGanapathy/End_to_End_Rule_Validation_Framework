@@ -296,6 +296,10 @@ class InjectionHarnessService:
                 button,
             )
 
+            time.sleep(2)
+
+            #input("Check whether the checkbox is ticked. Press ENTER...")
+
             logger.info(
                 f"Batch: {self.batch_name} | InjectionHarness | Select filtered clicked."
             )
@@ -468,10 +472,36 @@ class InjectionHarnessService:
             f"Batch: {self.batch_name} | Navigating to {page_name} page."
         )
 
-        radio = Waits.clickable(
-            self.driver,
-            InjectionHarnessLocators.navigation_radio(page_name),
-        )
+        # radio = Waits.clickable(
+        #     self.driver,
+        #     InjectionHarnessLocators.navigation_radio(page_name),
+        # )
+
+        locators = InjectionHarnessLocators.navigation_radio(page_name)
+
+        last_exception = None
+
+        for locator in locators:
+
+            try:
+
+                radio = Waits.clickable(
+                    self.driver,
+                    locator,
+                    timeout=5,
+                )
+
+                break
+
+            except Exception as ex:
+
+                last_exception = ex
+
+        else:
+
+            raise Exception(
+                f"{page_name} navigation not found."
+            ) from last_exception
 
         self.driver.execute_script(
             "arguments[0].scrollIntoView({block:'center'});",
@@ -593,9 +623,9 @@ class InjectionHarnessService:
 
             raise
 
-    def download_dirty_csv(self):
+    def download_imputed_dataset_csv(self):
         """
-        Download the Dirty CSV ZIP file from the Results page.
+        Download the imputed Dataset CSV ZIP file from the Results page.
         """
 
         try:
@@ -604,11 +634,38 @@ class InjectionHarnessService:
                 f"Batch: {self.batch_name} | InjectionHarness | Downloading Dirty CSV ZIP."
             )
 
-            button = Waits.clickable(
-                self.driver,
-                InjectionHarnessLocators.DOWNLOAD_DIRTY_CSV_BUTTON,
-            )
+            # button = Waits.clickable(
+            #     self.driver,
+            #     InjectionHarnessLocators.DOWNLOAD_DIRTY_CSV_BUTTON,
+            # )
+            button = None
 
+            for locator in InjectionHarnessLocators.download_imputed_dataset_csv_button():
+
+                try:
+
+                    button = Waits.clickable(
+                        self.driver,
+                        locator,
+                        timeout=5,
+                    )
+
+                    logger.info(
+                        f"Found Download Imputed Dataset button using locator: {locator}"
+                    )
+
+                    break
+
+                except Exception:
+
+                    continue
+
+            if button is None:
+
+                raise Exception(
+                    "Download Imputed Dataset button not found."
+                )
+            
             self.driver.execute_script(
                 "arguments[0].scrollIntoView({block:'center'});",
                 button,
@@ -813,7 +870,7 @@ class InjectionHarnessService:
                 paths,
             )
 
-            self.download_dirty_csv()
+            self.download_imputed_dataset_csv()
 
             download_service.process_dirty_csv(
                 temp_folder,

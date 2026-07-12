@@ -39,7 +39,12 @@ class DataComparisonService:
             rule_id = str(detail_row.get("rule_id", "")).strip()
             error_id = str(detail_row.get("error_id", "")).strip()
             domain = str(detail_row.get("domain", "")).strip()
-            usubjid = str(detail_row.get("USUBJID", "")).strip()
+            usubjid_value = detail_row.get("USUBJID", "")
+
+            if pd.isna(usubjid_value):
+                usubjid = ""
+            else:
+                usubjid = str(usubjid_value).strip()
             primitive = str(detail_row.get("primitive", "")).strip().lower()
 
             status = str(detail_row.get("status", "")).strip().lower()
@@ -66,6 +71,9 @@ class DataComparisonService:
                 variables_modified = json.loads(
                     str(detail_row.get("variables_modified", "{}"))
                 )
+                
+                
+                    
             except json.JSONDecodeError:
                 results.append(
                     {
@@ -81,15 +89,43 @@ class DataComparisonService:
                 )
                 continue
 
+            
+
             target_domain = self._get_target_domain(
                 audit_domain=domain,
                 variables_modified=variables_modified,
             )
+            
 
             original_file = original_dir / f"{target_domain}.csv"
             dirty_file = dirty_dir / f"{target_domain}.csv"
 
-            if not original_file.exists() or not dirty_file.exists():
+            # Handle complete domain deletion
+            if (
+                primitive == "drop_domain"
+                and "__domain__" in variables_modified
+            ):
+
+                results.append(
+                    self._validate_drop_domain(
+                        rule_id=rule_id,
+                        error_id=error_id,
+                        audit_domain=domain,
+                        target_domain=target_domain,
+                        original_file=original_file,
+                        dirty_file=dirty_file,
+                    )
+                )
+
+                continue
+
+            if (
+                primitive != "drop_domain"
+                and (
+                    not original_file.exists()
+                    or not dirty_file.exists()
+                )
+            ):
                 results.append(
                     {
                         "Rule ID": rule_id,
@@ -133,9 +169,13 @@ class DataComparisonService:
                 csv_row_number = row_index + ROW_INDEX_OFFSET
                 pandas_index = row_index
 
-            for variable, values in variables_modified.items():
-                variable = str(variable).strip()
+            for variable, values in variables_modified.items():   
 
+                if rule_id == "SD1299":
+                    print(f"Inside loop -> Variable: {variable}")  
+
+                variable = str(variable).strip()
+            
                 expected_original = self._normalize_value(
                     values.get("original", "")
                 )
@@ -163,6 +203,23 @@ class DataComparisonService:
                         )
                     )
                     continue
+
+                if primitive in ("drop_column", "drop_columns"):
+
+                    results.append(
+                        self._validate_drop_column(
+                            rule_id=rule_id,
+                            error_id=error_id,
+                            audit_domain=domain,
+                            target_domain=target_domain,
+                            variable=variable,
+                            original_df=original_df,
+                            dirty_df=dirty_df,
+                        )
+                    )
+
+                    continue
+
 
                 if primitive == "delete_row":
                     results.append(
@@ -200,6 +257,27 @@ class DataComparisonService:
                     )
                     continue
 
+                if primitive == "duplicate_with_mutation":
+
+                    results.append(
+                        self._validate_duplicate_with_mutation(
+                            rule_id=rule_id,
+                            error_id=error_id,
+                            audit_domain=domain,
+                            target_domain=target_domain,
+                            variable=variable,
+                            expected_original=expected_original,
+                            expected_injected=expected_injected,
+                            row_index=row_index,
+                            csv_row_number=csv_row_number,
+                            pandas_index=pandas_index,
+                            original_df=original_df,
+                            dirty_df=dirty_df,
+                        )
+                    )
+
+                    continue
+
                 if variable == "__row__":
                     if pandas_index is None:
                         results.append(
@@ -233,33 +311,97 @@ class DataComparisonService:
                     continue
 
                 if pandas_index is None:
-                    results.append(
-                        self._validate_using_usubjid(
-                            rule_id=rule_id,
-                            error_id=error_id,
-                            audit_domain=domain,
-                            target_domain=target_domain,
-                            usubjid=usubjid,
-                            variable=variable,
-                            expected_original=expected_original,
-                            expected_injected=expected_injected,
-                            original_df=original_df,
-                            dirty_df=dirty_df,
-                        )
-                    )
-                    continue
 
+                    # Dataset-level rules (no USUBJID and no row_index)
+                    if (
+                        not usubjid
+                        and primitive == "add_column"
+                    ):
+                        pass
+
+                    else:
+                        results.append(
+                            self._validate_using_usubjid(
+                                rule_id=rule_id,
+                                error_id=error_id,
+                                audit_domain=domain,
+                                target_domain=target_domain,
+                                usubjid=usubjid,
+                                variable=variable,
+                                expected_original=expected_original,
+                                expected_injected=expected_injected,
+                                original_df=original_df,
+                                dirty_df=dirty_df,
+                            )
+                        )
+                        continue
+                
+                
+                
                 if variable not in original_df.columns:
                     if variable in dirty_df.columns:
-                        actual_dirty = self._normalize_value(
-                            dirty_df.iloc[pandas_index][variable]
-                        )
+                        
+                        # ----------------------------------------------------------
+                        # Dataset-level validation (No USUBJID / No Row Index)
+                        # ----------------------------------------------------------
+                        
+                        
+                            
+                        if (
+                            not usubjid
+                            and (
+                                pd.isna(row_index)
+                                or str(row_index).strip() == ""
+                            )
+                        ):
+                            
 
-                        dirty_match = self._values_match(
-                            actual_dirty,
-                            expected_injected,
-                        )
+                            actual_values = (
+                                dirty_df[variable]
+                                .dropna()
+                                .astype(str)
+                                .str.strip()
+                                .unique()
+                                .tolist()
+                            )
 
+                            
+
+                            actual_dirty = ", ".join(actual_values)
+
+                            dirty_match = any(
+                                self._values_match(value, expected_injected)
+                                for value in actual_values
+                            )
+
+                            
+
+                        else:
+
+                            dirty_row = self._find_matching_row(
+                                original_df,
+                                dirty_df,
+                                pandas_index,
+                                target_domain,
+                                usubjid,
+                            )
+
+                            if dirty_row is not None:
+
+                                actual_dirty = self._normalize_value(
+                                    dirty_row[variable]
+                                )
+
+                            else:
+
+                                actual_dirty = ""
+
+                            dirty_match = self._values_match(
+                                actual_dirty,
+                                expected_injected,
+                            )
+
+                       
                         results.append(
                             {
                                 "Rule ID": rule_id,
@@ -343,20 +485,50 @@ class DataComparisonService:
                 actual_original = self._normalize_value(
                     original_df.iloc[pandas_index][variable]
                 )
-                actual_dirty = self._normalize_value(
-                    dirty_df.iloc[pandas_index][variable]
-                )
 
-                if rule_id == "SD1380":
-                    print("SD1380 DEBUG")
-                    print("row_index:", row_index)
-                    print("csv_row_number:", csv_row_number)
-                    print("pandas_index:", pandas_index)
-                    print("variable:", variable)
-                    print("expected_original:", expected_original)
-                    print("actual_original:", actual_original)
-                    print("expected_injected:", expected_injected)
-                    print("actual_dirty:", actual_dirty)
+                # If there is no row identifier (USUBJID/Row Index),
+                # validate the new column at dataset level.
+
+                if (
+                    not usubjid
+                    and (
+                        pd.isna(row_index)
+                        or str(row_index).strip() == ""
+                    )
+                ):
+
+                    actual_values = (
+                        dirty_df[variable]
+                        .dropna()
+                        .astype(str)
+                        .str.strip()
+                        .unique()
+                        .tolist()
+                    )
+
+                    actual_dirty = ", ".join(actual_values)
+
+                else:
+
+                    dirty_row = self._find_matching_row(
+                        original_df,
+                        dirty_df,
+                        pandas_index,
+                        target_domain,
+                        usubjid,
+                    )
+
+                    if dirty_row is not None:
+
+                        actual_dirty = self._normalize_value(
+                            dirty_row[variable]
+                        )
+
+                    else:
+
+                        actual_dirty = ""
+
+                
 
                 original_match = self._values_match(
                     actual_original,
@@ -662,24 +834,69 @@ class DataComparisonService:
         original_df: pd.DataFrame,
         dirty_df: pd.DataFrame,
     ) -> dict:
-        if "USUBJID" not in original_df.columns or "USUBJID" not in dirty_df.columns:
-            return self._failure_row(
-                rule_id,
-                error_id,
-                audit_domain,
-                target_domain,
-                usubjid,
-                "__row__",
-                csv_row_number,
-                "USUBJID column missing for duplicate row validation",
+        
+        
+              
+        # if "USUBJID" not in original_df.columns or "USUBJID" not in dirty_df.columns:
+        #     return self._failure_row(
+        #         rule_id,
+        #         error_id,
+        #         audit_domain,
+        #         target_domain,
+        #         usubjid,
+        #         "__row__",
+        #         csv_row_number,
+        #         "USUBJID column missing for duplicate row validation",
+        #     )
+
+
+        # USUBJID is required only for SV duplicate validation.
+        if (
+            target_domain.upper() == "SV"
+            and (
+                "USUBJID" not in original_df.columns
+                or "USUBJID" not in dirty_df.columns
             )
+        ):
+            return self._failure_row(
+            rule_id,
+            error_id,
+            audit_domain,
+            target_domain,
+            usubjid,
+            "__row__",
+            csv_row_number,
+            "USUBJID column missing for duplicate row validation",
+        )
 
         if (
             target_domain.upper() == "SV"
             and "VISITNUM" in original_df.columns
             and "VISITNUM" in dirty_df.columns
-            and pandas_index < len(original_df)
         ):
+
+            if (
+                pandas_index is None
+                or pandas_index < 0
+                or pandas_index >= len(original_df)
+            ):
+                return self._failure_row(
+                    rule_id,
+                    error_id,
+                    audit_domain,
+                    target_domain,
+                    usubjid,
+                    "__row__",
+                    csv_row_number,
+                    (
+                        f"Row index {pandas_index} is out of bounds "
+                        f"(Original {target_domain}.csv has {len(original_df)} rows)"
+                    ),
+                )
+
+            # visitnum = self._normalize_value(
+            # original_df.iloc[pandas_index]["VISITNUM"]
+            # )
             visitnum = self._normalize_value(
                 original_df.iloc[pandas_index]["VISITNUM"]
             )
@@ -708,16 +925,68 @@ class DataComparisonService:
 
             duplicate_key = f"USUBJID={usubjid}, VISITNUM={visitnum}"
 
+        # else:
+
+            # # Get the complete original row
+            # original_row = (
+            #     original_df.iloc[pandas_index]
+            #     .fillna("")
+            #     .astype(str)
+            # )
+
         else:
+
+            if (
+                pandas_index is None
+                or pandas_index < 0
+                or pandas_index >= len(original_df)
+            ):
+                return self._failure_row(
+                    rule_id,
+                    error_id,
+                    audit_domain,
+                    target_domain,
+                    usubjid,
+                    "__row__",
+                    csv_row_number,
+                    (
+                        f"Row index {pandas_index} is out of bounds "
+                        f"(Original {target_domain}.csv has {len(original_df)} rows)"
+                    ),
+                )
+
+            # Get the complete original row
+            original_row = (
+                original_df.iloc[pandas_index]
+                .fillna("")
+                .astype(str)
+            )
+
+            
+
+            # Count occurrences of the complete row in Original
             original_count = (
-                original_df["USUBJID"].astype(str).str.strip() == usubjid
-            ).sum()
+                original_df
+                .fillna("")
+                .astype(str)
+                .eq(original_row)
+                .all(axis=1)
+                .sum()
+            )
 
+            # Count occurrences of the same complete row in Dirty
             dirty_count = (
-                dirty_df["USUBJID"].astype(str).str.strip() == usubjid
-            ).sum()
+                dirty_df
+                .fillna("")
+                .astype(str)
+                .eq(original_row)
+                .all(axis=1)
+                .sum()
+            )
 
-            duplicate_key = f"USUBJID={usubjid}"
+            duplicate_key = f"Complete Row @ CSV Row {csv_row_number}"
+
+        
 
         original_match = original_count == 1
         dirty_match = dirty_count > 1
@@ -888,3 +1157,320 @@ class DataComparisonService:
 
     def _looks_like_date(self, value: str) -> bool:
         return "-" in value and len(value) >= 8
+
+    def _find_matching_row(
+        self,
+        original_df,
+        dirty_df,
+        pandas_index,
+        domain,
+        usubjid=None,
+    ):
+        """
+        Finds the matching row in the dirty dataset.
+
+        Priority:
+        1. Row Index
+        2. USUBJID
+        3. Domain-specific key
+        """
+
+        # -----------------------------
+            # 1. Use Row Index
+        # -----------------------------
+        if pandas_index is not None:
+
+            if pandas_index < len(dirty_df):
+
+                return dirty_df.iloc[pandas_index]
+
+        # -----------------------------
+        # 2. Use USUBJID
+        # -----------------------------
+        if (
+            usubjid
+            and "USUBJID" in dirty_df.columns
+        ):
+
+            rows = dirty_df[
+                dirty_df["USUBJID"]
+                .astype(str)
+                .str.strip()
+                == str(usubjid).strip()
+            ]
+
+            if not rows.empty:
+
+                return rows.iloc[0]
+
+        # -----------------------------
+        # 3. Domain Specific Keys
+        # -----------------------------
+
+        key_columns = {
+
+            "TS": "TSPARMCD",
+            "TA": "ARMCD",
+            "TV": "VISITNUM",
+            "TI": "IETESTCD",
+            "TE": "ETCD",
+
+        }
+
+        if domain in key_columns:
+
+            key = key_columns[domain]
+
+            if key in original_df.columns and key in dirty_df.columns:
+
+                value = original_df.iloc[pandas_index][key]
+
+                rows = dirty_df[
+                    dirty_df[key]
+                    .astype(str)
+                    .str.strip()
+                    == str(value).strip()
+                ]
+
+                if not rows.empty:
+
+                    return rows.iloc[0]
+
+        return None
+    
+    def _validate_drop_domain(
+        self,
+        rule_id: str,
+        error_id: str,
+        audit_domain: str,
+        target_domain: str,
+        original_file,
+        dirty_file,
+    ) -> dict:
+
+        original_exists = original_file.exists()
+        dirty_exists = dirty_file.exists()
+
+        original_match = original_exists
+        dirty_match = not dirty_exists
+
+        imputation_match = original_match and dirty_match
+
+        return {
+            "Rule ID": rule_id,
+            "Error ID": error_id,
+            "Audit Domain": audit_domain,
+            "Target Domain": target_domain,
+            "USUBJID": "",
+            "Variable": "__domain__",
+            "Audit Row Index": "",
+            "CSV Row Index Checked": "",
+            "Expected Original Value": "Domain exists",
+            "Actual Original Value": (
+                "Present" if original_exists else "Missing"
+            ),
+            "Expected Injected Value": "removed",
+            "Actual Dirty Value": (
+                "Missing" if not dirty_exists else "Present"
+            ),
+            "Original Match": "Yes" if original_match else "No",
+            "Dirty Match": "Yes" if dirty_match else "No",
+            "Original and Dirty csv imputation match": (
+                "Yes" if imputation_match else "No"
+            ),
+            "Validation Status": (
+                "PASS" if imputation_match else "FAIL"
+            ),
+            "Comments": (
+                "Domain successfully removed"
+                if imputation_match
+                else "Domain removal mismatch"
+            ),
+        }
+    
+    def _validate_drop_column(
+        self,
+        rule_id: str,
+        error_id: str,
+        audit_domain: str,
+        target_domain: str,
+        variable: str,
+        original_df: pd.DataFrame,
+        dirty_df: pd.DataFrame,
+    ) -> dict:
+
+
+        original_exists = variable in original_df.columns
+        dirty_exists = variable in dirty_df.columns
+
+        original_match = original_exists
+        dirty_match = not dirty_exists
+
+        imputation_match = (
+            original_match
+            and dirty_match
+        )
+
+        return {
+            "Rule ID": rule_id,
+            "Error ID": error_id,
+            "Audit Domain": audit_domain,
+            "Target Domain": target_domain,
+            "USUBJID": "",
+            "Variable": variable,
+            "Audit Row Index": "",
+            "CSV Row Index Checked": "",
+            "Expected Original Value": "present",
+            "Actual Original Value": (
+                "present"
+                if original_exists
+                else "removed"
+            ),
+            "Expected Injected Value": "removed",
+            "Actual Dirty Value": (
+                "removed"
+                if not dirty_exists
+                else "present"
+            ),
+            "Original Match": "Yes" if original_match else "No",
+            "Dirty Match": "Yes" if dirty_match else "No",
+            "Original and Dirty csv imputation match": (
+                "Yes"
+                if imputation_match
+                else "No"
+            ),
+            "Validation Status": (
+                "PASS"
+                if imputation_match
+                else "FAIL"
+            ),
+            "Comments": (
+                "Column successfully removed"
+                if imputation_match
+                else "Column removal mismatch"
+            ),
+        }
+    
+    def _validate_duplicate_with_mutation(
+        self,
+        rule_id: str,
+        error_id: str,
+        audit_domain: str,
+        target_domain: str,
+        variable: str,
+        expected_original: str,
+        expected_injected: str,
+        row_index: int,
+        csv_row_number: int,
+        pandas_index: int,
+        original_df: pd.DataFrame,
+        dirty_df: pd.DataFrame,
+    ) -> dict:
+
+        if pandas_index is None or pandas_index >= len(original_df):
+            return self._failure_row(
+                rule_id,
+                error_id,
+                audit_domain,
+                target_domain,
+                "",
+                variable,
+                csv_row_number,
+                "Row index out of range",
+            )
+
+        print("=" * 80)
+        print("Rule:", rule_id)
+        print("Variable:", variable)
+        print("Original Columns:")
+        print(original_df.columns.tolist())
+        print("Dirty Columns:")
+        print(dirty_df.columns.tolist())
+        print("=" * 80)
+        
+        if variable not in original_df.columns:
+
+            return self._failure_row(
+                rule_id,
+                error_id,
+                audit_domain,
+                target_domain,
+                usubjid,
+                variable,
+                csv_row_number,
+                f"{variable} not found in original CSV",
+            )
+        
+        # Original row
+        original_row = (
+            original_df.iloc[pandas_index]
+            .fillna("")
+            .astype(str)
+            .copy()
+        )
+
+        # Original value before mutation
+        actual_original = self._normalize_value(
+            original_row[variable]
+        )
+
+        original_match = self._values_match(
+            actual_original,
+            expected_original,
+        )
+
+        # Create expected duplicated row
+        expected_row = original_row.copy()
+
+        expected_row[variable] = expected_injected
+
+        # Compare complete row
+        comparison = (
+            dirty_df
+            .fillna("")
+            .astype(str)
+            .eq(expected_row)
+            .all(axis=1)
+        )
+
+        dirty_count = comparison.sum()
+
+        dirty_match = dirty_count == 1
+
+        if dirty_match:
+            actual_dirty = expected_injected
+        else:
+            actual_dirty = ""
+
+        imputation_match = (
+            original_match
+            and dirty_match
+        )
+
+        return {
+            "Rule ID": rule_id,
+            "Error ID": error_id,
+            "Audit Domain": audit_domain,
+            "Target Domain": target_domain,
+            "USUBJID": "",
+            "Variable": variable,
+            "Audit Row Index": row_index,
+            "CSV Row Index Checked": csv_row_number,
+            "Expected Original Value": expected_original,
+            "Actual Original Value": actual_original,
+            "Expected Injected Value": expected_injected,
+            "Actual Dirty Value": actual_dirty,
+            "Original Match": "Yes" if original_match else "No",
+            "Dirty Match": "Yes" if dirty_match else "No",
+            "Original and Dirty csv imputation match": (
+                "Yes" if imputation_match else "No"
+            ),
+            "Validation Status": (
+                "PASS" if imputation_match else "FAIL"
+            ),
+            "Comments": (
+                "Duplicate with mutation verified successfully"
+                if imputation_match
+                else "Duplicate with mutation mismatch"
+            ),
+        }

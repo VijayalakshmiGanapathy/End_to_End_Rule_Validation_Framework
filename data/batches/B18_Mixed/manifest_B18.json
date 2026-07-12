@@ -1,0 +1,3344 @@
+{
+  "generated_at": "2026-07-10T06:18:07.466032",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_jmcdw296",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 9,
+  "rules_skipped": 0,
+  "rules_injected": 9,
+  "total_mutations": 125,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1214-TS-001",
+      "rule_id": "SD1214",
+      "rule_message": "Multiple ADDON records",
+      "category": "TS02I1/TS02V1",
+      "primitive": "duplicate_record",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['TSPARMCD']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1223-TS-001",
+      "rule_id": "SD1223",
+      "rule_message": "Invalid TSVAL value for RANDOM",
+      "category": "TS01",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 25,
+      "csv_line": 27,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVAL": {
+          "original": "Y",
+          "injected": "INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 25
+    },
+    {
+      "error_id": "INJ-SD1309-TS-001",
+      "rule_id": "SD1309",
+      "rule_message": "TSVAL is missing for the TRT Trial Summary Parameter, when STYPE parameter equals 'INTERVENTIONAL'",
+      "category": "TS01",
+      "primitive": "blank_field",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 43,
+      "csv_line": 45,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVAL": {
+          "original": "EMPAGLIFLOZIN",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 43
+    },
+    {
+      "error_id": "INJ-SD2245-TS-001",
+      "rule_id": "SD2245",
+      "rule_message": "Invalid TSVAL value for DCUTDTC",
+      "category": "TS03",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVAL": {
+          "original": "2026-06-01",
+          "injected": "INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD0044-CM-001",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 280,
+      "csv_line": 282,
+      "seq_value": "6",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 280
+    },
+    {
+      "error_id": "INJ-SD0044-CM-002",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD0044-CM-003",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 241,
+      "csv_line": 243,
+      "seq_value": "5",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 241
+    },
+    {
+      "error_id": "INJ-SD0044-CM-004",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 122,
+      "csv_line": 124,
+      "seq_value": "20",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 122
+    },
+    {
+      "error_id": "INJ-SD0044-CM-005",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 197,
+      "csv_line": 199,
+      "seq_value": "3",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 197
+    },
+    {
+      "error_id": "INJ-SD0044-CM-006",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 211,
+      "csv_line": 213,
+      "seq_value": "17",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 211
+    },
+    {
+      "error_id": "INJ-SD0044-CM-007",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 181,
+      "csv_line": 183,
+      "seq_value": "11",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 181
+    },
+    {
+      "error_id": "INJ-SD0044-CM-008",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 26,
+      "csv_line": 28,
+      "seq_value": "3",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 26
+    },
+    {
+      "error_id": "INJ-SD0044-CM-009",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 121,
+      "csv_line": 123,
+      "seq_value": "19",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 121
+    },
+    {
+      "error_id": "INJ-SD0044-CM-010",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 57,
+      "csv_line": 59,
+      "seq_value": "11",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 57
+    },
+    {
+      "error_id": "INJ-SD0044-CM-011",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 214,
+      "csv_line": 216,
+      "seq_value": "20",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 214
+    },
+    {
+      "error_id": "INJ-SD0044-CM-012",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 281,
+      "csv_line": 283,
+      "seq_value": "7",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 281
+    },
+    {
+      "error_id": "INJ-SD0044-CM-013",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 219,
+      "csv_line": 221,
+      "seq_value": "25",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 219
+    },
+    {
+      "error_id": "INJ-SD0044-CM-014",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 150,
+      "csv_line": 152,
+      "seq_value": "18",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 150
+    },
+    {
+      "error_id": "INJ-SD0044-EC-015",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1193,
+      "csv_line": 1195,
+      "seq_value": "144",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1193
+    },
+    {
+      "error_id": "INJ-SD0044-EC-016",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2812,
+      "csv_line": 2814,
+      "seq_value": "484",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2812
+    },
+    {
+      "error_id": "INJ-SD0044-EC-017",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5851,
+      "csv_line": 5853,
+      "seq_value": "257",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5851
+    },
+    {
+      "error_id": "INJ-SD0044-EC-018",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 3180,
+      "csv_line": 3182,
+      "seq_value": "182",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3180
+    },
+    {
+      "error_id": "INJ-SD0044-EC-019",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2560,
+      "csv_line": 2562,
+      "seq_value": "232",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2560
+    },
+    {
+      "error_id": "INJ-SD0044-EC-020",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1504,
+      "csv_line": 1506,
+      "seq_value": "455",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1504
+    },
+    {
+      "error_id": "INJ-SD0044-EC-021",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3637,
+      "csv_line": 3639,
+      "seq_value": "270",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3637
+    },
+    {
+      "error_id": "INJ-SD0044-EC-022",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 6385,
+      "csv_line": 6387,
+      "seq_value": "194",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6385
+    },
+    {
+      "error_id": "INJ-SD0044-EC-023",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3417,
+      "csv_line": 3419,
+      "seq_value": "50",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3417
+    },
+    {
+      "error_id": "INJ-SD0044-EC-024",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 4203,
+      "csv_line": 4205,
+      "seq_value": "461",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4203
+    },
+    {
+      "error_id": "INJ-SD0044-EC-025",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5872,
+      "csv_line": 5874,
+      "seq_value": "278",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5872
+    },
+    {
+      "error_id": "INJ-SD0044-EC-026",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 5408,
+      "csv_line": 5410,
+      "seq_value": "121",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5408
+    },
+    {
+      "error_id": "INJ-SD0044-EC-027",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3442,
+      "csv_line": 3444,
+      "seq_value": "75",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3442
+    },
+    {
+      "error_id": "INJ-SD0044-EC-028",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 4276,
+      "csv_line": 4278,
+      "seq_value": "534",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4276
+    },
+    {
+      "error_id": "INJ-SD0044-EC-029",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3608,
+      "csv_line": 3610,
+      "seq_value": "241",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3608
+    },
+    {
+      "error_id": "INJ-SD0044-EC-030",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 5237,
+      "csv_line": 5239,
+      "seq_value": "281",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5237
+    },
+    {
+      "error_id": "INJ-SD0044-EC-031",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 1751,
+      "csv_line": 1753,
+      "seq_value": "164",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1751
+    },
+    {
+      "error_id": "INJ-SD0044-EC-032",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 7012,
+      "csv_line": 7014,
+      "seq_value": "266",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7012
+    },
+    {
+      "error_id": "INJ-SD0044-EC-033",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 492,
+      "csv_line": 494,
+      "seq_value": "493",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 492
+    },
+    {
+      "error_id": "INJ-SD0044-EC-034",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 7138,
+      "csv_line": 7140,
+      "seq_value": "392",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7138
+    },
+    {
+      "error_id": "INJ-SD0044-EC-035",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 6164,
+      "csv_line": 6166,
+      "seq_value": "570",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6164
+    },
+    {
+      "error_id": "INJ-SD0044-EC-036",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 524,
+      "csv_line": 526,
+      "seq_value": "525",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 524
+    },
+    {
+      "error_id": "INJ-SD0044-EC-037",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2837,
+      "csv_line": 2839,
+      "seq_value": "509",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2837
+    },
+    {
+      "error_id": "INJ-SD0044-EC-038",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 6339,
+      "csv_line": 6341,
+      "seq_value": "148",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6339
+    },
+    {
+      "error_id": "INJ-SD0044-EC-039",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 5321,
+      "csv_line": 5323,
+      "seq_value": "34",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5321
+    },
+    {
+      "error_id": "INJ-SD0044-EC-040",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 710,
+      "csv_line": 712,
+      "seq_value": "711",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 710
+    },
+    {
+      "error_id": "INJ-SD0044-EC-041",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 6014,
+      "csv_line": 6016,
+      "seq_value": "420",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6014
+    },
+    {
+      "error_id": "INJ-SD0044-EC-042",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2869,
+      "csv_line": 2871,
+      "seq_value": "541",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2869
+    },
+    {
+      "error_id": "INJ-SD0044-EC-043",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 7496,
+      "csv_line": 7498,
+      "seq_value": "151",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7496
+    },
+    {
+      "error_id": "INJ-SD0044-EC-044",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3587,
+      "csv_line": 3589,
+      "seq_value": "220",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3587
+    },
+    {
+      "error_id": "INJ-SD0044-EC-045",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 1007,
+      "csv_line": 1009,
+      "seq_value": "258",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1007
+    },
+    {
+      "error_id": "INJ-SD0044-EC-046",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 6620,
+      "csv_line": 6622,
+      "seq_value": "429",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6620
+    },
+    {
+      "error_id": "INJ-SD0044-EC-047",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5763,
+      "csv_line": 5765,
+      "seq_value": "169",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5763
+    },
+    {
+      "error_id": "INJ-SD0044-EC-048",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1275,
+      "csv_line": 1277,
+      "seq_value": "226",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1275
+    },
+    {
+      "error_id": "INJ-SD0044-EC-049",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2522,
+      "csv_line": 2524,
+      "seq_value": "194",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2522
+    },
+    {
+      "error_id": "INJ-SD0044-EC-050",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 338,
+      "csv_line": 340,
+      "seq_value": "339",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 338
+    },
+    {
+      "error_id": "INJ-SD0044-EC-051",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2737,
+      "csv_line": 2739,
+      "seq_value": "409",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2737
+    },
+    {
+      "error_id": "INJ-SD0044-EC-052",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5750,
+      "csv_line": 5752,
+      "seq_value": "156",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5750
+    },
+    {
+      "error_id": "INJ-SD0044-EC-053",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 591,
+      "csv_line": 593,
+      "seq_value": "592",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 591
+    },
+    {
+      "error_id": "INJ-SD0044-EC-054",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 4874,
+      "csv_line": 4876,
+      "seq_value": "338",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4874
+    },
+    {
+      "error_id": "INJ-SD0044-EC-055",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3472,
+      "csv_line": 3474,
+      "seq_value": "105",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3472
+    },
+    {
+      "error_id": "INJ-SD0044-EC-056",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 4227,
+      "csv_line": 4229,
+      "seq_value": "485",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4227
+    },
+    {
+      "error_id": "INJ-SD0044-EC-057",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3688,
+      "csv_line": 3690,
+      "seq_value": "321",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3688
+    },
+    {
+      "error_id": "INJ-SD0044-EC-058",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 7489,
+      "csv_line": 7491,
+      "seq_value": "144",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7489
+    },
+    {
+      "error_id": "INJ-SD0044-EC-059",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 6847,
+      "csv_line": 6849,
+      "seq_value": "101",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6847
+    },
+    {
+      "error_id": "INJ-SD0044-EC-060",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 6899,
+      "csv_line": 6901,
+      "seq_value": "153",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6899
+    },
+    {
+      "error_id": "INJ-SD0044-EC-061",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1468,
+      "csv_line": 1470,
+      "seq_value": "419",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1468
+    },
+    {
+      "error_id": "INJ-SD0044-EC-062",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 5284,
+      "csv_line": 5286,
+      "seq_value": "328",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5284
+    },
+    {
+      "error_id": "INJ-SD0044-EC-063",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 3848,
+      "csv_line": 3850,
+      "seq_value": "106",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3848
+    },
+    {
+      "error_id": "INJ-SD0044-EC-064",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 2135,
+      "csv_line": 2137,
+      "seq_value": "167",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2135
+    },
+    {
+      "error_id": "INJ-SD0044-EX-065",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "3",
+      "variables_modified": {
+        "EXVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "EXTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD0044-EX-066",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "4",
+      "variables_modified": {
+        "EXVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "EXTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD0044-SU-067",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 53,
+      "csv_line": 55,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "SUTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 53
+    },
+    {
+      "error_id": "INJ-SD0044-SU-068",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "SUTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD0044-SU-069",
+      "rule_id": "SD0044",
+      "rule_message": "Missing value for --VAMTU, when --VAMT is populated",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 33,
+      "csv_line": 35,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "SUTRTV": {
+          "original": "",
+          "injected": "SALINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 33
+    },
+    {
+      "error_id": "INJ-SD2238-CM-001",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 76,
+      "csv_line": 78,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 76
+    },
+    {
+      "error_id": "INJ-SD2238-CM-002",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 79,
+      "csv_line": 81,
+      "seq_value": "5",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 79
+    },
+    {
+      "error_id": "INJ-SD2238-CM-003",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 190,
+      "csv_line": 192,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 190
+    },
+    {
+      "error_id": "INJ-SD2238-CM-004",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 274,
+      "csv_line": 276,
+      "seq_value": "4",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 274
+    },
+    {
+      "error_id": "INJ-SD2238-CM-005",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 81,
+      "csv_line": 83,
+      "seq_value": "7",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 81
+    },
+    {
+      "error_id": "INJ-SD2238-CM-006",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 162,
+      "csv_line": 164,
+      "seq_value": "11",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 162
+    },
+    {
+      "error_id": "INJ-SD2238-CM-007",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 94,
+      "csv_line": 96,
+      "seq_value": "5",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 94
+    },
+    {
+      "error_id": "INJ-SD2238-CM-008",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 261,
+      "csv_line": 263,
+      "seq_value": "12",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 261
+    },
+    {
+      "error_id": "INJ-SD2238-CM-009",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 124,
+      "csv_line": 126,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 124
+    },
+    {
+      "error_id": "INJ-SD2238-CM-010",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 268,
+      "csv_line": 270,
+      "seq_value": "19",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 268
+    },
+    {
+      "error_id": "INJ-SD2238-CM-011",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD2238-CM-012",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 83,
+      "csv_line": 85,
+      "seq_value": "9",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 83
+    },
+    {
+      "error_id": "INJ-SD2238-CM-013",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 242,
+      "csv_line": 244,
+      "seq_value": "6",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 242
+    },
+    {
+      "error_id": "INJ-SD2238-CM-014",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 237,
+      "csv_line": 239,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with CMSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 237
+    },
+    {
+      "error_id": "INJ-SD2238-EC-015",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 2326,
+      "csv_line": 2328,
+      "seq_value": "358",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2326
+    },
+    {
+      "error_id": "INJ-SD2238-EC-016",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 2038,
+      "csv_line": 2040,
+      "seq_value": "70",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2038
+    },
+    {
+      "error_id": "INJ-SD2238-EC-017",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 2055,
+      "csv_line": 2057,
+      "seq_value": "87",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2055
+    },
+    {
+      "error_id": "INJ-SD2238-EC-018",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 5275,
+      "csv_line": 5277,
+      "seq_value": "319",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5275
+    },
+    {
+      "error_id": "INJ-SD2238-EC-019",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 2107,
+      "csv_line": 2109,
+      "seq_value": "139",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2107
+    },
+    {
+      "error_id": "INJ-SD2238-EC-020",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 4686,
+      "csv_line": 4688,
+      "seq_value": "150",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4686
+    },
+    {
+      "error_id": "INJ-SD2238-EC-021",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 4863,
+      "csv_line": 4865,
+      "seq_value": "327",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4863
+    },
+    {
+      "error_id": "INJ-SD2238-EC-022",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 2020,
+      "csv_line": 2022,
+      "seq_value": "52",
+      "variables_modified": {
+        "ECSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ECSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2020
+    },
+    {
+      "error_id": "INJ-SD2238-AE-023",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 360,
+      "csv_line": 362,
+      "seq_value": "1",
+      "variables_modified": {
+        "AESTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with AESTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 360
+    },
+    {
+      "error_id": "INJ-SD2238-AE-024",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 246,
+      "csv_line": 248,
+      "seq_value": "6",
+      "variables_modified": {
+        "AESTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with AESTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 246
+    },
+    {
+      "error_id": "INJ-SD2238-AE-025",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 574,
+      "csv_line": 576,
+      "seq_value": "2",
+      "variables_modified": {
+        "AESTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with AESTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 574
+    },
+    {
+      "error_id": "INJ-SD2238-AE-026",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 275,
+      "csv_line": 277,
+      "seq_value": "35",
+      "variables_modified": {
+        "AESTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with AESTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 275
+    },
+    {
+      "error_id": "INJ-SD2238-DV-027",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 231,
+      "csv_line": 233,
+      "seq_value": "31",
+      "variables_modified": {
+        "DVSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DVSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 231
+    },
+    {
+      "error_id": "INJ-SD2238-DV-028",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 244,
+      "csv_line": 246,
+      "seq_value": "44",
+      "variables_modified": {
+        "DVSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DVSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 244
+    },
+    {
+      "error_id": "INJ-SD2238-DV-029",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 232,
+      "csv_line": 234,
+      "seq_value": "32",
+      "variables_modified": {
+        "DVSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DVSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 232
+    },
+    {
+      "error_id": "INJ-SD2238-MH-030",
+      "rule_id": "SD2238",
+      "rule_message": "Inconsistent value for --STTPT",
+      "category": "EVT2",
+      "primitive": "duplicate_with_mutation",
+      "domain": "MH",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 69,
+      "csv_line": 71,
+      "seq_value": "3",
+      "variables_modified": {
+        "MHSTTPT": {
+          "original": "",
+          "injected": "BASELINE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with MHSTTPT changed on the copy; original set to SCREENING",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 69
+    },
+    {
+      "error_id": "INJ-SD1091-SE-003",
+      "rule_id": "SD1091",
+      "rule_message": "Missing --ENDY variable, when --ENDTC variable is present",
+      "category": "VI2 & VV2",
+      "primitive": "drop_column",
+      "domain": "SE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "SEENDY": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-CM-001",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "CM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-EC-002",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "EC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-EX-003",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "EX",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-SU-004",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "SU",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-AE-005",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "AE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-DS-006",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "DS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-DV-007",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "DV",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-HO-008",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "HO",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-MH-009",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "MH",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-DA-010",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "DA",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-DD-011",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "DD",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-EG-012",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "EG",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-IE-013",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "IE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-LB-014",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "LB",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-PC-015",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "PC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-PE-016",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "PE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-PP-017",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "PP",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-SC-018",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "SC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-SS-019",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "SS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1355-VS-020",
+      "rule_id": "SD1355",
+      "rule_message": "Missing TM dataset, when variable MIDS is present in a dataset",
+      "category": "VI2 & VV2",
+      "primitive": "add_column",
+      "domain": "VS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDS": {
+          "original": "absent",
+          "injected": "MILESTONE 1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD2270-LB-001",
+      "rule_id": "SD2270",
+      "rule_message": "Missing --DTC variable, when --DY variable is present",
+      "category": "VI2 & VV2",
+      "primitive": "drop_column",
+      "domain": "LB",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "LBDTC": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1214": 1,
+    "SD1223": 1,
+    "SD1309": 1,
+    "SD2245": 1,
+    "SD0044": 69,
+    "SD2238": 30,
+    "SD1091": 1,
+    "SD1355": 20,
+    "SD2270": 1
+  },
+  "summary_by_category": {
+    "TS02I1/TS02V1": 1,
+    "TS01": 2,
+    "TS03": 1,
+    "INT1": 69,
+    "EVT2": 30,
+    "VI2 & VV2": 22
+  },
+  "summary_by_domain": {
+    "TS": 4,
+    "CM": 29,
+    "EC": 59,
+    "EX": 3,
+    "SU": 4,
+    "AE": 5,
+    "DV": 4,
+    "MH": 2,
+    "SE": 1,
+    "DS": 1,
+    "HO": 1,
+    "DA": 1,
+    "DD": 1,
+    "EG": 1,
+    "IE": 1,
+    "LB": 2,
+    "PC": 1,
+    "PE": 1,
+    "PP": 1,
+    "SC": 1,
+    "SS": 1,
+    "VS": 1
+  },
+  "summary_status": {
+    "injected": 125,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

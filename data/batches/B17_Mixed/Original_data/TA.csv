@@ -1,0 +1,7 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+021IGAN17001,TA,IRBESARTAN,Irbesartan 300 mg QD (active control),1,SCRN,Screening,,Transition to Treatment (double-blind),SCREENING
+021IGAN17001,TA,IRBESARTAN,Irbesartan 300 mg QD (active control),2,TRT,Treatment (double-blind),,Transition to Safety follow-up,TREATMENT
+021IGAN17001,TA,IRBESARTAN,Irbesartan 300 mg QD (active control),3,FU,Safety follow-up,,,FOLLOW-UP
+021IGAN17001,TA,SPARSENTAN,Sparsentan 400 mg QD (target dose),1,SCRN,Screening,,Transition to Treatment (double-blind),SCREENING
+021IGAN17001,TA,SPARSENTAN,Sparsentan 400 mg QD (target dose),2,TRT,Treatment (double-blind),,Transition to Safety follow-up,TREATMENT
+021IGAN17001,TA,SPARSENTAN,Sparsentan 400 mg QD (target dose),3,FU,Safety follow-up,,,FOLLOW-UP

@@ -34,3 +34,28 @@ def read_excel_sheet(file_path: str, sheet_name: str) -> pd.DataFrame:
         ) from exc
     except Exception as exc:
         raise FileReadError(f"Unable to read Excel file: {path}") from exc
+    
+
+def clean_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Clean DataFrame column names by removing leading/trailing spaces.
+
+    Parameters
+    ----------
+    df : DataFrame
+        Input DataFrame.
+
+    Returns
+    -------
+    DataFrame
+        DataFrame with cleaned column names.
+    """
+
+    logger.info("Cleaning DataFrame column names.")
+
+    df.columns = (
+        df.columns.astype(str)
+        .str.strip()
+    )
+
+    return df

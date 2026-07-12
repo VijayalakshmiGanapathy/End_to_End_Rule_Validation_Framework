@@ -1,0 +1,5 @@
+STUDYID,DOMAIN,ETCD,ELEMENT,TESTRL,TEENRL,TEDUR
+BI-1245.110,TE,FU,Safety EoT,After EoT,30 days post-last-dose,P30D
+BI-1245.110,TE,SCRN,Screening,Informed consent,Randomization,P28D
+BI-1245.110,TE,TRT,Treatment,Day 1,Final visit (~26 mo median),P780D
+BI-1245.110,TE,ZZTE9,Safety EoT,After EoT,30 days post-last-dose,P30D

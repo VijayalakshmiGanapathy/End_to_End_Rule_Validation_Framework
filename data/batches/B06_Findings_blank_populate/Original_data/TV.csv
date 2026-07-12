@@ -1,0 +1,40 @@
+STUDYID,DOMAIN,VISITNUM,VISIT,VISITDY,ARMCD,ARM,TVSTRL,TVENRL
+MS200095-0022-VISION,TV,1.0,SCREENING,-28,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day -28,End of SCREENING
+MS200095-0022-VISION,TV,2.0,C1D1,1,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 1,End of C1D1
+MS200095-0022-VISION,TV,3.0,C1D15,15,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 15,End of C1D15
+MS200095-0022-VISION,TV,4.0,C2D1,22,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 22,End of C2D1
+MS200095-0022-VISION,TV,5.0,C3D1,43,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 43,End of C3D1
+MS200095-0022-VISION,TV,6.0,C4D1,64,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 64,End of C4D1
+MS200095-0022-VISION,TV,7.0,C6D1,106,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 106,End of C6D1
+MS200095-0022-VISION,TV,8.0,C8D1,148,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 148,End of C8D1
+MS200095-0022-VISION,TV,9.0,C12D1,232,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 232,End of C12D1
+MS200095-0022-VISION,TV,10.0,C18D1,358,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 358,End of C18D1
+MS200095-0022-VISION,TV,11.0,C24D1,484,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 484,End of C24D1
+MS200095-0022-VISION,TV,12.0,EOT,505,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 505,End of EOT
+MS200095-0022-VISION,TV,13.0,SAFETY FU,535,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),Study Day 535,End of SAFETY FU
+MS200095-0022-VISION,TV,1.0,SCREENING,-28,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day -28,End of SCREENING
+MS200095-0022-VISION,TV,2.0,C1D1,1,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 1,End of C1D1
+MS200095-0022-VISION,TV,3.0,C1D15,15,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 15,End of C1D15
+MS200095-0022-VISION,TV,4.0,C2D1,22,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 22,End of C2D1
+MS200095-0022-VISION,TV,5.0,C3D1,43,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 43,End of C3D1
+MS200095-0022-VISION,TV,6.0,C4D1,64,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 64,End of C4D1
+MS200095-0022-VISION,TV,7.0,C6D1,106,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 106,End of C6D1
+MS200095-0022-VISION,TV,8.0,C8D1,148,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 148,End of C8D1
+MS200095-0022-VISION,TV,9.0,C12D1,232,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 232,End of C12D1
+MS200095-0022-VISION,TV,10.0,C18D1,358,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 358,End of C18D1
+MS200095-0022-VISION,TV,11.0,C24D1,484,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 484,End of C24D1
+MS200095-0022-VISION,TV,12.0,EOT,505,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 505,End of EOT
+MS200095-0022-VISION,TV,13.0,SAFETY FU,535,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),Study Day 535,End of SAFETY FU
+MS200095-0022-VISION,TV,1.0,SCREENING,-28,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day -28,End of SCREENING
+MS200095-0022-VISION,TV,2.0,C1D1,1,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 1,End of C1D1
+MS200095-0022-VISION,TV,3.0,C1D15,15,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 15,End of C1D15
+MS200095-0022-VISION,TV,4.0,C2D1,22,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 22,End of C2D1
+MS200095-0022-VISION,TV,5.0,C3D1,43,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 43,End of C3D1
+MS200095-0022-VISION,TV,6.0,C4D1,64,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 64,End of C4D1
+MS200095-0022-VISION,TV,7.0,C6D1,106,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 106,End of C6D1
+MS200095-0022-VISION,TV,8.0,C8D1,148,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 148,End of C8D1
+MS200095-0022-VISION,TV,9.0,C12D1,232,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 232,End of C12D1
+MS200095-0022-VISION,TV,10.0,C18D1,358,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 358,End of C18D1
+MS200095-0022-VISION,TV,11.0,C24D1,484,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 484,End of C24D1
+MS200095-0022-VISION,TV,12.0,EOT,505,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 505,End of EOT
+MS200095-0022-VISION,TV,13.0,SAFETY FU,535,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",Study Day 535,End of SAFETY FU

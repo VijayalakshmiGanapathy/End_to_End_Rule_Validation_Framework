@@ -54,11 +54,7 @@ class InjectionHarnessLocators:
         "dvn-scroller",
     )
 
-    SELECT_FILTERED_BUTTON = (
-        By.XPATH,
-        "//button[.//p[text()='Select filtered']]",
-    )
-
+    
     
 
     RUN_INJECTION_BUTTON = (
@@ -71,10 +67,10 @@ class InjectionHarnessLocators:
         "//button[.//p[normalize-space()='Download manifest.json']]",
     )
 
-    DOWNLOAD_DIRTY_CSV_BUTTON = (
+    DOWNLOAD_IMPUTED_DATASET_CSV_BUTTON = (
         By.XPATH,
-        "//button[.//p[normalize-space()='Download dirty CSVs']]",
-    )
+            "//button[.//p[contains(normalize-space(),'Download imputed dataset CSV')]]",
+        )
 
     EXPORT_SUMMARY_TABLE = (
         By.XPATH,
@@ -96,12 +92,61 @@ class InjectionHarnessLocators:
         "button[aria-label='Download as CSV']",
     )
 
+    # @staticmethod
+    # def navigation_radio(page_name: str):
+    #     return (
+    #         By.XPATH,
+    #         f"//label[@data-baseweb='radio'][.//p[normalize-space()='{page_name}']]",
+    #     )
+    
+
+    # @staticmethod
+    # def navigation_radio(page_name: str):
+    #     return (
+    #         By.XPATH,
+    #         f"//p[normalize-space()='{page_name}']"
+    #     )
+
+   
+
     @staticmethod
-    def navigation_radio(page_name: str):
-        return (
-            By.XPATH,
-            f"//label[@data-baseweb='radio'][.//p[normalize-space()='{page_name}']]",
-        )
+    def navigation_radio(page_name):
+
+        return [
+            (
+                By.XPATH,
+                f"//label[@data-testid='stRadioOption'][.//p[normalize-space()='{page_name}']]"
+            ),
+            (
+                By.XPATH,
+                f"//label[.//p[normalize-space()='{page_name}']]"
+            ),
+            (
+                By.XPATH,
+                f"//*[normalize-space(text())='{page_name}']/ancestor::label[1]"
+            ),
+        ]
     
     AUDIT_RADIO_BUTTON = navigation_radio("Audit")
+
+    @staticmethod
+    def download_imputed_dataset_csv_button():
+
+        return [
+
+            (
+                By.XPATH,
+                "//button[.//p[contains(.,'Download imputed dataset')]]",
+            ),
+
+            (
+                By.XPATH,
+                "//button[.//p[contains(.,'dirty CSV')]]",
+            ),
+
+            (
+                By.XPATH,
+                "//div[@data-testid='stDownloadButton']//button",
+            ),
+        ]
     

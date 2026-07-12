@@ -1,0 +1,2836 @@
+{
+  "generated_at": "2026-07-07T05:09:30.285104",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_yjn6j4o_",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 10,
+  "rules_skipped": 0,
+  "rules_injected": 10,
+  "total_mutations": 116,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1031-SV-001",
+      "rule_id": "SD1031",
+      "rule_message": "Value for --ENRF is populated, when RFENDTC is NULL",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0004",
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": "1",
+      "variables_modified": {
+        "SVENRF": {
+          "original": "",
+          "injected": "DURING"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD1031-DS-002",
+      "rule_id": "SD1031",
+      "rule_message": "Value for --ENRF is populated, when RFENDTC is NULL",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0020",
+      "row_index": 45,
+      "csv_line": 47,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSENRF": {
+          "original": "",
+          "injected": "DURING"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 45
+    },
+    {
+      "error_id": "INJ-SD1031-IE-003",
+      "rule_id": "SD1031",
+      "rule_message": "Value for --ENRF is populated, when RFENDTC is NULL",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0020",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "IEENRF": {
+          "original": "",
+          "injected": "DURING"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1368-SM-001",
+      "rule_id": "SD1368",
+      "rule_message": "SMSTDTC is null",
+      "category": "SP01",
+      "primitive": "blank_field",
+      "domain": "SM",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "1",
+      "variables_modified": {
+        "SMSTDTC": {
+          "original": "2022-01-31",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD0067-SE-001",
+      "rule_id": "SD0067",
+      "rule_message": "Invalid ETCD",
+      "category": "SP01",
+      "primitive": "cross_domain_mismatch",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0007",
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "2",
+      "variables_modified": {
+        "ETCD": {
+          "original": "TRT",
+          "injected": "ZZZSD0067"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TE.ETCD (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD0067-SE-002",
+      "rule_id": "SD0067",
+      "rule_message": "Invalid ETCD",
+      "category": "SP01",
+      "primitive": "cross_domain_mismatch",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": "1",
+      "variables_modified": {
+        "ETCD": {
+          "original": "SCRN",
+          "injected": "ZZZSD0067"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TE.ETCD (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD1012-SE-001",
+      "rule_id": "SD1012",
+      "rule_message": "Invalid ETCD/ELEMENT",
+      "category": "SP01",
+      "primitive": "cross_domain_mismatch",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-FRA_SITE01-0003",
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "1",
+      "variables_modified": {
+        "ELEMENT": {
+          "original": "Screening",
+          "injected": "ZZZSD1012"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TE.ETCD,ELEMENT (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD1012-SE-002",
+      "rule_id": "SD1012",
+      "rule_message": "Invalid ETCD/ELEMENT",
+      "category": "SP01",
+      "primitive": "cross_domain_mismatch",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "3",
+      "variables_modified": {
+        "ELEMENT": {
+          "original": "30-day safety FU",
+          "injected": "ZZZSD1012"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs TE.ETCD,ELEMENT (not_in_target_set); target_set_size=3",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD1027-SE-001",
+      "rule_id": "SD1027",
+      "rule_message": "Non-unique value for ELEMENT within ETCD",
+      "category": "SP01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE01-0016",
+      "row_index": 22,
+      "csv_line": 24,
+      "seq_value": "2",
+      "variables_modified": {
+        "ELEMENT": {
+          "original": "Treatment (cycles)",
+          "injected": "DUP_X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ELEMENT changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 22
+    },
+    {
+      "error_id": "INJ-SD1027-SE-002",
+      "rule_id": "SD1027",
+      "rule_message": "Non-unique value for ELEMENT within ETCD",
+      "category": "SP01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0014",
+      "row_index": 42,
+      "csv_line": 44,
+      "seq_value": "1",
+      "variables_modified": {
+        "ELEMENT": {
+          "original": "Screening",
+          "injected": "DUP_X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ELEMENT changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 42
+    },
+    {
+      "error_id": "INJ-SD0019-TS-001",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Actual Number of Subjects",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD0019-TS-002",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Adaptive Design",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD0019-TS-003",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Added on to Existing Treatments",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD0019-TS-004",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Planned Maximum Age of Subjects",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD0019-TS-005",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Planned Minimum Age of Subjects",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD0019-TS-006",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Data Cutoff Description",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD0019-TS-007",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Data Cutoff Date",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD0019-TS-008",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Extension Trial Indicator",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD0019-TS-009",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Planned Country of Investigational Sites",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD0019-TS-010",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Healthy Subject Indicator",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD0019-TS-011",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Disease/Condition Indication",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD0019-TS-012",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Intervention Model",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD0019-TS-013",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Intervention Type",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD0019-TS-014",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Length",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD0019-TS-015",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Planned Number of Arms",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD0019-TS-016",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 15,
+      "csv_line": 17,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Number of Groups/Cohorts",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15
+    },
+    {
+      "error_id": "INJ-SD0019-TS-017",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Primary Objective",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD0019-TS-018",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 17,
+      "csv_line": 19,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Secondary Objective",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17
+    },
+    {
+      "error_id": "INJ-SD0019-TS-019",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Ongoing Study Indicator",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD0019-TS-020",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Primary Outcome Measure",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD0019-TS-021",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Pharmacologic Class",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD0019-TS-022",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Pediatric Postmarket Study Indicator",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD0019-TS-023",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 22,
+      "csv_line": 24,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Pediatric Study Indicator",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 22
+    },
+    {
+      "error_id": "INJ-SD0019-TS-024",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 23,
+      "csv_line": 25,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Pediatric Investigation Plan Indicator",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 23
+    },
+    {
+      "error_id": "INJ-SD0019-TS-025",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Planned Number of Subjects",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD0019-TS-026",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 25,
+      "csv_line": 27,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial is Randomized",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 25
+    },
+    {
+      "error_id": "INJ-SD0019-TS-027",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 26,
+      "csv_line": 28,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Rare Disease Indicator",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 26
+    },
+    {
+      "error_id": "INJ-SD0019-TS-028",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 27,
+      "csv_line": 29,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Registry Identifier",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 27
+    },
+    {
+      "error_id": "INJ-SD0019-TS-029",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 28,
+      "csv_line": 30,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "SDTM IG Version",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 28
+    },
+    {
+      "error_id": "INJ-SD0019-TS-030",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "SDTM Version",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD0019-TS-031",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 30,
+      "csv_line": 32,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Study End Date",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 30
+    },
+    {
+      "error_id": "INJ-SD0019-TS-032",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 31,
+      "csv_line": 33,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Sex of Participants",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 31
+    },
+    {
+      "error_id": "INJ-SD0019-TS-033",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 32,
+      "csv_line": 34,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Clinical Study Sponsor",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 32
+    },
+    {
+      "error_id": "INJ-SD0019-TS-034",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 33,
+      "csv_line": 35,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Study Start Date",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 33
+    },
+    {
+      "error_id": "INJ-SD0019-TS-035",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 34,
+      "csv_line": 36,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Study Stop Rules",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 34
+    },
+    {
+      "error_id": "INJ-SD0019-TS-036",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 35,
+      "csv_line": 37,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Study Type",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 35
+    },
+    {
+      "error_id": "INJ-SD0019-TS-037",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Blinding Schema",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD0019-TS-038",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Control Type",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD0019-TS-039",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 38,
+      "csv_line": 40,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Diagnosis Group",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 38
+    },
+    {
+      "error_id": "INJ-SD0019-TS-040",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 39,
+      "csv_line": 41,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Therapeutic Area",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 39
+    },
+    {
+      "error_id": "INJ-SD0019-TS-041",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Intent Type",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD0019-TS-042",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 41,
+      "csv_line": 43,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Title",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 41
+    },
+    {
+      "error_id": "INJ-SD0019-TS-043",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 42,
+      "csv_line": 44,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Phase Classification",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 42
+    },
+    {
+      "error_id": "INJ-SD0019-TS-044",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 43,
+      "csv_line": 45,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Investigational Therapy or Treatment",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 43
+    },
+    {
+      "error_id": "INJ-SD0019-TS-045",
+      "rule_id": "SD0019",
+      "rule_message": "Invalid value for --PARM variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 44,
+      "csv_line": 46,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARM": {
+          "original": "Trial Type",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 44
+    },
+    {
+      "error_id": "INJ-SD0020-TS-001",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "ACTSUB",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD0020-TS-002",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "ADAPT",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD0020-TS-003",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "ADDON",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD0020-TS-004",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "AGEMAX",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD0020-TS-005",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "AGEMIN",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD0020-TS-006",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "DCUTDESC",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD0020-TS-007",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "DCUTDTC",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD0020-TS-008",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "EXTTIND",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD0020-TS-009",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "FCNTRY",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD0020-TS-010",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "HLTSUBJI",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD0020-TS-011",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "INDIC",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD0020-TS-012",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "INTMODEL",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD0020-TS-013",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "INTTYPE",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD0020-TS-014",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "LENGTH",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD0020-TS-015",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "NARMS",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD0020-TS-016",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 15,
+      "csv_line": 17,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "NCOHORT",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15
+    },
+    {
+      "error_id": "INJ-SD0020-TS-017",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "OBJPRIM",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD0020-TS-018",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 17,
+      "csv_line": 19,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "OBJSEC",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17
+    },
+    {
+      "error_id": "INJ-SD0020-TS-019",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "ONGOSIND",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD0020-TS-020",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "OUTMSPRI",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD0020-TS-021",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "PCLAS",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD0020-TS-022",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "PDPSTIND",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD0020-TS-023",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 22,
+      "csv_line": 24,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "PDSTIND",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 22
+    },
+    {
+      "error_id": "INJ-SD0020-TS-024",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 23,
+      "csv_line": 25,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "PIPIND",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 23
+    },
+    {
+      "error_id": "INJ-SD0020-TS-025",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "PLANSUB",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD0020-TS-026",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 25,
+      "csv_line": 27,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "RANDOM",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 25
+    },
+    {
+      "error_id": "INJ-SD0020-TS-027",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 26,
+      "csv_line": 28,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "RDIND",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 26
+    },
+    {
+      "error_id": "INJ-SD0020-TS-028",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 27,
+      "csv_line": 29,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "REGID",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 27
+    },
+    {
+      "error_id": "INJ-SD0020-TS-029",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 28,
+      "csv_line": 30,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "SDTIGVER",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 28
+    },
+    {
+      "error_id": "INJ-SD0020-TS-030",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "SDTMVER",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD0020-TS-031",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 30,
+      "csv_line": 32,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "SENDTC",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 30
+    },
+    {
+      "error_id": "INJ-SD0020-TS-032",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 31,
+      "csv_line": 33,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "SEXPOP",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 31
+    },
+    {
+      "error_id": "INJ-SD0020-TS-033",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 32,
+      "csv_line": 34,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "SPONSOR",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 32
+    },
+    {
+      "error_id": "INJ-SD0020-TS-034",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 33,
+      "csv_line": 35,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "SSTDTC",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 33
+    },
+    {
+      "error_id": "INJ-SD0020-TS-035",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 34,
+      "csv_line": 36,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "STOPRULE",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 34
+    },
+    {
+      "error_id": "INJ-SD0020-TS-036",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 35,
+      "csv_line": 37,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "STYPE",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 35
+    },
+    {
+      "error_id": "INJ-SD0020-TS-037",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TBLIND",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD0020-TS-038",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TCNTRL",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD0020-TS-039",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 38,
+      "csv_line": 40,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TDIGRP",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 38
+    },
+    {
+      "error_id": "INJ-SD0020-TS-040",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 39,
+      "csv_line": 41,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "THERAREA",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 39
+    },
+    {
+      "error_id": "INJ-SD0020-TS-041",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TINDTP",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD0020-TS-042",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 41,
+      "csv_line": 43,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TITLE",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 41
+    },
+    {
+      "error_id": "INJ-SD0020-TS-043",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 42,
+      "csv_line": 44,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TPHASE",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 42
+    },
+    {
+      "error_id": "INJ-SD0020-TS-044",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 43,
+      "csv_line": 45,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TRT",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 43
+    },
+    {
+      "error_id": "INJ-SD0020-TS-045",
+      "rule_id": "SD0020",
+      "rule_message": "Invalid value for --PARMCD variable",
+      "category": "MDAP",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 44,
+      "csv_line": 46,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TTYPE",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 44
+    },
+    {
+      "error_id": "INJ-SD1050-SE-001",
+      "rule_id": "SD1050",
+      "rule_message": "Non-unique value for ETCD within ELEMENT",
+      "category": "SP01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 34,
+      "csv_line": 36,
+      "seq_value": "2",
+      "variables_modified": {
+        "ETCD": {
+          "original": "TRT",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ETCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 34
+    },
+    {
+      "error_id": "INJ-SD1050-SE-002",
+      "rule_id": "SD1050",
+      "rule_message": "Non-unique value for ETCD within ELEMENT",
+      "category": "SP01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 33,
+      "csv_line": 35,
+      "seq_value": "1",
+      "variables_modified": {
+        "ETCD": {
+          "original": "SCRN",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ETCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 33
+    },
+    {
+      "error_id": "INJ-SD1050-TA-003",
+      "rule_id": "SD1050",
+      "rule_message": "Non-unique value for ETCD within ELEMENT",
+      "category": "SP01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TA",
+      "usubjid": null,
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": null,
+      "variables_modified": {
+        "ETCD": {
+          "original": "TRT",
+          "injected": "INCONSISTENT_CD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with ETCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1009-SE-001",
+      "rule_id": "SD1009",
+      "rule_message": "Invalid value for ETCD",
+      "category": "SP01",
+      "primitive": "set_invalid_value",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-USA_SITE02-0002",
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "1",
+      "variables_modified": {
+        "ETCD": {
+          "original": "SCRN",
+          "injected": "ABCDEFGHI"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD1009-SE-002",
+      "rule_id": "SD1009",
+      "rule_message": "Invalid value for ETCD",
+      "category": "SP01",
+      "primitive": "set_invalid_value",
+      "domain": "SE",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "2",
+      "variables_modified": {
+        "ETCD": {
+          "original": "TRT",
+          "injected": "ABCDEFGHI"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1009-TA-003",
+      "rule_id": "SD1009",
+      "rule_message": "Invalid value for ETCD",
+      "category": "SP01",
+      "primitive": "set_invalid_value",
+      "domain": "TA",
+      "usubjid": null,
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": null,
+      "variables_modified": {
+        "ETCD": {
+          "original": "FU",
+          "injected": "ABCDEFGHI"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1009-TE-004",
+      "rule_id": "SD1009",
+      "rule_message": "Invalid value for ETCD",
+      "category": "SP01",
+      "primitive": "set_invalid_value",
+      "domain": "TE",
+      "usubjid": null,
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": null,
+      "variables_modified": {
+        "ETCD": {
+          "original": "SCRN",
+          "injected": "ABCDEFGHI"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1060-SV-001",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-USA_SITE01-0018",
+      "row_index": 152,
+      "csv_line": 154,
+      "seq_value": "2",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 152
+    },
+    {
+      "error_id": "INJ-SD1060-SV-002",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 67,
+      "csv_line": 69,
+      "seq_value": "2",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 67
+    },
+    {
+      "error_id": "INJ-SD1060-SV-003",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 77,
+      "csv_line": 79,
+      "seq_value": "12",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 77
+    },
+    {
+      "error_id": "INJ-SD1060-SV-004",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0005",
+      "row_index": 92,
+      "csv_line": 94,
+      "seq_value": "5",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 92
+    },
+    {
+      "error_id": "INJ-SD1060-SV-005",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-ITA_SITE01-0011",
+      "row_index": 75,
+      "csv_line": 77,
+      "seq_value": "10",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 75
+    },
+    {
+      "error_id": "INJ-SD1060-SV-006",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 139,
+      "csv_line": 141,
+      "seq_value": "12",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 139
+    },
+    {
+      "error_id": "INJ-SD1060-SV-007",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0012",
+      "row_index": 107,
+      "csv_line": 109,
+      "seq_value": "6",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 107
+    },
+    {
+      "error_id": "INJ-SD1060-SV-008",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-DEU_SITE01-0009",
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "13",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD1060-SV-009",
+      "rule_id": "SD1060",
+      "rule_message": "Duplicate VISITNUM",
+      "category": "SP01",
+      "primitive": "duplicate_record",
+      "domain": "SV",
+      "usubjid": "MS200095-0022-VISION-JPN_SITE02-0019",
+      "row_index": 129,
+      "csv_line": 131,
+      "seq_value": "2",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'VISITNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 129
+    }
+  ],
+  "summary_by_rule": {
+    "SD1031": 3,
+    "SD1368": 1,
+    "SD0067": 2,
+    "SD1012": 2,
+    "SD1027": 2,
+    "SD0019": 45,
+    "SD0020": 45,
+    "SD1050": 3,
+    "SD1009": 4,
+    "SD1060": 9
+  },
+  "summary_by_category": {
+    "GO2": 3,
+    "SP01": 23,
+    "MDAP": 90
+  },
+  "summary_by_domain": {
+    "SV": 10,
+    "DS": 1,
+    "IE": 1,
+    "SM": 1,
+    "SE": 10,
+    "TS": 90,
+    "TA": 2,
+    "TE": 1
+  },
+  "summary_status": {
+    "injected": 116,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

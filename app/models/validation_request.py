@@ -4,8 +4,8 @@ from pydantic import BaseModel, Field
 class ValidationRequest(BaseModel):
     """Request model for validation execution."""
 
-    batch_name: str = Field(..., example="B01_DM_dates")
-    host_generator_key: str = Field(..., example="oncology_nsclc")
+    batch_name: str = Field(..., example="B18_Mixed")
+    host_generator_key: str = Field(..., example="cardiovascular_hfpef")
     export_summary_path: str
     export_detail_path: str
     p21_report_path: str

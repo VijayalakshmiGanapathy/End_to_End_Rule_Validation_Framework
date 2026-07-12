@@ -1,0 +1,16 @@
+﻿rule_id,injected,overwritten,failed_self_validation,total,failure_reason
+SD1026,24,0,1,25,guard no longer holds: IDVAR.endswith('SEQ')
+SD1072,22,0,0,22,
+SD1066,21,0,0,21,
+SD1067,15,0,0,15,
+SD0075,13,0,0,13,
+SD1264,10,0,2,12,"guard no longer holds: IDVAR in (AESEQ,DSSEQ,CMSEQ,AESEQ,EXSEQ,LBSEQ)"
+SD0046,3,0,0,3,
+SD0077,3,0,0,3,
+SD1126,3,0,0,3,
+SD0032,2,0,0,2,
+SD0072,2,0,0,2,
+SD0086,2,0,0,2,
+SD0034,1,0,0,1,
+SD1022,1,0,0,1,
+SD1130,1,0,0,1,

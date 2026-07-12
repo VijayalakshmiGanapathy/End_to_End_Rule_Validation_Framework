@@ -1,0 +1,4 @@
+STUDYID,DOMAIN,ETCD,ELEMENT,TESTRL,TEENRL,TEDUR
+M19-977-RISA-PED,TE,FU,Safety follow-up,After Week 40,Week 60,P140D
+M19-977-RISA-PED,TE,SCRN,Screening,Informed consent/assent,Week 0,P35D
+M19-977-RISA-PED,TE,TRT,Treatment (initial),Week 0,Week 40,P280D

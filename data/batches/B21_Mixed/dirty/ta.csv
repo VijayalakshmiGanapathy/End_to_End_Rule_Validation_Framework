@@ -1,0 +1,4 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+P261-402-USL261,TA,USL261,USL261 5 mg intranasal PRN per seizure cluster,1,SCRN,Enrollment (post P261-401),,Transition to Treatment (long-term),SCREENING
+P261-402-USL261,TA,USL261,USL261 5 mg intranasal PRN per seizure cluster,2,TRT,Treatment (long-term),,Transition to Final visit,TREATMENT
+P261-402-USL261,TA,USL261,USL261 5 mg intranasal PRN per seizure cluster,3,FU,Final visit,,,FOLLOW-UP

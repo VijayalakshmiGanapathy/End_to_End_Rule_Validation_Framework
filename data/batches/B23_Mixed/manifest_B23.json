@@ -1,0 +1,3161 @@
+{
+  "generated_at": "2026-07-07T06:12:13.090027",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_ztp95pqm",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 10,
+  "rules_skipped": 0,
+  "rules_injected": 10,
+  "total_mutations": 119,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1219-TS-001",
+      "rule_id": "SD1219",
+      "rule_message": "Invalid TSVAL value for LENGTH",
+      "category": "TS01",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVAL": {
+          "original": "P15M",
+          "injected": "INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD2212-TS-001",
+      "rule_id": "SD2212",
+      "rule_message": "Missing TINDTP Trial Summary Parameter",
+      "category": "TS02I1/TS02V1",
+      "primitive": "delete_row",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TINDTP",
+          "injected": "(row deleted)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD1150-TI-001",
+      "rule_id": "SD1150",
+      "rule_message": "Inconsistent value for IETEST within IETESTCD",
+      "category": "TD01",
+      "primitive": "duplicate_with_mutation",
+      "domain": "TI",
+      "usubjid": null,
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": null,
+      "variables_modified": {
+        "IETEST": {
+          "original": "Subject has a known hypersensitivity to study drug or excipients",
+          "injected": "Alternate wording of this criterion"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with IETEST changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-001",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+      "row_index": 32,
+      "csv_line": 34,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 32
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-002",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 102,
+      "csv_line": 104,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 102
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-003",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+      "row_index": 68,
+      "csv_line": 70,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 68
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-004",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+      "row_index": 136,
+      "csv_line": 138,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 136
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-005",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+      "row_index": 112,
+      "csv_line": 114,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 112
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-006",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-007",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+      "row_index": 157,
+      "csv_line": 159,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 157
+    },
+    {
+      "error_id": "INJ-SD2006-SUPPAE-008",
+      "rule_id": "SD2006",
+      "rule_message": "Unexpected MedDRA coding in the SUPPQUAL domain",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+      "row_index": 119,
+      "csv_line": 121,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "AELLT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 119
+    },
+    {
+      "error_id": "INJ-SD1331-CM-001",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+      "row_index": 44,
+      "csv_line": 46,
+      "seq_value": "4",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 44
+    },
+    {
+      "error_id": "INJ-SD1331-CM-002",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+      "row_index": 48,
+      "csv_line": 50,
+      "seq_value": "8",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 48
+    },
+    {
+      "error_id": "INJ-SD1331-CM-003",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1331-CM-004",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "4",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD1331-CM-005",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+      "row_index": 94,
+      "csv_line": 96,
+      "seq_value": "4",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 94
+    },
+    {
+      "error_id": "INJ-SD1331-CM-006",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+      "row_index": 81,
+      "csv_line": 83,
+      "seq_value": "10",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 81
+    },
+    {
+      "error_id": "INJ-SD1331-CM-007",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+      "row_index": 49,
+      "csv_line": 51,
+      "seq_value": "9",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 49
+    },
+    {
+      "error_id": "INJ-SD1331-CM-008",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD1331-EC-009",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+      "row_index": 34,
+      "csv_line": 36,
+      "seq_value": "3",
+      "variables_modified": {
+        "ECDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 34
+    },
+    {
+      "error_id": "INJ-SD1331-EC-010",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "4",
+      "variables_modified": {
+        "ECDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1331-EC-011",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "1",
+      "variables_modified": {
+        "ECDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1331-EC-012",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 55,
+      "csv_line": 57,
+      "seq_value": "4",
+      "variables_modified": {
+        "ECDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 55
+    },
+    {
+      "error_id": "INJ-SD1331-EC-013",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "3",
+      "variables_modified": {
+        "ECDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1331-EX-014",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": "4",
+      "variables_modified": {
+        "EXDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD1331-EX-015",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "3",
+      "variables_modified": {
+        "EXDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD1331-EX-016",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+      "row_index": 42,
+      "csv_line": 44,
+      "seq_value": "4",
+      "variables_modified": {
+        "EXDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 42
+    },
+    {
+      "error_id": "INJ-SD1331-EX-017",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+      "row_index": 45,
+      "csv_line": 47,
+      "seq_value": "3",
+      "variables_modified": {
+        "EXDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 45
+    },
+    {
+      "error_id": "INJ-SD1331-EX-018",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "3",
+      "variables_modified": {
+        "EXDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1331-SU-019",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+      "row_index": 49,
+      "csv_line": 51,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 49
+    },
+    {
+      "error_id": "INJ-SD1331-SU-020",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+      "row_index": 39,
+      "csv_line": 41,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 39
+    },
+    {
+      "error_id": "INJ-SD1331-AE-021",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "7",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1331-AE-022",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 145,
+      "csv_line": 147,
+      "seq_value": "4",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 145
+    },
+    {
+      "error_id": "INJ-SD1331-AE-023",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 107,
+      "csv_line": 109,
+      "seq_value": "14",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 107
+    },
+    {
+      "error_id": "INJ-SD1331-AE-024",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+      "row_index": 23,
+      "csv_line": 25,
+      "seq_value": "6",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 23
+    },
+    {
+      "error_id": "INJ-SD1331-AE-025",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+      "row_index": 118,
+      "csv_line": 120,
+      "seq_value": "1",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 118
+    },
+    {
+      "error_id": "INJ-SD1331-AE-026",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+      "row_index": 75,
+      "csv_line": 77,
+      "seq_value": "12",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 75
+    },
+    {
+      "error_id": "INJ-SD1331-AE-027",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+      "row_index": 70,
+      "csv_line": 72,
+      "seq_value": "7",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 70
+    },
+    {
+      "error_id": "INJ-SD1331-AE-028",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+      "row_index": 115,
+      "csv_line": 117,
+      "seq_value": "6",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 115
+    },
+    {
+      "error_id": "INJ-SD1331-AE-029",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+      "row_index": 155,
+      "csv_line": 157,
+      "seq_value": "1",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 155
+    },
+    {
+      "error_id": "INJ-SD1331-AE-030",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 54,
+      "csv_line": 56,
+      "seq_value": "5",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 54
+    },
+    {
+      "error_id": "INJ-SD1331-AE-031",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+      "row_index": 66,
+      "csv_line": 68,
+      "seq_value": "3",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 66
+    },
+    {
+      "error_id": "INJ-SD1331-AE-032",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+      "row_index": 58,
+      "csv_line": 60,
+      "seq_value": "2",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 58
+    },
+    {
+      "error_id": "INJ-SD1331-AE-033",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "AE",
+      "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+      "row_index": 84,
+      "csv_line": 86,
+      "seq_value": "4",
+      "variables_modified": {
+        "AEDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 84
+    },
+    {
+      "error_id": "INJ-SD1331-DS-034",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0015",
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "DSDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD1331-DS-035",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0020",
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD1331-DS-036",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+      "row_index": 30,
+      "csv_line": 32,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 30
+    },
+    {
+      "error_id": "INJ-SD1331-DS-037",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+      "row_index": 52,
+      "csv_line": 54,
+      "seq_value": "1",
+      "variables_modified": {
+        "DSDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 52
+    },
+    {
+      "error_id": "INJ-SD1331-DS-038",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "DSDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1331-DV-039",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DV",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "2",
+      "variables_modified": {
+        "DVDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1331-DV-040",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DV",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+      "row_index": 48,
+      "csv_line": 50,
+      "seq_value": "5",
+      "variables_modified": {
+        "DVDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 48
+    },
+    {
+      "error_id": "INJ-SD1331-DV-041",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DV",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": "1",
+      "variables_modified": {
+        "DVDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1331-DV-042",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "DV",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+      "row_index": 53,
+      "csv_line": 55,
+      "seq_value": "5",
+      "variables_modified": {
+        "DVDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 53
+    },
+    {
+      "error_id": "INJ-SD1331-HO-043",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "HO",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "HODTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1331-HO-044",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "HO",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "2",
+      "variables_modified": {
+        "HODTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1331-MH-045",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "MH",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 32,
+      "csv_line": 34,
+      "seq_value": "1",
+      "variables_modified": {
+        "MHDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 32
+    },
+    {
+      "error_id": "INJ-SD1331-MH-046",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "MH",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "MHDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1331-MH-047",
+      "rule_id": "SD1331",
+      "rule_message": "--STDTC is after --DTC",
+      "category": "EVT2",
+      "primitive": "set_invalid_value",
+      "domain": "MH",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 23,
+      "csv_line": 25,
+      "seq_value": "3",
+      "variables_modified": {
+        "MHDTC": {
+          "original": "",
+          "injected": "2025-01-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 23
+    },
+    {
+      "error_id": "INJ-SD0045-DA-001",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+      "row_index": 185,
+      "csv_line": 187,
+      "seq_value": "6",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 185
+    },
+    {
+      "error_id": "INJ-SD0045-DA-002",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+      "row_index": 145,
+      "csv_line": 147,
+      "seq_value": "2",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 145
+    },
+    {
+      "error_id": "INJ-SD0045-DA-003",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 52,
+      "csv_line": 54,
+      "seq_value": "5",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 52
+    },
+    {
+      "error_id": "INJ-SD0045-DA-004",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+      "row_index": 146,
+      "csv_line": 148,
+      "seq_value": "3",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 146
+    },
+    {
+      "error_id": "INJ-SD0045-DA-005",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+      "row_index": 133,
+      "csv_line": 135,
+      "seq_value": "2",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 133
+    },
+    {
+      "error_id": "INJ-SD0045-DA-006",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-CAN_SITE01-0004",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "2",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD0045-DA-007",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+      "row_index": 149,
+      "csv_line": 151,
+      "seq_value": "6",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 149
+    },
+    {
+      "error_id": "INJ-SD0045-DA-008",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+      "row_index": 106,
+      "csv_line": 108,
+      "seq_value": "11",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 106
+    },
+    {
+      "error_id": "INJ-SD0045-DA-009",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+      "row_index": 124,
+      "csv_line": 126,
+      "seq_value": "5",
+      "variables_modified": {
+        "DARESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 124
+    },
+    {
+      "error_id": "INJ-SD0045-IE-010",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0020",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "IERESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "IESTRESC": {
+          "original": "Y",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD0045-LB-011",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 249,
+      "csv_line": 251,
+      "seq_value": "5",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "145.05",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 249
+    },
+    {
+      "error_id": "INJ-SD0045-LB-012",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 492,
+      "csv_line": 494,
+      "seq_value": "3",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "94.98",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 492
+    },
+    {
+      "error_id": "INJ-SD0045-LB-013",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 297,
+      "csv_line": 299,
+      "seq_value": "53",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "5.79",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 297
+    },
+    {
+      "error_id": "INJ-SD0045-LB-014",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 764,
+      "csv_line": 766,
+      "seq_value": "51",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "17.61",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 764
+    },
+    {
+      "error_id": "INJ-SD0045-LB-015",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 739,
+      "csv_line": 741,
+      "seq_value": "26",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "129.1",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 739
+    },
+    {
+      "error_id": "INJ-SD0045-LB-016",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 499,
+      "csv_line": 501,
+      "seq_value": "10",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "95.36",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 499
+    },
+    {
+      "error_id": "INJ-SD0045-LB-017",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+      "row_index": 828,
+      "csv_line": 830,
+      "seq_value": "45",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "84.54",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 828
+    },
+    {
+      "error_id": "INJ-SD0045-LB-018",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+      "row_index": 560,
+      "csv_line": 562,
+      "seq_value": "8",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "30.82",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 560
+    },
+    {
+      "error_id": "INJ-SD0045-LB-019",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 498,
+      "csv_line": 500,
+      "seq_value": "9",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "23.84",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 498
+    },
+    {
+      "error_id": "INJ-SD0045-LB-020",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 714,
+      "csv_line": 716,
+      "seq_value": "1",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "17.51",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 714
+    },
+    {
+      "error_id": "INJ-SD0045-LB-021",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+      "row_index": 886,
+      "csv_line": 888,
+      "seq_value": "33",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "154.79",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 886
+    },
+    {
+      "error_id": "INJ-SD0045-LB-022",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+      "row_index": 116,
+      "csv_line": 118,
+      "seq_value": "40",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "124.97",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 116
+    },
+    {
+      "error_id": "INJ-SD0045-LB-023",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 213,
+      "csv_line": 215,
+      "seq_value": "11",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "4.97",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 213
+    },
+    {
+      "error_id": "INJ-SD0045-LB-024",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 747,
+      "csv_line": 749,
+      "seq_value": "34",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "188.32",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 747
+    },
+    {
+      "error_id": "INJ-SD0045-LB-025",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+      "row_index": 195,
+      "csv_line": 197,
+      "seq_value": "28",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "4.89",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 195
+    },
+    {
+      "error_id": "INJ-SD0045-LB-026",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+      "row_index": 609,
+      "csv_line": 611,
+      "seq_value": "57",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "32.96",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 609
+    },
+    {
+      "error_id": "INJ-SD0045-LB-027",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 537,
+      "csv_line": 539,
+      "seq_value": "48",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "283.63",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 537
+    },
+    {
+      "error_id": "INJ-SD0045-LB-028",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+      "row_index": 602,
+      "csv_line": 604,
+      "seq_value": "50",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "32.66",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 602
+    },
+    {
+      "error_id": "INJ-SD0045-LB-029",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 501,
+      "csv_line": 503,
+      "seq_value": "12",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "142.26",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 501
+    },
+    {
+      "error_id": "INJ-SD0045-LB-030",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+      "row_index": 464,
+      "csv_line": 466,
+      "seq_value": "38",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "30.0",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 464
+    },
+    {
+      "error_id": "INJ-SD0045-LB-031",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+      "row_index": 80,
+      "csv_line": 82,
+      "seq_value": "4",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "4.79",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 80
+    },
+    {
+      "error_id": "INJ-SD0045-LB-032",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 509,
+      "csv_line": 511,
+      "seq_value": "20",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "284.24",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 509
+    },
+    {
+      "error_id": "INJ-SD0045-LB-033",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 271,
+      "csv_line": 273,
+      "seq_value": "27",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "147.12",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 271
+    },
+    {
+      "error_id": "INJ-SD0045-LB-034",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+      "row_index": 372,
+      "csv_line": 374,
+      "seq_value": "58",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "26.75",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 372
+    },
+    {
+      "error_id": "INJ-SD0045-LB-035",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+      "row_index": 157,
+      "csv_line": 159,
+      "seq_value": "25",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "4.57",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 157
+    },
+    {
+      "error_id": "INJ-SD0045-LB-036",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 746,
+      "csv_line": 748,
+      "seq_value": "33",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "127.85",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 746
+    },
+    {
+      "error_id": "INJ-SD0045-LB-037",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 268,
+      "csv_line": 270,
+      "seq_value": "24",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "82.85",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 268
+    },
+    {
+      "error_id": "INJ-SD0045-LB-038",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+      "row_index": 906,
+      "csv_line": 908,
+      "seq_value": "53",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "6.51",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 906
+    },
+    {
+      "error_id": "INJ-SD0045-LB-039",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+      "row_index": 508,
+      "csv_line": 510,
+      "seq_value": "19",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "143.45",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 508
+    },
+    {
+      "error_id": "INJ-SD0045-LB-040",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+      "row_index": 874,
+      "csv_line": 876,
+      "seq_value": "21",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "6.31",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 874
+    },
+    {
+      "error_id": "INJ-SD0045-LB-041",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+      "row_index": 770,
+      "csv_line": 772,
+      "seq_value": "57",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "19.74",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 770
+    },
+    {
+      "error_id": "INJ-SD0045-LB-042",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 256,
+      "csv_line": 258,
+      "seq_value": "12",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "146.15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 256
+    },
+    {
+      "error_id": "INJ-SD0045-LB-043",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+      "row_index": 314,
+      "csv_line": 316,
+      "seq_value": "70",
+      "variables_modified": {
+        "LBRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "LBSTRESC": {
+          "original": "4.76",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 314
+    },
+    {
+      "error_id": "INJ-SD0045-PE-044",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+      "row_index": 146,
+      "csv_line": 148,
+      "seq_value": "7",
+      "variables_modified": {
+        "PERESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "PESTRESC": {
+          "original": "NORMAL",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 146
+    },
+    {
+      "error_id": "INJ-SD0045-PE-045",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 103,
+      "csv_line": 105,
+      "seq_value": "4",
+      "variables_modified": {
+        "PERESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "PESTRESC": {
+          "original": "NORMAL",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 103
+    },
+    {
+      "error_id": "INJ-SD0045-PE-046",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+      "row_index": 147,
+      "csv_line": 149,
+      "seq_value": "8",
+      "variables_modified": {
+        "PERESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "PESTRESC": {
+          "original": "NORMAL",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 147
+    },
+    {
+      "error_id": "INJ-SD0045-PE-047",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+      "row_index": 151,
+      "csv_line": 153,
+      "seq_value": "12",
+      "variables_modified": {
+        "PERESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "PESTRESC": {
+          "original": "IRREGULAR RHYTHM",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 151
+    },
+    {
+      "error_id": "INJ-SD0045-PE-048",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+      "row_index": 89,
+      "csv_line": 91,
+      "seq_value": "10",
+      "variables_modified": {
+        "PERESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "PESTRESC": {
+          "original": "NORMAL",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 89
+    },
+    {
+      "error_id": "INJ-SD0045-VS-049",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 292,
+      "csv_line": 294,
+      "seq_value": "30",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "107.1",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 292
+    },
+    {
+      "error_id": "INJ-SD0045-VS-050",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+      "row_index": 1033,
+      "csv_line": 1035,
+      "seq_value": "71",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "64.9",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1033
+    },
+    {
+      "error_id": "INJ-SD0045-VS-051",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 317,
+      "csv_line": 319,
+      "seq_value": "55",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "66.1",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 317
+    },
+    {
+      "error_id": "INJ-SD0045-VS-052",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-CAN_SITE01-0004",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "11",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "156.8",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD0045-VS-053",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+      "row_index": 986,
+      "csv_line": 988,
+      "seq_value": "24",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "62.8",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 986
+    },
+    {
+      "error_id": "INJ-SD0045-VS-054",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+      "row_index": 1022,
+      "csv_line": 1024,
+      "seq_value": "60",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "14.5",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1022
+    },
+    {
+      "error_id": "INJ-SD0045-VS-055",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 299,
+      "csv_line": 301,
+      "seq_value": "37",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "15.6",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 299
+    },
+    {
+      "error_id": "INJ-SD0045-VS-056",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 314,
+      "csv_line": 316,
+      "seq_value": "52",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "16.5",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 314
+    },
+    {
+      "error_id": "INJ-SD0045-VS-057",
+      "rule_id": "SD0045",
+      "rule_message": "Missing value for --STRESC, when --RESCAT is populated",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+      "row_index": 320,
+      "csv_line": 322,
+      "seq_value": "58",
+      "variables_modified": {
+        "VSRESCAT": {
+          "original": "",
+          "injected": "POSITIVE"
+        },
+        "VSSTRESC": {
+          "original": "162.5",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 320
+    },
+    {
+      "error_id": "INJ-SD1073-DM-001",
+      "rule_id": "SD1073",
+      "rule_message": "Variable prohibited for use in SDTM",
+      "category": "ALL2",
+      "primitive": "add_column",
+      "domain": "DM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "DMSTDTC": {
+          "original": "absent",
+          "injected": "2025-02-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1282-VS-020",
+      "rule_id": "SD1282",
+      "rule_message": "--TPTREF variable is present when --ELTM, --TPTNUM, and --TPT are missing",
+      "category": "VI2 & VV2",
+      "primitive": "drop_column",
+      "domain": "VS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "VSELTM": {
+          "original": "present",
+          "injected": "removed"
+        },
+        "VSTPTNUM": {
+          "original": "present",
+          "injected": "removed"
+        },
+        "VSTPT": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1294-EC-002",
+      "rule_id": "SD1294",
+      "rule_message": "--STAT variable is present when --PRESP variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "EC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "ECPRESP": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD2272-SE-001",
+      "rule_id": "SD2272",
+      "rule_message": "Missing --ENDTC variable, when --ENDY variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "SE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "SEENDTC": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1219": 1,
+    "SD2212": 1,
+    "SD1150": 1,
+    "SD2006": 8,
+    "SD1331": 47,
+    "SD0045": 57,
+    "SD1073": 1,
+    "SD1282": 1,
+    "SD1294": 1,
+    "SD2272": 1
+  },
+  "summary_by_category": {
+    "TS01": 1,
+    "TS02I1/TS02V1": 1,
+    "TD01": 1,
+    "REL1": 8,
+    "EVT2": 47,
+    "FA1": 57,
+    "ALL2": 1,
+    "VI2 & VV2": 1,
+    "VI1 & VV1": 2
+  },
+  "summary_by_domain": {
+    "TS": 2,
+    "TI": 1,
+    "SUPPAE": 8,
+    "CM": 8,
+    "EC": 6,
+    "EX": 5,
+    "SU": 2,
+    "AE": 13,
+    "DS": 5,
+    "DV": 4,
+    "HO": 2,
+    "MH": 3,
+    "DA": 9,
+    "IE": 1,
+    "LB": 33,
+    "PE": 5,
+    "VS": 10,
+    "DM": 1,
+    "SE": 1
+  },
+  "summary_status": {
+    "injected": 119,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

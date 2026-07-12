@@ -1,0 +1,28 @@
+STUDYID,DOMAIN,VISITNUM,VISIT,VISITDY,ARMCD,ARM,TVSTRL,TVENRL
+COVHIC001-CHALLENGE,TV,1.0,SCREENING,-28,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day -28,End of SCREENING
+COVHIC001-CHALLENGE,TV,2.0,DAY 1 INOCULATION,1,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 1,End of DAY 1 INOCULATION
+COVHIC001-CHALLENGE,TV,3.0,DAY 4 QUARANTINE,4,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 4,End of DAY 4 QUARANTINE
+COVHIC001-CHALLENGE,TV,4.0,DAY 7 QUARANTINE,7,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 7,End of DAY 7 QUARANTINE
+COVHIC001-CHALLENGE,TV,5.0,DAY 14 DISCHARGE,14,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 14,End of DAY 14 DISCHARGE
+COVHIC001-CHALLENGE,TV,6.0,DAY 28 FU,28,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 28,End of DAY 28 FU
+COVHIC001-CHALLENGE,TV,7.0,MONTH 3 FU,90,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 90,End of MONTH 3 FU
+COVHIC001-CHALLENGE,TV,8.0,MONTH 6 FU,180,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 180,End of MONTH 6 FU
+COVHIC001-CHALLENGE,TV,9.0,MONTH 12 FU,365,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 365,End of MONTH 12 FU
+COVHIC001-CHALLENGE,TV,1.0,SCREENING,-28,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day -28,End of SCREENING
+COVHIC001-CHALLENGE,TV,2.0,DAY 1 INOCULATION,1,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 1,End of DAY 1 INOCULATION
+COVHIC001-CHALLENGE,TV,3.0,DAY 4 QUARANTINE,4,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 4,End of DAY 4 QUARANTINE
+COVHIC001-CHALLENGE,TV,4.0,DAY 7 QUARANTINE,7,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 7,End of DAY 7 QUARANTINE
+COVHIC001-CHALLENGE,TV,5.0,DAY 14 DISCHARGE,14,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 14,End of DAY 14 DISCHARGE
+COVHIC001-CHALLENGE,TV,6.0,DAY 28 FU,28,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 28,End of DAY 28 FU
+COVHIC001-CHALLENGE,TV,7.0,MONTH 3 FU,90,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 90,End of MONTH 3 FU
+COVHIC001-CHALLENGE,TV,8.0,MONTH 6 FU,180,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 180,End of MONTH 6 FU
+COVHIC001-CHALLENGE,TV,9.0,MONTH 12 FU,365,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 365,End of MONTH 12 FU
+COVHIC001-CHALLENGE,TV,1.0,SCREENING,-28,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day -28,End of SCREENING
+COVHIC001-CHALLENGE,TV,2.0,DAY 1 INOCULATION,1,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 1,End of DAY 1 INOCULATION
+COVHIC001-CHALLENGE,TV,3.0,DAY 4 QUARANTINE,4,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 4,End of DAY 4 QUARANTINE
+COVHIC001-CHALLENGE,TV,4.0,DAY 7 QUARANTINE,7,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 7,End of DAY 7 QUARANTINE
+COVHIC001-CHALLENGE,TV,5.0,DAY 14 DISCHARGE,14,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 14,End of DAY 14 DISCHARGE
+COVHIC001-CHALLENGE,TV,6.0,DAY 28 FU,28,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 28,End of DAY 28 FU
+COVHIC001-CHALLENGE,TV,7.0,MONTH 3 FU,90,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 90,End of MONTH 3 FU
+COVHIC001-CHALLENGE,TV,8.0,MONTH 6 FU,180,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 180,End of MONTH 6 FU
+COVHIC001-CHALLENGE,TV,9.0,MONTH 12 FU,365,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,Study Day 365,End of MONTH 12 FU

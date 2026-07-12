@@ -1,0 +1,49 @@
+STUDYID,DOMAIN,VISITNUM,VISIT,VISITDY,ARMCD,ARM,TVSTRL,TVENRL
+I8F-JE-GPGO-SURPASS,TV,1.0,SCREENING,-28,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day -28,End of SCREENING
+I8F-JE-GPGO-SURPASS,TV,2.0,BASELINE,1,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 1,End of BASELINE
+I8F-JE-GPGO-SURPASS,TV,3.0,WEEK 4,29,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 29,End of WEEK 4
+I8F-JE-GPGO-SURPASS,TV,4.0,WEEK 8,57,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 57,End of WEEK 8
+I8F-JE-GPGO-SURPASS,TV,5.0,WEEK 12,85,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 85,End of WEEK 12
+I8F-JE-GPGO-SURPASS,TV,6.0,WEEK 16,113,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 113,End of WEEK 16
+I8F-JE-GPGO-SURPASS,TV,7.0,WEEK 20,141,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 141,End of WEEK 20
+I8F-JE-GPGO-SURPASS,TV,8.0,WEEK 24,169,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 169,End of WEEK 24
+I8F-JE-GPGO-SURPASS,TV,9.0,WEEK 32,225,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 225,End of WEEK 32
+I8F-JE-GPGO-SURPASS,TV,10.0,WEEK 40,281,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 281,End of WEEK 40
+I8F-JE-GPGO-SURPASS,TV,11.0,WEEK 52 EOT,365,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 365,End of WEEK 52 EOT
+I8F-JE-GPGO-SURPASS,TV,12.0,WEEK 56 SAFETY FU,393,DULA_075,Dulaglutide 0.75 mg QW SC (active control),Study Day 393,End of WEEK 56 SAFETY FU
+I8F-JE-GPGO-SURPASS,TV,1.0,SCREENING,-28,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day -28,End of SCREENING
+I8F-JE-GPGO-SURPASS,TV,2.0,BASELINE,1,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 1,End of BASELINE
+I8F-JE-GPGO-SURPASS,TV,3.0,WEEK 4,29,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 29,End of WEEK 4
+I8F-JE-GPGO-SURPASS,TV,4.0,WEEK 8,57,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 57,End of WEEK 8
+I8F-JE-GPGO-SURPASS,TV,5.0,WEEK 12,85,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 85,End of WEEK 12
+I8F-JE-GPGO-SURPASS,TV,6.0,WEEK 16,113,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 113,End of WEEK 16
+I8F-JE-GPGO-SURPASS,TV,7.0,WEEK 20,141,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 141,End of WEEK 20
+I8F-JE-GPGO-SURPASS,TV,8.0,WEEK 24,169,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 169,End of WEEK 24
+I8F-JE-GPGO-SURPASS,TV,9.0,WEEK 32,225,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 225,End of WEEK 32
+I8F-JE-GPGO-SURPASS,TV,10.0,WEEK 40,281,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 281,End of WEEK 40
+I8F-JE-GPGO-SURPASS,TV,11.0,WEEK 52 EOT,365,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 365,End of WEEK 52 EOT
+I8F-JE-GPGO-SURPASS,TV,12.0,WEEK 56 SAFETY FU,393,TIRZ_10,Tirzepatide 10 mg QW SC (target),Study Day 393,End of WEEK 56 SAFETY FU
+I8F-JE-GPGO-SURPASS,TV,1.0,SCREENING,-28,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day -28,End of SCREENING
+I8F-JE-GPGO-SURPASS,TV,2.0,BASELINE,1,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 1,End of BASELINE
+I8F-JE-GPGO-SURPASS,TV,3.0,WEEK 4,29,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 29,End of WEEK 4
+I8F-JE-GPGO-SURPASS,TV,4.0,WEEK 8,57,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 57,End of WEEK 8
+I8F-JE-GPGO-SURPASS,TV,5.0,WEEK 12,85,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 85,End of WEEK 12
+I8F-JE-GPGO-SURPASS,TV,6.0,WEEK 16,113,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 113,End of WEEK 16
+I8F-JE-GPGO-SURPASS,TV,7.0,WEEK 20,141,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 141,End of WEEK 20
+I8F-JE-GPGO-SURPASS,TV,8.0,WEEK 24,169,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 169,End of WEEK 24
+I8F-JE-GPGO-SURPASS,TV,9.0,WEEK 32,225,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 225,End of WEEK 32
+I8F-JE-GPGO-SURPASS,TV,10.0,WEEK 40,281,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 281,End of WEEK 40
+I8F-JE-GPGO-SURPASS,TV,11.0,WEEK 52 EOT,365,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 365,End of WEEK 52 EOT
+I8F-JE-GPGO-SURPASS,TV,12.0,WEEK 56 SAFETY FU,393,TIRZ_15,Tirzepatide 15 mg QW SC (target),Study Day 393,End of WEEK 56 SAFETY FU
+I8F-JE-GPGO-SURPASS,TV,1.0,SCREENING,-28,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day -28,End of SCREENING
+I8F-JE-GPGO-SURPASS,TV,2.0,BASELINE,1,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 1,End of BASELINE
+I8F-JE-GPGO-SURPASS,TV,3.0,WEEK 4,29,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 29,End of WEEK 4
+I8F-JE-GPGO-SURPASS,TV,4.0,WEEK 8,57,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 57,End of WEEK 8
+I8F-JE-GPGO-SURPASS,TV,5.0,WEEK 12,85,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 85,End of WEEK 12
+I8F-JE-GPGO-SURPASS,TV,6.0,WEEK 16,113,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 113,End of WEEK 16
+I8F-JE-GPGO-SURPASS,TV,7.0,WEEK 20,141,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 141,End of WEEK 20
+I8F-JE-GPGO-SURPASS,TV,8.0,WEEK 24,169,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 169,End of WEEK 24
+I8F-JE-GPGO-SURPASS,TV,9.0,WEEK 32,225,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 225,End of WEEK 32
+I8F-JE-GPGO-SURPASS,TV,10.0,WEEK 40,281,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 281,End of WEEK 40
+I8F-JE-GPGO-SURPASS,TV,11.0,WEEK 52 EOT,365,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 365,End of WEEK 52 EOT
+I8F-JE-GPGO-SURPASS,TV,12.0,WEEK 56 SAFETY FU,393,TIRZ_5,Tirzepatide 5 mg QW SC (target),Study Day 393,End of WEEK 56 SAFETY FU

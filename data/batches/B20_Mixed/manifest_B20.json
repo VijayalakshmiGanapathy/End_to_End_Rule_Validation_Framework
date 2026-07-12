@@ -1,0 +1,4565 @@
+{
+  "generated_at": "2026-07-07T06:04:22.919635",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_0ukhpia0",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 9,
+  "rules_skipped": 0,
+  "rules_injected": 9,
+  "total_mutations": 188,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1216-TS-001",
+      "rule_id": "SD1216",
+      "rule_message": "Multiple AGEMAX records",
+      "category": "TS02I1/TS02V1",
+      "primitive": "duplicate_record",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['TSPARMCD']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1227-TS-001",
+      "rule_id": "SD1227",
+      "rule_message": "Multiple NARMS records",
+      "category": "TS02I1/TS02V1",
+      "primitive": "duplicate_record",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": "1",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['TSPARMCD']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD2219-TS-001",
+      "rule_id": "SD2219",
+      "rule_message": "Missing TRT Trial Summary Parameter",
+      "category": "TS02I1/TS02V1",
+      "primitive": "delete_row",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TRT",
+          "injected": "(row deleted)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 43
+    },
+    {
+      "error_id": "INJ-SD2243-TS-001",
+      "rule_id": "SD2243",
+      "rule_message": "Invalid TSVCDREF value for PCLAS",
+      "category": "TS01",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "MED-RT",
+          "injected": "INVALID_REF"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD2248-TS-001",
+      "rule_id": "SD2248",
+      "rule_message": "Invalid TSVAL value for SENDTC",
+      "category": "TS03",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 30,
+      "csv_line": 32,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVAL": {
+          "original": "2026-07-01",
+          "injected": "INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 30
+    },
+    {
+      "error_id": "INJ-SD1260-TS-001",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1260-TS-002",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1260-TS-002",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1260-TS-003",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1260-TS-003",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1260-TS-004",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1260-TS-005",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 5,
+      "csv_line": 7,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5
+    },
+    {
+      "error_id": "INJ-SD1260-TS-006",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD1260-TS-007",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD1260-TS-007",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD1260-TS-008",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "GENC",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD1260-TS-008",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "Ed3 Up11",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD1260-TS-009",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD1260-TS-009",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD1260-TS-010",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "SNOMED",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1260-TS-010",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-09-01",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1260-TS-011",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1260-TS-011",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1260-TS-012",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1260-TS-012",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1260-TS-013",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1260-TS-014",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 15,
+      "csv_line": 17,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15
+    },
+    {
+      "error_id": "INJ-SD1260-TS-015",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD1260-TS-016",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 17,
+      "csv_line": 19,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17
+    },
+    {
+      "error_id": "INJ-SD1260-TS-017",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD1260-TS-017",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD1260-TS-018",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1260-TS-019",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD1260-TS-019",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD1260-TS-020",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 22,
+      "csv_line": 24,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 22
+    },
+    {
+      "error_id": "INJ-SD1260-TS-020",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 22,
+      "csv_line": 24,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 22
+    },
+    {
+      "error_id": "INJ-SD1260-TS-021",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 23,
+      "csv_line": 25,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 23
+    },
+    {
+      "error_id": "INJ-SD1260-TS-021",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 23,
+      "csv_line": 25,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 23
+    },
+    {
+      "error_id": "INJ-SD1260-TS-022",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD1260-TS-023",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 25,
+      "csv_line": 27,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 25
+    },
+    {
+      "error_id": "INJ-SD1260-TS-023",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 25,
+      "csv_line": 27,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 25
+    },
+    {
+      "error_id": "INJ-SD1260-TS-024",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 26,
+      "csv_line": 28,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 26
+    },
+    {
+      "error_id": "INJ-SD1260-TS-024",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 26,
+      "csv_line": 28,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 26
+    },
+    {
+      "error_id": "INJ-SD1260-TS-025",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 27,
+      "csv_line": 29,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 27
+    },
+    {
+      "error_id": "INJ-SD1260-TS-026",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 28,
+      "csv_line": 30,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 28
+    },
+    {
+      "error_id": "INJ-SD1260-TS-027",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD1260-TS-028",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 31,
+      "csv_line": 33,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 31
+    },
+    {
+      "error_id": "INJ-SD1260-TS-028",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 31,
+      "csv_line": 33,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 31
+    },
+    {
+      "error_id": "INJ-SD1260-TS-029",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 32,
+      "csv_line": 34,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 32
+    },
+    {
+      "error_id": "INJ-SD1260-TS-030",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 33,
+      "csv_line": 35,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 33
+    },
+    {
+      "error_id": "INJ-SD1260-TS-031",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 34,
+      "csv_line": 36,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 34
+    },
+    {
+      "error_id": "INJ-SD1260-TS-032",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD1260-TS-032",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD1260-TS-033",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD1260-TS-033",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD1260-TS-034",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 38,
+      "csv_line": 40,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "SNOMED",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 38
+    },
+    {
+      "error_id": "INJ-SD1260-TS-034",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 38,
+      "csv_line": 40,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-09-01",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 38
+    },
+    {
+      "error_id": "INJ-SD1260-TS-035",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 39,
+      "csv_line": 41,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 39
+    },
+    {
+      "error_id": "INJ-SD1260-TS-036",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD1260-TS-036",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD1260-TS-037",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 41,
+      "csv_line": 43,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 41
+    },
+    {
+      "error_id": "INJ-SD1260-TS-038",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 42,
+      "csv_line": 44,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 42
+    },
+    {
+      "error_id": "INJ-SD1260-TS-038",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 42,
+      "csv_line": 44,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 42
+    },
+    {
+      "error_id": "INJ-SD1260-TS-039",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 43,
+      "csv_line": 45,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "CDISC CT",
+          "injected": "CDISC"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 44
+    },
+    {
+      "error_id": "INJ-SD1260-TS-039",
+      "rule_id": "SD1260",
+      "rule_message": "TSVCDVER is null when Reference Terminology is versioned",
+      "category": "TS01",
+      "primitive": "populate_forbidden",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 43,
+      "csv_line": 45,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDVER": {
+          "original": "2023-12-15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 44
+    },
+    {
+      "error_id": "INJ-CT2002-AE-001",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 232,
+      "csv_line": 234,
+      "seq_value": "36",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 232
+    },
+    {
+      "error_id": "INJ-CT2002-AE-002",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 292,
+      "csv_line": 294,
+      "seq_value": "16",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 292
+    },
+    {
+      "error_id": "INJ-CT2002-AE-003",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 257,
+      "csv_line": 259,
+      "seq_value": "17",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 257
+    },
+    {
+      "error_id": "INJ-CT2002-AE-004",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 49,
+      "csv_line": 51,
+      "seq_value": "1",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 49
+    },
+    {
+      "error_id": "INJ-CT2002-AE-005",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 468,
+      "csv_line": 470,
+      "seq_value": "44",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 468
+    },
+    {
+      "error_id": "INJ-CT2002-AE-006",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 580,
+      "csv_line": 582,
+      "seq_value": "6",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 580
+    },
+    {
+      "error_id": "INJ-CT2002-AE-007",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 372,
+      "csv_line": 374,
+      "seq_value": "12",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 372
+    },
+    {
+      "error_id": "INJ-CT2002-AE-008",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 416,
+      "csv_line": 418,
+      "seq_value": "14",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 416
+    },
+    {
+      "error_id": "INJ-CT2002-AE-009",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 163,
+      "csv_line": 165,
+      "seq_value": "32",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 163
+    },
+    {
+      "error_id": "INJ-CT2002-AE-010",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 266,
+      "csv_line": 268,
+      "seq_value": "26",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 266
+    },
+    {
+      "error_id": "INJ-CT2002-AE-011",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 211,
+      "csv_line": 213,
+      "seq_value": "15",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 211
+    },
+    {
+      "error_id": "INJ-CT2002-AE-012",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 407,
+      "csv_line": 409,
+      "seq_value": "5",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 407
+    },
+    {
+      "error_id": "INJ-CT2002-AE-013",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 241,
+      "csv_line": 243,
+      "seq_value": "1",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 241
+    },
+    {
+      "error_id": "INJ-CT2002-AE-014",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "41",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-CT2002-AE-015",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 446,
+      "csv_line": 448,
+      "seq_value": "22",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 446
+    },
+    {
+      "error_id": "INJ-CT2002-AE-016",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 296,
+      "csv_line": 298,
+      "seq_value": "20",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 296
+    },
+    {
+      "error_id": "INJ-CT2002-AE-017",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 286,
+      "csv_line": 288,
+      "seq_value": "10",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 286
+    },
+    {
+      "error_id": "INJ-CT2002-AE-018",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 593,
+      "csv_line": 595,
+      "seq_value": "19",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 593
+    },
+    {
+      "error_id": "INJ-CT2002-AE-019",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 113,
+      "csv_line": 115,
+      "seq_value": "22",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 113
+    },
+    {
+      "error_id": "INJ-CT2002-AE-020",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 570,
+      "csv_line": 572,
+      "seq_value": "33",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 570
+    },
+    {
+      "error_id": "INJ-CT2002-AE-021",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 324,
+      "csv_line": 326,
+      "seq_value": "4",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 324
+    },
+    {
+      "error_id": "INJ-CT2002-AE-022",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 477,
+      "csv_line": 479,
+      "seq_value": "53",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 477
+    },
+    {
+      "error_id": "INJ-CT2002-AE-023",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 97,
+      "csv_line": 99,
+      "seq_value": "6",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 97
+    },
+    {
+      "error_id": "INJ-CT2002-AE-024",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 390,
+      "csv_line": 392,
+      "seq_value": "30",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 390
+    },
+    {
+      "error_id": "INJ-CT2002-AE-025",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 521,
+      "csv_line": 523,
+      "seq_value": "15",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 521
+    },
+    {
+      "error_id": "INJ-CT2002-AE-026",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 535,
+      "csv_line": 537,
+      "seq_value": "29",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 535
+    },
+    {
+      "error_id": "INJ-CT2002-AE-027",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 244,
+      "csv_line": 246,
+      "seq_value": "4",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 244
+    },
+    {
+      "error_id": "INJ-CT2002-AE-028",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 53,
+      "csv_line": 55,
+      "seq_value": "5",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 53
+    },
+    {
+      "error_id": "INJ-CT2002-AE-029",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 479,
+      "csv_line": 481,
+      "seq_value": "1",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 479
+    },
+    {
+      "error_id": "INJ-CT2002-AE-030",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 533,
+      "csv_line": 535,
+      "seq_value": "27",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 533
+    },
+    {
+      "error_id": "INJ-CT2002-AE-031",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 373,
+      "csv_line": 375,
+      "seq_value": "13",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 373
+    },
+    {
+      "error_id": "INJ-CT2002-AE-032",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 363,
+      "csv_line": 365,
+      "seq_value": "3",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 363
+    },
+    {
+      "error_id": "INJ-CT2002-AE-033",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 415,
+      "csv_line": 417,
+      "seq_value": "13",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 415
+    },
+    {
+      "error_id": "INJ-CT2002-AE-034",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 262,
+      "csv_line": 264,
+      "seq_value": "22",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 262
+    },
+    {
+      "error_id": "INJ-CT2002-AE-035",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 550,
+      "csv_line": 552,
+      "seq_value": "13",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 550
+    },
+    {
+      "error_id": "INJ-CT2002-AE-036",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 406,
+      "csv_line": 408,
+      "seq_value": "4",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 406
+    },
+    {
+      "error_id": "INJ-CT2002-AE-037",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "38",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-CT2002-AE-038",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 430,
+      "csv_line": 432,
+      "seq_value": "6",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 430
+    },
+    {
+      "error_id": "INJ-CT2002-AE-039",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 258,
+      "csv_line": 260,
+      "seq_value": "18",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 258
+    },
+    {
+      "error_id": "INJ-CT2002-AE-040",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 505,
+      "csv_line": 507,
+      "seq_value": "27",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 505
+    },
+    {
+      "error_id": "INJ-CT2002-AE-041",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 316,
+      "csv_line": 318,
+      "seq_value": "40",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 316
+    },
+    {
+      "error_id": "INJ-CT2002-AE-042",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 132,
+      "csv_line": 134,
+      "seq_value": "1",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 132
+    },
+    {
+      "error_id": "INJ-CT2002-AE-043",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 48,
+      "csv_line": 50,
+      "seq_value": "49",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 48
+    },
+    {
+      "error_id": "INJ-CT2002-AE-044",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 450,
+      "csv_line": 452,
+      "seq_value": "26",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 450
+    },
+    {
+      "error_id": "INJ-CT2002-AE-045",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 428,
+      "csv_line": 430,
+      "seq_value": "4",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 428
+    },
+    {
+      "error_id": "INJ-CT2002-AE-046",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 104,
+      "csv_line": 106,
+      "seq_value": "13",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 104
+    },
+    {
+      "error_id": "INJ-CT2002-AE-047",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 212,
+      "csv_line": 214,
+      "seq_value": "16",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 212
+    },
+    {
+      "error_id": "INJ-CT2002-AE-048",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 73,
+      "csv_line": 75,
+      "seq_value": "25",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 73
+    },
+    {
+      "error_id": "INJ-CT2002-AE-049",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 52,
+      "csv_line": 54,
+      "seq_value": "4",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 52
+    },
+    {
+      "error_id": "INJ-CT2002-AE-050",
+      "rule_id": "CT2002",
+      "rule_message": "Variable value not found in extensible codelist",
+      "category": "ALL1",
+      "primitive": "invalid_codelist",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 488,
+      "csv_line": 490,
+      "seq_value": "10",
+      "variables_modified": {
+        "EPOCH": {
+          "original": "TREATMENT",
+          "injected": "ZZZ_INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 488
+    },
+    {
+      "error_id": "INJ-SD1021-CM-001",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 273,
+      "csv_line": 275,
+      "seq_value": "3",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 273
+    },
+    {
+      "error_id": "INJ-SD1021-CM-002",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 117,
+      "csv_line": 119,
+      "seq_value": "15",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 117
+    },
+    {
+      "error_id": "INJ-SD1021-CM-003",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 285,
+      "csv_line": 287,
+      "seq_value": "11",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 285
+    },
+    {
+      "error_id": "INJ-SD1021-CM-004",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 175,
+      "csv_line": 177,
+      "seq_value": "5",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 175
+    },
+    {
+      "error_id": "INJ-SD1021-CM-005",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 283,
+      "csv_line": 285,
+      "seq_value": "9",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 283
+    },
+    {
+      "error_id": "INJ-SD1021-CM-006",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 83,
+      "csv_line": 85,
+      "seq_value": "9",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 83
+    },
+    {
+      "error_id": "INJ-SD1021-CM-007",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 96,
+      "csv_line": 98,
+      "seq_value": "7",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 96
+    },
+    {
+      "error_id": "INJ-SD1021-CM-008",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 282,
+      "csv_line": 284,
+      "seq_value": "8",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 282
+    },
+    {
+      "error_id": "INJ-SD1021-CM-009",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 114,
+      "csv_line": 116,
+      "seq_value": "12",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 114
+    },
+    {
+      "error_id": "INJ-SD1021-CM-010",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1021-CM-011",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 150,
+      "csv_line": 152,
+      "seq_value": "18",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 150
+    },
+    {
+      "error_id": "INJ-SD1021-CM-012",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 193,
+      "csv_line": 195,
+      "seq_value": "4",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 193
+    },
+    {
+      "error_id": "INJ-SD1021-CM-013",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 192,
+      "csv_line": 194,
+      "seq_value": "3",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 192
+    },
+    {
+      "error_id": "INJ-SD1021-CM-014",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 67,
+      "csv_line": 69,
+      "seq_value": "21",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 67
+    },
+    {
+      "error_id": "INJ-SD1021-CM-015",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 164,
+      "csv_line": 166,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 164
+    },
+    {
+      "error_id": "INJ-SD1021-CM-016",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "PRIOR",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD1021-CM-017",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 171,
+      "csv_line": 173,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "PRIOR",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 171
+    },
+    {
+      "error_id": "INJ-SD1021-CM-018",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 166,
+      "csv_line": 168,
+      "seq_value": "15",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 166
+    },
+    {
+      "error_id": "INJ-SD1021-CM-019",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 145,
+      "csv_line": 147,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 145
+    },
+    {
+      "error_id": "INJ-SD1021-CM-020",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 69,
+      "csv_line": 71,
+      "seq_value": "23",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 69
+    },
+    {
+      "error_id": "INJ-SD1021-CM-021",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": "10",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD1021-CM-022",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD1021-CM-023",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 122,
+      "csv_line": 124,
+      "seq_value": "20",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 122
+    },
+    {
+      "error_id": "INJ-SD1021-CM-024",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 237,
+      "csv_line": 239,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "PRIOR",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 237
+    },
+    {
+      "error_id": "INJ-SD1021-CM-025",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 33,
+      "csv_line": 35,
+      "seq_value": "10",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 33
+    },
+    {
+      "error_id": "INJ-SD1021-CM-026",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 271,
+      "csv_line": 273,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "PRIOR",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 271
+    },
+    {
+      "error_id": "INJ-SD1021-CM-027",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 60,
+      "csv_line": 62,
+      "seq_value": "14",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 60
+    },
+    {
+      "error_id": "INJ-SD1021-CM-028",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 176,
+      "csv_line": 178,
+      "seq_value": "6",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 176
+    },
+    {
+      "error_id": "INJ-SD1021-CM-029",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "22",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD1021-CM-030",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 116,
+      "csv_line": 118,
+      "seq_value": "14",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 116
+    },
+    {
+      "error_id": "INJ-SD1021-CM-031",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 226,
+      "csv_line": 228,
+      "seq_value": "5",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 226
+    },
+    {
+      "error_id": "INJ-SD1021-CM-032",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 8,
+      "csv_line": 10,
+      "seq_value": "9",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8
+    },
+    {
+      "error_id": "INJ-SD1021-CM-033",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 153,
+      "csv_line": 155,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "PRIOR",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 153
+    },
+    {
+      "error_id": "INJ-SD1021-CM-034",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "6",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD1021-CM-035",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 172,
+      "csv_line": 174,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 172
+    },
+    {
+      "error_id": "INJ-SD1021-CM-036",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 244,
+      "csv_line": 246,
+      "seq_value": "8",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 244
+    },
+    {
+      "error_id": "INJ-SD1021-CM-037",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 154,
+      "csv_line": 156,
+      "seq_value": "3",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 154
+    },
+    {
+      "error_id": "INJ-SD1021-CM-038",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 63,
+      "csv_line": 65,
+      "seq_value": "17",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 63
+    },
+    {
+      "error_id": "INJ-SD1021-CM-039",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 286,
+      "csv_line": 288,
+      "seq_value": "12",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 286
+    },
+    {
+      "error_id": "INJ-SD1021-CM-040",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 78,
+      "csv_line": 80,
+      "seq_value": "4",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 78
+    },
+    {
+      "error_id": "INJ-SD1021-CM-041",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 140,
+      "csv_line": 142,
+      "seq_value": "8",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 140
+    },
+    {
+      "error_id": "INJ-SD1021-CM-042",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 276,
+      "csv_line": 278,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "CONCOMITANT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 276
+    },
+    {
+      "error_id": "INJ-SD1021-CM-043",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 48,
+      "csv_line": 50,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMCAT": {
+          "original": "PRIOR",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 48
+    },
+    {
+      "error_id": "INJ-SD1021-SU-044",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "TOBACCO",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD1021-SU-045",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "TOBACCO",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1021-SU-046",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "CAFFEINE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1021-SU-047",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 28,
+      "csv_line": 30,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "CAFFEINE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 28
+    },
+    {
+      "error_id": "INJ-SD1021-SU-048",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 45,
+      "csv_line": 47,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "ALCOHOL",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 45
+    },
+    {
+      "error_id": "INJ-SD1021-SU-049",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 47,
+      "csv_line": 49,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "TOBACCO",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 47
+    },
+    {
+      "error_id": "INJ-SD1021-SU-050",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "CAFFEINE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD1021-SU-051",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "ALCOHOL",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1021-SU-052",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 41,
+      "csv_line": 43,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "TOBACCO",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 41
+    },
+    {
+      "error_id": "INJ-SD1021-SU-053",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 50,
+      "csv_line": 52,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "TOBACCO",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 50
+    },
+    {
+      "error_id": "INJ-SD1021-SU-054",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 49,
+      "csv_line": 51,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "CAFFEINE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 49
+    },
+    {
+      "error_id": "INJ-SD1021-SU-055",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 39,
+      "csv_line": 41,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "ALCOHOL",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 39
+    },
+    {
+      "error_id": "INJ-SD1021-SU-056",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 48,
+      "csv_line": 50,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "ALCOHOL",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 48
+    },
+    {
+      "error_id": "INJ-SD1021-SU-057",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "TOBACCO",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD1021-SU-058",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 46,
+      "csv_line": 48,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "CAFFEINE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 46
+    },
+    {
+      "error_id": "INJ-SD1021-SU-059",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "CAFFEINE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1021-SU-060",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 27,
+      "csv_line": 29,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "ALCOHOL",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 27
+    },
+    {
+      "error_id": "INJ-SD1021-SU-061",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 9,
+      "csv_line": 11,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUCAT": {
+          "original": "ALCOHOL",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9
+    },
+    {
+      "error_id": "INJ-SD1021-DS-062",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-USA_SITE01-0001",
+      "row_index": 48,
+      "csv_line": 50,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 48
+    },
+    {
+      "error_id": "INJ-SD1021-DS-063",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1021-DS-064",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 31,
+      "csv_line": 33,
+      "seq_value": "3",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "DISPOSITION EVENT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 31
+    },
+    {
+      "error_id": "INJ-SD1021-DS-065",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-USA_SITE01-0001",
+      "row_index": 47,
+      "csv_line": 49,
+      "seq_value": "1",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 47
+    },
+    {
+      "error_id": "INJ-SD1021-DS-066",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 30,
+      "csv_line": 32,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 30
+    },
+    {
+      "error_id": "INJ-SD1021-DS-067",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 29,
+      "csv_line": 31,
+      "seq_value": "1",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 29
+    },
+    {
+      "error_id": "INJ-SD1021-DS-068",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-GBR_SITE01-0009",
+      "row_index": 15,
+      "csv_line": 17,
+      "seq_value": "1",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15
+    },
+    {
+      "error_id": "INJ-SD1021-DS-069",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": "3",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "DISPOSITION EVENT",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD1021-DS-070",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-GBR_SITE01-0009",
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD1021-IE-071",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-GBR_SITE01-0009",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "IECAT": {
+          "original": "EXCLUSION",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1021-IE-072",
+      "rule_id": "SD1021",
+      "rule_message": "Unexpected character value in variable",
+      "category": "ALL2",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-USA_SITE01-0001",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "IECAT": {
+          "original": "INCLUSION",
+          "injected": "."
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1147-EC-001",
+      "rule_id": "SD1147",
+      "rule_message": "Missing --PRESP variable, when --OCCUR variable is present",
+      "category": "Re-order",
+      "primitive": "drop_column",
+      "domain": "EC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "ECPRESP": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1216": 1,
+    "SD1227": 1,
+    "SD2219": 1,
+    "SD2243": 1,
+    "SD2248": 1,
+    "SD1260": 60,
+    "CT2002": 50,
+    "SD1021": 72,
+    "SD1147": 1
+  },
+  "summary_by_category": {
+    "TS02I1/TS02V1": 3,
+    "TS01": 61,
+    "TS03": 1,
+    "ALL1": 50,
+    "ALL2": 72,
+    "Re-order": 1
+  },
+  "summary_by_domain": {
+    "TS": 65,
+    "AE": 50,
+    "CM": 43,
+    "SU": 18,
+    "DS": 9,
+    "IE": 2,
+    "EC": 1
+  },
+  "summary_status": {
+    "injected": 188,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

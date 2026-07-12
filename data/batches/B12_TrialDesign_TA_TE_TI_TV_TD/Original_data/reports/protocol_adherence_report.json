@@ -1,0 +1,1137 @@
+{
+  "study_id": "NBI-1065846-MDD2020-TERPSIS",
+  "generated_at": "2026-07-07T05:41:07.935210+00:00",
+  "summary": {
+    "total_enrolled": 16,
+    "subjects_with_deviations": 15,
+    "total_deviations": 52,
+    "deviation_rate_pct": 93.8,
+    "overall_visit_compliance_pct": 89.8,
+    "overall_dose_compliance_pct": 98.4
+  },
+  "protocol_deviations": {
+    "by_category": {
+      "MINOR": 52
+    },
+    "by_decod": {
+      "VISIT OCCURRED OUTSIDE VISIT WINDOW": 40,
+      "MISSED DOSE": 2,
+      "DOSE MODIFICATION": 5,
+      "MISSED ASSESSMENT": 5
+    },
+    "by_arm": {
+      "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)": 23,
+      "NBI-1065846 (160 mg loading then 80 mg QW)": 29
+    },
+    "by_visit": {},
+    "deviations_leading_to_discontinuation": 0,
+    "subject_level": [
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE01-0016",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 7 occurred 2 days early (Day 48 vs planned Day 50)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit SAFETY FU WEEK 4 occurred 4 days early (Day 81 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit SAFETY FU WEEK 8 occurred 0 days late (Day 113 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-08",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE02-0004",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Missed PLACEBO dose on 2024-05-08",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Missed PLACEBO dose on 2024-05-22",
+            "decod": "MISSED DOSE",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 4 occurred 1 days late (Day 30 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 6 occurred 0 days late (Day 43 vs planned Day 43)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 8 EOT occurred 1 days early (Day 56 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-25",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 5
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE02-0012",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit SAFETY FU WEEK 8 occurred 2 days late (Day 115 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-15",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE03-0001",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 80.0 to 160.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 5 occurred 0 days late (Day 36 vs planned Day 36)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Vital signs assessment not performed at WEEK 5",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit SAFETY FU WEEK 4 occurred 1 days early (Day 84 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit SAFETY FU WEEK 8 occurred 5 days early (Day 108 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-20",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 5
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE03-0002",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 80.0 to 160.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 2 occurred 0 days late (Day 15 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 3 occurred 1 days early (Day 21 vs planned Day 22)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 4 occurred 1 days early (Day 28 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 6 occurred 0 days late (Day 43 vs planned Day 43)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Visit WEEK 8 EOT occurred 1 days early (Day 56 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Visit SAFETY FU WEEK 4 occurred 5 days late (Day 90 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Vital signs assessment not performed at SAFETY FU WEEK 4",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-07-09",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 8
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE06-0017",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 80.0 to 160.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 2 occurred 0 days late (Day 15 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 4 occurred 2 days early (Day 27 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Vital signs assessment not performed at WEEK 4",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-04-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 5 occurred 1 days early (Day 35 vs planned Day 36)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-27",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Visit WEEK 7 occurred 1 days early (Day 49 vs planned Day 50)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "7",
+            "term": "Visit WEEK 8 EOT occurred 1 days late (Day 58 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "8",
+            "term": "Visit SAFETY FU WEEK 4 occurred 3 days early (Day 82 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-13",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 8
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0007",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 4 occurred 1 days early (Day 28 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 6 occurred 0 days late (Day 43 vs planned Day 43)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 7 occurred 0 days late (Day 50 vs planned Day 50)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-22",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0011",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Vital signs assessment not performed at SAFETY FU WEEK 4",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-04-24",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0013",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 80.0 to 160.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-11",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0019",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 3 occurred 2 days early (Day 20 vs planned Day 22)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 6 occurred 1 days early (Day 42 vs planned Day 43)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 7 occurred 0 days late (Day 50 vs planned Day 50)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-19",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0005",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit SAFETY FU WEEK 4 occurred 1 days late (Day 86 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-20",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 1
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0006",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 4 occurred 1 days late (Day 30 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Vital signs assessment not performed at WEEK 5",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-04-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit SAFETY FU WEEK 8 occurred 7 days early (Day 106 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-15",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0008",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "deviations": [],
+        "total_deviations": 0
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0010",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 0 days late (Day 15 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 4 occurred 2 days early (Day 27 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 7 occurred 0 days late (Day 50 vs planned Day 50)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-09",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE09-0003",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 2 occurred 1 days late (Day 16 vs planned Day 15)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-15",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 5 occurred 2 days early (Day 34 vs planned Day 36)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 6 occurred 1 days early (Day 42 vs planned Day 43)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 7 occurred 2 days early (Day 48 vs planned Day 50)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 8 EOT occurred 2 days early (Day 55 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-23",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 5
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE09-0009",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 80.0 to 160.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-18",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit SAFETY FU WEEK 8 occurred 2 days late (Day 115 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-10",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      }
+    ]
+  },
+  "visit_compliance": {
+    "planned_visits": [
+      "SCREENING",
+      "DAY 1 LOADING",
+      "WEEK 2",
+      "WEEK 3",
+      "WEEK 4",
+      "WEEK 5",
+      "WEEK 6",
+      "WEEK 7",
+      "WEEK 8 EOT",
+      "SAFETY FU WEEK 4",
+      "SAFETY FU WEEK 8"
+    ],
+    "per_visit": {
+      "SCREENING": {
+        "planned": 16,
+        "attended": 16,
+        "compliance_pct": 100.0,
+        "planned_study_day": -28.0,
+        "median_actual_study_day": -40.0,
+        "within_window_pct": 6.2,
+        "out_of_window_count": 15
+      },
+      "DAY 1 LOADING": {
+        "planned": 16,
+        "attended": 16,
+        "compliance_pct": 100.0,
+        "planned_study_day": 1.0,
+        "median_actual_study_day": 1.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 2": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 15.0,
+        "median_actual_study_day": 17.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 3": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 22.0,
+        "median_actual_study_day": 22.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 4": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 29.0,
+        "median_actual_study_day": 30.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 5": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 36.0,
+        "median_actual_study_day": 35.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 6": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 43.0,
+        "median_actual_study_day": 43.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 7": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 50.0,
+        "median_actual_study_day": 50.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 8 EOT": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 57.0,
+        "median_actual_study_day": 56.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "SAFETY FU WEEK 4": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 85.0,
+        "median_actual_study_day": 84.0,
+        "within_window_pct": 42.9,
+        "out_of_window_count": 8
+      },
+      "SAFETY FU WEEK 8": {
+        "planned": 16,
+        "attended": 14,
+        "compliance_pct": 87.5,
+        "planned_study_day": 113.0,
+        "median_actual_study_day": 116.0,
+        "within_window_pct": 35.7,
+        "out_of_window_count": 9
+      }
+    },
+    "per_subject": [
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE01-0016",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE02-0004",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE02-0012",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE03-0001",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE03-0002",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE06-0017",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0007",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0011",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0013",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "visits_planned": 11,
+        "visits_attended": 2,
+        "compliance_pct": 18.2,
+        "missed_visits": [
+          "WEEK 2",
+          "WEEK 3",
+          "WEEK 4",
+          "WEEK 5",
+          "WEEK 6",
+          "WEEK 7",
+          "WEEK 8 EOT",
+          "SAFETY FU WEEK 4",
+          "SAFETY FU WEEK 8"
+        ]
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0019",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0005",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0006",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0008",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "visits_planned": 11,
+        "visits_attended": 2,
+        "compliance_pct": 18.2,
+        "missed_visits": [
+          "WEEK 2",
+          "WEEK 3",
+          "WEEK 4",
+          "WEEK 5",
+          "WEEK 6",
+          "WEEK 7",
+          "WEEK 8 EOT",
+          "SAFETY FU WEEK 4",
+          "SAFETY FU WEEK 8"
+        ]
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0010",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE09-0003",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE09-0009",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "visits_planned": 11,
+        "visits_attended": 11,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      }
+    ]
+  },
+  "dose_compliance": {
+    "per_subject": [
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE01-0016",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-18",
+        "last_dose_dtc": "2024-05-06",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE02-0004",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 6,
+        "compliance_pct": 75.0,
+        "first_dose_dtc": "2024-05-01",
+        "last_dose_dtc": "2024-06-19",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE02-0012",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-22",
+        "last_dose_dtc": "2024-04-11",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE03-0001",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-04",
+        "last_dose_dtc": "2024-05-23",
+        "exposure_days": 49,
+        "total_dose": 720.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE03-0002",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-11",
+        "last_dose_dtc": "2024-05-30",
+        "exposure_days": 49,
+        "total_dose": 720.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE06-0017",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-24",
+        "last_dose_dtc": "2024-05-12",
+        "exposure_days": 49,
+        "total_dose": 720.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0007",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-03",
+        "last_dose_dtc": "2024-05-22",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0011",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-07",
+        "last_dose_dtc": "2024-03-27",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0013",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "planned_doses": 1,
+        "administered_doses": 1,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-11",
+        "last_dose_dtc": "2024-02-11",
+        "exposure_days": 0,
+        "total_dose": 160.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE07-0019",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-05-01",
+        "last_dose_dtc": "2024-06-19",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0005",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-25",
+        "last_dose_dtc": "2024-04-14",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0006",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-02",
+        "last_dose_dtc": "2024-04-20",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0008",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "planned_doses": 1,
+        "administered_doses": 1,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-07",
+        "last_dose_dtc": "2024-02-07",
+        "exposure_days": 0,
+        "total_dose": 160.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE08-0010",
+        "arm": "Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-21",
+        "last_dose_dtc": "2024-05-09",
+        "exposure_days": 49
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE09-0003",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-30",
+        "last_dose_dtc": "2024-06-18",
+        "exposure_days": 49,
+        "total_dose": 720.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "NBI-1065846-MDD2020-TERPSIS-USA_SITE09-0009",
+        "arm": "NBI-1065846 (160 mg loading then 80 mg QW)",
+        "planned_doses": 8,
+        "administered_doses": 8,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-18",
+        "last_dose_dtc": "2024-05-06",
+        "exposure_days": 49,
+        "total_dose": 720.0,
+        "dose_unit": "mg"
+      }
+    ],
+    "summary": {
+      "mean_compliance_pct": 98.4,
+      "subjects_below_80pct": [
+        "NBI-1065846-MDD2020-TERPSIS-USA_SITE02-0004"
+      ]
+    }
+  },
+  "screen_failures": {
+    "total": 4,
+    "by_reason": {
+      "ELIGIBILITY CRITERIA NOT MET": 4,
+      "INFORMED CONSENT OBTAINED": 4
+    },
+    "by_ie_criterion": {
+      "EXCL01": {
+        "test": "Subject has a known hypersensitivity to study drug or excipients",
+        "category": "EXCLUSION",
+        "failed_count": 2
+      },
+      "EXCL04": {
+        "test": "Subject has uncontrolled concurrent illness",
+        "category": "EXCLUSION",
+        "failed_count": 2
+      }
+    },
+    "by_site": {
+      "USA_SITE02": 1,
+      "USA_SITE04": 1,
+      "USA_SITE09": 1,
+      "USA_SITE10": 1
+    }
+  }
+}

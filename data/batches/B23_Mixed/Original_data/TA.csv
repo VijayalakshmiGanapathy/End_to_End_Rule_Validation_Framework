@@ -1,0 +1,7 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+M19-977-RISA-PED,TA,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",1,SCRN,Screening,,Transition to Treatment (initial),SCREENING
+M19-977-RISA-PED,TA,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",2,TRT,Treatment (initial),,Transition to Safety follow-up,TREATMENT
+M19-977-RISA-PED,TA,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",3,FU,Safety follow-up,,,FOLLOW-UP
+M19-977-RISA-PED,TA,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),1,SCRN,Screening,,Transition to Treatment (initial),SCREENING
+M19-977-RISA-PED,TA,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),2,TRT,Treatment (initial),,Transition to Safety follow-up,TREATMENT
+M19-977-RISA-PED,TA,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),3,FU,Safety follow-up,,,FOLLOW-UP

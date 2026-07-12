@@ -1,0 +1,3108 @@
+{
+  "generated_at": "2026-07-07T05:25:24.844219",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_b9wmuv0j",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 15,
+  "rules_skipped": 0,
+  "rules_injected": 9,
+  "total_mutations": 127,
+  "skipped_rules": [
+    {
+      "rule_id": "SD0085",
+      "reason": "every eligible row's target cell was taken by an earlier rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1275",
+      "reason": "every eligible row's target cell was taken by an earlier rule \u2014 re-run in a separate batch"
+    }
+  ],
+  "errors": [
+    {
+      "error_id": "INJ-SD1045-IE-001",
+      "rule_id": "SD1045",
+      "rule_message": "Inconsistent values for IEORRES/IECAT",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-GBR_SITE01-0009",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "IESTRESC": {
+          "original": "Y",
+          "injected": "N"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1046-IE-001",
+      "rule_id": "SD1046",
+      "rule_message": "Inconsistent values for IEORRES/IECAT",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-USA_SITE01-0001",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "IEORRES": {
+          "original": "N",
+          "injected": "Y"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1298-LB-001",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 238,
+      "csv_line": 240,
+      "seq_value": "29",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 238
+    },
+    {
+      "error_id": "INJ-SD1298-LB-002",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 313,
+      "csv_line": 315,
+      "seq_value": "6",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 313
+    },
+    {
+      "error_id": "INJ-SD1298-LB-003",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 194,
+      "csv_line": 196,
+      "seq_value": "27",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 194
+    },
+    {
+      "error_id": "INJ-SD1298-LB-004",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 815,
+      "csv_line": 817,
+      "seq_value": "53",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 815
+    },
+    {
+      "error_id": "INJ-SD1298-LB-005",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 639,
+      "csv_line": 641,
+      "seq_value": "52",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 639
+    },
+    {
+      "error_id": "INJ-SD1298-LB-006",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 785,
+      "csv_line": 787,
+      "seq_value": "23",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 785
+    },
+    {
+      "error_id": "INJ-SD1298-LB-007",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 660,
+      "csv_line": 662,
+      "seq_value": "17",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 660
+    },
+    {
+      "error_id": "INJ-SD1298-LB-008",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 54,
+      "csv_line": 56,
+      "seq_value": "55",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 54
+    },
+    {
+      "error_id": "INJ-SD1298-LB-009",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 615,
+      "csv_line": 617,
+      "seq_value": "28",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 615
+    },
+    {
+      "error_id": "INJ-SD1298-LB-010",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 307,
+      "csv_line": 309,
+      "seq_value": "63",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 307
+    },
+    {
+      "error_id": "INJ-SD1298-LB-011",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 762,
+      "csv_line": 764,
+      "seq_value": "63",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 762
+    },
+    {
+      "error_id": "INJ-SD1298-LB-012",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 71,
+      "csv_line": 73,
+      "seq_value": "16",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 71
+    },
+    {
+      "error_id": "INJ-SD1298-LB-013",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 707,
+      "csv_line": 709,
+      "seq_value": "8",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 707
+    },
+    {
+      "error_id": "INJ-SD1298-LB-014",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 607,
+      "csv_line": 609,
+      "seq_value": "20",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 607
+    },
+    {
+      "error_id": "INJ-SD1298-LB-015",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 580,
+      "csv_line": 582,
+      "seq_value": "56",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 580
+    },
+    {
+      "error_id": "INJ-SD1298-LB-016",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 358,
+      "csv_line": 360,
+      "seq_value": "23",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 358
+    },
+    {
+      "error_id": "INJ-SD1298-LB-017",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 601,
+      "csv_line": 603,
+      "seq_value": "14",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 601
+    },
+    {
+      "error_id": "INJ-SD1298-LB-018",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 78,
+      "csv_line": 80,
+      "seq_value": "23",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 78
+    },
+    {
+      "error_id": "INJ-SD1298-LB-019",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 856,
+      "csv_line": 858,
+      "seq_value": "17",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "3",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 856
+    },
+    {
+      "error_id": "INJ-SD1298-LB-020",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 713,
+      "csv_line": 715,
+      "seq_value": "14",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 713
+    },
+    {
+      "error_id": "INJ-SD1298-LB-021",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 342,
+      "csv_line": 344,
+      "seq_value": "7",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 342
+    },
+    {
+      "error_id": "INJ-SD1298-LB-022",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 142,
+      "csv_line": 144,
+      "seq_value": "31",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 142
+    },
+    {
+      "error_id": "INJ-SD1298-LB-023",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 545,
+      "csv_line": 547,
+      "seq_value": "21",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 545
+    },
+    {
+      "error_id": "INJ-SD1298-LB-024",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 663,
+      "csv_line": 665,
+      "seq_value": "20",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 663
+    },
+    {
+      "error_id": "INJ-SD1298-LB-025",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 439,
+      "csv_line": 441,
+      "seq_value": "41",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 439
+    },
+    {
+      "error_id": "INJ-SD1298-LB-026",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 465,
+      "csv_line": 467,
+      "seq_value": "67",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 465
+    },
+    {
+      "error_id": "INJ-SD1298-LB-027",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 547,
+      "csv_line": 549,
+      "seq_value": "23",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 547
+    },
+    {
+      "error_id": "INJ-SD1298-LB-028",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 422,
+      "csv_line": 424,
+      "seq_value": "24",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 422
+    },
+    {
+      "error_id": "INJ-SD1298-LB-029",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 154,
+      "csv_line": 156,
+      "seq_value": "43",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 154
+    },
+    {
+      "error_id": "INJ-SD1298-LB-030",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 712,
+      "csv_line": 714,
+      "seq_value": "13",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 712
+    },
+    {
+      "error_id": "INJ-SD1298-LB-031",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 475,
+      "csv_line": 477,
+      "seq_value": "7",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 475
+    },
+    {
+      "error_id": "INJ-SD1298-LB-032",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 541,
+      "csv_line": 543,
+      "seq_value": "17",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 541
+    },
+    {
+      "error_id": "INJ-SD1298-LB-033",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 107,
+      "csv_line": 109,
+      "seq_value": "52",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 107
+    },
+    {
+      "error_id": "INJ-SD1298-LB-034",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 431,
+      "csv_line": 433,
+      "seq_value": "33",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 431
+    },
+    {
+      "error_id": "INJ-SD1298-LB-035",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 637,
+      "csv_line": 639,
+      "seq_value": "50",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 637
+    },
+    {
+      "error_id": "INJ-SD1298-LB-036",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 167,
+      "csv_line": 169,
+      "seq_value": "56",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 167
+    },
+    {
+      "error_id": "INJ-SD1298-LB-037",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 378,
+      "csv_line": 380,
+      "seq_value": "43",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 378
+    },
+    {
+      "error_id": "INJ-SD1298-LB-038",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 385,
+      "csv_line": 387,
+      "seq_value": "50",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 385
+    },
+    {
+      "error_id": "INJ-SD1298-LB-039",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 700,
+      "csv_line": 702,
+      "seq_value": "1",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 700
+    },
+    {
+      "error_id": "INJ-SD1298-LB-040",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 738,
+      "csv_line": 740,
+      "seq_value": "39",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "1",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 738
+    },
+    {
+      "error_id": "INJ-SD1298-LB-041",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 380,
+      "csv_line": 382,
+      "seq_value": "45",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 380
+    },
+    {
+      "error_id": "INJ-SD1298-LB-042",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 656,
+      "csv_line": 658,
+      "seq_value": "13",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 656
+    },
+    {
+      "error_id": "INJ-SD1298-LB-043",
+      "rule_id": "SD1298",
+      "rule_message": "LBTOXGR is not a numeric value when a numeric scale is used.",
+      "category": "FND1",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 363,
+      "csv_line": 365,
+      "seq_value": "28",
+      "variables_modified": {
+        "LBTOXGR": {
+          "original": "",
+          "injected": "Grade 2"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 363
+    },
+    {
+      "error_id": "INJ-SD0007-DA-001",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 15539,
+      "csv_line": 15541,
+      "seq_value": "669",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15539
+    },
+    {
+      "error_id": "INJ-SD0007-DA-002",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 15214,
+      "csv_line": 15216,
+      "seq_value": "344",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15214
+    },
+    {
+      "error_id": "INJ-SD0007-DA-003",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 15850,
+      "csv_line": 15852,
+      "seq_value": "980",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15850
+    },
+    {
+      "error_id": "INJ-SD0007-DA-004",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 6439,
+      "csv_line": 6441,
+      "seq_value": "533",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6439
+    },
+    {
+      "error_id": "INJ-SD0007-DA-005",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 2662,
+      "csv_line": 2664,
+      "seq_value": "413",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2662
+    },
+    {
+      "error_id": "INJ-SD0007-DA-006",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 18511,
+      "csv_line": 18513,
+      "seq_value": "1727",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18511
+    },
+    {
+      "error_id": "INJ-SD0007-DA-007",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 14761,
+      "csv_line": 14763,
+      "seq_value": "1151",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14761
+    },
+    {
+      "error_id": "INJ-SD0007-DA-008",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 8997,
+      "csv_line": 8999,
+      "seq_value": "1",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8997
+    },
+    {
+      "error_id": "INJ-SD0007-DA-009",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 20854,
+      "csv_line": 20856,
+      "seq_value": "614",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20854
+    },
+    {
+      "error_id": "INJ-SD0007-DA-010",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 12912,
+      "csv_line": 12914,
+      "seq_value": "1684",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12912
+    },
+    {
+      "error_id": "INJ-SD0007-DA-011",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 5563,
+      "csv_line": 5565,
+      "seq_value": "800",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5563
+    },
+    {
+      "error_id": "INJ-SD0007-DA-012",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 4643,
+      "csv_line": 4645,
+      "seq_value": "1494",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4643
+    },
+    {
+      "error_id": "INJ-SD0007-DA-013",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 13142,
+      "csv_line": 13144,
+      "seq_value": "1914",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13142
+    },
+    {
+      "error_id": "INJ-SD0007-DA-014",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 2256,
+      "csv_line": 2258,
+      "seq_value": "7",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2256
+    },
+    {
+      "error_id": "INJ-SD0007-DA-015",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 18281,
+      "csv_line": 18283,
+      "seq_value": "1497",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18281
+    },
+    {
+      "error_id": "INJ-SD0007-DA-016",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 13218,
+      "csv_line": 13220,
+      "seq_value": "1990",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13218
+    },
+    {
+      "error_id": "INJ-SD0007-DA-017",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 13362,
+      "csv_line": 13364,
+      "seq_value": "2134",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13362
+    },
+    {
+      "error_id": "INJ-SD0007-DA-018",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 5706,
+      "csv_line": 5708,
+      "seq_value": "943",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5706
+    },
+    {
+      "error_id": "INJ-SD0007-DA-019",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 11750,
+      "csv_line": 11752,
+      "seq_value": "522",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11750
+    },
+    {
+      "error_id": "INJ-SD0007-DA-020",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 18142,
+      "csv_line": 18144,
+      "seq_value": "1358",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18142
+    },
+    {
+      "error_id": "INJ-SD0007-DA-021",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 15447,
+      "csv_line": 15449,
+      "seq_value": "577",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 15447
+    },
+    {
+      "error_id": "INJ-SD0007-DA-022",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 13007,
+      "csv_line": 13009,
+      "seq_value": "1779",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13007
+    },
+    {
+      "error_id": "INJ-SD0007-DA-023",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 2106,
+      "csv_line": 2108,
+      "seq_value": "2107",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2106
+    },
+    {
+      "error_id": "INJ-SD0007-DA-024",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 3245,
+      "csv_line": 3247,
+      "seq_value": "96",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3245
+    },
+    {
+      "error_id": "INJ-SD0007-DA-025",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 1841,
+      "csv_line": 1843,
+      "seq_value": "1842",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1841
+    },
+    {
+      "error_id": "INJ-SD0007-DA-026",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 7070,
+      "csv_line": 7072,
+      "seq_value": "84",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7070
+    },
+    {
+      "error_id": "INJ-SD0007-DA-027",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 17825,
+      "csv_line": 17827,
+      "seq_value": "1041",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17825
+    },
+    {
+      "error_id": "INJ-SD0007-DA-028",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 3249,
+      "csv_line": 3251,
+      "seq_value": "100",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3249
+    },
+    {
+      "error_id": "INJ-SD0007-DA-029",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 13148,
+      "csv_line": 13150,
+      "seq_value": "1920",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13148
+    },
+    {
+      "error_id": "INJ-SD0007-DA-030",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 18490,
+      "csv_line": 18492,
+      "seq_value": "1706",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18490
+    },
+    {
+      "error_id": "INJ-SD0007-DA-031",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 17789,
+      "csv_line": 17791,
+      "seq_value": "1005",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 17789
+    },
+    {
+      "error_id": "INJ-SD0007-DA-032",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 171,
+      "csv_line": 173,
+      "seq_value": "172",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 171
+    },
+    {
+      "error_id": "INJ-SD0007-DA-033",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 14788,
+      "csv_line": 14790,
+      "seq_value": "1178",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14788
+    },
+    {
+      "error_id": "INJ-SD0007-DA-034",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 6695,
+      "csv_line": 6697,
+      "seq_value": "789",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6695
+    },
+    {
+      "error_id": "INJ-SD0007-DA-035",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 12875,
+      "csv_line": 12877,
+      "seq_value": "1647",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12875
+    },
+    {
+      "error_id": "INJ-SD0007-DA-036",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 18130,
+      "csv_line": 18132,
+      "seq_value": "1346",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18130
+    },
+    {
+      "error_id": "INJ-SD0007-DA-037",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 7251,
+      "csv_line": 7253,
+      "seq_value": "265",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7251
+    },
+    {
+      "error_id": "INJ-SD0007-DA-038",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "DA",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 866,
+      "csv_line": 868,
+      "seq_value": "867",
+      "variables_modified": {
+        "DASTRESU": {
+          "original": "TABLET",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with DASTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 866
+    },
+    {
+      "error_id": "INJ-SD0007-EG-039",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 599,
+      "csv_line": 601,
+      "seq_value": "15",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 599
+    },
+    {
+      "error_id": "INJ-SD0007-EG-040",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 232,
+      "csv_line": 234,
+      "seq_value": "13",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "beats/min",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 232
+    },
+    {
+      "error_id": "INJ-SD0007-EG-041",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 593,
+      "csv_line": 595,
+      "seq_value": "9",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 593
+    },
+    {
+      "error_id": "INJ-SD0007-EG-042",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 167,
+      "csv_line": 169,
+      "seq_value": "18",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 167
+    },
+    {
+      "error_id": "INJ-SD0007-EG-043",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 173,
+      "csv_line": 175,
+      "seq_value": "24",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 173
+    },
+    {
+      "error_id": "INJ-SD0007-EG-044",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 567,
+      "csv_line": 569,
+      "seq_value": "23",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 567
+    },
+    {
+      "error_id": "INJ-SD0007-EG-045",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 184,
+      "csv_line": 186,
+      "seq_value": "5",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 184
+    },
+    {
+      "error_id": "INJ-SD0007-EG-046",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 165,
+      "csv_line": 167,
+      "seq_value": "16",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 165
+    },
+    {
+      "error_id": "INJ-SD0007-EG-047",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 611,
+      "csv_line": 613,
+      "seq_value": "2",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "beats/min",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 611
+    },
+    {
+      "error_id": "INJ-SD0007-EG-048",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 166,
+      "csv_line": 168,
+      "seq_value": "17",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 166
+    },
+    {
+      "error_id": "INJ-SD0007-EG-049",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 228,
+      "csv_line": 230,
+      "seq_value": "9",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 228
+    },
+    {
+      "error_id": "INJ-SD0007-EG-050",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 223,
+      "csv_line": 225,
+      "seq_value": "4",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 223
+    },
+    {
+      "error_id": "INJ-SD0007-EG-051",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 212,
+      "csv_line": 214,
+      "seq_value": "33",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 212
+    },
+    {
+      "error_id": "INJ-SD0007-EG-052",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 374,
+      "csv_line": 376,
+      "seq_value": "20",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 374
+    },
+    {
+      "error_id": "INJ-SD0007-EG-053",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 210,
+      "csv_line": 212,
+      "seq_value": "31",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "beats/min",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 210
+    },
+    {
+      "error_id": "INJ-SD0007-EG-054",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 146,
+      "csv_line": 148,
+      "seq_value": "27",
+      "variables_modified": {
+        "EGSTRESU": {
+          "original": "ms",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with EGSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 146
+    },
+    {
+      "error_id": "INJ-SD0007-LB-055",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 484,
+      "csv_line": 486,
+      "seq_value": "2",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "U/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 484
+    },
+    {
+      "error_id": "INJ-SD0007-LB-056",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 489,
+      "csv_line": 491,
+      "seq_value": "7",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "10^9/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 489
+    },
+    {
+      "error_id": "INJ-SD0007-LB-057",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 806,
+      "csv_line": 808,
+      "seq_value": "44",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "U/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 806
+    },
+    {
+      "error_id": "INJ-SD0007-LB-058",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 831,
+      "csv_line": 833,
+      "seq_value": "6",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "10^9/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 831
+    },
+    {
+      "error_id": "INJ-SD0007-LB-059",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 495,
+      "csv_line": 497,
+      "seq_value": "13",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "10^9/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 495
+    },
+    {
+      "error_id": "INJ-SD0007-LB-060",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 812,
+      "csv_line": 814,
+      "seq_value": "50",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "U/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 812
+    },
+    {
+      "error_id": "INJ-SD0007-LB-061",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 486,
+      "csv_line": 488,
+      "seq_value": "4",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "mmol/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 486
+    },
+    {
+      "error_id": "INJ-SD0007-LB-062",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 773,
+      "csv_line": 775,
+      "seq_value": "11",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "mmol/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 773
+    },
+    {
+      "error_id": "INJ-SD0007-LB-063",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 513,
+      "csv_line": 515,
+      "seq_value": "31",
+      "variables_modified": {
+        "LBSTRESU": {
+          "original": "umol/L",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with LBSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 513
+    },
+    {
+      "error_id": "INJ-SD0007-PC-064",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "PC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "4",
+      "variables_modified": {
+        "PCSTRESU": {
+          "original": "ng/mL",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with PCSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD0007-PC-065",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "PC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 25,
+      "csv_line": 27,
+      "seq_value": "8",
+      "variables_modified": {
+        "PCSTRESU": {
+          "original": "ng/mL",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with PCSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 25
+    },
+    {
+      "error_id": "INJ-SD0007-PP-066",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "PP",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 30,
+      "csv_line": 32,
+      "seq_value": "3",
+      "variables_modified": {
+        "PPSTRESU": {
+          "original": "h*ng/mL",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with PPSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 30
+    },
+    {
+      "error_id": "INJ-SD0007-VS-067",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 1053,
+      "csv_line": 1055,
+      "seq_value": "20",
+      "variables_modified": {
+        "VSSTRESU": {
+          "original": "C",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1053
+    },
+    {
+      "error_id": "INJ-SD0007-VS-068",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 1040,
+      "csv_line": 1042,
+      "seq_value": "7",
+      "variables_modified": {
+        "VSSTRESU": {
+          "original": "C",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1040
+    },
+    {
+      "error_id": "INJ-SD0007-VS-069",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 1015,
+      "csv_line": 1017,
+      "seq_value": "3",
+      "variables_modified": {
+        "VSSTRESU": {
+          "original": "cm",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1015
+    },
+    {
+      "error_id": "INJ-SD0007-VS-070",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 1069,
+      "csv_line": 1071,
+      "seq_value": "36",
+      "variables_modified": {
+        "VSSTRESU": {
+          "original": "C",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1069
+    },
+    {
+      "error_id": "INJ-SD0007-VS-071",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 1019,
+      "csv_line": 1021,
+      "seq_value": "7",
+      "variables_modified": {
+        "VSSTRESU": {
+          "original": "C",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1019
+    },
+    {
+      "error_id": "INJ-SD0007-VS-072",
+      "rule_id": "SD0007",
+      "rule_message": "Inconsistent value for Standard Units",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 1030,
+      "csv_line": 1032,
+      "seq_value": "18",
+      "variables_modified": {
+        "VSSTRESU": {
+          "original": "mmHg",
+          "injected": "mg/dL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSSTRESU changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1030
+    },
+    {
+      "error_id": "INJ-SD0017-EG-001",
+      "rule_id": "SD0017",
+      "rule_message": "Invalid value for --TEST variable",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 343,
+      "csv_line": 345,
+      "seq_value": "14",
+      "variables_modified": {
+        "EGTEST": {
+          "original": "PR Interval",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 343
+    },
+    {
+      "error_id": "INJ-SD0017-IE-002",
+      "rule_id": "SD0017",
+      "rule_message": "Invalid value for --TEST variable",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-USA_SITE01-0001",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETEST": {
+          "original": "Subject meets diagnosis criteria for the study indication",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD0017-PE-003",
+      "rule_id": "SD0017",
+      "rule_message": "Invalid value for --TEST variable",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 194,
+      "csv_line": 196,
+      "seq_value": "15",
+      "variables_modified": {
+        "PETEST": {
+          "original": "GENERAL APPEARANCE",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 194
+    },
+    {
+      "error_id": "INJ-SD0017-PE-004",
+      "rule_id": "SD0017",
+      "rule_message": "Invalid value for --TEST variable",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 198,
+      "csv_line": 200,
+      "seq_value": "19",
+      "variables_modified": {
+        "PETEST": {
+          "original": "RESPIRATORY",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 198
+    },
+    {
+      "error_id": "INJ-SD0017-PE-005",
+      "rule_id": "SD0017",
+      "rule_message": "Invalid value for --TEST variable",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 183,
+      "csv_line": 185,
+      "seq_value": "4",
+      "variables_modified": {
+        "PETEST": {
+          "original": "EYES",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 183
+    },
+    {
+      "error_id": "INJ-SD0017-PE-006",
+      "rule_id": "SD0017",
+      "rule_message": "Invalid value for --TEST variable",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "PE",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 184,
+      "csv_line": 186,
+      "seq_value": "5",
+      "variables_modified": {
+        "PETEST": {
+          "original": "GENERAL APPEARANCE",
+          "injected": "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789101112"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 184
+    },
+    {
+      "error_id": "INJ-SD0040-IE-001",
+      "rule_id": "SD0040",
+      "rule_message": "Inconsistent value for --TEST within --TESTCD",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-GBR_SITE01-0009",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETEST": {
+          "original": "Subject has participated in another clinical trial within 30 days",
+          "injected": "Inconsistent Test Name"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with IETEST changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1043-IE-001",
+      "rule_id": "SD1043",
+      "rule_message": "Inconsistent value for --TESTCD within --TEST",
+      "category": "FA1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-GBR_SITE01-0009",
+      "row_index": 2,
+      "csv_line": 4,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETESTCD": {
+          "original": "EXCL05",
+          "injected": "ALBX"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with IETESTCD changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2
+    },
+    {
+      "error_id": "INJ-SD1272-IE-001",
+      "rule_id": "SD1272",
+      "rule_message": "--TESTCD equals 'OTHER'",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-GBR_SITE01-0009",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETESTCD": {
+          "original": "ALBX",
+          "injected": "OTHER"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD0018-IE-001",
+      "rule_id": "SD0018",
+      "rule_message": "Invalid value for --TESTCD variable",
+      "category": "FA1",
+      "primitive": "set_invalid_value",
+      "domain": "IE",
+      "usubjid": "BI-1245.110-USA_SITE01-0001",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETESTCD": {
+          "original": "INCL03",
+          "injected": "TOOLONGCD"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    }
+  ],
+  "summary_by_rule": {
+    "SD1045": 1,
+    "SD1046": 1,
+    "SD1298": 43,
+    "SD0007": 72,
+    "SD0017": 6,
+    "SD0040": 1,
+    "SD1043": 1,
+    "SD1272": 1,
+    "SD0018": 1
+  },
+  "summary_by_category": {
+    "FND1": 45,
+    "FA1": 81,
+    "FA2": 1
+  },
+  "summary_by_domain": {
+    "IE": 7,
+    "LB": 52,
+    "DA": 38,
+    "EG": 17,
+    "PC": 2,
+    "PP": 1,
+    "VS": 6,
+    "PE": 4
+  },
+  "summary_status": {
+    "injected": 127,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

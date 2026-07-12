@@ -1,0 +1,7 @@
+STUDYID,DOMAIN,ETCD,ELEMENT,TESTRL,TEENRL,TEDUR
+MS200095-0022-VISION,INVALID,FU,30-day safety FU,After last dose,30 days post-last-dose,NOT-ISO8601
+MS200095-0022-VISION,INVALID,SCRN,Screening,Informed consent,Cycle 1 Day 1,NOT-ISO8601
+MS200095-0022-VISION,INVALID,TRT,Treatment (cycles),Cycle 1 Day 1,Last cycle (~24 cycles modeled),NOT-ISO8601
+MS200095-0022-VISION,INVALID,FU,30-day safety FU,After last dose,30 days post-last-dose,NOT-ISO8601
+MS200095-0022-VISION,INVALID,SCRN,Screening,Informed consent,Cycle 1 Day 1,NOT-ISO8601
+MS200095-0022-VISION,INVALID,TRT,Treatment (cycles),Cycle 1 Day 1,Last cycle (~24 cycles modeled),NOT-ISO8601

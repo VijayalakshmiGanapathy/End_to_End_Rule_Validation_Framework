@@ -37,6 +37,7 @@ class ValidationService:
     p21_report,
     ):
         
+
         logger.info(
             "Starting validation for batch=%s host_generator_key=%s",
             config.batch_name,
@@ -54,8 +55,8 @@ class ValidationService:
         export_summary_df.columns = export_summary_df.columns.str.strip()
         export_detail_df.columns = export_detail_df.columns.str.strip()
 
-        logger.info("Export summary columns: %s", export_summary_df.columns.tolist())
-        logger.info("Export detail columns: %s", export_detail_df.columns.tolist())
+        # logger.info("Export summary columns: %s", export_summary_df.columns.tolist())
+        # logger.info("Export detail columns: %s", export_detail_df.columns.tolist())
 
         p21_issue_df = read_excel_sheet(
             p21_report,
@@ -167,7 +168,7 @@ class ValidationService:
                 export_detail_df,
             )
         )
-
+        
         logger.info("Original vs Dirty comparison completed.")
 
         logger.info("Building rule validation results...")

@@ -1,0 +1,21 @@
+STUDYID,DOMAIN,VISITNUM,VISIT,VISITDY,ARMCD,ARM,TVSTRL,TVENRL
+M19-977-RISA-PED,TV,1.0,SCREENING,-35,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day -35,End of SCREENING
+M19-977-RISA-PED,TV,2.0,WEEK 0 BASELINE,1,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 1,End of WEEK 0 BASELINE
+M19-977-RISA-PED,TV,3.0,WEEK 4,29,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 29,End of WEEK 4
+M19-977-RISA-PED,TV,4.0,WEEK 8,57,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 57,End of WEEK 8
+M19-977-RISA-PED,TV,5.0,WEEK 12,85,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 85,End of WEEK 12
+M19-977-RISA-PED,TV,6.0,WEEK 16,113,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 113,End of WEEK 16
+M19-977-RISA-PED,TV,7.0,WEEK 24,169,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 169,End of WEEK 24
+M19-977-RISA-PED,TV,8.0,WEEK 36,253,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 253,End of WEEK 36
+M19-977-RISA-PED,TV,9.0,WEEK 40 EOT,281,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 281,End of WEEK 40 EOT
+M19-977-RISA-PED,TV,10.0,WEEK 60 FU,421,RISA,"Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",Study Day 421,End of WEEK 60 FU
+M19-977-RISA-PED,TV,1.0,SCREENING,-35,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day -35,End of SCREENING
+M19-977-RISA-PED,TV,2.0,WEEK 0 BASELINE,1,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 1,End of WEEK 0 BASELINE
+M19-977-RISA-PED,TV,3.0,WEEK 4,29,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 29,End of WEEK 4
+M19-977-RISA-PED,TV,4.0,WEEK 8,57,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 57,End of WEEK 8
+M19-977-RISA-PED,TV,5.0,WEEK 12,85,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 85,End of WEEK 12
+M19-977-RISA-PED,TV,6.0,WEEK 16,113,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 113,End of WEEK 16
+M19-977-RISA-PED,TV,7.0,WEEK 24,169,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 169,End of WEEK 24
+M19-977-RISA-PED,TV,8.0,WEEK 36,253,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 253,End of WEEK 36
+M19-977-RISA-PED,TV,9.0,WEEK 40 EOT,281,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 281,End of WEEK 40 EOT
+M19-977-RISA-PED,TV,10.0,WEEK 60 FU,421,USTE,Ustekinumab SC (45 mg simplified; actual is weight-banded),Study Day 421,End of WEEK 60 FU

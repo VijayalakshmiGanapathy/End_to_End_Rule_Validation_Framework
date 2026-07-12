@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-07-07T06:20:43.535012",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_ci5vgq35",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 1,
+  "rules_skipped": 0,
+  "rules_injected": 1,
+  "total_mutations": 3,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1250-EG-016",
+      "rule_id": "SD1250",
+      "rule_message": "Missing --TPTNUM variable, when --TPT variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "EG",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "EGTPTNUM": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1250-PC-019",
+      "rule_id": "SD1250",
+      "rule_message": "Missing --TPTNUM variable, when --TPT variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "PC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "PCTPTNUM": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1250-VS-024",
+      "rule_id": "SD1250",
+      "rule_message": "Missing --TPTNUM variable, when --TPT variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "VS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "VSTPTNUM": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1250": 3
+  },
+  "summary_by_category": {
+    "VI1 & VV1": 3
+  },
+  "summary_by_domain": {
+    "EG": 1,
+    "PC": 1,
+    "VS": 1
+  },
+  "summary_status": {
+    "injected": 3,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

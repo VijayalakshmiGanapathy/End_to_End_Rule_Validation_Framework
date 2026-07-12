@@ -1,0 +1,11 @@
+STUDYID,DOMAIN,VISITNUM,VISIT,VISITDY,ARMCD,ARM,TVSTRL,TVENRL
+P261-402-USL261,TV,1.0,ENROLLMENT,1,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 1,End of ENROLLMENT
+P261-402-USL261,TV,2.0,VISIT 2,90,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 90,End of VISIT 2
+P261-402-USL261,TV,3.0,VISIT 3,180,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 180,End of VISIT 3
+P261-402-USL261,TV,4.0,VISIT 4,270,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 270,End of VISIT 4
+P261-402-USL261,TV,5.0,VISIT 5,365,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 365,End of VISIT 5
+P261-402-USL261,TV,6.0,VISIT 6,540,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 540,End of VISIT 6
+P261-402-USL261,TV,7.0,VISIT 7,730,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 730,End of VISIT 7
+P261-402-USL261,TV,8.0,VISIT 8,1095,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 1095,End of VISIT 8
+P261-402-USL261,TV,9.0,VISIT 9,1430,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 1430,End of VISIT 9
+P261-402-USL261,TV,10.0,FINAL VISIT,1460,USL261,USL261 5 mg intranasal PRN per seizure cluster,Study Day 1460,End of FINAL VISIT

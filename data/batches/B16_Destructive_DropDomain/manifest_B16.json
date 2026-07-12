@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-07-07T05:54:06.383345",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_ihc8nw54",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 10,
+  "rules_skipped": 0,
+  "rules_injected": 0,
+  "total_mutations": 0,
+  "skipped_rules": [
+    {
+      "rule_id": "SD1020",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1107",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1108",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1109",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1110",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1111",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1112",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1113",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1115",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1270",
+      "reason": "destructive dataset rule \u2014 re-run in a separate batch"
+    }
+  ],
+  "errors": [],
+  "summary_by_rule": {},
+  "summary_by_category": {},
+  "summary_by_domain": {},
+  "summary_status": {
+    "injected": 0,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

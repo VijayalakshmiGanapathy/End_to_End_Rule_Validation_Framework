@@ -1,0 +1,2 @@
+﻿error_id,rule_id,status,domain,USUBJID,row_index,primitive,variables_modified,re_derived,failure_reason
+INJ-SD1129-DM-001,SD1129,injected,DM,,,drop_column,"{""AGE"": {""original"": ""present"", ""injected"": ""removed""}}",,

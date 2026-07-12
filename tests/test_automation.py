@@ -8,13 +8,11 @@ logger = logging.getLogger(__name__)
 
 def test_automation():
 
-    config = BatchConfigService().get_batch_configuration(
-        "B01_DM_dates",
-    )
+    # config = BatchConfigService().get_batch_configuration(
+    #     "B01_DM_dates",
+    # )
 
-    AutomationService().run_batch(
-        config,
-    )
+    AutomationService().run_all_batches()
 
 
 if __name__ == "__main__":

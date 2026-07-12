@@ -10,6 +10,7 @@ from app.core.constants import (
     TEST_VALIDATION_REPORT_FOLDER,
     KWALIFY_REPORT_FOLDER,
     COMPARISON_REPORT_FOLDER,
+    TD_VALIDATION_FOLDER,
 )
 
 
@@ -91,6 +92,30 @@ class BatchPaths:
             exist_ok=True,
         )
 
+        self.td_validation_reports.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+
+    @property
+    def td_validation_folder(self) -> Path:
+        """
+        Returns TD Validation folder.
+        """
+
+        folder = (
+            self.batch_folder
+            / "TD_Validation"
+        )
+
+        folder.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        return folder
+    
     @property
     def export_summary(self):
 
@@ -123,6 +148,8 @@ class BatchPaths:
 
         return folder
     
+    
+    
     @property
     def test_validation_report(self):
 
@@ -145,7 +172,40 @@ class BatchPaths:
         return self.kwalify_reports / f"Kwalify_{self.batch_prefix}.xlsx"
     
 
+   
+
     @property
     def latest_p21_report(self):
 
-        pass
+        reports = sorted(
+            self.p21_reports.glob("P21_*.xlsx")
+        )
+
+        if not reports:
+            return None
+
+        return reports[0]
+    
+    @property
+    def td_validation_report(self) -> Path:
+        """
+        Returns TD Validation report path.
+
+        Example:
+            P21_B01_Run1.xlsx
+             ->
+            TD_Validation_Report_B01_Run1.xlsx
+        """
+
+        report_name = (
+            self.latest_p21_report.name
+            .replace(
+                "P21_",
+                "TD_Validation_Report_",
+            )
+        )
+
+        return (
+            self.td_validation_folder
+            / report_name
+        )

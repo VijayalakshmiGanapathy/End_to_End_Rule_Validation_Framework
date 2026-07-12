@@ -70,3 +70,28 @@ class BatchConfigService:
             host_generator_key=host_generator_key,
             rule_ids=rule_ids,
         )
+    
+    def get_all_batches(self):
+        """
+        Returns BatchConfiguration objects for every unique batch
+        in the Batches sheet.
+        """
+
+        batch_names = (
+            self.df["Batch"]
+            .dropna()
+            .astype(str)
+            .str.strip()
+            .unique()
+            .tolist()
+        )
+
+        configs = []
+
+        for batch_name in batch_names:
+
+            configs.append(
+                self.get_batch_configuration(batch_name)
+            )
+
+        return configs

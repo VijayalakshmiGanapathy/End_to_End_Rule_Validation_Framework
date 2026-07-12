@@ -1,0 +1,3079 @@
+{
+  "generated_at": "2026-07-07T05:39:59.081749",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_kgh88thq",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 18,
+  "rules_skipped": 0,
+  "rules_injected": 15,
+  "total_mutations": 126,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD0072-CO-001",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD0072-CO-002",
+      "rule_id": "SD0072",
+      "rule_message": "Invalid RDOMAIN",
+      "category": "Re-order",
+      "primitive": "set_invalid_value",
+      "domain": "CO",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "1",
+      "variables_modified": {
+        "RDOMAIN": {
+          "original": "",
+          "injected": "ZZ"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-001",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 342,
+      "csv_line": 344,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 342
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-002",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 187,
+      "csv_line": 189,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 187
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-003",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 99,
+      "csv_line": 101,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 99
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-004",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 397,
+      "csv_line": 399,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 397
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-005",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 92,
+      "csv_line": 94,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 92
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-006",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 392,
+      "csv_line": 394,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 392
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-007",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 318,
+      "csv_line": 320,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 318
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-008",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 419,
+      "csv_line": 421,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 419
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-009",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 378,
+      "csv_line": 380,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 378
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-010",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 64,
+      "csv_line": 66,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 64
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-011",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 42,
+      "csv_line": 44,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 42
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-012",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 213,
+      "csv_line": 215,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "failed_self_validation",
+      "failure_reason": "guard no longer holds: IDVAR.endswith('SEQ')",
+      "clean_row_index": 213
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-013",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 260,
+      "csv_line": 262,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 260
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-014",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 364,
+      "csv_line": 366,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 364
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-015",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 43,
+      "csv_line": 45,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 43
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-016",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 357,
+      "csv_line": 359,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 357
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-017",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 226,
+      "csv_line": 228,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 226
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-018",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 375,
+      "csv_line": 377,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 375
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-019",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 211,
+      "csv_line": 213,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 211
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-020",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 252,
+      "csv_line": 254,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 252
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-021",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 469,
+      "csv_line": 471,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 469
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-022",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 482,
+      "csv_line": 484,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 482
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-023",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 421,
+      "csv_line": 423,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 421
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-024",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 46,
+      "csv_line": 48,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 46
+    },
+    {
+      "error_id": "INJ-SD1026-RELREC-025",
+      "rule_id": "SD1026",
+      "rule_message": "Invalid value for RELTYPE variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 256,
+      "csv_line": 258,
+      "seq_value": null,
+      "variables_modified": {
+        "RELTYPE": {
+          "original": "",
+          "injected": "ONE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 256
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-001",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 185,
+      "csv_line": 187,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "12",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 185
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-002",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 205,
+      "csv_line": 207,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "11",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 205
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-003",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 401,
+      "csv_line": 403,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "4",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 401
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-004",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 162,
+      "csv_line": 164,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "38",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 162
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-005",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 243,
+      "csv_line": 245,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "8",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 243
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-006",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "11",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-007",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 236,
+      "csv_line": 238,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "22",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 236
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-008",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 337,
+      "csv_line": 339,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "16",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 337
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-009",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 75,
+      "csv_line": 77,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "17",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 75
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-010",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 177,
+      "csv_line": 179,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "8",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 177
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-011",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 481,
+      "csv_line": 483,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "3",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 481
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-012",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 38,
+      "csv_line": 40,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "45",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 38
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-013",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 94,
+      "csv_line": 96,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "7",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 94
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-014",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 95,
+      "csv_line": 97,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "7",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 95
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-015",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 66,
+      "csv_line": 68,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "21",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 66
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-016",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 182,
+      "csv_line": 184,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "21",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 182
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-017",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 234,
+      "csv_line": 236,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "19",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 234
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-018",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 227,
+      "csv_line": 229,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "3",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 227
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-019",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 268,
+      "csv_line": 270,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "30",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 268
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-020",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 456,
+      "csv_line": 458,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "17",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 456
+    },
+    {
+      "error_id": "INJ-SD1066-RELREC-021",
+      "rule_id": "SD1066",
+      "rule_message": "IDVARVAL value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 453,
+      "csv_line": 455,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "8",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 453
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-001",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 3,
+      "csv_line": 5,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-ARG_SITE01-0017",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-002",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 284,
+      "csv_line": 286,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-JPN_SITE02-0014",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 284
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-003",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 276,
+      "csv_line": 278,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-JPN_SITE02-0014",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 276
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-004",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 404,
+      "csv_line": 406,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-POL_SITE01-0006",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 404
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-005",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 222,
+      "csv_line": 224,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-JPN_SITE01-0003",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 222
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-006",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 338,
+      "csv_line": 340,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-MEX_SITE01-0016",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 338
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-007",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 18,
+      "csv_line": 20,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-ARG_SITE01-0017",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 18
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-008",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 308,
+      "csv_line": 310,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-MEX_SITE01-0016",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 308
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-009",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 70,
+      "csv_line": 72,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-BRA_SITE01-0010",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 70
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-010",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 57,
+      "csv_line": 59,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-BRA_SITE01-0010",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 57
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-011",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 327,
+      "csv_line": 329,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-MEX_SITE01-0016",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 327
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-012",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 137,
+      "csv_line": 139,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-CAN_SITE01-0008",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 137
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-013",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 332,
+      "csv_line": 334,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-MEX_SITE01-0016",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 332
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-014",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 252,
+      "csv_line": 254,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-JPN_SITE02-0007",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 252
+    },
+    {
+      "error_id": "INJ-SD1067-RELREC-015",
+      "rule_id": "SD1067",
+      "rule_message": "USUBJID value is populated, when RELTYPE values is populated",
+      "category": "REL1",
+      "primitive": "populate_forbidden",
+      "domain": "RELREC",
+      "usubjid": "X",
+      "row_index": 67,
+      "csv_line": 69,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-BRA_SITE01-0010",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 67
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-001",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 330,
+      "csv_line": 332,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 330
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-002",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 168,
+      "csv_line": 170,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 168
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-003",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 249,
+      "csv_line": 251,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 249
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-004",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 495,
+      "csv_line": 497,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 495
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-005",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 325,
+      "csv_line": 327,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 325
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-006",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-007",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 45,
+      "csv_line": 47,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 45
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-008",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 398,
+      "csv_line": 400,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 398
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-009",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 448,
+      "csv_line": 450,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 448
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-010",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 143,
+      "csv_line": 145,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 143
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-011",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 408,
+      "csv_line": 410,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 408
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-012",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 213,
+      "csv_line": 215,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 213
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-013",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 28,
+      "csv_line": 30,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 28
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-014",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 84,
+      "csv_line": 86,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 84
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-015",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 62,
+      "csv_line": 64,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 62
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-016",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 53,
+      "csv_line": 55,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 53
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-017",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 416,
+      "csv_line": 418,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 416
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-018",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 204,
+      "csv_line": 206,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 204
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-019",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 275,
+      "csv_line": 277,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 275
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-020",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 203,
+      "csv_line": 205,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 203
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-021",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 209,
+      "csv_line": 211,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 209
+    },
+    {
+      "error_id": "INJ-SD1072-RELREC-022",
+      "rule_id": "SD1072",
+      "rule_message": "Missing IDVAR value, when RDOMAIN value is provided",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 161,
+      "csv_line": 163,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 161
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-001",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 501,
+      "csv_line": 503,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "6",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 501
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-001",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "",
+      "row_index": 501,
+      "csv_line": 503,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-USA_SITE02-0002",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 501
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-002",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 345,
+      "csv_line": 347,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "4",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 345
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-002",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "",
+      "row_index": 345,
+      "csv_line": 347,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-MEX_SITE01-0019",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 345
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-003",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 496,
+      "csv_line": 498,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "6",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 496
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-003",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "",
+      "row_index": 496,
+      "csv_line": 498,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-USA_SITE02-0002",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 496
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-004",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 480,
+      "csv_line": 482,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "27",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "failed_self_validation",
+      "failure_reason": "guard no longer holds: IDVAR in (AESEQ,DSSEQ,CMSEQ,AESEQ,EXSEQ,LBSEQ)",
+      "clean_row_index": 480
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-004",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "",
+      "row_index": 480,
+      "csv_line": 482,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-USA_SITE02-0002",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "failed_self_validation",
+      "failure_reason": "guard no longer holds: IDVAR in (AESEQ,DSSEQ,CMSEQ,AESEQ,EXSEQ,LBSEQ)",
+      "clean_row_index": 480
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-005",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 165,
+      "csv_line": 167,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "15",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 165
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-005",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "",
+      "row_index": 165,
+      "csv_line": 167,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-CAN_SITE01-0008",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 165
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-006",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 445,
+      "csv_line": 447,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "13",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 445
+    },
+    {
+      "error_id": "INJ-SD1264-RELREC-006",
+      "rule_id": "SD1264",
+      "rule_message": "IDVAR equals --SEQ when IDVARVAL is null and USUBJID is null",
+      "category": "REL1",
+      "primitive": "blank_field",
+      "domain": "RELREC",
+      "usubjid": "",
+      "row_index": 445,
+      "csv_line": 447,
+      "seq_value": null,
+      "variables_modified": {
+        "USUBJID": {
+          "original": "BI-1245.110-RUS_SITE01-0011",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 445
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-001",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 154,
+      "csv_line": 156,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 154
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-002",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 136,
+      "csv_line": 138,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 136
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-003",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 289,
+      "csv_line": 291,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 289
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-004",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 319,
+      "csv_line": 321,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 319
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-005",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "",
+      "row_index": 480,
+      "csv_line": 482,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 480
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-006",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 287,
+      "csv_line": 289,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 287
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-007",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 296,
+      "csv_line": 298,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 296
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-008",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 310,
+      "csv_line": 312,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 310
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-009",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 298,
+      "csv_line": 300,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 298
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-010",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 443,
+      "csv_line": 445,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 443
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-011",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 334,
+      "csv_line": 336,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 334
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-012",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 286,
+      "csv_line": 288,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "AESEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 286
+    },
+    {
+      "error_id": "INJ-SD0075-RELREC-013",
+      "rule_id": "SD0075",
+      "rule_message": "Invalid IDVAR",
+      "category": "Re-order",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 279,
+      "csv_line": 281,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVAR": {
+          "original": "CMSEQ",
+          "injected": "ZZZSD0075"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 279
+    },
+    {
+      "error_id": "INJ-SD0077-RELREC-001",
+      "rule_id": "SD0077",
+      "rule_message": "Invalid referenced record",
+      "category": "REL1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 479,
+      "csv_line": 481,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "3",
+          "injected": "ZZZSD0077"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 479
+    },
+    {
+      "error_id": "INJ-SD0077-RELREC-002",
+      "rule_id": "SD0077",
+      "rule_message": "Invalid referenced record",
+      "category": "REL1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 439,
+      "csv_line": 441,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "10",
+          "injected": "ZZZSD0077"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 439
+    },
+    {
+      "error_id": "INJ-SD0077-RELREC-003",
+      "rule_id": "SD0077",
+      "rule_message": "Invalid referenced record",
+      "category": "REL1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "RELREC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 444,
+      "csv_line": 446,
+      "seq_value": null,
+      "variables_modified": {
+        "IDVARVAL": {
+          "original": "31",
+          "injected": "ZZZSD0077"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs AE.AESEQ (not_in_target_set); target_set_size=54",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 444
+    },
+    {
+      "error_id": "INJ-SD0046-SUPPAE-001",
+      "rule_id": "SD0046",
+      "rule_message": "Inconsistent value for QLABEL within QNAM",
+      "category": "REL1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SUPPAE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 403,
+      "csv_line": 405,
+      "seq_value": null,
+      "variables_modified": {
+        "QLABEL": {
+          "original": "Treatment Emergent Flag",
+          "injected": "INCONSISTENT_QLABEL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with QLABEL changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 403
+    },
+    {
+      "error_id": "INJ-SD0046-SUPPAE-002",
+      "rule_id": "SD0046",
+      "rule_message": "Inconsistent value for QLABEL within QNAM",
+      "category": "REL1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SUPPAE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 413,
+      "csv_line": 415,
+      "seq_value": null,
+      "variables_modified": {
+        "QLABEL": {
+          "original": "Treatment Emergent Flag",
+          "injected": "INCONSISTENT_QLABEL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with QLABEL changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 413
+    },
+    {
+      "error_id": "INJ-SD0046-SUPPAE-003",
+      "rule_id": "SD0046",
+      "rule_message": "Inconsistent value for QLABEL within QNAM",
+      "category": "REL1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SUPPAE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 417,
+      "csv_line": 419,
+      "seq_value": null,
+      "variables_modified": {
+        "QLABEL": {
+          "original": "Treatment Emergent Flag",
+          "injected": "INCONSISTENT_QLABEL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with QLABEL changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 417
+    },
+    {
+      "error_id": "INJ-SD0086-SUPPAE-001",
+      "rule_id": "SD0086",
+      "rule_message": "SUPPQUAL duplicate records",
+      "category": "REL1",
+      "primitive": "duplicate_record",
+      "domain": "SUPPAE",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 532,
+      "csv_line": 534,
+      "seq_value": null,
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'RDOMAIN', 'IDVAR', 'IDVARVAL', 'QNAM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 532
+    },
+    {
+      "error_id": "INJ-SD0086-SUPPAE-002",
+      "rule_id": "SD0086",
+      "rule_message": "SUPPQUAL duplicate records",
+      "category": "REL1",
+      "primitive": "duplicate_record",
+      "domain": "SUPPAE",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 509,
+      "csv_line": 511,
+      "seq_value": null,
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['USUBJID', 'RDOMAIN', 'IDVAR', 'IDVARVAL', 'QNAM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 509
+    },
+    {
+      "error_id": "INJ-SD1022-SUPPAE-001",
+      "rule_id": "SD1022",
+      "rule_message": "Invalid value for QNAM variable",
+      "category": "REL1",
+      "primitive": "set_invalid_value",
+      "domain": "SUPPAE",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 574,
+      "csv_line": 576,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "AETRTEM",
+          "injected": "1BCDEFGH"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 574
+    },
+    {
+      "error_id": "INJ-SD1130-SUPPAE-001",
+      "rule_id": "SD1130",
+      "rule_message": "Inconsistent value for QNAM within QLABEL",
+      "category": "REL1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "SUPPAE",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 574,
+      "csv_line": 576,
+      "seq_value": null,
+      "variables_modified": {
+        "QNAM": {
+          "original": "1BCDEFGH",
+          "injected": "INCONSISTENT_QNAM"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with QNAM changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 574
+    },
+    {
+      "error_id": "INJ-SD1126-VS-001",
+      "rule_id": "SD1126",
+      "rule_message": "Inconsistent value for --TPT within --TPTNUM, --TPTREF, VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 1032,
+      "csv_line": 1034,
+      "seq_value": "20",
+      "variables_modified": {
+        "VSTPT": {
+          "original": "1H POST-DOSE",
+          "injected": "90 MIN POST-DOSE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSTPT changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1032
+    },
+    {
+      "error_id": "INJ-SD1126-VS-002",
+      "rule_id": "SD1126",
+      "rule_message": "Inconsistent value for --TPT within --TPTNUM, --TPTREF, VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 1030,
+      "csv_line": 1032,
+      "seq_value": "18",
+      "variables_modified": {
+        "VSTPT": {
+          "original": "1H POST-DOSE",
+          "injected": "90 MIN POST-DOSE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSTPT changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1030
+    },
+    {
+      "error_id": "INJ-SD1126-VS-003",
+      "rule_id": "SD1126",
+      "rule_message": "Inconsistent value for --TPT within --TPTNUM, --TPTREF, VISITNUM",
+      "category": "GO1",
+      "primitive": "duplicate_with_mutation",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 598,
+      "csv_line": 600,
+      "seq_value": "11",
+      "variables_modified": {
+        "VSTPT": {
+          "original": "1H POST-DOSE",
+          "injected": "90 MIN POST-DOSE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated row with VSTPT changed on the copy",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 598
+    },
+    {
+      "error_id": "INJ-SD0032-EG-001",
+      "rule_id": "SD0032",
+      "rule_message": "Missing value for --TPT, when --TPTNUM is provided",
+      "category": "GO1",
+      "primitive": "blank_field",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 340,
+      "csv_line": 342,
+      "seq_value": "11",
+      "variables_modified": {
+        "EGTPT": {
+          "original": "PRE-DOSE",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 340
+    },
+    {
+      "error_id": "INJ-SD0032-EG-002",
+      "rule_id": "SD0032",
+      "rule_message": "Missing value for --TPT, when --TPTNUM is provided",
+      "category": "GO1",
+      "primitive": "blank_field",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 349,
+      "csv_line": 351,
+      "seq_value": "20",
+      "variables_modified": {
+        "EGTPT": {
+          "original": "PRE-DOSE",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 349
+    },
+    {
+      "error_id": "INJ-SD0034-VS-001",
+      "rule_id": "SD0034",
+      "rule_message": "Missing value for --TPTREF, when --ELTM is provided",
+      "category": "GO1",
+      "primitive": "blank_field",
+      "domain": "VS",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 601,
+      "csv_line": 603,
+      "seq_value": "14",
+      "variables_modified": {
+        "VSTPTREF": {
+          "original": "DOSE ADMINISTRATION",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 601
+    }
+  ],
+  "summary_by_rule": {
+    "SD0072": 2,
+    "SD1026": 25,
+    "SD1066": 21,
+    "SD1067": 15,
+    "SD1072": 22,
+    "SD1264": 12,
+    "SD0075": 13,
+    "SD0077": 3,
+    "SD0046": 3,
+    "SD0086": 2,
+    "SD1022": 1,
+    "SD1130": 1,
+    "SD1126": 3,
+    "SD0032": 2,
+    "SD0034": 1
+  },
+  "summary_by_category": {
+    "Re-order": 15,
+    "REL1": 105,
+    "GO1": 6
+  },
+  "summary_by_domain": {
+    "CO": 2,
+    "RELREC": 111,
+    "SUPPAE": 7,
+    "VS": 4,
+    "EG": 2
+  },
+  "summary_status": {
+    "injected": 123,
+    "overwritten": 0,
+    "failed_self_validation": 3
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors.",
+    "0 mutations overwritten by later rules; 3 failed self-validation. See per-record status."
+  ]
+}

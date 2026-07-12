@@ -1,0 +1,5 @@
+STUDYID,DOMAIN,RDOMAIN,USUBJID,COSEQ,IDVAR,IDVARVAL,COREF,COVAL,CODTC,CODY
+GB001-2001,CO,,GB001-2001-FRA_SITE01-0001,1,,,,Assessment performed slightly outside the planned visit window.,2024-04-10,1
+GB001-2001,CO,,GB001-2001-USA_SITE01-0007,1,,,,Subject reported transient mild headache; resolved without intervention.,2024-02-04,1
+GB001-2001,CO,,GB001-2001-USA_SITE01-0013,1,,,,Assessment performed slightly outside the planned visit window.,2024-04-02,1
+GB001-2001,CO,,GB001-2001-USA_SITE03-0005,1,,,,Assessment performed slightly outside the planned visit window.,2024-04-04,1

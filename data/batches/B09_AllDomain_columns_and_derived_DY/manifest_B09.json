@@ -1,0 +1,3114 @@
+{
+  "generated_at": "2026-07-07T05:31:18.428368",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_o2cc0r43",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 14,
+  "rules_skipped": 0,
+  "rules_injected": 13,
+  "total_mutations": 127,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1089-SE-001",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SE",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "2",
+      "variables_modified": {
+        "SESTDTC": {
+          "original": "2024-03-20",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD1089-SE-002",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SE",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "3",
+      "variables_modified": {
+        "SESTDTC": {
+          "original": "2026-06-01",
+          "injected": "2026-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD1089-SV-003",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 59,
+      "csv_line": 61,
+      "seq_value": "2",
+      "variables_modified": {
+        "SVSTDTC": {
+          "original": "2024-03-21",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 59
+    },
+    {
+      "error_id": "INJ-SD1089-SV-004",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 58,
+      "csv_line": 60,
+      "seq_value": "1",
+      "variables_modified": {
+        "SVSTDTC": {
+          "original": "2024-01-30",
+          "injected": "2024-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 58
+    },
+    {
+      "error_id": "INJ-SD1089-SV-005",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 117,
+      "csv_line": 119,
+      "seq_value": "4",
+      "variables_modified": {
+        "SVSTDTC": {
+          "original": "2024-07-05",
+          "injected": "2024-07"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 117
+    },
+    {
+      "error_id": "INJ-SD1089-SV-006",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 96,
+      "csv_line": 98,
+      "seq_value": "2",
+      "variables_modified": {
+        "SVSTDTC": {
+          "original": "2024-02-12",
+          "injected": "2024-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 96
+    },
+    {
+      "error_id": "INJ-SD1089-SV-007",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "5",
+      "variables_modified": {
+        "SVSTDTC": {
+          "original": "2024-09-20",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1089-SV-008",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 28,
+      "csv_line": 30,
+      "seq_value": "1",
+      "variables_modified": {
+        "SVSTDTC": {
+          "original": "2024-02-10",
+          "injected": "2024-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 28
+    },
+    {
+      "error_id": "INJ-SD1089-SV-009",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 11,
+      "csv_line": 13,
+      "seq_value": "3",
+      "variables_modified": {
+        "SVSTDTC": {
+          "original": "2024-04-12",
+          "injected": "2024-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11
+    },
+    {
+      "error_id": "INJ-SD1089-CM-010",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 140,
+      "csv_line": 142,
+      "seq_value": "8",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-03-26",
+          "injected": "2025-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 140
+    },
+    {
+      "error_id": "INJ-SD1089-CM-011",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 262,
+      "csv_line": 264,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-08-05",
+          "injected": "2025-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 262
+    },
+    {
+      "error_id": "INJ-SD1089-CM-012",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 157,
+      "csv_line": 159,
+      "seq_value": "6",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-02-21",
+          "injected": "2025-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 157
+    },
+    {
+      "error_id": "INJ-SD1089-CM-013",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 183,
+      "csv_line": 185,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-03-10",
+          "injected": "2025-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 183
+    },
+    {
+      "error_id": "INJ-SD1089-CM-014",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 125,
+      "csv_line": 127,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2024-06-24",
+          "injected": "2024-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 125
+    },
+    {
+      "error_id": "INJ-SD1089-CM-015",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 236,
+      "csv_line": 238,
+      "seq_value": "15",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2026-03-26",
+          "injected": "2026-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 236
+    },
+    {
+      "error_id": "INJ-SD1089-CM-016",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 104,
+      "csv_line": 106,
+      "seq_value": "2",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2000-02-15",
+          "injected": "2000-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 104
+    },
+    {
+      "error_id": "INJ-SD1089-CM-017",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 115,
+      "csv_line": 117,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-05-14",
+          "injected": "2025-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 115
+    },
+    {
+      "error_id": "INJ-SD1089-CM-018",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 141,
+      "csv_line": 143,
+      "seq_value": "9",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-05-30",
+          "injected": "2025-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 141
+    },
+    {
+      "error_id": "INJ-SD1089-CM-019",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 221,
+      "csv_line": 223,
+      "seq_value": "27",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2026-02-28",
+          "injected": "2026-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 221
+    },
+    {
+      "error_id": "INJ-SD1089-CM-020",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 128,
+      "csv_line": 130,
+      "seq_value": "5",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-05-24",
+          "injected": "2025-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 128
+    },
+    {
+      "error_id": "INJ-SD1089-CM-021",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 35,
+      "csv_line": 37,
+      "seq_value": "12",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2025-03-31",
+          "injected": "2025-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 35
+    },
+    {
+      "error_id": "INJ-SD1089-CM-022",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 233,
+      "csv_line": 235,
+      "seq_value": "12",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2026-01-13",
+          "injected": "2026-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 233
+    },
+    {
+      "error_id": "INJ-SD1089-CM-023",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 51,
+      "csv_line": 53,
+      "seq_value": "5",
+      "variables_modified": {
+        "CMSTDTC": {
+          "original": "2024-05-07",
+          "injected": "2024-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 51
+    },
+    {
+      "error_id": "INJ-SD1089-EC-024",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 590,
+      "csv_line": 592,
+      "seq_value": "591",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-11-02",
+          "injected": "2025-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 590
+    },
+    {
+      "error_id": "INJ-SD1089-EC-025",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 6526,
+      "csv_line": 6528,
+      "seq_value": "335",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-03-15",
+          "injected": "2025-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6526
+    },
+    {
+      "error_id": "INJ-SD1089-EC-026",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 7474,
+      "csv_line": 7476,
+      "seq_value": "129",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-08-16",
+          "injected": "2024-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7474
+    },
+    {
+      "error_id": "INJ-SD1089-EC-027",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 6450,
+      "csv_line": 6452,
+      "seq_value": "259",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-12-29",
+          "injected": "2024-12"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6450
+    },
+    {
+      "error_id": "INJ-SD1089-EC-028",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5751,
+      "csv_line": 5753,
+      "seq_value": "157",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-09-15",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5751
+    },
+    {
+      "error_id": "INJ-SD1089-EC-029",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 1004,
+      "csv_line": 1006,
+      "seq_value": "255",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-11-29",
+          "injected": "2024-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1004
+    },
+    {
+      "error_id": "INJ-SD1089-EC-030",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 6885,
+      "csv_line": 6887,
+      "seq_value": "139",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-08-02",
+          "injected": "2024-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6885
+    },
+    {
+      "error_id": "INJ-SD1089-EC-031",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 6449,
+      "csv_line": 6451,
+      "seq_value": "258",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-12-28",
+          "injected": "2024-12"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6449
+    },
+    {
+      "error_id": "INJ-SD1089-EC-032",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 6152,
+      "csv_line": 6154,
+      "seq_value": "558",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-10-21",
+          "injected": "2025-10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6152
+    },
+    {
+      "error_id": "INJ-SD1089-EC-033",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 5226,
+      "csv_line": 5228,
+      "seq_value": "270",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-11-24",
+          "injected": "2024-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5226
+    },
+    {
+      "error_id": "INJ-SD1089-EC-034",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1244,
+      "csv_line": 1246,
+      "seq_value": "195",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-09-27",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1244
+    },
+    {
+      "error_id": "INJ-SD1089-EC-035",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3384,
+      "csv_line": 3386,
+      "seq_value": "17",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-04-06",
+          "injected": "2024-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3384
+    },
+    {
+      "error_id": "INJ-SD1089-EC-036",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5860,
+      "csv_line": 5862,
+      "seq_value": "266",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-01-02",
+          "injected": "2025-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5860
+    },
+    {
+      "error_id": "INJ-SD1089-EC-037",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 3174,
+      "csv_line": 3176,
+      "seq_value": "176",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-09-19",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3174
+    },
+    {
+      "error_id": "INJ-SD1089-EC-038",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 4878,
+      "csv_line": 4880,
+      "seq_value": "342",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-02-14",
+          "injected": "2025-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4878
+    },
+    {
+      "error_id": "INJ-SD1089-EC-039",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 338,
+      "csv_line": 340,
+      "seq_value": "339",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-02-23",
+          "injected": "2025-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 338
+    },
+    {
+      "error_id": "INJ-SD1089-EC-040",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3630,
+      "csv_line": 3632,
+      "seq_value": "263",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-12-08",
+          "injected": "2024-12"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3630
+    },
+    {
+      "error_id": "INJ-SD1089-EC-041",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2517,
+      "csv_line": 2519,
+      "seq_value": "189",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-09-16",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2517
+    },
+    {
+      "error_id": "INJ-SD1089-EC-042",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 1756,
+      "csv_line": 1758,
+      "seq_value": "169",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-09-02",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1756
+    },
+    {
+      "error_id": "INJ-SD1089-EC-043",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3680,
+      "csv_line": 3682,
+      "seq_value": "313",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-01-27",
+          "injected": "2025-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3680
+    },
+    {
+      "error_id": "INJ-SD1089-EC-044",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 7279,
+      "csv_line": 7281,
+      "seq_value": "533",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-08-31",
+          "injected": "2025-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7279
+    },
+    {
+      "error_id": "INJ-SD1089-EC-045",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 5185,
+      "csv_line": 5187,
+      "seq_value": "229",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-10-14",
+          "injected": "2024-10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5185
+    },
+    {
+      "error_id": "INJ-SD1089-EC-046",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3600,
+      "csv_line": 3602,
+      "seq_value": "233",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-11-08",
+          "injected": "2024-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3600
+    },
+    {
+      "error_id": "INJ-SD1089-EC-047",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 7481,
+      "csv_line": 7483,
+      "seq_value": "136",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-08-23",
+          "injected": "2024-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7481
+    },
+    {
+      "error_id": "INJ-SD1089-EC-048",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0010",
+      "row_index": 753,
+      "csv_line": 755,
+      "seq_value": "4",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-03-23",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 753
+    },
+    {
+      "error_id": "INJ-SD1089-EC-049",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3435,
+      "csv_line": 3437,
+      "seq_value": "68",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-05-27",
+          "injected": "2024-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3435
+    },
+    {
+      "error_id": "INJ-SD1089-EC-050",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 523,
+      "csv_line": 525,
+      "seq_value": "524",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-08-27",
+          "injected": "2025-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 523
+    },
+    {
+      "error_id": "INJ-SD1089-EC-051",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5738,
+      "csv_line": 5740,
+      "seq_value": "144",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-09-02",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5738
+    },
+    {
+      "error_id": "INJ-SD1089-EC-052",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1190,
+      "csv_line": 1192,
+      "seq_value": "141",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-08-04",
+          "injected": "2024-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1190
+    },
+    {
+      "error_id": "INJ-SD1089-EC-053",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3373,
+      "csv_line": 3375,
+      "seq_value": "6",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-03-26",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3373
+    },
+    {
+      "error_id": "INJ-SD1089-EC-054",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 7123,
+      "csv_line": 7125,
+      "seq_value": "377",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-03-28",
+          "injected": "2025-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7123
+    },
+    {
+      "error_id": "INJ-SD1089-EC-055",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2863,
+      "csv_line": 2865,
+      "seq_value": "535",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-08-28",
+          "injected": "2025-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2863
+    },
+    {
+      "error_id": "INJ-SD1089-EC-056",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2807,
+      "csv_line": 2809,
+      "seq_value": "479",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-07-03",
+          "injected": "2025-07"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2807
+    },
+    {
+      "error_id": "INJ-SD1089-EC-057",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 5424,
+      "csv_line": 5426,
+      "seq_value": "137",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-06-27",
+          "injected": "2024-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5424
+    },
+    {
+      "error_id": "INJ-SD1089-EC-058",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 5273,
+      "csv_line": 5275,
+      "seq_value": "317",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-01-10",
+          "injected": "2025-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5273
+    },
+    {
+      "error_id": "INJ-SD1089-EC-059",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0005",
+      "row_index": 6997,
+      "csv_line": 6999,
+      "seq_value": "251",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-11-22",
+          "injected": "2024-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6997
+    },
+    {
+      "error_id": "INJ-SD1089-EC-060",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-RUS_SITE01-0011",
+      "row_index": 6239,
+      "csv_line": 6241,
+      "seq_value": "48",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-06-01",
+          "injected": "2024-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6239
+    },
+    {
+      "error_id": "INJ-SD1089-EC-061",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0007",
+      "row_index": 3580,
+      "csv_line": 3582,
+      "seq_value": "213",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-10-19",
+          "injected": "2024-10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3580
+    },
+    {
+      "error_id": "INJ-SD1089-EC-062",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 5950,
+      "csv_line": 5952,
+      "seq_value": "356",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-04-02",
+          "injected": "2025-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5950
+    },
+    {
+      "error_id": "INJ-SD1089-EC-063",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2731,
+      "csv_line": 2733,
+      "seq_value": "403",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-04-18",
+          "injected": "2025-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2731
+    },
+    {
+      "error_id": "INJ-SD1089-EC-064",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2555,
+      "csv_line": 2557,
+      "seq_value": "227",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-10-24",
+          "injected": "2024-10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2555
+    },
+    {
+      "error_id": "INJ-SD1089-EC-065",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1501,
+      "csv_line": 1503,
+      "seq_value": "452",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-06-11",
+          "injected": "2025-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1501
+    },
+    {
+      "error_id": "INJ-SD1089-EC-066",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 4369,
+      "csv_line": 4371,
+      "seq_value": "627",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-12-07",
+          "injected": "2025-12"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4369
+    },
+    {
+      "error_id": "INJ-SD1089-EC-067",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0006",
+      "row_index": 6002,
+      "csv_line": 6004,
+      "seq_value": "408",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-05-24",
+          "injected": "2025-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6002
+    },
+    {
+      "error_id": "INJ-SD1089-EC-068",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-BRA_SITE01-0020",
+      "row_index": 1465,
+      "csv_line": 1467,
+      "seq_value": "416",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-05-06",
+          "injected": "2025-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1465
+    },
+    {
+      "error_id": "INJ-SD1089-EC-069",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 5310,
+      "csv_line": 5312,
+      "seq_value": "23",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-03-05",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 5310
+    },
+    {
+      "error_id": "INJ-SD1089-EC-070",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 3840,
+      "csv_line": 3842,
+      "seq_value": "98",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-06-26",
+          "injected": "2024-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3840
+    },
+    {
+      "error_id": "INJ-SD1089-EC-071",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 4218,
+      "csv_line": 4220,
+      "seq_value": "476",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-07-09",
+          "injected": "2025-07"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4218
+    },
+    {
+      "error_id": "INJ-SD1089-EC-072",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2420,
+      "csv_line": 2422,
+      "seq_value": "92",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-06-11",
+          "injected": "2024-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2420
+    },
+    {
+      "error_id": "INJ-SD1089-EC-073",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-JPN_SITE01-0003",
+      "row_index": 2831,
+      "csv_line": 2833,
+      "seq_value": "503",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2025-07-27",
+          "injected": "2025-07"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "ECSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2831
+    },
+    {
+      "error_id": "INJ-SD1089-EX-074",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "EX",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": "1",
+      "variables_modified": {
+        "EXSTDTC": {
+          "original": "2024-04-25",
+          "injected": "2024-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "EXSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1089-SU-075",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUSTDTC": {
+          "original": "2007-03-10",
+          "injected": "2007-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SUSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1089-SU-076",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "SU",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUSTDTC": {
+          "original": "2003-03-29",
+          "injected": "2003-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "SUSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD1089-AE-077",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 189,
+      "csv_line": 191,
+      "seq_value": "17",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2025-04-29",
+          "injected": "2025-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 189
+    },
+    {
+      "error_id": "INJ-SD1089-AE-078",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE02-0014",
+      "row_index": 323,
+      "csv_line": 325,
+      "seq_value": "3",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-05-14",
+          "injected": "2024-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 323
+    },
+    {
+      "error_id": "INJ-SD1089-AE-079",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 276,
+      "csv_line": 278,
+      "seq_value": "36",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2026-02-24",
+          "injected": "2026-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 276
+    },
+    {
+      "error_id": "INJ-SD1089-AE-080",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 429,
+      "csv_line": 431,
+      "seq_value": "5",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-03-09",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 429
+    },
+    {
+      "error_id": "INJ-SD1089-AE-081",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 456,
+      "csv_line": 458,
+      "seq_value": "32",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2025-01-14",
+          "injected": "2025-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 456
+    },
+    {
+      "error_id": "INJ-SD1089-AE-082",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 459,
+      "csv_line": 461,
+      "seq_value": "35",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2025-05-18",
+          "injected": "2025-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 459
+    },
+    {
+      "error_id": "INJ-SD1089-AE-083",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 430,
+      "csv_line": 432,
+      "seq_value": "6",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-03-12",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 430
+    },
+    {
+      "error_id": "INJ-SD1089-AE-084",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-ARG_SITE01-0017",
+      "row_index": 13,
+      "csv_line": 15,
+      "seq_value": "14",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-09-02",
+          "injected": "2024-09"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 13
+    },
+    {
+      "error_id": "INJ-SD1089-AE-085",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 245,
+      "csv_line": 247,
+      "seq_value": "5",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-06-24",
+          "injected": "2024-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 245
+    },
+    {
+      "error_id": "INJ-SD1089-AE-086",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 161,
+      "csv_line": 163,
+      "seq_value": "30",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2025-01-24",
+          "injected": "2025-01"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 161
+    },
+    {
+      "error_id": "INJ-SD1089-AE-087",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-POL_SITE01-0004",
+      "row_index": 478,
+      "csv_line": 480,
+      "seq_value": "54",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2026-03-10",
+          "injected": "2026-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 478
+    },
+    {
+      "error_id": "INJ-SD1089-AE-088",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 580,
+      "csv_line": 582,
+      "seq_value": "6",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-07-14",
+          "injected": "2024-07"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 580
+    },
+    {
+      "error_id": "INJ-SD1089-AE-089",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 415,
+      "csv_line": 417,
+      "seq_value": "13",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2025-04-30",
+          "injected": "2025-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 415
+    },
+    {
+      "error_id": "INJ-SD1089-AE-090",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 382,
+      "csv_line": 384,
+      "seq_value": "22",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-12-10",
+          "injected": "2024-12"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 382
+    },
+    {
+      "error_id": "INJ-SD1089-AE-091",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 169,
+      "csv_line": 171,
+      "seq_value": "38",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2025-06-22",
+          "injected": "2025-06"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 169
+    },
+    {
+      "error_id": "INJ-SD1089-AE-092",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 387,
+      "csv_line": 389,
+      "seq_value": "27",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2025-03-06",
+          "injected": "2025-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 387
+    },
+    {
+      "error_id": "INJ-SD1089-AE-093",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-JPN_SITE01-0013",
+      "row_index": 250,
+      "csv_line": 252,
+      "seq_value": "10",
+      "variables_modified": {
+        "AESTDTC": {
+          "original": "2024-08-20",
+          "injected": "2024-08"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "AESTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 250
+    },
+    {
+      "error_id": "INJ-SD1089-DS-094",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DS",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": "3",
+      "variables_modified": {
+        "DSSTDTC": {
+          "original": "2025-10-02",
+          "injected": "2025-10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DSSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD1089-DV-095",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 320,
+      "csv_line": 322,
+      "seq_value": "18",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2025-03-11",
+          "injected": "2025-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 320
+    },
+    {
+      "error_id": "INJ-SD1089-DV-096",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 355,
+      "csv_line": 357,
+      "seq_value": "29",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2024-11-16",
+          "injected": "2024-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 355
+    },
+    {
+      "error_id": "INJ-SD1089-DV-097",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 168,
+      "csv_line": 170,
+      "seq_value": "15",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2024-10-08",
+          "injected": "2024-10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 168
+    },
+    {
+      "error_id": "INJ-SD1089-DV-098",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-MEX_SITE01-0016",
+      "row_index": 303,
+      "csv_line": 305,
+      "seq_value": "1",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2024-03-29",
+          "injected": "2024-03"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 303
+    },
+    {
+      "error_id": "INJ-SD1089-DV-099",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-CAN_SITE01-0008",
+      "row_index": 147,
+      "csv_line": 149,
+      "seq_value": "23",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2024-11-23",
+          "injected": "2024-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 147
+    },
+    {
+      "error_id": "INJ-SD1089-DV-100",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 563,
+      "csv_line": 565,
+      "seq_value": "21",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2025-04-13",
+          "injected": "2025-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 563
+    },
+    {
+      "error_id": "INJ-SD1089-DV-101",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-CAN_SITE01-0015",
+      "row_index": 174,
+      "csv_line": 176,
+      "seq_value": "21",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2024-11-26",
+          "injected": "2024-11"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 174
+    },
+    {
+      "error_id": "INJ-SD1089-DV-102",
+      "rule_id": "SD1089",
+      "rule_message": "--STDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "DV",
+      "usubjid": "BI-1245.110-MEX_SITE01-0019",
+      "row_index": 331,
+      "csv_line": 333,
+      "seq_value": "5",
+      "variables_modified": {
+        "DVSTDTC": {
+          "original": "2024-04-17",
+          "injected": "2024-04"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "DVSTDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 331
+    },
+    {
+      "error_id": "INJ-SD1090-SV-001",
+      "rule_id": "SD1090",
+      "rule_message": "Incorrect value for --STDY variable",
+      "category": "GO2",
+      "primitive": "wrong_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 133,
+      "csv_line": 135,
+      "seq_value": "1",
+      "variables_modified": {
+        "SVSTDY": {
+          "original": "-30",
+          "injected": "-25"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 133
+    },
+    {
+      "error_id": "INJ-SD1090-SV-002",
+      "rule_id": "SD1090",
+      "rule_message": "Incorrect value for --STDY variable",
+      "category": "GO2",
+      "primitive": "wrong_derived",
+      "domain": "SV",
+      "usubjid": "BI-1245.110-USA_SITE02-0002",
+      "row_index": 137,
+      "csv_line": 139,
+      "seq_value": "3",
+      "variables_modified": {
+        "SVSTDY": {
+          "original": "27",
+          "injected": "29"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 137
+    },
+    {
+      "error_id": "INJ-SD1090-EC-003",
+      "rule_id": "SD1090",
+      "rule_message": "Incorrect value for --STDY variable",
+      "category": "GO2",
+      "primitive": "wrong_derived",
+      "domain": "EC",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 7343,
+      "csv_line": 7345,
+      "seq_value": "18",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "18",
+          "injected": "26"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7343
+    },
+    {
+      "error_id": "INJ-SD1090-AE-004",
+      "rule_id": "SD1090",
+      "rule_message": "Incorrect value for --STDY variable",
+      "category": "GO2",
+      "primitive": "wrong_derived",
+      "domain": "AE",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 574,
+      "csv_line": 576,
+      "seq_value": "2",
+      "variables_modified": {
+        "AESTDY": {
+          "original": "5",
+          "injected": "10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 574
+    },
+    {
+      "error_id": "INJ-SD1090-MH-005",
+      "rule_id": "SD1090",
+      "rule_message": "Incorrect value for --STDY variable",
+      "category": "GO2",
+      "primitive": "wrong_derived",
+      "domain": "MH",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 71,
+      "csv_line": 73,
+      "seq_value": "5",
+      "variables_modified": {
+        "MHSTDY": {
+          "original": "-8769",
+          "injected": "-8771"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 71
+    },
+    {
+      "error_id": "INJ-SD1093-CM-001",
+      "rule_id": "SD1093",
+      "rule_message": "--ENDY variable value is imputed",
+      "category": "GO2",
+      "primitive": "truncate_with_derived",
+      "domain": "CM",
+      "usubjid": "BI-1245.110-USA_SITE01-0018",
+      "row_index": 274,
+      "csv_line": 276,
+      "seq_value": "4",
+      "variables_modified": {
+        "CMENDTC": {
+          "original": "2024-02-23",
+          "injected": "2024-02"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "CMENDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 274
+    },
+    {
+      "error_id": "INJ-SD1085-EG-004",
+      "rule_id": "SD1085",
+      "rule_message": "--DY variable value is imputed",
+      "category": "DTC2",
+      "primitive": "truncate_with_derived",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 346,
+      "csv_line": 348,
+      "seq_value": "17",
+      "variables_modified": {
+        "EGDTC": {
+          "original": "2024-05-03T07:45",
+          "injected": "2024-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "EGDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 346
+    },
+    {
+      "error_id": "INJ-SD1085-LB-006",
+      "rule_id": "SD1085",
+      "rule_message": "--DY variable value is imputed",
+      "category": "DTC2",
+      "primitive": "truncate_with_derived",
+      "domain": "LB",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 477,
+      "csv_line": 479,
+      "seq_value": "9",
+      "variables_modified": {
+        "LBDTC": {
+          "original": "2024-05-03",
+          "injected": "2024-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "LBDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 477
+    },
+    {
+      "error_id": "INJ-SD1085-PE-007",
+      "rule_id": "SD1085",
+      "rule_message": "--DY variable value is imputed",
+      "category": "DTC2",
+      "primitive": "truncate_with_derived",
+      "domain": "PE",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 193,
+      "csv_line": 195,
+      "seq_value": "14",
+      "variables_modified": {
+        "PEDTC": {
+          "original": "2024-05-03",
+          "injected": "2024-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "PEDY left populated",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 193
+    },
+    {
+      "error_id": "INJ-SD1086-EG-003",
+      "rule_id": "SD1086",
+      "rule_message": "Incorrect value for --DY variable",
+      "category": "DTC2",
+      "primitive": "wrong_derived",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 342,
+      "csv_line": 344,
+      "seq_value": "13",
+      "variables_modified": {
+        "EGDY": {
+          "original": "1",
+          "injected": "3"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 342
+    },
+    {
+      "error_id": "INJ-SD1086-EG-004",
+      "rule_id": "SD1086",
+      "rule_message": "Incorrect value for --DY variable",
+      "category": "DTC2",
+      "primitive": "wrong_derived",
+      "domain": "EG",
+      "usubjid": "BI-1245.110-KOR_SITE01-0012",
+      "row_index": 339,
+      "csv_line": 341,
+      "seq_value": "10",
+      "variables_modified": {
+        "EGDY": {
+          "original": "1",
+          "injected": "5"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 339
+    },
+    {
+      "error_id": "INJ-SD0058-DM-001",
+      "rule_id": "SD0058",
+      "rule_message": "Variable appears in dataset, but is not in SDTM model",
+      "category": "ALL1",
+      "primitive": "add_column",
+      "domain": "DM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "CUSTOMVAR": {
+          "original": "absent",
+          "injected": "X"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1074-DM-001",
+      "rule_id": "SD1074",
+      "rule_message": "Variable which can be used only in SEND",
+      "category": "ALL2",
+      "primitive": "add_column",
+      "domain": "DM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "AGETXT": {
+          "original": "absent",
+          "injected": "THIRTY-FIVE"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1076-DM-001",
+      "rule_id": "SD1076",
+      "rule_message": "Model permissible variable added into standard domain",
+      "category": "ALL2",
+      "primitive": "add_column",
+      "domain": "DM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "SETCD": {
+          "original": "absent",
+          "injected": "ITT"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1079-DM-001",
+      "rule_id": "SD1079",
+      "rule_message": "Variable is in wrong order within domain",
+      "category": "ALL2",
+      "primitive": "reorder_columns",
+      "domain": "DM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "STUDYID<->DOMAIN": {
+          "original": "in-order",
+          "injected": "swapped"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1083-CO-001",
+      "rule_id": "SD1083",
+      "rule_message": "Missing --DY variable, when --DTC variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "CO",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "CODY": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1244-EG-016",
+      "rule_id": "SD1244",
+      "rule_message": "Missing --TPT variable, when --TPTNUM variable is present",
+      "category": "ALL2",
+      "primitive": "drop_column",
+      "domain": "EG",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "EGTPT": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1244-PC-019",
+      "rule_id": "SD1244",
+      "rule_message": "Missing --TPT variable, when --TPTNUM variable is present",
+      "category": "ALL2",
+      "primitive": "drop_column",
+      "domain": "PC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "PCTPT": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1244-VS-024",
+      "rule_id": "SD1244",
+      "rule_message": "Missing --TPT variable, when --TPTNUM variable is present",
+      "category": "ALL2",
+      "primitive": "drop_column",
+      "domain": "VS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "VSTPT": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1245-EG-016",
+      "rule_id": "SD1245",
+      "rule_message": "Missing --TPTREF variable, when --RFTDTC variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "EG",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "EGTPTREF": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1245-PC-019",
+      "rule_id": "SD1245",
+      "rule_message": "Missing --TPTREF variable, when --RFTDTC variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "PC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "PCTPTREF": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1245-VS-024",
+      "rule_id": "SD1245",
+      "rule_message": "Missing --TPTREF variable, when --RFTDTC variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "VS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "VSTPTREF": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1246-EG-016",
+      "rule_id": "SD1246",
+      "rule_message": "Missing --TPTREF variable, when --ELTM variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "EG",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "EGRFTDTC": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1246-PC-019",
+      "rule_id": "SD1246",
+      "rule_message": "Missing --TPTREF variable, when --ELTM variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "PC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "PCRFTDTC": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1246-VS-024",
+      "rule_id": "SD1246",
+      "rule_message": "Missing --TPTREF variable, when --ELTM variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "VS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "VSRFTDTC": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1089": 102,
+    "SD1090": 5,
+    "SD1093": 1,
+    "SD1085": 3,
+    "SD1086": 2,
+    "SD0058": 1,
+    "SD1074": 1,
+    "SD1076": 1,
+    "SD1079": 1,
+    "SD1083": 1,
+    "SD1244": 3,
+    "SD1245": 3,
+    "SD1246": 3
+  },
+  "summary_by_category": {
+    "GO2": 108,
+    "DTC2": 5,
+    "ALL1": 1,
+    "ALL2": 6,
+    "VI1 & VV1": 7
+  },
+  "summary_by_domain": {
+    "SE": 2,
+    "SV": 9,
+    "CM": 15,
+    "EC": 51,
+    "EX": 1,
+    "SU": 2,
+    "AE": 18,
+    "DS": 1,
+    "DV": 8,
+    "MH": 1,
+    "EG": 6,
+    "LB": 1,
+    "PE": 1,
+    "DM": 4,
+    "CO": 1,
+    "PC": 3,
+    "VS": 3
+  },
+  "summary_status": {
+    "injected": 127,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

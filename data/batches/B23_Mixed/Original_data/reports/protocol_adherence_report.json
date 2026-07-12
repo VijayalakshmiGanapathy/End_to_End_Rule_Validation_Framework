@@ -1,0 +1,1310 @@
+{
+  "study_id": "M19-977-RISA-PED",
+  "generated_at": "2026-07-07T06:10:43.619674+00:00",
+  "summary": {
+    "total_enrolled": 17,
+    "subjects_with_deviations": 17,
+    "total_deviations": 65,
+    "deviation_rate_pct": 100.0,
+    "overall_visit_compliance_pct": 88.8,
+    "overall_dose_compliance_pct": 98.0
+  },
+  "protocol_deviations": {
+    "by_category": {
+      "MINOR": 65
+    },
+    "by_decod": {
+      "DOSE MODIFICATION": 23,
+      "VISIT OCCURRED OUTSIDE VISIT WINDOW": 38,
+      "MISSED ASSESSMENT": 4
+    },
+    "by_arm": {
+      "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)": 58,
+      "Ustekinumab SC (45 mg simplified; actual is weight-banded)": 7
+    },
+    "by_visit": {},
+    "deviations_leading_to_discontinuation": 0,
+    "subject_level": [
+      {
+        "usubjid": "M19-977-RISA-PED-CAN_SITE01-0004",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-22",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-04-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 24 occurred 4 days late (Day 173 vs planned Day 169)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-09-02",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-21",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 16 occurred 3 days late (Day 116 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-08-24",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Vital signs assessment not performed at WEEK 60 FU",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2025-07-02",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 5
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 4 occurred 0 days late (Day 29 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-13",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 12 occurred 2 days late (Day 87 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-10",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 4 occurred 3 days early (Day 26 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-01",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 16 occurred 3 days early (Day 110 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-24",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-10",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-11-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 36 occurred 5 days early (Day 248 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-01-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 40 EOT occurred 2 days late (Day 283 vs planned Day 281)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-02-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Visit WEEK 60 FU occurred 9 days early (Day 412 vs planned Day 421)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-06-25",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 6
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Vital signs assessment not performed at WEEK 4",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-03-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 8 occurred 2 days late (Day 59 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 16 occurred 4 days late (Day 117 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 40 EOT occurred 7 days early (Day 274 vs planned Day 281)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-11-24",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 4
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-08",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 24 occurred 5 days early (Day 164 vs planned Day 169)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-08-28",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-30",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 4 occurred 3 days early (Day 26 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-05",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 8 occurred 3 days early (Day 54 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 36 occurred 5 days early (Day 248 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-10-13",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 5
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+        "arm": "Ustekinumab SC (45 mg simplified; actual is weight-banded)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 8 occurred 3 days early (Day 54 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 12 occurred 3 days early (Day 82 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 40 EOT occurred 1 days late (Day 282 vs planned Day 281)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-12-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 60 FU occurred 6 days early (Day 415 vs planned Day 421)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-05-08",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 4
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-02-09",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 8 occurred 2 days late (Day 59 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-07",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-31",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 16 occurred 3 days late (Day 116 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 24 occurred 0 days late (Day 169 vs planned Day 169)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Visit WEEK 36 occurred 3 days early (Day 250 vs planned Day 253)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-10-15",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 6
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 8 occurred 0 days late (Day 57 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-07-20",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 60 FU occurred 13 days late (Day 434 vs planned Day 421)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-06-06",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 8 occurred 2 days late (Day 59 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 16 occurred 5 days early (Day 108 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-25",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-05-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 24 occurred 1 days late (Day 170 vs planned Day 169)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-07-26",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-08-22",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 5
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 4 occurred 3 days early (Day 26 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-03-16",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-03-19",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-11",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Visit WEEK 16 occurred 1 days late (Day 114 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-12",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Visit WEEK 40 EOT occurred 6 days early (Day 275 vs planned Day 281)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-11-20",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 5
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+        "arm": "Ustekinumab SC (45 mg simplified; actual is weight-banded)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Vital signs assessment not performed at WEEK 4",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-05-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Vital signs assessment not performed at WEEK 8",
+            "decod": "MISSED ASSESSMENT",
+            "cat": "MINOR",
+            "scat": "ASSESSMENT",
+            "start_dtc": "2024-06-02",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 16 occurred 3 days late (Day 116 vs planned Day 113)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-08-01",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 3
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Visit WEEK 4 occurred 3 days early (Day 26 vs planned Day 29)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-04-04",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 8 occurred 1 days late (Day 58 vs planned Day 57)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-05-06",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "3",
+            "term": "Visit WEEK 12 occurred 1 days late (Day 86 vs planned Day 85)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2024-06-03",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "4",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-30",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "5",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-09-22",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "6",
+            "term": "Visit WEEK 60 FU occurred 2 days early (Day 419 vs planned Day 421)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-05-02",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 6
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "deviations": [
+          {
+            "seq": "1",
+            "term": "Dose modified from 75.0 to 150.0 mg",
+            "decod": "DOSE MODIFICATION",
+            "cat": "MINOR",
+            "scat": "DOSING",
+            "start_dtc": "2024-06-23",
+            "end_dtc": null,
+            "visit": null
+          },
+          {
+            "seq": "2",
+            "term": "Visit WEEK 60 FU occurred 4 days late (Day 425 vs planned Day 421)",
+            "decod": "VISIT OCCURRED OUTSIDE VISIT WINDOW",
+            "cat": "MINOR",
+            "scat": "VISIT WINDOW",
+            "start_dtc": "2025-05-01",
+            "end_dtc": null,
+            "visit": null
+          }
+        ],
+        "total_deviations": 2
+      }
+    ]
+  },
+  "visit_compliance": {
+    "planned_visits": [
+      "SCREENING",
+      "WEEK 0 BASELINE",
+      "WEEK 4",
+      "WEEK 8",
+      "WEEK 12",
+      "WEEK 16",
+      "WEEK 24",
+      "WEEK 36",
+      "WEEK 40 EOT",
+      "WEEK 60 FU"
+    ],
+    "per_visit": {
+      "SCREENING": {
+        "planned": 17,
+        "attended": 17,
+        "compliance_pct": 100.0,
+        "planned_study_day": -35.0,
+        "median_actual_study_day": -48.0,
+        "within_window_pct": 11.8,
+        "out_of_window_count": 15
+      },
+      "WEEK 0 BASELINE": {
+        "planned": 17,
+        "attended": 17,
+        "compliance_pct": 100.0,
+        "planned_study_day": 1.0,
+        "median_actual_study_day": 1.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 4": {
+        "planned": 17,
+        "attended": 17,
+        "compliance_pct": 100.0,
+        "planned_study_day": 29.0,
+        "median_actual_study_day": 27.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 8": {
+        "planned": 17,
+        "attended": 17,
+        "compliance_pct": 100.0,
+        "planned_study_day": 57.0,
+        "median_actual_study_day": 57.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 12": {
+        "planned": 17,
+        "attended": 16,
+        "compliance_pct": 94.1,
+        "planned_study_day": 85.0,
+        "median_actual_study_day": 86.0,
+        "within_window_pct": 100.0,
+        "out_of_window_count": 0
+      },
+      "WEEK 16": {
+        "planned": 17,
+        "attended": 16,
+        "compliance_pct": 94.1,
+        "planned_study_day": 113.0,
+        "median_actual_study_day": 114.0,
+        "within_window_pct": 62.5,
+        "out_of_window_count": 6
+      },
+      "WEEK 24": {
+        "planned": 17,
+        "attended": 14,
+        "compliance_pct": 82.4,
+        "planned_study_day": 169.0,
+        "median_actual_study_day": 170.0,
+        "within_window_pct": 42.9,
+        "out_of_window_count": 8
+      },
+      "WEEK 36": {
+        "planned": 17,
+        "attended": 13,
+        "compliance_pct": 76.5,
+        "planned_study_day": 253.0,
+        "median_actual_study_day": 251.0,
+        "within_window_pct": 53.8,
+        "out_of_window_count": 6
+      },
+      "WEEK 40 EOT": {
+        "planned": 17,
+        "attended": 12,
+        "compliance_pct": 70.6,
+        "planned_study_day": 281.0,
+        "median_actual_study_day": 280.0,
+        "within_window_pct": 58.3,
+        "out_of_window_count": 5
+      },
+      "WEEK 60 FU": {
+        "planned": 17,
+        "attended": 12,
+        "compliance_pct": 70.6,
+        "planned_study_day": 421.0,
+        "median_actual_study_day": 429.0,
+        "within_window_pct": 8.3,
+        "out_of_window_count": 11
+      }
+    },
+    "per_subject": [
+      {
+        "usubjid": "M19-977-RISA-PED-CAN_SITE01-0004",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 4,
+        "compliance_pct": 40.0,
+        "missed_visits": [
+          "WEEK 12",
+          "WEEK 16",
+          "WEEK 24",
+          "WEEK 36",
+          "WEEK 40 EOT",
+          "WEEK 60 FU"
+        ]
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 6,
+        "compliance_pct": 60.0,
+        "missed_visits": [
+          "WEEK 24",
+          "WEEK 36",
+          "WEEK 40 EOT",
+          "WEEK 60 FU"
+        ]
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 6,
+        "compliance_pct": 60.0,
+        "missed_visits": [
+          "WEEK 24",
+          "WEEK 36",
+          "WEEK 40 EOT",
+          "WEEK 60 FU"
+        ]
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 8,
+        "compliance_pct": 80.0,
+        "missed_visits": [
+          "WEEK 40 EOT",
+          "WEEK 60 FU"
+        ]
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+        "arm": "Ustekinumab SC (45 mg simplified; actual is weight-banded)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 7,
+        "compliance_pct": 70.0,
+        "missed_visits": [
+          "WEEK 36",
+          "WEEK 40 EOT",
+          "WEEK 60 FU"
+        ]
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+        "arm": "Ustekinumab SC (45 mg simplified; actual is weight-banded)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "visits_planned": 10,
+        "visits_attended": 10,
+        "compliance_pct": 100.0,
+        "missed_visits": []
+      }
+    ]
+  },
+  "dose_compliance": {
+    "per_subject": [
+      {
+        "usubjid": "M19-977-RISA-PED-CAN_SITE01-0004",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 2,
+        "administered_doses": 2,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-23",
+        "last_dose_dtc": "2024-03-22",
+        "exposure_days": 28,
+        "total_dose": 300.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CAN_SITE01-0009",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-14",
+        "last_dose_dtc": "2024-09-26",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0001",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-05-01",
+        "last_dose_dtc": "2024-11-13",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0010",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 3,
+        "administered_doses": 3,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-16",
+        "last_dose_dtc": "2024-07-06",
+        "exposure_days": 112,
+        "total_dose": 450.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0012",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 3,
+        "administered_doses": 2,
+        "compliance_pct": 66.7,
+        "first_dose_dtc": "2024-03-07",
+        "last_dose_dtc": "2024-04-04",
+        "exposure_days": 28,
+        "total_dose": 300.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-CZE_SITE01-0018",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-05-10",
+        "last_dose_dtc": "2024-11-22",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-DEU_SITE01-0007",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-25",
+        "last_dose_dtc": "2024-09-08",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-DEU_SITE01-0008",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-18",
+        "last_dose_dtc": "2024-09-30",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-ESP_SITE01-0019",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-09",
+        "last_dose_dtc": "2024-08-23",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-FRA_SITE01-0003",
+        "arm": "Ustekinumab SC (45 mg simplified; actual is weight-banded)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-20",
+        "last_dose_dtc": "2024-10-02",
+        "exposure_days": 196,
+        "total_dose": 180.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-GBR_SITE01-0002",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-09",
+        "last_dose_dtc": "2024-08-23",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0005",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-30",
+        "last_dose_dtc": "2024-10-12",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0011",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-08",
+        "last_dose_dtc": "2024-08-22",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-KOR_SITE01-0014",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-02-20",
+        "last_dose_dtc": "2024-09-03",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE01-0006",
+        "arm": "Ustekinumab SC (45 mg simplified; actual is weight-banded)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-04-08",
+        "last_dose_dtc": "2024-10-21",
+        "exposure_days": 196,
+        "total_dose": 180.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE02-0013",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-10",
+        "last_dose_dtc": "2024-09-22",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      },
+      {
+        "usubjid": "M19-977-RISA-PED-USA_SITE02-0016",
+        "arm": "Risankizumab SC (75 mg if <40 kg, 150 mg if >=40 kg)",
+        "planned_doses": 4,
+        "administered_doses": 4,
+        "compliance_pct": 100.0,
+        "first_dose_dtc": "2024-03-03",
+        "last_dose_dtc": "2024-09-15",
+        "exposure_days": 196,
+        "total_dose": 600.0,
+        "dose_unit": "mg"
+      }
+    ],
+    "summary": {
+      "mean_compliance_pct": 98.0,
+      "subjects_below_80pct": [
+        "M19-977-RISA-PED-CZE_SITE01-0012"
+      ]
+    }
+  },
+  "screen_failures": {
+    "total": 3,
+    "by_reason": {
+      "ELIGIBILITY CRITERIA NOT MET": 3,
+      "INFORMED CONSENT OBTAINED": 3
+    },
+    "by_ie_criterion": {
+      "EXCL03": {
+        "test": "Subject has severe hepatic impairment (ALT/AST > 5x ULN)",
+        "category": "EXCLUSION",
+        "failed_count": 1
+      },
+      "INCL01": {
+        "test": "Subject is >= 18 years of age",
+        "category": "INCLUSION",
+        "failed_count": 1
+      },
+      "INCL03": {
+        "test": "Subject meets diagnosis criteria for the study indication",
+        "category": "INCLUSION",
+        "failed_count": 1
+      }
+    },
+    "by_site": {
+      "DEU_SITE01": 1,
+      "GBR_SITE01": 1,
+      "USA_SITE02": 1
+    }
+  }
+}

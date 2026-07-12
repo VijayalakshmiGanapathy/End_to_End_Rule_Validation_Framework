@@ -1,0 +1,46 @@
+STUDYID,DOMAIN,TSSEQ,TSGRPID,TSPARMCD,TSPARM,TSVAL,TSVALNF,TSVALCD,TSVCDREF,TSVCDVER
+BI-1245.110,TS,1,,ACTSUB,Actual Number of Subjects,,,,,
+BI-1245.110,TS,1,,ADAPT,Adaptive Design,INVALID,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,ADDON,Added on to Existing Treatments,,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,AGEMAX,Planned Maximum Age of Subjects,,,,,
+BI-1245.110,TS,1,,AGEMIN,Planned Minimum Age of Subjects,,,,,
+BI-1245.110,TS,1,,DCUTDESC,Data Cutoff Description,,,,,
+BI-1245.110,TS,1,,DCUTDTC,Data Cutoff Date,,,,,
+BI-1245.110,TS,1,,EXTTIND,Extension Trial Indicator,,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,FCNTRY,Planned Country of Investigational Sites,,,,GENC,Ed3 Up11
+BI-1245.110,TS,1,,HLTSUBJI,Healthy Subject Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,INDIC,Trial Disease/Condition Indication,,,,SNOMED,2023-09-01
+BI-1245.110,TS,1,,INTTYPE,Intervention Type,,,C1909,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,LENGTH,Trial Length,P27M,,,,
+BI-1245.110,TS,1,,NARMS,Planned Number of Arms,,,,,
+BI-1245.110,TS,1,,NCOHORT,Number of Groups/Cohorts,,,,,
+BI-1245.110,TS,1,,OBJPRIM,Trial Primary Objective,,,,,
+BI-1245.110,TS,1,,OBJSEC,Trial Secondary Objective,,,,,
+BI-1245.110,TS,1,,ONGOSIND,Ongoing Study Indicator,,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,OUTMSPRI,Primary Outcome Measure,,,,,
+BI-1245.110,TS,1,,PCLAS,Pharmacologic Class,,,,MED-RT,2023-09-01
+BI-1245.110,TS,1,,PDPSTIND,Pediatric Postmarket Study Indicator,,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,PDSTIND,Pediatric Study Indicator,,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,PIPIND,Pediatric Investigation Plan Indicator,,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,PLANSUB,Planned Number of Subjects,,,,,
+BI-1245.110,TS,1,,RANDOM,Trial is Randomized,,,C49488,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,RDIND,Rare Disease Indicator,,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,REGID,Registry Identifier,,,,,
+BI-1245.110,TS,1,,SDTIGVER,SDTM IG Version,,,,,
+BI-1245.110,TS,1,,SDTMVER,SDTM Version,,,,,
+BI-1245.110,TS,1,,SENDTC,Study End Date,,,,,
+BI-1245.110,TS,1,,SEXPOP,Sex of Participants,,,C49636,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,SPONSOR,Clinical Study Sponsor,,,,,
+BI-1245.110,TS,1,,SSTDTC,Study Start Date,,,,,
+BI-1245.110,TS,1,,STOPRULE,Study Stop Rules,,,,,
+BI-1245.110,TS,1,,STYPE,Study Type,INTERVENTIONAL,,C98388,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TBLIND,Trial Blinding Schema,,,C15228,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TCNTRL,Control Type,,,C49648,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TDIGRP,Diagnosis Group,,,,SNOMED,2023-09-01
+BI-1245.110,TS,1,,THERAREA,Therapeutic Area,,,,,
+BI-1245.110,TS,1,,TINDTP,Trial Intent Type,,,C49656,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TITLE,Trial Title,,,,,
+BI-1245.110,TS,1,,TPHASE,Trial Phase Classification,,,C15602,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TRT,Investigational Therapy or Treatment,,,,UNII,2023-12-15
+BI-1245.110,TS,1,,TTYPE,Trial Type,,,C49666,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,LENGTH,Trial Length,P27M,,,,

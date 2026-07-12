@@ -1,0 +1,2725 @@
+{
+  "generated_at": "2026-07-07T05:56:33.307629",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_72onqcms",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 9,
+  "rules_skipped": 0,
+  "rules_injected": 9,
+  "total_mutations": 101,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1222-TS-001",
+      "rule_id": "SD1222",
+      "rule_message": "Multiple PLANSUB records",
+      "category": "TS02I1/TS02V1",
+      "primitive": "duplicate_record",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['TSPARMCD']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD1312-TS-001",
+      "rule_id": "SD1312",
+      "rule_message": "TSVAL is missing for the PCLAS Trial Summary Parameter, when STYPE parameter equals 'INTERVENTIONAL'",
+      "category": "TS01",
+      "primitive": "blank_field",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVAL": {
+          "original": "MONOCLONAL ANTIBODY",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD2211-TS-001",
+      "rule_id": "SD2211",
+      "rule_message": "Missing TDIGRP Trial Summary Parameter",
+      "category": "TS02I1/TS02V1",
+      "primitive": "delete_row",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSPARMCD": {
+          "original": "TDIGRP",
+          "injected": "(row deleted)"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 38
+    },
+    {
+      "error_id": "INJ-SD2240-TS-001",
+      "rule_id": "SD2240",
+      "rule_message": "Invalid TSVCDREF value for INDIC",
+      "category": "TS03",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVCDREF": {
+          "original": "SNOMED",
+          "injected": "INVALID_REF"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD2246-TS-001",
+      "rule_id": "SD2246",
+      "rule_message": "Invalid TSVAL value for NARMS",
+      "category": "TS03",
+      "primitive": "set_invalid_value",
+      "domain": "TS",
+      "usubjid": null,
+      "row_index": 14,
+      "csv_line": 16,
+      "seq_value": "1",
+      "variables_modified": {
+        "TSVAL": {
+          "original": "2",
+          "injected": "INVALID"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 14
+    },
+    {
+      "error_id": "INJ-SD0089-TE-001",
+      "rule_id": "SD0089",
+      "rule_message": "Missing values for TEENRL and TEDUR",
+      "category": "TD01",
+      "primitive": "blank_field",
+      "domain": "TE",
+      "usubjid": null,
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": null,
+      "variables_modified": {
+        "TEENRL": {
+          "original": "Day +28 post-last-dose",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD0089-TE-001",
+      "rule_id": "SD0089",
+      "rule_message": "Missing values for TEENRL and TEDUR",
+      "category": "TD01",
+      "primitive": "blank_field",
+      "domain": "TE",
+      "usubjid": null,
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": null,
+      "variables_modified": {
+        "TEDUR": {
+          "original": "P28D",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD0043-CM-001",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "021IGAN17001-CAN_SITE01-0008",
+      "row_index": 12,
+      "csv_line": 14,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12
+    },
+    {
+      "error_id": "INJ-SD0043-CM-002",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 98,
+      "csv_line": 100,
+      "seq_value": "9",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 98
+    },
+    {
+      "error_id": "INJ-SD0043-CM-003",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "021IGAN17001-USA_SITE01-0009",
+      "row_index": 119,
+      "csv_line": 121,
+      "seq_value": "1",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 119
+    },
+    {
+      "error_id": "INJ-SD0043-CM-004",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 59,
+      "csv_line": 61,
+      "seq_value": "13",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 59
+    },
+    {
+      "error_id": "INJ-SD0043-CM-005",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 60,
+      "csv_line": 62,
+      "seq_value": "14",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 60
+    },
+    {
+      "error_id": "INJ-SD0043-CM-006",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 104,
+      "csv_line": 106,
+      "seq_value": "15",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 104
+    },
+    {
+      "error_id": "INJ-SD0043-CM-007",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "021IGAN17001-JPN_SITE01-0015",
+      "row_index": 89,
+      "csv_line": 91,
+      "seq_value": "3",
+      "variables_modified": {
+        "CMVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "CMVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 89
+    },
+    {
+      "error_id": "INJ-SD0043-EC-008",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1522,
+      "csv_line": 1524,
+      "seq_value": "384",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1522
+    },
+    {
+      "error_id": "INJ-SD0043-EC-009",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1142,
+      "csv_line": 1144,
+      "seq_value": "4",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1142
+    },
+    {
+      "error_id": "INJ-SD0043-EC-010",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 3083,
+      "csv_line": 3085,
+      "seq_value": "291",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3083
+    },
+    {
+      "error_id": "INJ-SD0043-EC-011",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 3226,
+      "csv_line": 3228,
+      "seq_value": "434",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3226
+    },
+    {
+      "error_id": "INJ-SD0043-EC-012",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 2833,
+      "csv_line": 2835,
+      "seq_value": "41",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2833
+    },
+    {
+      "error_id": "INJ-SD0043-EC-013",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CHN_SITE02-0002",
+      "row_index": 805,
+      "csv_line": 807,
+      "seq_value": "225",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 805
+    },
+    {
+      "error_id": "INJ-SD0043-EC-014",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CAN_SITE01-0018",
+      "row_index": 280,
+      "csv_line": 282,
+      "seq_value": "47",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 280
+    },
+    {
+      "error_id": "INJ-SD0043-EC-015",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 2056,
+      "csv_line": 2058,
+      "seq_value": "136",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2056
+    },
+    {
+      "error_id": "INJ-SD0043-EC-016",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-KOR_SITE01-0007",
+      "row_index": 3387,
+      "csv_line": 3389,
+      "seq_value": "86",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3387
+    },
+    {
+      "error_id": "INJ-SD0043-EC-017",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1524,
+      "csv_line": 1526,
+      "seq_value": "386",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1524
+    },
+    {
+      "error_id": "INJ-SD0043-EC-018",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 2944,
+      "csv_line": 2946,
+      "seq_value": "152",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2944
+    },
+    {
+      "error_id": "INJ-SD0043-EC-019",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-USA_SITE01-0009",
+      "row_index": 3811,
+      "csv_line": 3813,
+      "seq_value": "61",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3811
+    },
+    {
+      "error_id": "INJ-SD0043-EC-020",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1843,
+      "csv_line": 1845,
+      "seq_value": "705",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1843
+    },
+    {
+      "error_id": "INJ-SD0043-EC-021",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1855,
+      "csv_line": 1857,
+      "seq_value": "717",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1855
+    },
+    {
+      "error_id": "INJ-SD0043-EC-022",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 1933,
+      "csv_line": 1935,
+      "seq_value": "13",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1933
+    },
+    {
+      "error_id": "INJ-SD0043-EC-023",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 2805,
+      "csv_line": 2807,
+      "seq_value": "13",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2805
+    },
+    {
+      "error_id": "INJ-SD0043-EC-024",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 2649,
+      "csv_line": 2651,
+      "seq_value": "306",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2649
+    },
+    {
+      "error_id": "INJ-SD0043-EC-025",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-KOR_SITE01-0007",
+      "row_index": 3449,
+      "csv_line": 3451,
+      "seq_value": "148",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3449
+    },
+    {
+      "error_id": "INJ-SD0043-EC-026",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-USA_SITE01-0001",
+      "row_index": 3694,
+      "csv_line": 3696,
+      "seq_value": "214",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3694
+    },
+    {
+      "error_id": "INJ-SD0043-EC-027",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-USA_SITE01-0009",
+      "row_index": 3828,
+      "csv_line": 3830,
+      "seq_value": "78",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3828
+    },
+    {
+      "error_id": "INJ-SD0043-EC-028",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CHN_SITE02-0002",
+      "row_index": 682,
+      "csv_line": 684,
+      "seq_value": "102",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 682
+    },
+    {
+      "error_id": "INJ-SD0043-EC-029",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-USA_SITE01-0001",
+      "row_index": 3541,
+      "csv_line": 3543,
+      "seq_value": "61",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3541
+    },
+    {
+      "error_id": "INJ-SD0043-EC-030",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1465,
+      "csv_line": 1467,
+      "seq_value": "327",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1465
+    },
+    {
+      "error_id": "INJ-SD0043-EC-031",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 3215,
+      "csv_line": 3217,
+      "seq_value": "423",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3215
+    },
+    {
+      "error_id": "INJ-SD0043-EC-032",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 2894,
+      "csv_line": 2896,
+      "seq_value": "102",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2894
+    },
+    {
+      "error_id": "INJ-SD0043-EC-033",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CAN_SITE01-0008",
+      "row_index": 181,
+      "csv_line": 183,
+      "seq_value": "182",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 181
+    },
+    {
+      "error_id": "INJ-SD0043-EC-034",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 3145,
+      "csv_line": 3147,
+      "seq_value": "353",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3145
+    },
+    {
+      "error_id": "INJ-SD0043-EC-035",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 2107,
+      "csv_line": 2109,
+      "seq_value": "187",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2107
+    },
+    {
+      "error_id": "INJ-SD0043-EC-036",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 3091,
+      "csv_line": 3093,
+      "seq_value": "299",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3091
+    },
+    {
+      "error_id": "INJ-SD0043-EC-037",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1507,
+      "csv_line": 1509,
+      "seq_value": "369",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1507
+    },
+    {
+      "error_id": "INJ-SD0043-EC-038",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 2608,
+      "csv_line": 2610,
+      "seq_value": "265",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2608
+    },
+    {
+      "error_id": "INJ-SD0043-EC-039",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 2062,
+      "csv_line": 2064,
+      "seq_value": "142",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2062
+    },
+    {
+      "error_id": "INJ-SD0043-EC-040",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 2246,
+      "csv_line": 2248,
+      "seq_value": "326",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2246
+    },
+    {
+      "error_id": "INJ-SD0043-EC-041",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-USA_SITE02-0014",
+      "row_index": 4013,
+      "csv_line": 4015,
+      "seq_value": "150",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4013
+    },
+    {
+      "error_id": "INJ-SD0043-EC-042",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-KOR_SITE01-0007",
+      "row_index": 3415,
+      "csv_line": 3417,
+      "seq_value": "114",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3415
+    },
+    {
+      "error_id": "INJ-SD0043-EC-043",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-USA_SITE02-0014",
+      "row_index": 4018,
+      "csv_line": 4020,
+      "seq_value": "155",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4018
+    },
+    {
+      "error_id": "INJ-SD0043-EC-044",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 2266,
+      "csv_line": 2268,
+      "seq_value": "346",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2266
+    },
+    {
+      "error_id": "INJ-SD0043-EC-045",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1656,
+      "csv_line": 1658,
+      "seq_value": "518",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1656
+    },
+    {
+      "error_id": "INJ-SD0043-EC-046",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CAN_SITE01-0018",
+      "row_index": 379,
+      "csv_line": 381,
+      "seq_value": "146",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 379
+    },
+    {
+      "error_id": "INJ-SD0043-EC-047",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 3131,
+      "csv_line": 3133,
+      "seq_value": "339",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3131
+    },
+    {
+      "error_id": "INJ-SD0043-EC-048",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1850,
+      "csv_line": 1852,
+      "seq_value": "712",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1850
+    },
+    {
+      "error_id": "INJ-SD0043-EC-049",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-ITA_SITE01-0013",
+      "row_index": 2286,
+      "csv_line": 2288,
+      "seq_value": "366",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 2286
+    },
+    {
+      "error_id": "INJ-SD0043-EC-050",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CHN_SITE02-0002",
+      "row_index": 750,
+      "csv_line": 752,
+      "seq_value": "170",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 750
+    },
+    {
+      "error_id": "INJ-SD0043-EC-051",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-JPN_SITE02-0019",
+      "row_index": 3221,
+      "csv_line": 3223,
+      "seq_value": "429",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3221
+    },
+    {
+      "error_id": "INJ-SD0043-EC-052",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CAN_SITE01-0018",
+      "row_index": 263,
+      "csv_line": 265,
+      "seq_value": "30",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 263
+    },
+    {
+      "error_id": "INJ-SD0043-EC-053",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CAN_SITE01-0018",
+      "row_index": 526,
+      "csv_line": 528,
+      "seq_value": "293",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 526
+    },
+    {
+      "error_id": "INJ-SD0043-EC-054",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CHN_SITE02-0002",
+      "row_index": 936,
+      "csv_line": 938,
+      "seq_value": "356",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 936
+    },
+    {
+      "error_id": "INJ-SD0043-EC-055",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-CHN_SITE02-0002",
+      "row_index": 639,
+      "csv_line": 641,
+      "seq_value": "59",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 639
+    },
+    {
+      "error_id": "INJ-SD0043-EC-056",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-GBR_SITE01-0006",
+      "row_index": 1826,
+      "csv_line": 1828,
+      "seq_value": "688",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1826
+    },
+    {
+      "error_id": "INJ-SD0043-EC-057",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "021IGAN17001-USA_SITE01-0001",
+      "row_index": 3661,
+      "csv_line": 3663,
+      "seq_value": "181",
+      "variables_modified": {
+        "ECVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "ECVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 3661
+    },
+    {
+      "error_id": "INJ-SD0043-EX-058",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 21,
+      "csv_line": 23,
+      "seq_value": "1",
+      "variables_modified": {
+        "EXVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "EXVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 21
+    },
+    {
+      "error_id": "INJ-SD0043-EX-059",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "4",
+      "variables_modified": {
+        "EXVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "EXVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD0043-SU-060",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "021IGAN17001-CAN_SITE01-0018",
+      "row_index": 6,
+      "csv_line": 8,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "SUVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 6
+    },
+    {
+      "error_id": "INJ-SD0043-SU-061",
+      "rule_id": "SD0043",
+      "rule_message": "Missing value for --TRTV, when --VAMT is not NULL",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "021IGAN17001-CAN_SITE01-0008",
+      "row_index": 1,
+      "csv_line": 3,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUVAMT": {
+          "original": "",
+          "injected": "5"
+        },
+        "SUVAMTU": {
+          "original": "",
+          "injected": "mL"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1
+    },
+    {
+      "error_id": "INJ-SD1353-DA-001",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-CAN_SITE01-0008",
+      "row_index": 431,
+      "csv_line": 433,
+      "seq_value": "432",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 431
+    },
+    {
+      "error_id": "INJ-SD1353-DA-002",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 7883,
+      "csv_line": 7885,
+      "seq_value": "852",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7883
+    },
+    {
+      "error_id": "INJ-SD1353-DA-003",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-USA_SITE02-0014",
+      "row_index": 12216,
+      "csv_line": 12218,
+      "seq_value": "625",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12216
+    },
+    {
+      "error_id": "INJ-SD1353-DA-004",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 8123,
+      "csv_line": 8125,
+      "seq_value": "1092",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8123
+    },
+    {
+      "error_id": "INJ-SD1353-DA-005",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-USA_SITE01-0001",
+      "row_index": 10612,
+      "csv_line": 10614,
+      "seq_value": "170",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10612
+    },
+    {
+      "error_id": "INJ-SD1353-DA-006",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-USA_SITE02-0014",
+      "row_index": 12402,
+      "csv_line": 12404,
+      "seq_value": "811",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12402
+    },
+    {
+      "error_id": "INJ-SD1353-DA-007",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-JPN_SITE01-0015",
+      "row_index": 8272,
+      "csv_line": 8274,
+      "seq_value": "95",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8272
+    },
+    {
+      "error_id": "INJ-SD1353-DA-008",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-JPN_SITE01-0015",
+      "row_index": 8296,
+      "csv_line": 8298,
+      "seq_value": "119",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8296
+    },
+    {
+      "error_id": "INJ-SD1353-DA-009",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-KOR_SITE01-0007",
+      "row_index": 10220,
+      "csv_line": 10222,
+      "seq_value": "315",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10220
+    },
+    {
+      "error_id": "INJ-SD1353-DA-010",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 7135,
+      "csv_line": 7137,
+      "seq_value": "104",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7135
+    },
+    {
+      "error_id": "INJ-SD1353-DA-011",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-KOR_SITE01-0005",
+      "row_index": 9876,
+      "csv_line": 9878,
+      "seq_value": "70",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 9876
+    },
+    {
+      "error_id": "INJ-SD1353-DA-012",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-ITA_SITE01-0016",
+      "row_index": 7491,
+      "csv_line": 7493,
+      "seq_value": "460",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7491
+    },
+    {
+      "error_id": "INJ-SD1353-DA-013",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-USA_SITE02-0014",
+      "row_index": 12343,
+      "csv_line": 12345,
+      "seq_value": "752",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 12343
+    },
+    {
+      "error_id": "INJ-SD1353-DA-014",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-CAN_SITE01-0008",
+      "row_index": 383,
+      "csv_line": 385,
+      "seq_value": "384",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 383
+    },
+    {
+      "error_id": "INJ-SD1353-DA-015",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-KOR_SITE01-0007",
+      "row_index": 10139,
+      "csv_line": 10141,
+      "seq_value": "234",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10139
+    },
+    {
+      "error_id": "INJ-SD1353-DA-016",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-USA_SITE01-0001",
+      "row_index": 10645,
+      "csv_line": 10647,
+      "seq_value": "203",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10645
+    },
+    {
+      "error_id": "INJ-SD1353-DA-017",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-USA_SITE01-0009",
+      "row_index": 11418,
+      "csv_line": 11420,
+      "seq_value": "166",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 11418
+    },
+    {
+      "error_id": "INJ-SD1353-DA-018",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-JPN_SITE01-0015",
+      "row_index": 8238,
+      "csv_line": 8240,
+      "seq_value": "61",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 8238
+    },
+    {
+      "error_id": "INJ-SD1353-DA-019",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "DA",
+      "usubjid": "021IGAN17001-USA_SITE01-0001",
+      "row_index": 10615,
+      "csv_line": 10617,
+      "seq_value": "173",
+      "variables_modified": {
+        "DASTRESC": {
+          "original": "0.0",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10615
+    },
+    {
+      "error_id": "INJ-SD1353-LB-020",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "021IGAN17001-CAN_SITE01-0010",
+      "row_index": 64,
+      "csv_line": 66,
+      "seq_value": "16",
+      "variables_modified": {
+        "LBSTRESC": {
+          "original": "27.82",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 64
+    },
+    {
+      "error_id": "INJ-SD1353-LB-021",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "021IGAN17001-ITA_SITE01-0020",
+      "row_index": 454,
+      "csv_line": 456,
+      "seq_value": "7",
+      "variables_modified": {
+        "LBSTRESC": {
+          "original": "9.08",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 454
+    },
+    {
+      "error_id": "INJ-SD1353-LB-022",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "021IGAN17001-CAN_SITE01-0010",
+      "row_index": 72,
+      "csv_line": 74,
+      "seq_value": "24",
+      "variables_modified": {
+        "LBSTRESC": {
+          "original": "63.79",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 72
+    },
+    {
+      "error_id": "INJ-SD1353-LB-023",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "021IGAN17001-JPN_SITE01-0015",
+      "row_index": 487,
+      "csv_line": 489,
+      "seq_value": "26",
+      "variables_modified": {
+        "LBSTRESC": {
+          "original": "137.27",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 487
+    },
+    {
+      "error_id": "INJ-SD1353-LB-024",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "021IGAN17001-KOR_SITE01-0005",
+      "row_index": 585,
+      "csv_line": 587,
+      "seq_value": "5",
+      "variables_modified": {
+        "LBSTRESC": {
+          "original": "151.52",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 585
+    },
+    {
+      "error_id": "INJ-SD1353-LB-025",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "021IGAN17001-KOR_SITE01-0005",
+      "row_index": 594,
+      "csv_line": 596,
+      "seq_value": "14",
+      "variables_modified": {
+        "LBSTRESC": {
+          "original": "11.29",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 594
+    },
+    {
+      "error_id": "INJ-SD1353-LB-026",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "021IGAN17001-JPN_SITE01-0015",
+      "row_index": 492,
+      "csv_line": 494,
+      "seq_value": "31",
+      "variables_modified": {
+        "LBSTRESC": {
+          "original": "104.36",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 492
+    },
+    {
+      "error_id": "INJ-SD1353-VS-027",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "021IGAN17001-USA_SITE01-0009",
+      "row_index": 817,
+      "csv_line": 819,
+      "seq_value": "44",
+      "variables_modified": {
+        "VSSTRESC": {
+          "original": "82.9",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 817
+    },
+    {
+      "error_id": "INJ-SD1353-VS-028",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "021IGAN17001-ITA_SITE01-0020",
+      "row_index": 458,
+      "csv_line": 460,
+      "seq_value": "3",
+      "variables_modified": {
+        "VSSTRESC": {
+          "original": "152.2",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 458
+    },
+    {
+      "error_id": "INJ-SD1353-VS-029",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "021IGAN17001-KOR_SITE01-0005",
+      "row_index": 636,
+      "csv_line": 638,
+      "seq_value": "22",
+      "variables_modified": {
+        "VSSTRESC": {
+          "original": "109.0",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 636
+    },
+    {
+      "error_id": "INJ-SD1353-VS-030",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "021IGAN17001-KOR_SITE01-0005",
+      "row_index": 634,
+      "csv_line": 636,
+      "seq_value": "20",
+      "variables_modified": {
+        "VSSTRESC": {
+          "original": "81.6",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 634
+    },
+    {
+      "error_id": "INJ-SD1353-VS-031",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "021IGAN17001-USA_SITE01-0009",
+      "row_index": 802,
+      "csv_line": 804,
+      "seq_value": "29",
+      "variables_modified": {
+        "VSSTRESC": {
+          "original": "25.1",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 802
+    },
+    {
+      "error_id": "INJ-SD1353-VS-032",
+      "rule_id": "SD1353",
+      "rule_message": "--STRESC does not equal --ORRES when --STRESU is equal to --ORRESU",
+      "category": "FA2",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "021IGAN17001-ITA_SITE01-0020",
+      "row_index": 462,
+      "csv_line": 464,
+      "seq_value": "7",
+      "variables_modified": {
+        "VSSTRESC": {
+          "original": "37.4",
+          "injected": "777.7"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 462
+    },
+    {
+      "error_id": "INJ-SD1087-SE-003",
+      "rule_id": "SD1087",
+      "rule_message": "Missing --STDY variable, when --STDTC variable is present",
+      "category": "VI2 & VV2",
+      "primitive": "drop_column",
+      "domain": "SE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "SESTDY": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1222": 1,
+    "SD1312": 1,
+    "SD2211": 1,
+    "SD2240": 1,
+    "SD2246": 1,
+    "SD0089": 2,
+    "SD0043": 61,
+    "SD1353": 32,
+    "SD1087": 1
+  },
+  "summary_by_category": {
+    "TS02I1/TS02V1": 2,
+    "TS01": 1,
+    "TS03": 2,
+    "TD01": 2,
+    "INT1": 61,
+    "FA2": 32,
+    "VI2 & VV2": 1
+  },
+  "summary_by_domain": {
+    "TS": 5,
+    "TE": 2,
+    "CM": 7,
+    "EC": 50,
+    "EX": 2,
+    "SU": 2,
+    "DA": 19,
+    "LB": 7,
+    "VS": 6,
+    "SE": 1
+  },
+  "summary_status": {
+    "injected": 101,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

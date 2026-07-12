@@ -1,0 +1,11 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+MS200095-0022-VISION,TA,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),1,SCRN,Screening,,Transition to Treatment (cycles),SCREENING
+MS200095-0022-VISION,TA,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),2,TRT,Treatment (cycles),,Transition to 30-day safety FU,TREATMENT
+MS200095-0022-VISION,TA,COHORT_A,Cohort A — Tepotinib 500 mg QD (MET exon 14 skipping),3,FU,30-day safety FU,,,FOLLOW-UP
+MS200095-0022-VISION,TA,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),1,SCRN,Screening,,Transition to Treatment (cycles),SCREENING
+MS200095-0022-VISION,TA,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),2,TRT,Treatment (cycles),,Transition to 30-day safety FU,TREATMENT
+MS200095-0022-VISION,TA,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),3,ABCDEFGHI,30-day safety FU,,,FOLLOW-UP
+MS200095-0022-VISION,TA,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",1,SCRN,Screening,,Transition to Treatment (cycles),SCREENING
+MS200095-0022-VISION,TA,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",2,TRT,Treatment (cycles),,Transition to 30-day safety FU,TREATMENT
+MS200095-0022-VISION,TA,COHORT_C,"Cohort C — Tepotinib 500 mg QD (MET exon 14, confirmatory)",3,FU,30-day safety FU,,,FOLLOW-UP
+MS200095-0022-VISION,TA,COHORT_B,Cohort B — Tepotinib 500 mg QD (MET amplification),2,INCONSISTENT_CD,Treatment (cycles),,Transition to 30-day safety FU,TREATMENT

@@ -1,0 +1,13 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+I8F-JE-GPGO-SURPASS,TA,DULA_075,Dulaglutide 0.75 mg QW SC (active control),1,SCRN,Screening,,Transition to Treatment,SCREENING
+I8F-JE-GPGO-SURPASS,TA,DULA_075,Dulaglutide 0.75 mg QW SC (active control),2,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+I8F-JE-GPGO-SURPASS,TA,DULA_075,Dulaglutide 0.75 mg QW SC (active control),3,FU,Safety follow-up,,,FOLLOW-UP
+I8F-JE-GPGO-SURPASS,TA,TIRZ_10,Tirzepatide 10 mg QW SC (target),1,SCRN,Screening,,Transition to Treatment,SCREENING
+I8F-JE-GPGO-SURPASS,TA,TIRZ_10,Tirzepatide 10 mg QW SC (target),2,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+I8F-JE-GPGO-SURPASS,TA,TIRZ_10,Tirzepatide 10 mg QW SC (target),3,FU,Safety follow-up,,,FOLLOW-UP
+I8F-JE-GPGO-SURPASS,TA,TIRZ_15,Tirzepatide 15 mg QW SC (target),1,SCRN,Screening,,Transition to Treatment,SCREENING
+I8F-JE-GPGO-SURPASS,TA,TIRZ_15,Tirzepatide 15 mg QW SC (target),2,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+I8F-JE-GPGO-SURPASS,TA,TIRZ_15,Tirzepatide 15 mg QW SC (target),3,FU,Safety follow-up,,,FOLLOW-UP
+I8F-JE-GPGO-SURPASS,TA,TIRZ_5,Tirzepatide 5 mg QW SC (target),1,SCRN,Screening,,Transition to Treatment,SCREENING
+I8F-JE-GPGO-SURPASS,TA,TIRZ_5,Tirzepatide 5 mg QW SC (target),2,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+I8F-JE-GPGO-SURPASS,TA,TIRZ_5,Tirzepatide 5 mg QW SC (target),3,FU,Safety follow-up,,,FOLLOW-UP

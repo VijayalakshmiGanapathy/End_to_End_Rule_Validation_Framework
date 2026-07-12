@@ -1,0 +1,533 @@
+{
+  "generated_at": "2026-07-07T06:25:38.395105",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_xsuehmdm",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 1,
+  "rules_skipped": 0,
+  "rules_injected": 1,
+  "total_mutations": 20,
+  "skipped_rules": [],
+  "errors": [
+    {
+      "error_id": "INJ-SD1357-CM-001",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "CM",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-EC-002",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "EC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-EX-003",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "EX",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-SU-004",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "SU",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-AE-005",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "AE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-DS-006",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "DS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-DV-007",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "DV",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-HO-008",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "HO",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-MH-009",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "MH",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-DA-010",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "DA",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-DD-011",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "DD",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-EG-012",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "EG",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-IE-013",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "IE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-LB-014",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "LB",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-PC-015",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "PC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-PE-016",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "PE",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-PP-017",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "PP",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-SC-018",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "SC",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-SS-019",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "SS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    },
+    {
+      "error_id": "INJ-SD1357-VS-020",
+      "rule_id": "SD1357",
+      "rule_message": "MIDSDTC variable is present when MIDS variable is missing",
+      "category": "VI1 & VV1",
+      "primitive": "add_column",
+      "domain": "VS",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "MIDSDTC": {
+          "original": "absent",
+          "injected": "2025-02-05"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1357": 20
+  },
+  "summary_by_category": {
+    "VI1 & VV1": 20
+  },
+  "summary_by_domain": {
+    "CM": 1,
+    "EC": 1,
+    "EX": 1,
+    "SU": 1,
+    "AE": 1,
+    "DS": 1,
+    "DV": 1,
+    "HO": 1,
+    "MH": 1,
+    "DA": 1,
+    "DD": 1,
+    "EG": 1,
+    "IE": 1,
+    "LB": 1,
+    "PC": 1,
+    "PE": 1,
+    "PP": 1,
+    "SC": 1,
+    "SS": 1,
+    "VS": 1
+  },
+  "summary_status": {
+    "injected": 20,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

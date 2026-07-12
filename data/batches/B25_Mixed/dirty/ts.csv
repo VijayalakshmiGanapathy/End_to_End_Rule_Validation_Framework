@@ -1,0 +1,47 @@
+STUDYID,DOMAIN,TSSEQ,TSGRPID,TSPARMCD,TSPARM,TSVAL,TSVALNF,TSVALCD,TSVCDREF,TSVCDVER
+I8F-JE-GPGO-SURPASS,TS,1,,ACTSUB,Actual Number of Subjects,636,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,ADAPT,Adaptive Design,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,ADDON,Added on to Existing Treatments,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,AGEMAX,Planned Maximum Age of Subjects,P75Y,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,AGEMIN,Planned Minimum Age of Subjects,P20Y,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,DCUTDESC,Data Cutoff Description,Final database lock,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,DCUTDTC,Data Cutoff Date,2025-04-09,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,EXTTIND,Extension Trial Indicator,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,FCNTRY,Planned Country of Investigational Sites,USA,,,ISO,Ed3 Up11
+I8F-JE-GPGO-SURPASS,TS,1,,HLTSUBJI,Healthy Subject Indicator,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,INDIC,Trial Disease/Condition Indication,Type 2 Diabetes Mellitus,,,SNOMED,2023-09-01
+I8F-JE-GPGO-SURPASS,TS,1,,INTMODEL,Intervention Model,PARALLEL,,C82639,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,INTTYPE,Intervention Type,DRUG,,C1909,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,LENGTH,Trial Length,P14M,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,NARMS,Planned Number of Arms,4,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,NCOHORT,Number of Groups/Cohorts,4,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,OBJPRIM,Trial Primary Objective,To evaluate the efficacy and safety of the investigational treatment,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,OBJSEC,Trial Secondary Objective,To evaluate pharmacokinetics and immunogenicity,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,ONGOSIND,Ongoing Study Indicator,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,OUTMSPRI,Primary Outcome Measure,Change from baseline in primary endpoint,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,PDPSTIND,Pediatric Postmarket Study Indicator,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,PDSTIND,Pediatric Study Indicator,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,PIPIND,Pediatric Investigation Plan Indicator,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,PLANSUB,Planned Number of Subjects,INVALID,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,RANDOM,Trial is Randomized,Y,,C49488,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,RDIND,Rare Disease Indicator,N,,C49487,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,REGID,Registry Identifier,NCT03861052,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,SDTIGVER,SDTM IG Version,3.4,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,SDTMVER,SDTM Version,2.0,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,SENDTC,Study End Date,2025-05-09,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,SEXPOP,Sex of Participants,BOTH,,C49636,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,SPONSOR,Clinical Study Sponsor,Eli Lilly Japan K.K.,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,SSTDTC,Study Start Date,2024-01-15,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,STOPRULE,Study Stop Rules,Study may be stopped for safety concerns per DMC recommendation,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,STYPE,Study Type,INTERVENTIONAL,,C98388,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,TBLIND,Trial Blinding Schema,DOUBLE BLIND,,C15228,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,TCNTRL,Control Type,ACTIVE,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,TDIGRP,Diagnosis Group,Endocrinology,,,SNOMED,2023-09-01
+I8F-JE-GPGO-SURPASS,TS,1,,THERAREA,Therapeutic Area,Endocrinology,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,TINDTP,Trial Intent Type,TREATMENT,,C49656,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,TITLE,Trial Title,SURPASS J-mono: A Phase 3 Study of Tirzepatide Monotherapy Compared to Dulaglutide 0.75 mg in Patients with Type 2 Diabetes Mellitus,,,,
+I8F-JE-GPGO-SURPASS,TS,1,,TPHASE,Trial Phase Classification,PHASE III TRIAL,,C15602,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,TRT,Investigational Therapy or Treatment,DULAGLUTIDE,,,UNII,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,2,,TRT,Investigational Therapy or Treatment,TIRZEPATIDE,,,UNII,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,TTYPE,Trial Type,EFFICACY,,C49666,CDISC CT,2023-12-15
+I8F-JE-GPGO-SURPASS,TS,1,,SEXPOP,Sex of Participants,BOTH,,C49636,CDISC CT,2023-12-15

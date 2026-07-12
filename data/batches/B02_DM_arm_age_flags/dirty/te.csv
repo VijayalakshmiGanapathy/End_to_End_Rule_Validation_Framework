@@ -1,0 +1,4 @@
+STUDYID,DOMAIN,ETCD,ELEMENT,TESTRL,TEENRL,TEDUR
+COVHIC001-CHALLENGE,TE,FU,Outpatient follow-up,After discharge,Day 365 (1-year FU),P360D
+COVHIC001-CHALLENGE,TE,INOC,Inoculation + quarantine,Day 1 inoculation,Day 14 discharge,P14D
+COVHIC001-CHALLENGE,TE,SCRN,Screening,Informed consent,Quarantine admission,P28D

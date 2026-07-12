@@ -1,0 +1,4 @@
+STUDYID,DOMAIN,ETCD,ELEMENT,TESTRL,TEENRL,TEDUR
+MS200095-0022-VISION,TE,FU,30-day safety FU,After last dose,30 days post-last-dose,P30D
+MS200095-0022-VISION,TE,ABCDEFGHI,Screening,Informed consent,Cycle 1 Day 1,P28D
+MS200095-0022-VISION,TE,TRT,Treatment (cycles),Cycle 1 Day 1,Last cycle (~24 cycles modeled),P504D

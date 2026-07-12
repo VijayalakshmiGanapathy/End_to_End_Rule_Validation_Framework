@@ -1,0 +1,3409 @@
+{
+  "generated_at": "2026-07-07T05:13:31.501459",
+  "seed": 42,
+  "mode": "compound",
+  "source_dir": "/tmp/sdtm_uploads_w__u1hu1",
+  "profile": "all",
+  "rate": 0.05,
+  "density_cap": 5,
+  "rules_available": 467,
+  "rules_injectable": 23,
+  "rules_skipped": 0,
+  "rules_injected": 20,
+  "total_mutations": 139,
+  "skipped_rules": [
+    {
+      "rule_id": "SD1040",
+      "reason": "every eligible row's target cell was taken by an earlier rule \u2014 re-run in a separate batch"
+    },
+    {
+      "rule_id": "SD1041",
+      "reason": "every eligible row's target cell was taken by an earlier rule \u2014 re-run in a separate batch"
+    }
+  ],
+  "errors": [
+    {
+      "error_id": "INJ-SD1249-EX-001",
+      "rule_id": "SD1249",
+      "rule_message": "EXDOSE does not equal 0 when EXTRT = 'PLACEBO'",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EX",
+      "usubjid": "GB001-2001-CAN_SITE01-0019",
+      "row_index": 4,
+      "csv_line": 6,
+      "seq_value": "1",
+      "variables_modified": {
+        "EXDOSE": {
+          "original": "0.0",
+          "injected": "50"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 4
+    },
+    {
+      "error_id": "INJ-SD0082-EX-001",
+      "rule_id": "SD0082",
+      "rule_message": "Exposure end date is after the latest Disposition date",
+      "category": "INT1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "EX",
+      "usubjid": "GB001-2001-USA_SITE03-0005",
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": "1",
+      "variables_modified": {
+        "EXENDTC": {
+          "original": "2024-04-20",
+          "injected": "2024-07-13"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs DS.DSSTDTC (date_after_target); DS.DSSTDTC=2024-06-13",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1205-EX-001",
+      "rule_id": "SD1205",
+      "rule_message": "EXSTDTC date is before RFXSTDTC",
+      "category": "INT1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "EX",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 16,
+      "csv_line": 18,
+      "seq_value": "2",
+      "variables_modified": {
+        "EXSTDTC": {
+          "original": "2024-04-20",
+          "injected": "2024-03-14"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs DM.RFXSTDTC (date_before_target); DM.RFXSTDTC=2024-04-13",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 16
+    },
+    {
+      "error_id": "INJ-SD1207-EX-001",
+      "rule_id": "SD1207",
+      "rule_message": "EXENDTC date is after RFXENDTC",
+      "category": "INT1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "EX",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "1",
+      "variables_modified": {
+        "EXENDTC": {
+          "original": "2024-09-12",
+          "injected": "2024-10-12"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs DM.RFXENDTC (date_after_target); DM.RFXENDTC=2024-09-12",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1446-EX-001",
+      "rule_id": "SD1446",
+      "rule_message": "Exposure start date is after the latest Disposition date",
+      "category": "INT1",
+      "primitive": "cross_domain_mismatch",
+      "domain": "EX",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 10,
+      "csv_line": 12,
+      "seq_value": "1",
+      "variables_modified": {
+        "EXSTDTC": {
+          "original": "2024-03-29",
+          "injected": "2024-12-21"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "vs DS.DSSTDTC (date_after_target); DS.DSSTDTC=2024-11-21",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 10
+    },
+    {
+      "error_id": "INJ-SD1279-EC-001",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 532,
+      "csv_line": 534,
+      "seq_value": "154",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 532
+    },
+    {
+      "error_id": "INJ-SD1279-EC-002",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 572,
+      "csv_line": 574,
+      "seq_value": "24",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 572
+    },
+    {
+      "error_id": "INJ-SD1279-EC-003",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0019",
+      "row_index": 332,
+      "csv_line": 334,
+      "seq_value": "54",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 332
+    },
+    {
+      "error_id": "INJ-SD1279-EC-004",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 577,
+      "csv_line": 579,
+      "seq_value": "29",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 577
+    },
+    {
+      "error_id": "INJ-SD1279-EC-005",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0015",
+      "row_index": 695,
+      "csv_line": 697,
+      "seq_value": "30",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 695
+    },
+    {
+      "error_id": "INJ-SD1279-EC-006",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0014",
+      "row_index": 1032,
+      "csv_line": 1034,
+      "seq_value": "24",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1032
+    },
+    {
+      "error_id": "INJ-SD1279-EC-007",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0015",
+      "row_index": 724,
+      "csv_line": 726,
+      "seq_value": "59",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 724
+    },
+    {
+      "error_id": "INJ-SD1279-EC-008",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0015",
+      "row_index": 758,
+      "csv_line": 760,
+      "seq_value": "93",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 758
+    },
+    {
+      "error_id": "INJ-SD1279-EC-009",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0015",
+      "row_index": 675,
+      "csv_line": 677,
+      "seq_value": "10",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 675
+    },
+    {
+      "error_id": "INJ-SD1279-EC-010",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 489,
+      "csv_line": 491,
+      "seq_value": "111",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 489
+    },
+    {
+      "error_id": "INJ-SD1279-EC-011",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0016",
+      "row_index": 1536,
+      "csv_line": 1538,
+      "seq_value": "16",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1536
+    },
+    {
+      "error_id": "INJ-SD1279-EC-012",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0015",
+      "row_index": 715,
+      "csv_line": 717,
+      "seq_value": "50",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 715
+    },
+    {
+      "error_id": "INJ-SD1279-EC-013",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0015",
+      "row_index": 742,
+      "csv_line": 744,
+      "seq_value": "77",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 742
+    },
+    {
+      "error_id": "INJ-SD1279-EC-014",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0019",
+      "row_index": 352,
+      "csv_line": 354,
+      "seq_value": "74",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 352
+    },
+    {
+      "error_id": "INJ-SD1279-EC-015",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 387,
+      "csv_line": 389,
+      "seq_value": "9",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 387
+    },
+    {
+      "error_id": "INJ-SD1279-EC-016",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 413,
+      "csv_line": 415,
+      "seq_value": "35",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 413
+    },
+    {
+      "error_id": "INJ-SD1279-EC-017",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 537,
+      "csv_line": 539,
+      "seq_value": "159",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 537
+    },
+    {
+      "error_id": "INJ-SD1279-EC-018",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0014",
+      "row_index": 1030,
+      "csv_line": 1032,
+      "seq_value": "22",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1030
+    },
+    {
+      "error_id": "INJ-SD1279-EC-019",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 533,
+      "csv_line": 535,
+      "seq_value": "155",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 533
+    },
+    {
+      "error_id": "INJ-SD1279-EC-020",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0019",
+      "row_index": 333,
+      "csv_line": 335,
+      "seq_value": "55",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 333
+    },
+    {
+      "error_id": "INJ-SD1279-EC-021",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 394,
+      "csv_line": 396,
+      "seq_value": "16",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 394
+    },
+    {
+      "error_id": "INJ-SD1279-EC-022",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0014",
+      "row_index": 1033,
+      "csv_line": 1035,
+      "seq_value": "25",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1033
+    },
+    {
+      "error_id": "INJ-SD1279-EC-023",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0016",
+      "row_index": 1552,
+      "csv_line": 1554,
+      "seq_value": "32",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1552
+    },
+    {
+      "error_id": "INJ-SD1279-EC-024",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0015",
+      "row_index": 762,
+      "csv_line": 764,
+      "seq_value": "97",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 762
+    },
+    {
+      "error_id": "INJ-SD1279-EC-025",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-DEU_SITE01-0012",
+      "row_index": 509,
+      "csv_line": 511,
+      "seq_value": "131",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 509
+    },
+    {
+      "error_id": "INJ-SD1279-EC-026",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0019",
+      "row_index": 326,
+      "csv_line": 328,
+      "seq_value": "48",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 326
+    },
+    {
+      "error_id": "INJ-SD1279-EC-027",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 598,
+      "csv_line": 600,
+      "seq_value": "50",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 598
+    },
+    {
+      "error_id": "INJ-SD1279-EC-028",
+      "rule_id": "SD1279",
+      "rule_message": "ECDOSTXT is null when ECDOSE is null and ECOCCUR does not equal 'N'",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 567,
+      "csv_line": 569,
+      "seq_value": "19",
+      "variables_modified": {
+        "ECDOSTXT": {
+          "original": "PLACEBO",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 567
+    },
+    {
+      "error_id": "INJ-SD1247-EC-001",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0008",
+      "row_index": 266,
+      "csv_line": 268,
+      "seq_value": "120",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 266
+    },
+    {
+      "error_id": "INJ-SD1247-EC-002",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 796,
+      "csv_line": 798,
+      "seq_value": "28",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 796
+    },
+    {
+      "error_id": "INJ-SD1247-EC-003",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ARG_SITE01-0006",
+      "row_index": 7,
+      "csv_line": 9,
+      "seq_value": "8",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 7
+    },
+    {
+      "error_id": "INJ-SD1247-EC-004",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0008",
+      "row_index": 223,
+      "csv_line": 225,
+      "seq_value": "77",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 223
+    },
+    {
+      "error_id": "INJ-SD1247-EC-005",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1386,
+      "csv_line": 1388,
+      "seq_value": "105",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1386
+    },
+    {
+      "error_id": "INJ-SD1247-EC-006",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1352,
+      "csv_line": 1354,
+      "seq_value": "71",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1352
+    },
+    {
+      "error_id": "INJ-SD1247-EC-007",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0008",
+      "row_index": 206,
+      "csv_line": 208,
+      "seq_value": "60",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 206
+    },
+    {
+      "error_id": "INJ-SD1247-EC-008",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1380,
+      "csv_line": 1382,
+      "seq_value": "99",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1380
+    },
+    {
+      "error_id": "INJ-SD1247-EC-009",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 789,
+      "csv_line": 791,
+      "seq_value": "21",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 789
+    },
+    {
+      "error_id": "INJ-SD1247-EC-010",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ARG_SITE01-0006",
+      "row_index": 82,
+      "csv_line": 84,
+      "seq_value": "83",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 82
+    },
+    {
+      "error_id": "INJ-SD1247-EC-011",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1300,
+      "csv_line": 1302,
+      "seq_value": "19",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1300
+    },
+    {
+      "error_id": "INJ-SD1247-EC-012",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1434,
+      "csv_line": 1436,
+      "seq_value": "153",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1434
+    },
+    {
+      "error_id": "INJ-SD1247-EC-013",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0018",
+      "row_index": 1607,
+      "csv_line": 1609,
+      "seq_value": "19",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1607
+    },
+    {
+      "error_id": "INJ-SD1247-EC-014",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0008",
+      "row_index": 178,
+      "csv_line": 180,
+      "seq_value": "32",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 178
+    },
+    {
+      "error_id": "INJ-SD1247-EC-015",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 942,
+      "csv_line": 944,
+      "seq_value": "6",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "40.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 942
+    },
+    {
+      "error_id": "INJ-SD1247-EC-016",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 972,
+      "csv_line": 974,
+      "seq_value": "36",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "40.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 972
+    },
+    {
+      "error_id": "INJ-SD1247-EC-017",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1403,
+      "csv_line": 1405,
+      "seq_value": "122",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1403
+    },
+    {
+      "error_id": "INJ-SD1247-EC-018",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1394,
+      "csv_line": 1396,
+      "seq_value": "113",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1394
+    },
+    {
+      "error_id": "INJ-SD1247-EC-019",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1431,
+      "csv_line": 1433,
+      "seq_value": "150",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1431
+    },
+    {
+      "error_id": "INJ-SD1247-EC-020",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 951,
+      "csv_line": 953,
+      "seq_value": "15",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "40.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 951
+    },
+    {
+      "error_id": "INJ-SD1247-EC-021",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 1268,
+      "csv_line": 1270,
+      "seq_value": "155",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1268
+    },
+    {
+      "error_id": "INJ-SD1247-EC-022",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE03-0005",
+      "row_index": 1490,
+      "csv_line": 1492,
+      "seq_value": "41",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1490
+    },
+    {
+      "error_id": "INJ-SD1247-EC-023",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 1256,
+      "csv_line": 1258,
+      "seq_value": "143",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1256
+    },
+    {
+      "error_id": "INJ-SD1247-EC-024",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 843,
+      "csv_line": 845,
+      "seq_value": "75",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 843
+    },
+    {
+      "error_id": "INJ-SD1247-EC-025",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0018",
+      "row_index": 1594,
+      "csv_line": 1596,
+      "seq_value": "6",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1594
+    },
+    {
+      "error_id": "INJ-SD1247-EC-026",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 960,
+      "csv_line": 962,
+      "seq_value": "24",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "40.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 960
+    },
+    {
+      "error_id": "INJ-SD1247-EC-027",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 871,
+      "csv_line": 873,
+      "seq_value": "103",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 871
+    },
+    {
+      "error_id": "INJ-SD1247-EC-028",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1421,
+      "csv_line": 1423,
+      "seq_value": "140",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1421
+    },
+    {
+      "error_id": "INJ-SD1247-EC-029",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 804,
+      "csv_line": 806,
+      "seq_value": "36",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 804
+    },
+    {
+      "error_id": "INJ-SD1247-EC-030",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE03-0005",
+      "row_index": 1496,
+      "csv_line": 1498,
+      "seq_value": "47",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1496
+    },
+    {
+      "error_id": "INJ-SD1247-EC-031",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 1131,
+      "csv_line": 1133,
+      "seq_value": "18",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1131
+    },
+    {
+      "error_id": "INJ-SD1247-EC-032",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1396,
+      "csv_line": 1398,
+      "seq_value": "115",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1396
+    },
+    {
+      "error_id": "INJ-SD1247-EC-033",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 837,
+      "csv_line": 839,
+      "seq_value": "69",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 837
+    },
+    {
+      "error_id": "INJ-SD1247-EC-034",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 1242,
+      "csv_line": 1244,
+      "seq_value": "129",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1242
+    },
+    {
+      "error_id": "INJ-SD1247-EC-035",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 920,
+      "csv_line": 922,
+      "seq_value": "152",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 920
+    },
+    {
+      "error_id": "INJ-SD1247-EC-036",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0008",
+      "row_index": 157,
+      "csv_line": 159,
+      "seq_value": "11",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 157
+    },
+    {
+      "error_id": "INJ-SD1247-EC-037",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 1203,
+      "csv_line": 1205,
+      "seq_value": "90",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1203
+    },
+    {
+      "error_id": "INJ-SD1247-EC-038",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0018",
+      "row_index": 1689,
+      "csv_line": 1691,
+      "seq_value": "101",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1689
+    },
+    {
+      "error_id": "INJ-SD1247-EC-039",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-CAN_SITE01-0008",
+      "row_index": 247,
+      "csv_line": 249,
+      "seq_value": "101",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 247
+    },
+    {
+      "error_id": "INJ-SD1247-EC-040",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 884,
+      "csv_line": 886,
+      "seq_value": "116",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 884
+    },
+    {
+      "error_id": "INJ-SD1247-EC-041",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1367,
+      "csv_line": 1369,
+      "seq_value": "86",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1367
+    },
+    {
+      "error_id": "INJ-SD1247-EC-042",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE03-0005",
+      "row_index": 1478,
+      "csv_line": 1480,
+      "seq_value": "29",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1478
+    },
+    {
+      "error_id": "INJ-SD1247-EC-043",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1308,
+      "csv_line": 1310,
+      "seq_value": "27",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1308
+    },
+    {
+      "error_id": "INJ-SD1247-EC-044",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 1278,
+      "csv_line": 1280,
+      "seq_value": "165",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1278
+    },
+    {
+      "error_id": "INJ-SD1247-EC-045",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0013",
+      "row_index": 1417,
+      "csv_line": 1419,
+      "seq_value": "136",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "20.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1417
+    },
+    {
+      "error_id": "INJ-SD1247-EC-046",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0002",
+      "row_index": 918,
+      "csv_line": 920,
+      "seq_value": "150",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 918
+    },
+    {
+      "error_id": "INJ-SD1247-EC-047",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ARG_SITE01-0006",
+      "row_index": 105,
+      "csv_line": 107,
+      "seq_value": "106",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 105
+    },
+    {
+      "error_id": "INJ-SD1247-EC-048",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0011",
+      "row_index": 1219,
+      "csv_line": 1221,
+      "seq_value": "106",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1219
+    },
+    {
+      "error_id": "INJ-SD1247-EC-049",
+      "rule_id": "SD1247",
+      "rule_message": "ECDOSE is not greater than 0 when ECOCCUR does not equal 'N' and ECDOSTXT is null",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ARG_SITE01-0006",
+      "row_index": 142,
+      "csv_line": 144,
+      "seq_value": "143",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "60.0",
+          "injected": "0"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 142
+    },
+    {
+      "error_id": "INJ-SD1135-EC-001",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0018",
+      "row_index": 1613,
+      "csv_line": 1615,
+      "seq_value": "25",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "25",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1613
+    },
+    {
+      "error_id": "INJ-SD1135-EC-002",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0016",
+      "row_index": 1533,
+      "csv_line": 1535,
+      "seq_value": "13",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "13",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1533
+    },
+    {
+      "error_id": "INJ-SD1135-EC-003",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 637,
+      "csv_line": 639,
+      "seq_value": "89",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "89",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 637
+    },
+    {
+      "error_id": "INJ-SD1135-EC-004",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0014",
+      "row_index": 1057,
+      "csv_line": 1059,
+      "seq_value": "49",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "49",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1057
+    },
+    {
+      "error_id": "INJ-SD1135-EC-005",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0016",
+      "row_index": 1563,
+      "csv_line": 1565,
+      "seq_value": "43",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "43",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1563
+    },
+    {
+      "error_id": "INJ-SD1135-EC-006",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0018",
+      "row_index": 1640,
+      "csv_line": 1642,
+      "seq_value": "52",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "52",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1640
+    },
+    {
+      "error_id": "INJ-SD1135-EC-007",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0007",
+      "row_index": 1094,
+      "csv_line": 1096,
+      "seq_value": "17",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "17",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1094
+    },
+    {
+      "error_id": "INJ-SD1135-EC-008",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 553,
+      "csv_line": 555,
+      "seq_value": "5",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "5",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 553
+    },
+    {
+      "error_id": "INJ-SD1135-EC-009",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0018",
+      "row_index": 1641,
+      "csv_line": 1643,
+      "seq_value": "53",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "53",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1641
+    },
+    {
+      "error_id": "INJ-SD1135-EC-010",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE03-0005",
+      "row_index": 1499,
+      "csv_line": 1501,
+      "seq_value": "50",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "50",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1499
+    },
+    {
+      "error_id": "INJ-SD1135-EC-011",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0018",
+      "row_index": 1621,
+      "csv_line": 1623,
+      "seq_value": "33",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "33",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1621
+    },
+    {
+      "error_id": "INJ-SD1135-EC-012",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 571,
+      "csv_line": 573,
+      "seq_value": "23",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "23",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 571
+    },
+    {
+      "error_id": "INJ-SD1135-EC-013",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ARG_SITE01-0006",
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "38",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "38",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD1135-EC-014",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 617,
+      "csv_line": 619,
+      "seq_value": "69",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "69",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 617
+    },
+    {
+      "error_id": "INJ-SD1135-EC-015",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0014",
+      "row_index": 1019,
+      "csv_line": 1021,
+      "seq_value": "11",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "11",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1019
+    },
+    {
+      "error_id": "INJ-SD1135-EC-016",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 576,
+      "csv_line": 578,
+      "seq_value": "28",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "28",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 576
+    },
+    {
+      "error_id": "INJ-SD1135-EC-017",
+      "rule_id": "SD1135",
+      "rule_message": "Negative value of Study Day variable",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-ITA_SITE01-0017",
+      "row_index": 607,
+      "csv_line": 609,
+      "seq_value": "59",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "59",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 607
+    },
+    {
+      "error_id": "INJ-SD1352-EC-001",
+      "rule_id": "SD1352",
+      "rule_message": "Duplicate records in domain",
+      "category": "INT1",
+      "primitive": "duplicate_record",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 957,
+      "csv_line": 959,
+      "seq_value": "21",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['--TRT', '--DECOD', '--MOOD', '--CAT', '--SCAT', '--ROUTE', '--LOC', '--TRTV', 'USUBJID', '--STDTC', '--TPT', '--TPTNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 957
+    },
+    {
+      "error_id": "INJ-SD1352-EC-002",
+      "rule_id": "SD1352",
+      "rule_message": "Duplicate records in domain",
+      "category": "INT1",
+      "primitive": "duplicate_record",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 967,
+      "csv_line": 969,
+      "seq_value": "31",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['--TRT', '--DECOD', '--MOOD', '--CAT', '--SCAT', '--ROUTE', '--LOC', '--TRTV', 'USUBJID', '--STDTC', '--TPT', '--TPTNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 967
+    },
+    {
+      "error_id": "INJ-SD1352-EC-003",
+      "rule_id": "SD1352",
+      "rule_message": "Duplicate records in domain",
+      "category": "INT1",
+      "primitive": "duplicate_record",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0016",
+      "row_index": 1568,
+      "csv_line": 1570,
+      "seq_value": "48",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['--TRT', '--DECOD', '--MOOD', '--CAT', '--SCAT', '--ROUTE', '--LOC', '--TRTV', 'USUBJID', '--STDTC', '--TPT', '--TPTNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1568
+    },
+    {
+      "error_id": "INJ-SD1352-EC-004",
+      "rule_id": "SD1352",
+      "rule_message": "Duplicate records in domain",
+      "category": "INT1",
+      "primitive": "duplicate_record",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 959,
+      "csv_line": 961,
+      "seq_value": "23",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['--TRT', '--DECOD', '--MOOD', '--CAT', '--SCAT', '--ROUTE', '--LOC', '--TRTV', 'USUBJID', '--STDTC', '--TPT', '--TPTNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 959
+    },
+    {
+      "error_id": "INJ-SD1352-EC-005",
+      "rule_id": "SD1352",
+      "rule_message": "Duplicate records in domain",
+      "category": "INT1",
+      "primitive": "duplicate_record",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0016",
+      "row_index": 1526,
+      "csv_line": 1528,
+      "seq_value": "6",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['--TRT', '--DECOD', '--MOOD', '--CAT', '--SCAT', '--ROUTE', '--LOC', '--TRTV', 'USUBJID', '--STDTC', '--TPT', '--TPTNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1526
+    },
+    {
+      "error_id": "INJ-SD1352-EC-006",
+      "rule_id": "SD1352",
+      "rule_message": "Duplicate records in domain",
+      "category": "INT1",
+      "primitive": "duplicate_record",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 978,
+      "csv_line": 980,
+      "seq_value": "42",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['--TRT', '--DECOD', '--MOOD', '--CAT', '--SCAT', '--ROUTE', '--LOC', '--TRTV', 'USUBJID', '--STDTC', '--TPT', '--TPTNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 978
+    },
+    {
+      "error_id": "INJ-SD1352-EC-007",
+      "rule_id": "SD1352",
+      "rule_message": "Duplicate records in domain",
+      "category": "INT1",
+      "primitive": "duplicate_record",
+      "domain": "EC",
+      "usubjid": "GB001-2001-POL_SITE01-0004",
+      "row_index": 938,
+      "csv_line": 940,
+      "seq_value": "2",
+      "variables_modified": {
+        "__row__": {
+          "original": "unique",
+          "injected": "duplicated"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": "duplicated key_fields=['--TRT', '--DECOD', '--MOOD', '--CAT', '--SCAT', '--ROUTE', '--LOC', '--TRTV', 'USUBJID', '--STDTC', '--TPT', '--TPTNUM']",
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 938
+    },
+    {
+      "error_id": "INJ-SD0041-EC-001",
+      "rule_id": "SD0041",
+      "rule_message": "Value for --OCCUR is populated for unsolicited Intervention or Event",
+      "category": "EVT2",
+      "primitive": "populate_forbidden",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0007",
+      "row_index": 1101,
+      "csv_line": 1103,
+      "seq_value": "24",
+      "variables_modified": {
+        "ECPRESP": {
+          "original": "Y",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1101
+    },
+    {
+      "error_id": "INJ-SD0014-EC-001",
+      "rule_id": "SD0014",
+      "rule_message": "Negative value for --DOSE",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0007",
+      "row_index": 1090,
+      "csv_line": 1092,
+      "seq_value": "13",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "40.0",
+          "injected": "-1"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1090
+    },
+    {
+      "error_id": "INJ-SD0035-EC-001",
+      "rule_id": "SD0035",
+      "rule_message": "Missing value for --DOSU, when --DOSE, --DOSTXT or --DOSTOT is provided",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0007",
+      "row_index": 1084,
+      "csv_line": 1086,
+      "seq_value": "7",
+      "variables_modified": {
+        "ECDOSU": {
+          "original": "mg",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1084
+    },
+    {
+      "error_id": "INJ-SD0035-EC-002",
+      "rule_id": "SD0035",
+      "rule_message": "Missing value for --DOSU, when --DOSE, --DOSTXT or --DOSTOT is provided",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0007",
+      "row_index": 1091,
+      "csv_line": 1093,
+      "seq_value": "14",
+      "variables_modified": {
+        "ECDOSU": {
+          "original": "mg",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1091
+    },
+    {
+      "error_id": "INJ-SD0035-EC-003",
+      "rule_id": "SD0035",
+      "rule_message": "Missing value for --DOSU, when --DOSE, --DOSTXT or --DOSTOT is provided",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-FRA_SITE01-0001",
+      "row_index": 547,
+      "csv_line": 549,
+      "seq_value": "1",
+      "variables_modified": {
+        "ECDOSU": {
+          "original": "mg",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 547
+    },
+    {
+      "error_id": "INJ-SD0035-EX-004",
+      "rule_id": "SD0035",
+      "rule_message": "Missing value for --DOSU, when --DOSE, --DOSTXT or --DOSTOT is provided",
+      "category": "INT1",
+      "primitive": "blank_field",
+      "domain": "EX",
+      "usubjid": "GB001-2001-USA_SITE04-0020",
+      "row_index": 24,
+      "csv_line": 26,
+      "seq_value": "1",
+      "variables_modified": {
+        "EXDOSU": {
+          "original": "mg",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 24
+    },
+    {
+      "error_id": "INJ-SD1047-EC-001",
+      "rule_id": "SD1047",
+      "rule_message": "Both --DOSE and --DOSTXT values are populated",
+      "category": "INT1",
+      "primitive": "populate_forbidden",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE04-0020",
+      "row_index": 1694,
+      "csv_line": 1696,
+      "seq_value": "2",
+      "variables_modified": {
+        "ECDOSE": {
+          "original": "",
+          "injected": "10"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1694
+    },
+    {
+      "error_id": "INJ-SD1273-CM-001",
+      "rule_id": "SD1273",
+      "rule_message": "--TRT equals 'OTHER'",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "CM",
+      "usubjid": "GB001-2001-MEX_SITE01-0003",
+      "row_index": 19,
+      "csv_line": 21,
+      "seq_value": "3",
+      "variables_modified": {
+        "CMTRT": {
+          "original": "PARACETAMOL",
+          "injected": "OTHER"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 19
+    },
+    {
+      "error_id": "INJ-SD1273-SU-002",
+      "rule_id": "SD1273",
+      "rule_message": "--TRT equals 'OTHER'",
+      "category": "INT1",
+      "primitive": "set_invalid_value",
+      "domain": "SU",
+      "usubjid": "GB001-2001-USA_SITE04-0020",
+      "row_index": 54,
+      "csv_line": 56,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUTRT": {
+          "original": "BEER/WINE/SPIRITS",
+          "injected": "OTHER"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 54
+    },
+    {
+      "error_id": "INJ-SD0021-SU-001",
+      "rule_id": "SD0021",
+      "rule_message": "Missing End Time-Point value",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "SU",
+      "usubjid": "GB001-2001-USA_SITE01-0009",
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUENRF": {
+          "original": "ONGOING",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD0021-SU-002",
+      "rule_id": "SD0021",
+      "rule_message": "Missing End Time-Point value",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "SU",
+      "usubjid": "GB001-2001-MEX_SITE01-0003",
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUENDTC": {
+          "original": "2003-02-22",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD0021-SU-002",
+      "rule_id": "SD0021",
+      "rule_message": "Missing End Time-Point value",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "SU",
+      "usubjid": "GB001-2001-MEX_SITE01-0003",
+      "row_index": 20,
+      "csv_line": 22,
+      "seq_value": "3",
+      "variables_modified": {
+        "SUENDY": {
+          "original": "-7694",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 20
+    },
+    {
+      "error_id": "INJ-SD0022-EC-001",
+      "rule_id": "SD0022",
+      "rule_message": "Missing Start Time-Point value",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0003",
+      "row_index": 654,
+      "csv_line": 656,
+      "seq_value": "6",
+      "variables_modified": {
+        "ECSTDTC": {
+          "original": "2024-03-22",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 654
+    },
+    {
+      "error_id": "INJ-SD0022-EC-001",
+      "rule_id": "SD0022",
+      "rule_message": "Missing Start Time-Point value",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-MEX_SITE01-0003",
+      "row_index": 654,
+      "csv_line": 656,
+      "seq_value": "6",
+      "variables_modified": {
+        "ECSTDY": {
+          "original": "6",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 654
+    },
+    {
+      "error_id": "INJ-SD0042-EC-001",
+      "rule_id": "SD0042",
+      "rule_message": "--STAT does not equal 'NOT DONE', when --PRESP='Y' and --OCCUR is NULL",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "EC",
+      "usubjid": "GB001-2001-USA_SITE01-0009",
+      "row_index": 1107,
+      "csv_line": 1109,
+      "seq_value": "1",
+      "variables_modified": {
+        "ECOCCUR": {
+          "original": "Y",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1107
+    },
+    {
+      "error_id": "INJ-SD0042-SU-002",
+      "rule_id": "SD0042",
+      "rule_message": "--STAT does not equal 'NOT DONE', when --PRESP='Y' and --OCCUR is NULL",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "SU",
+      "usubjid": "GB001-2001-USA_SITE01-0009",
+      "row_index": 37,
+      "csv_line": 39,
+      "seq_value": "2",
+      "variables_modified": {
+        "SUOCCUR": {
+          "original": "Y",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 37
+    },
+    {
+      "error_id": "INJ-SD0042-SU-003",
+      "rule_id": "SD0042",
+      "rule_message": "--STAT does not equal 'NOT DONE', when --PRESP='Y' and --OCCUR is NULL",
+      "category": "EVT2",
+      "primitive": "blank_field",
+      "domain": "SU",
+      "usubjid": "GB001-2001-USA_SITE01-0009",
+      "row_index": 36,
+      "csv_line": 38,
+      "seq_value": "1",
+      "variables_modified": {
+        "SUOCCUR": {
+          "original": "N",
+          "injected": ""
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 36
+    },
+    {
+      "error_id": "INJ-SD0023-LB-001",
+      "rule_id": "SD0023",
+      "rule_message": "Missing value for --STAT, when --REASND is provided",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "GB001-2001-USA_SITE01-0009",
+      "row_index": 723,
+      "csv_line": 725,
+      "seq_value": "3",
+      "variables_modified": {
+        "LBREASND": {
+          "original": "",
+          "injected": "SAMPLE LOST"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 723
+    },
+    {
+      "error_id": "INJ-SD0023-LB-002",
+      "rule_id": "SD0023",
+      "rule_message": "Missing value for --STAT, when --REASND is provided",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "GB001-2001-FRA_SITE01-0001",
+      "row_index": 267,
+      "csv_line": 269,
+      "seq_value": "2",
+      "variables_modified": {
+        "LBREASND": {
+          "original": "",
+          "injected": "SAMPLE LOST"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 267
+    },
+    {
+      "error_id": "INJ-SD0023-LB-003",
+      "rule_id": "SD0023",
+      "rule_message": "Missing value for --STAT, when --REASND is provided",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "GB001-2001-USA_SITE01-0009",
+      "row_index": 724,
+      "csv_line": 726,
+      "seq_value": "4",
+      "variables_modified": {
+        "LBREASND": {
+          "original": "",
+          "injected": "SAMPLE LOST"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 724
+    },
+    {
+      "error_id": "INJ-SD0023-LB-004",
+      "rule_id": "SD0023",
+      "rule_message": "Missing value for --STAT, when --REASND is provided",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "GB001-2001-USA_SITE04-0020",
+      "row_index": 1058,
+      "csv_line": 1060,
+      "seq_value": "2",
+      "variables_modified": {
+        "LBREASND": {
+          "original": "",
+          "injected": "SAMPLE LOST"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1058
+    },
+    {
+      "error_id": "INJ-SD0023-LB-005",
+      "rule_id": "SD0023",
+      "rule_message": "Missing value for --STAT, when --REASND is provided",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "LB",
+      "usubjid": "GB001-2001-FRA_SITE01-0001",
+      "row_index": 281,
+      "csv_line": 283,
+      "seq_value": "16",
+      "variables_modified": {
+        "LBREASND": {
+          "original": "",
+          "injected": "SAMPLE LOST"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 281
+    },
+    {
+      "error_id": "INJ-SD0023-VS-006",
+      "rule_id": "SD0023",
+      "rule_message": "Missing value for --STAT, when --REASND is provided",
+      "category": "GO2",
+      "primitive": "set_invalid_value",
+      "domain": "VS",
+      "usubjid": "GB001-2001-FRA_SITE01-0001",
+      "row_index": 327,
+      "csv_line": 329,
+      "seq_value": "2",
+      "variables_modified": {
+        "VSREASND": {
+          "original": "",
+          "injected": "SAMPLE LOST"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 327
+    },
+    {
+      "error_id": "INJ-SD1039-DS-001",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "DS",
+      "usubjid": "GB001-2001-USA_SITE01-0010",
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSCAT": {
+          "original": "PROTOCOL MILESTONE",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD1039-DS-001",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "DS",
+      "usubjid": "GB001-2001-USA_SITE01-0010",
+      "row_index": 40,
+      "csv_line": 42,
+      "seq_value": "2",
+      "variables_modified": {
+        "DSTERM": {
+          "original": "ELIGIBILITY CRITERIA NOT MET",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 40
+    },
+    {
+      "error_id": "INJ-SD1039-IE-002",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "IE",
+      "usubjid": "GB001-2001-USA_SITE01-0010",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "IECAT": {
+          "original": "EXCLUSION",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1039-IE-002",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "IE",
+      "usubjid": "GB001-2001-USA_SITE01-0010",
+      "row_index": 0,
+      "csv_line": 2,
+      "seq_value": "1",
+      "variables_modified": {
+        "IETESTCD": {
+          "original": "EXCL05",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 0
+    },
+    {
+      "error_id": "INJ-SD1039-LB-003",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "LB",
+      "usubjid": "GB001-2001-FRA_SITE01-0001",
+      "row_index": 268,
+      "csv_line": 270,
+      "seq_value": "3",
+      "variables_modified": {
+        "LBCAT": {
+          "original": "CHEMISTRY",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 268
+    },
+    {
+      "error_id": "INJ-SD1039-LB-003",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "LB",
+      "usubjid": "GB001-2001-FRA_SITE01-0001",
+      "row_index": 268,
+      "csv_line": 270,
+      "seq_value": "3",
+      "variables_modified": {
+        "LBTESTCD": {
+          "original": "CREAT",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 268
+    },
+    {
+      "error_id": "INJ-SD1039-VS-004",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "VS",
+      "usubjid": "GB001-2001-USA_SITE04-0020",
+      "row_index": 1226,
+      "csv_line": 1228,
+      "seq_value": "11",
+      "variables_modified": {
+        "VSTESTCD": {
+          "original": "HEIGHT",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1226
+    },
+    {
+      "error_id": "INJ-SD1039-VS-005",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "VS",
+      "usubjid": "GB001-2001-USA_SITE04-0020",
+      "row_index": 1235,
+      "csv_line": 1237,
+      "seq_value": "20",
+      "variables_modified": {
+        "VSTESTCD": {
+          "original": "PULSE",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1235
+    },
+    {
+      "error_id": "INJ-SD1039-VS-006",
+      "rule_id": "SD1039",
+      "rule_message": "--CAT value is redundant with other variable values",
+      "category": "GO2",
+      "primitive": "populate_forbidden",
+      "domain": "VS",
+      "usubjid": "GB001-2001-USA_SITE04-0020",
+      "row_index": 1216,
+      "csv_line": 1218,
+      "seq_value": "1",
+      "variables_modified": {
+        "VSTESTCD": {
+          "original": "BMI",
+          "injected": "SAMECAT8"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": 1216
+    },
+    {
+      "error_id": "INJ-SD1099-DV-002",
+      "rule_id": "SD1099",
+      "rule_message": "Missing --CAT variable, when --SCAT variable is present",
+      "category": "VI1 & VV1",
+      "primitive": "drop_column",
+      "domain": "DV",
+      "usubjid": null,
+      "row_index": null,
+      "csv_line": null,
+      "seq_value": null,
+      "variables_modified": {
+        "DVCAT": {
+          "original": "present",
+          "injected": "removed"
+        }
+      },
+      "re_derived": {},
+      "expected_co_violations": [],
+      "notes": null,
+      "status": "injected",
+      "failure_reason": null,
+      "clean_row_index": null
+    }
+  ],
+  "summary_by_rule": {
+    "SD1249": 1,
+    "SD0082": 1,
+    "SD1205": 1,
+    "SD1207": 1,
+    "SD1446": 1,
+    "SD1279": 28,
+    "SD1247": 49,
+    "SD1135": 17,
+    "SD1352": 7,
+    "SD0041": 1,
+    "SD0014": 1,
+    "SD0035": 4,
+    "SD1047": 1,
+    "SD1273": 2,
+    "SD0021": 3,
+    "SD0022": 2,
+    "SD0042": 3,
+    "SD0023": 6,
+    "SD1039": 9,
+    "SD1099": 1
+  },
+  "summary_by_category": {
+    "INT1": 114,
+    "EVT2": 9,
+    "GO2": 15,
+    "VI1 & VV1": 1
+  },
+  "summary_by_domain": {
+    "EX": 6,
+    "EC": 110,
+    "CM": 1,
+    "SU": 6,
+    "LB": 7,
+    "VS": 4,
+    "DS": 2,
+    "IE": 2,
+    "DV": 1
+  },
+  "summary_status": {
+    "injected": 139,
+    "overwritten": 0,
+    "failed_self_validation": 0
+  },
+  "warnings": [
+    "Re-derivation skipped: ConformanceLayer not importable. Derived fields (--DY, EPOCH) may not reflect injected errors."
+  ]
+}

@@ -1,0 +1,46 @@
+STUDYID,DOMAIN,TSSEQ,TSGRPID,TSPARMCD,TSPARM,TSVAL,TSVALNF,TSVALCD,TSVCDREF,TSVCDVER
+BI-1245.110,TS,1,,ACTSUB,Actual Number of Subjects,4126,,,,
+BI-1245.110,TS,1,,ADAPT,Adaptive Design,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,ADDON,Added on to Existing Treatments,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,AGEMAX,Planned Maximum Age of Subjects,P95Y,,,,
+BI-1245.110,TS,1,,AGEMIN,Planned Minimum Age of Subjects,P18Y,,,,
+BI-1245.110,TS,1,,DCUTDESC,Data Cutoff Description,Final database lock,,,,
+BI-1245.110,TS,1,,DCUTDTC,Data Cutoff Date,2026-06-01,,,,
+BI-1245.110,TS,1,,EXTTIND,Extension Trial Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,FCNTRY,Planned Country of Investigational Sites,USA,,,GENC,Ed3 Up11
+BI-1245.110,TS,1,,HLTSUBJI,Healthy Subject Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,INDIC,Trial Disease/Condition Indication,Chronic Heart Failure with Preserved Ejection Fraction (HFpEF),,,SNOMED,2023-09-01
+BI-1245.110,TS,1,,INTMODEL,Intervention Model,PARALLEL,,C82639,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,INTTYPE,Intervention Type,DRUG,,C1909,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,LENGTH,Trial Length,P27M,,,,
+BI-1245.110,TS,1,,NARMS,Planned Number of Arms,2,,,,
+BI-1245.110,TS,1,,NCOHORT,Number of Groups/Cohorts,2,,,,
+BI-1245.110,TS,1,,OBJPRIM,Trial Primary Objective,To evaluate the efficacy and safety of the investigational treatment,,,,
+BI-1245.110,TS,1,,OBJSEC,Trial Secondary Objective,To evaluate pharmacokinetics and immunogenicity,,,,
+BI-1245.110,TS,1,,ONGOSIND,Ongoing Study Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,OUTMSPRI,Primary Outcome Measure,Change from baseline in primary endpoint,,,,
+BI-1245.110,TS,1,,PCLAS,Pharmacologic Class,MONOCLONAL ANTIBODY,,,MED-RT,2023-09-01
+BI-1245.110,TS,1,,PDPSTIND,Pediatric Postmarket Study Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,PDSTIND,Pediatric Study Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,PIPIND,Pediatric Investigation Plan Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,PLANSUB,Planned Number of Subjects,4126,,,,
+BI-1245.110,TS,1,,RANDOM,Trial is Randomized,Y,,C49488,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,RDIND,Rare Disease Indicator,N,,C49487,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,REGID,Registry Identifier,NCT03057951,,,,
+BI-1245.110,TS,1,,SDTIGVER,SDTM IG Version,3.4,,,,
+BI-1245.110,TS,1,,SDTMVER,SDTM Version,2.0,,,,
+BI-1245.110,TS,1,,SENDTC,Study End Date,2026-07-01,,,,
+BI-1245.110,TS,1,,SEXPOP,Sex of Participants,BOTH,,C49636,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,SPONSOR,Clinical Study Sponsor,Boehringer Ingelheim,,,,
+BI-1245.110,TS,1,,SSTDTC,Study Start Date,2024-01-15,,,,
+BI-1245.110,TS,1,,STOPRULE,Study Stop Rules,Study may be stopped for safety concerns per DMC recommendation,,,,
+BI-1245.110,TS,1,,STYPE,Study Type,INTERVENTIONAL,,C98388,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TBLIND,Trial Blinding Schema,DOUBLE BLIND,,C15228,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TCNTRL,Control Type,PLACEBO,,C49648,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TDIGRP,Diagnosis Group,Cardiovascular,,,SNOMED,2023-09-01
+BI-1245.110,TS,1,,THERAREA,Therapeutic Area,Cardiovascular,,,,
+BI-1245.110,TS,1,,TINDTP,Trial Intent Type,TREATMENT,,C49656,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TITLE,Trial Title,"EMPEROR-Preserved: A Phase III randomised, double-blind trial to evaluate efficacy and safety of once daily empagliflozin 10 mg compared to placebo, in patients with chronic Heart Failure with preserved Ejection Fraction (HFpEF)",,,,
+BI-1245.110,TS,1,,TPHASE,Trial Phase Classification,PHASE III TRIAL,,C15602,CDISC CT,2023-12-15
+BI-1245.110,TS,1,,TRT,Investigational Therapy or Treatment,EMPAGLIFLOZIN,,,UNII,2023-12-15
+BI-1245.110,TS,1,,TTYPE,Trial Type,EFFICACY,,C49666,CDISC CT,2023-12-15

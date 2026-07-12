@@ -1,0 +1,10 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+COVHIC001-CHALLENGE,TA,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,1,SCRN,Screening,,Transition to Inoculation + quarantine,SCREENING
+COVHIC001-CHALLENGE,TA,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,2,INOC,Inoculation + quarantine,,Transition to Outpatient follow-up,TREATMENT
+COVHIC001-CHALLENGE,TA,DOSE1,Dose 1 — 10 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,3,FU,Outpatient follow-up,,,FOLLOW-UP
+COVHIC001-CHALLENGE,TA,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,1,SCRN,Screening,,Transition to Inoculation + quarantine,SCREENING
+COVHIC001-CHALLENGE,TA,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,2,INOC,Inoculation + quarantine,,Transition to Outpatient follow-up,TREATMENT
+COVHIC001-CHALLENGE,TA,DOSE2,Dose 2 — 100 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,3,FU,Outpatient follow-up,,,FOLLOW-UP
+COVHIC001-CHALLENGE,TA,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,1,SCRN,Screening,,Transition to Inoculation + quarantine,SCREENING
+COVHIC001-CHALLENGE,TA,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,2,INOC,Inoculation + quarantine,,Transition to Outpatient follow-up,TREATMENT
+COVHIC001-CHALLENGE,TA,DOSE3,Dose 3 — 1000 TCID50 intranasal SARS-CoV-2 + pre-emptive remdesivir,3,FU,Outpatient follow-up,,,FOLLOW-UP

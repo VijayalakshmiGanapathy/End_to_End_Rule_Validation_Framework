@@ -1,0 +1,5 @@
+STUDYID,DOMAIN,ETCD,ELEMENT,TESTRL,TEENRL,TEDUR
+GB001-2001,TE,FU,Safety follow-up,After Week 24,Week 28,P28D
+GB001-2001,TE,RUNIN,eDiary run-in,After screening,Randomization,P28D
+GB001-2001,TE,SCRN,Screening,Informed consent,Run-in start,P14D
+GB001-2001,TE,TRT,Treatment,Day 1 (random),Week 24 EOT,P168D

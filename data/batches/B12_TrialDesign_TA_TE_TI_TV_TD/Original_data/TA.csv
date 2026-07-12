@@ -1,0 +1,7 @@
+STUDYID,DOMAIN,ARMCD,ARM,TAETORD,ETCD,ELEMENT,TABRANCH,TATRANS,EPOCH
+NBI-1065846-MDD2020-TERPSIS,TA,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),1,SCRN,Screening,,Transition to Treatment,SCREENING
+NBI-1065846-MDD2020-TERPSIS,TA,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),2,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+NBI-1065846-MDD2020-TERPSIS,TA,NBI_1065846,NBI-1065846 (160 mg loading then 80 mg QW),3,FU,Safety follow-up,,,FOLLOW-UP
+NBI-1065846-MDD2020-TERPSIS,TA,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",1,SCRN,Screening,,Transition to Treatment,SCREENING
+NBI-1065846-MDD2020-TERPSIS,TA,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",2,TRT,Treatment,,Transition to Safety follow-up,TREATMENT
+NBI-1065846-MDD2020-TERPSIS,TA,PLACEBO,"Matching placebo (4 tablets Day 1 loading, 2 tablets QW thereafter)",3,FU,Safety follow-up,,,FOLLOW-UP

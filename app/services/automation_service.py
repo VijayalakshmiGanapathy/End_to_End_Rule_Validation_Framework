@@ -1,6 +1,14 @@
 import logging
 
 from app.core.paths import BatchPaths
+
+from app.core.config import (
+    RUN_MODE_SINGLE,
+    RUN_MODE_ALL,
+    RUN_MODE,
+    SINGLE_BATCH,
+)
+
 from app.selenium.selenium_driver import SeleniumDriver
 from app.services.injection_harness_service import (
     InjectionHarnessService,
@@ -13,6 +21,8 @@ from app.services.trialgen_service import TrialGenService
 from app.services.p21_service import P21Service
 
 from app.services.validation_service import ValidationService
+
+from app.services.batch_config_service import BatchConfigService
 
 from app.services.kwalify_service import KwalifyService
 
@@ -182,20 +192,20 @@ class AutomationService:
                 "Validation completed successfully."
             )
 
-            logger.info(
-                "Starting Kwalify Validation..."
-            )
+            # logger.info(
+            #     "Starting Kwalify Validation..."
+            # )
 
-            KwalifyService().run(
-                paths,
-                config,
-                run_number,
-            )
+            # KwalifyService().run(
+            #     paths,
+            #     config,
+            #     run_number,
+            # )
 
-            logger.info(
-                "Kwalify Validation Completed."
-            )
-            return run_number
+            # logger.info(
+            #     "Kwalify Validation Completed."
+            # )
+            # return run_number
     
         except Exception:
 
@@ -214,3 +224,72 @@ class AutomationService:
                 logger.info(
                     "Browser closed."
                 )
+
+
+    def run_all_batches(self):
+
+        logger.info("=" * 80)
+        logger.info("Starting Test Approach 1 - All Batches")
+        logger.info("=" * 80)
+
+        batch_service = BatchConfigService()
+
+        if RUN_MODE.lower() == RUN_MODE_SINGLE:
+
+            logger.info(
+                f"Run Mode : SINGLE ({SINGLE_BATCH})"
+            )
+
+            batch_configs = [
+                batch_service.get_batch_configuration(
+                    SINGLE_BATCH,
+                )
+            ]
+
+        elif RUN_MODE.lower() == RUN_MODE_ALL:
+
+            logger.info(
+                "Run Mode : ALL"
+            )
+
+            batch_configs = (
+                batch_service.get_all_batches()
+            )
+
+        else:
+
+            raise ValueError(
+                "RUN_MODE must be 'single' or 'all'."
+            )
+        
+        total = len(batch_configs)
+        completed = 0
+        failed = 0
+
+        logger.info(f"Total Batches : {total}")
+
+        for config in batch_configs:
+
+            try:
+
+                self.run_batch(config)
+
+                completed += 1
+
+            except Exception:
+
+                failed += 1
+
+                logger.exception(
+                    f"{config.batch_name} failed."
+                )
+
+                # Continue with the next batch
+                continue
+
+        logger.info("=" * 80)
+        logger.info("Test Approach 1 Completed")
+        logger.info(f"Total     : {total}")
+        logger.info(f"Completed : {completed}")
+        logger.info(f"Failed    : {failed}")
+        logger.info("=" * 80)

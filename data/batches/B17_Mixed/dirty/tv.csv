@@ -1,0 +1,27 @@
+STUDYID,DOMAIN,VISITNUM,VISIT,VISITDY,ARMCD,ARM,TVSTRL,TVENRL
+021IGAN17001,TV,1.0,SCREENING,-42,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day -42,End of SCREENING
+021IGAN17001,TV,2.0,BASELINE,1,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 1,End of BASELINE
+021IGAN17001,TV,3.0,WEEK 2,15,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 15,End of WEEK 2
+021IGAN17001,TV,4.0,WEEK 4,29,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 29,End of WEEK 4
+021IGAN17001,TV,5.0,WEEK 8,57,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 57,End of WEEK 8
+021IGAN17001,TV,6.0,WEEK 12,85,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 85,End of WEEK 12
+021IGAN17001,TV,7.0,WEEK 24,169,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 169,End of WEEK 24
+021IGAN17001,TV,8.0,WEEK 36,253,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 253,End of WEEK 36
+021IGAN17001,TV,9.0,WEEK 58,407,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 407,End of WEEK 58
+021IGAN17001,TV,10.0,WEEK 84,589,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 589,End of WEEK 84
+021IGAN17001,TV,11.0,WEEK 110,771,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 771,End of WEEK 110
+021IGAN17001,TV,12.0,WEEK 114 EOT,799,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 799,End of WEEK 114 EOT
+021IGAN17001,TV,13.0,SAFETY FU,827,IRBESARTAN,Irbesartan 300 mg QD (active control),Study Day 827,End of SAFETY FU
+021IGAN17001,TV,1.0,SCREENING,-42,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day -42,End of SCREENING
+021IGAN17001,TV,2.0,BASELINE,1,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 1,End of BASELINE
+021IGAN17001,TV,3.0,WEEK 2,15,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 15,End of WEEK 2
+021IGAN17001,TV,4.0,WEEK 4,29,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 29,End of WEEK 4
+021IGAN17001,TV,5.0,WEEK 8,57,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 57,End of WEEK 8
+021IGAN17001,TV,6.0,WEEK 12,85,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 85,End of WEEK 12
+021IGAN17001,TV,7.0,WEEK 24,169,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 169,End of WEEK 24
+021IGAN17001,TV,8.0,WEEK 36,253,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 253,End of WEEK 36
+021IGAN17001,TV,9.0,WEEK 58,407,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 407,End of WEEK 58
+021IGAN17001,TV,10.0,WEEK 84,589,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 589,End of WEEK 84
+021IGAN17001,TV,11.0,WEEK 110,771,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 771,End of WEEK 110
+021IGAN17001,TV,12.0,WEEK 114 EOT,799,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 799,End of WEEK 114 EOT
+021IGAN17001,TV,13.0,SAFETY FU,827,SPARSENTAN,Sparsentan 400 mg QD (target dose),Study Day 827,End of SAFETY FU

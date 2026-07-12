@@ -1,0 +1,4 @@
+﻿error_id,rule_id,status,domain,USUBJID,row_index,primitive,variables_modified,re_derived,failure_reason
+INJ-SD1250-EG-016,SD1250,injected,EG,,,drop_column,"{""EGTPTNUM"": {""original"": ""present"", ""injected"": ""removed""}}",,
+INJ-SD1250-PC-019,SD1250,injected,PC,,,drop_column,"{""PCTPTNUM"": {""original"": ""present"", ""injected"": ""removed""}}",,
+INJ-SD1250-VS-024,SD1250,injected,VS,,,drop_column,"{""VSTPTNUM"": {""original"": ""present"", ""injected"": ""removed""}}",,

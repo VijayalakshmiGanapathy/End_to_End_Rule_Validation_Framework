@@ -227,7 +227,7 @@ Original_data/DM.csv
 dirty/DM.csv
 ```
 
-Then validates the value from `variables_modified`.
+Then validates the value from `fied`.
 
 Example:
 

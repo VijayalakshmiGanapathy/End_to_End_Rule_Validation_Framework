@@ -1,0 +1,4 @@
+STUDYID,DOMAIN,ETCD,ELEMENT,TESTRL,TEENRL,TEDUR
+P261-402-USL261,TE,FU,Final visit,After last dose,Day +30,P30D
+P261-402-USL261,TE,SCRN,Enrollment (post P261-401),Informed consent,First dose visit,P14D
+P261-402-USL261,TE,TRT,Treatment (long-term),First seizure cluster,Up to ~4 years,P1430D

@@ -8,7 +8,7 @@ def test_batch_configuration():
     service = BatchConfigService()
 
     config = service.get_batch_configuration(
-        "B01_DM_dates"
+        "B18_Mixed"
     )
 
     print()
