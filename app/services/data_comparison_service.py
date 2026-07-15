@@ -171,9 +171,7 @@ class DataComparisonService:
 
             for variable, values in variables_modified.items():   
 
-                if rule_id == "SD1299":
-                    print(f"Inside loop -> Variable: {variable}")  
-
+                
                 variable = str(variable).strip()
             
                 expected_original = self._normalize_value(
@@ -1378,28 +1376,6 @@ class DataComparisonService:
                 csv_row_number,
                 "Row index out of range",
             )
-
-        print("=" * 80)
-        print("Rule:", rule_id)
-        print("Variable:", variable)
-        print("Original Columns:")
-        print(original_df.columns.tolist())
-        print("Dirty Columns:")
-        print(dirty_df.columns.tolist())
-        print("=" * 80)
-        
-        if variable not in original_df.columns:
-
-            return self._failure_row(
-                rule_id,
-                error_id,
-                audit_domain,
-                target_domain,
-                usubjid,
-                variable,
-                csv_row_number,
-                f"{variable} not found in original CSV",
-            )
         
         # Original row
         original_row = (
@@ -1409,10 +1385,40 @@ class DataComparisonService:
             .copy()
         )
 
-        # Original value before mutation
-        actual_original = self._normalize_value(
+        # ---------------------------------------------------------
+        # DEBUG - Find matching duplicate rows
+        # ---------------------------------------------------------
+
+        common_cols = original_df.columns.tolist()
+
+        candidate_rows = dirty_df.copy()
+
+        for col in common_cols:
+
+            candidate_rows = candidate_rows[
+                candidate_rows[col]
+                .fillna("")
+                .astype(str)
+                .str.strip()
+                ==
+                str(original_row[col]).strip()
+            ]
+
+        
+        # ---------------------------------------------------------
+        # Original value
+        # Variable may not exist in Original CSV (SD2238)
+        # ---------------------------------------------------------
+
+        if variable in original_df.columns:
+
+            actual_original = self._normalize_value(
             original_row[variable]
         )
+
+        else:
+
+            actual_original = ""
 
         original_match = self._values_match(
             actual_original,
@@ -1422,31 +1428,62 @@ class DataComparisonService:
         # Create expected duplicated row
         expected_row = original_row.copy()
 
+        # ---------------------------------------------------------
+        # If the variable doesn't exist in Original,
+        # add it before comparing.
+        # ---------------------------------------------------------
+
+        if variable not in expected_row.index:
+            expected_row[variable] = ""
+
         expected_row[variable] = expected_injected
 
         # Compare complete row
-        comparison = (
+        comparison_df = (
             dirty_df
             .fillna("")
             .astype(str)
-            .eq(expected_row)
-            .all(axis=1)
         )
 
-        dirty_count = comparison.sum()
+        # Add missing columns into expected_row
+        for col in comparison_df.columns:
 
-        dirty_match = dirty_count == 1
+            if col not in expected_row.index:
+                expected_row[col] = ""
 
-        if dirty_match:
-            actual_dirty = expected_injected
-        else:
-            actual_dirty = ""
+        # Match column order
+        expected_row = expected_row[
+            comparison_df.columns
+        ]
+
+        # ---------------------------------------------------------
+        # Find duplicated row containing injected value
+        # ---------------------------------------------------------
+
+        actual_dirty = ""
+        dirty_match = False
+
+        for _, row in candidate_rows.iterrows():
+
+            value = self._normalize_value(
+                row.get(variable, "")
+            )
+
+            if self._values_match(
+                value,
+                expected_injected,
+            ):
+
+                actual_dirty = value
+                dirty_match = True
+                break
 
         imputation_match = (
             original_match
             and dirty_match
         )
 
+        
         return {
             "Rule ID": rule_id,
             "Error ID": error_id,

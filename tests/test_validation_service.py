@@ -15,7 +15,7 @@ def test_validation_service():
     # -----------------------------------------
 
     config = BatchConfigService().get_batch_configuration(
-        "B18_Mixed",
+        "B16_Destructive_DropDomain",
     )
 
     # -----------------------------------------

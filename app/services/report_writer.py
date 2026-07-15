@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from app.core.config import DEFAULT_OUTPUT_FILE
+# from app.core.config import DEFAULT_OUTPUT_FILE
 
 
 class ReportWriter:

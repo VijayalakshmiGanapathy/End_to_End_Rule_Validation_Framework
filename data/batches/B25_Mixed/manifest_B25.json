@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-07T06:17:28.442703",
+  "generated_at": "2026-07-14T06:50:51.731140",
   "seed": 42,
   "mode": "compound",
-  "source_dir": "/tmp/sdtm_uploads_m_02hlc_",
+  "source_dir": "/tmp/sdtm_uploads__rni7e7t",
   "profile": "all",
   "rate": 0.05,
   "density_cap": 5,
   "rules_available": 467,
-  "rules_injectable": 10,
+  "rules_injectable": 9,
   "rules_skipped": 0,
-  "rules_injected": 10,
-  "total_mutations": 122,
+  "rules_injected": 9,
+  "total_mutations": 121,
   "skipped_rules": [],
   "errors": [
     {
@@ -45,8 +45,8 @@
       "primitive": "duplicate_record",
       "domain": "TS",
       "usubjid": null,
-      "row_index": 30,
-      "csv_line": 32,
+      "row_index": 45,
+      "csv_line": 47,
       "seq_value": "1",
       "variables_modified": {
         "__row__": {
@@ -3422,30 +3422,6 @@
       "clean_row_index": null
     },
     {
-      "error_id": "INJ-SD1078-DM-001",
-      "rule_id": "SD1078",
-      "rule_message": "Permissible variable with missing value for all records",
-      "category": "ALL2",
-      "primitive": "add_column",
-      "domain": "DM",
-      "usubjid": null,
-      "row_index": null,
-      "csv_line": null,
-      "seq_value": null,
-      "variables_modified": {
-        "RFCSTDTC": {
-          "original": "absent",
-          "injected": ""
-        }
-      },
-      "re_derived": {},
-      "expected_co_violations": [],
-      "notes": null,
-      "status": "injected",
-      "failure_reason": null,
-      "clean_row_index": null
-    },
-    {
       "error_id": "INJ-SD1299-CM-001",
       "rule_id": "SD1299",
       "rule_message": "No timing variables are present in dataset",
@@ -3495,7 +3471,6 @@
     "SD1029": 48,
     "SD2024": 1,
     "SD0057": 1,
-    "SD1078": 1,
     "SD1299": 1
   },
   "summary_by_category": {
@@ -3505,7 +3480,6 @@
     "INT1": 66,
     "REL1": 49,
     "ALL1": 1,
-    "ALL2": 1,
     "GO2": 1
   },
   "summary_by_domain": {
@@ -3520,10 +3494,10 @@
     "PE": 7,
     "SC": 1,
     "VS": 8,
-    "DM": 2
+    "DM": 1
   },
   "summary_status": {
-    "injected": 122,
+    "injected": 121,
     "overwritten": 0,
     "failed_self_validation": 0
   },

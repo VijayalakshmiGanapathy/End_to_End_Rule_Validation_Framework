@@ -8,7 +8,7 @@ def test_batch_configuration():
     service = BatchConfigService()
 
     config = service.get_batch_configuration(
-        "B18_Mixed"
+        "B16_Destructive_DropDomain"
     )
 
     print()

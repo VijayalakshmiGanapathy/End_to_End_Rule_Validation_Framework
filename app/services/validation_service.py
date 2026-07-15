@@ -126,11 +126,7 @@ class ValidationService:
         print("Requested Batch:", repr(config.batch_name))
         print("Requested Host Generator Key:", repr(config.host_generator_key))
 
-        print(
-            working_rules_df[
-                ["Batch", "Host Generator Key", "Rule ID"]
-            ].head(20)
-        )
+        
 
         working_rules_df = working_rules_df[
             working_rules_df["Batch"].str.contains(
